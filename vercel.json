@@ -1,15 +1,56 @@
 {
   "cleanUrls": false,
-  "headers": [{ "source": "/(.*)", "headers": [{ "key": "X-Espelho", "value": "vercel" }] }],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Espelho",
+          "value": "vercel"
+        }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/videos/(.*)",    "destination": "https://www.vento-sul.tech/videos/$1" },
-    { "source": "/radio-mp3/(.*)", "destination": "https://www.vento-sul.tech/radio-mp3/$1" },
-    { "source": "/audio/(.*)",     "destination": "https://www.vento-sul.tech/audio/$1" },
-    { "source": "/audios/(.*)",    "destination": "https://www.vento-sul.tech/audios/$1" },
-    { "source": "/fotos/(.*)",     "destination": "https://www.vento-sul.tech/fotos/$1" },
-    { "source": "/shorts/(.*)",    "destination": "https://www.vento-sul.tech/shorts/$1" },
-    { "source": "/img/(.*)",       "destination": "https://www.vento-sul.tech/img/$1" },
-    { "source": "/api/(.*)",       "destination": "https://www.vento-sul.tech/api/$1" },
-    { "source": "/(.*)",           "destination": "/index.html" }
+    {
+      "source": "/data/(.*)",
+      "destination": "https://www.vento-sul.tech/data/$1"
+    },
+    {
+      "source": "/videos/(.*)",
+      "destination": "https://www.vento-sul.tech/videos/$1"
+    },
+    {
+      "source": "/radio-mp3/(.*)",
+      "destination": "https://www.vento-sul.tech/radio-mp3/$1"
+    },
+    {
+      "source": "/audio/(.*)",
+      "destination": "https://www.vento-sul.tech/audio/$1"
+    },
+    {
+      "source": "/audios/(.*)",
+      "destination": "https://www.vento-sul.tech/audios/$1"
+    },
+    {
+      "source": "/fotos/(.*)",
+      "destination": "https://www.vento-sul.tech/fotos/$1"
+    },
+    {
+      "source": "/shorts/(.*)",
+      "destination": "https://www.vento-sul.tech/shorts/$1"
+    },
+    {
+      "source": "/img/(.*)",
+      "destination": "https://www.vento-sul.tech/img/$1"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "https://www.vento-sul.tech/api/$1"
+    },
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
   ]
 }
