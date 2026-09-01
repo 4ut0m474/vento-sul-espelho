@@ -1,0 +1,114 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Pesca Artesanal do Pântano do Sul",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-prod-pesca-artesanal-do-pantano-do-sul",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Casa Rústica no Morro da Trilha Lagoinha do Leste",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Manoel Pedro de Oliveira 193",
+   "link": "https://www.airbnb.com.br/h/casa-morro-lagoinha-leste"
+  },
+  {
+   "nome": "Bifarma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Estrada João Bellarmino da Silva",
+   "link": ""
+  },
+  {
+   "nome": "D'Ruts",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mini Mercado EAIEL",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "RP Supermercados",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Abelardo Otacílio Gomes 143",
+   "link": ""
+  },
+  {
+   "nome": "Estrelas no Mar",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ana Maria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar do Arante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Abelardo Otacílio Gomes 254",
+   "link": ""
+  },
+  {
+   "nome": "Bar e Restaurante Silva",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Francisco Thomaz dos Santos 9165",
+   "link": ""
+  },
+  {
+   "nome": "Canoa Grande",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Flamenguinho",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mandala",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Perello's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+  "_leia": "A TABELA OFICIAL DE PREÇOS DO VENTO SUL. Fonte única da verdade. Corrigida em 25/08/2026 pelo DJ, que ouviu a rádio dizer preço errado ('grátis pro usuário e 30 por comerciante'). Nenhum texto — rádio, short, página, e-mail ou resposta de IA — pode citar preço que não esteja aqui. Se um modelo inventar valor, é erro: manda ler este arquivo.",
+  "atualizado": "2026-08-25",
+  "moeda": "BRL",
+
+  "sempre_gratis": {
+    "_leia": "Isto NUNCA foi pago e nunca vai ser. Desde o primeiro dia do app.",
+    "itens": [
+      "acessar o aplicativo",
+      "ouvir a rádio",
+      "ver o mapa do bairro",
+      "ler o jornal",
+      "ver o boletim do mar e a previsão",
+      "ver as câmeras da praia"
+    ]
+  },
+
+  "pessoa": {
+    "nome": "Cooperativa",
+    "mensal": 1.00,
+    "anual": 10.00,
+    "_anual_leia": "10 no ano = 12 meses pagando 10 → 2 meses de graça",
+    "teste_gratis_dias": 30,
+    "da_direito_a": [
+      "usar SulCoins",
+      "receber push com promoções perto de você",
+      "entrar nas compras coletivas",
+      "fazer parte da cooperativa e opinar no rumo do app"
+    ]
+  },
+
+  "comerciante": {
+    "_leia": "Três planos. O de 100 tem que valer TRÊS VEZES o de 50 — não um pouco mais, três vezes. Ex: 50 aparece 3x por dia na rádio, 100 aparece 9x.",
+    "planos": [
+      {
+        "id": "participa",
+        "nome": "Participa",
+        "mensal": 10.00,
+        "anual": 100.00,
+        "teste_gratis_dias": 30,
+        "aparicoes_radio_dia": 0,
+        "da_direito_a": [
+          "aparecer no mapa e na busca do app",
+          "página do negócio com foto, descrição e contato",
+          "fazer parte da cooperativa"
+        ]
+      },
+      {
+        "id": "promove",
+        "nome": "Promove",
+        "mensal": 50.00,
+        "anual": 500.00,
+        "teste_gratis_dias": 30,
+        "aparicoes_radio_dia": 3,
+        "da_direito_a": [
+          "tudo do Participa",
+          "propaganda feita por IA — texto, imagem e vídeo",
+          "3 aparições por dia na rádio",
+          "participar dos eventos e das compras coletivas",
+          "destaque no mapa"
+        ]
+      },
+      {
+        "id": "destaque",
+        "nome": "Destaque",
+        "mensal": 100.00,
+        "anual": 1000.00,
+        "teste_gratis_dias": 30,
+        "aparicoes_radio_dia": 9,
+        "_leia": "TUDO do Promove, três vezes mais. Se o Promove tem 3, este tem 9.",
+        "da_direito_a": [
+          "tudo do Promove, com o triplo de tudo",
+          "9 aparições por dia na rádio",
+          "3x mais propaganda gerada por IA",
+          "prioridade no mapa e na busca",
+          "participação nos projetos do app",
+          "mais IA pra ajudar o negócio"
+        ]
+      }
+    ]
+  },
+
+  "servicos_extras": {
+    "_leia": "Serviço avulso, fora do plano. Preço BAIXO, variando conforme a dificuldade. Nunca inventar valor: se não estiver aqui, dizer que é sob consulta.",
+    "regra": "quanto mais trabalho, mais caro — mas sempre barato perto do mercado",
+    "sob_consulta": true
+  },
+
+  "regras_de_fala": [
+    "Acessar o app, a rádio e o mapa é GRÁTIS. Sempre foi, desde o primeiro dia.",
+    "NUNCA dizer que o app inteiro é pago.",
+    "NUNCA dizer 'grátis pro usuário e X por comerciante' — isso está errado: a pessoa paga 1 real por mês pra entrar na cooperativa.",
+    "NUNCA citar valor que não esteja neste arquivo.",
+    "Todo plano tem 1 mês de teste grátis.",
+    "Quem paga no ano ganha 2 meses (paga 10 meses, usa 12).",
+    "Não prometer resultado de venda — só o que o plano dá."
+  ]
+}

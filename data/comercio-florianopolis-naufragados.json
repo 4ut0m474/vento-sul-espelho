@@ -1,0 +1,18 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Naufragados",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-naufragados",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Golfinho",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

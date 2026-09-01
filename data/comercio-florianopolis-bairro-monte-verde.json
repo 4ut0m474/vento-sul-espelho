@@ -1,0 +1,170 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Monte Verde",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-monte-verde",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Elaine Amorim Studio de Beleza e Estética",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rodovia Virgílio Várzea 981",
+   "link": ""
+  },
+  {
+   "nome": "Havan",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tok & Stok",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Decathlon",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Rodovia José Carlos Daux 3400",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cassol Centerlar",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rodovia Virgílio Várzea 587",
+   "link": "www.floripashopping.com.br"
+  },
+  {
+   "nome": "Florterra",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rodovia Virgílio Várzea 863",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Sak's",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Virgílio Várzea 762",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Sol Nascente",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Souza de Jesus",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bistek Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua da Timbaúba 1",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Sonic",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Virgílio Várzea 1204",
+   "link": ""
+  },
+  {
+   "nome": "Banca Cardoso",
+   "tipo": "Newsagent",
+   "emoji": "🏪",
+   "cat": "newsagent",
+   "end": "Rua Almíscar",
+   "link": ""
+  },
+  {
+   "nome": "Irmãos de Patas Pet Shop",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua do Alecrim",
+   "link": ""
+  },
+  {
+   "nome": "Postos Máximo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Virgílio Várzea 460",
+   "link": ""
+  },
+  {
+   "nome": "Caseirinho",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Virgílio Várzea 518",
+   "link": ""
+  },
+  {
+   "nome": "Churrascaria Ataliba",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://www.ataliba.com.br"
+  },
+  {
+   "nome": "Angeloi / Balaroti",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Madeireira Madekalo",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Rodovia José Carlos Daux 1607",
+   "link": ""
+  }
+ ]
+}

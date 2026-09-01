@@ -1,0 +1,21 @@
+{
+  "_nota": "Diretório do comércio da Barra da Lagoa — info PÚBLICA encontrada na net (2026-06-11). NÃO são clientes/parceiros ainda: é vitrine + isca de prospecção. Logos/fotos reais entram quando cada um reivindicar. Fotos atuais = categoria (loremflickr).",
+  "bairro": "Barra da Lagoa",
+  "cidade": "Florianópolis · SC",
+  "atualizado": "2026-06-11",
+  "comercios": [
+    { "nome": "Restaurante Tamarutaca", "tipo": "Restaurante", "emoji": "🦐", "cat": "seafood,restaurant", "end": "R. Laurindo José de Souza, 663", "link": "" },
+    { "nome": "Dois Irmãos", "tipo": "Restaurante", "emoji": "🐟", "cat": "seafood,grill", "end": "R. Amaro Coelho, 157", "link": "" },
+    { "nome": "Deck6", "tipo": "Restaurante à beira-mar", "emoji": "🌊", "cat": "seafood,beach,restaurant", "end": "Servidão João Januário do Nascimento, 52", "link": "" },
+    { "nome": "Ponta das Caranhas", "tipo": "Bar e Restaurante", "emoji": "🦀", "cat": "seafood,bar", "end": "Barra da Lagoa", "link": "" },
+    { "nome": "Bistrô Isadora Duncan", "tipo": "Bistrô", "emoji": "🍷", "cat": "bistro,dinner,wine", "end": "Barra da Lagoa", "link": "" },
+    { "nome": "Bar do Gaúcho", "tipo": "Bar", "emoji": "🍺", "cat": "bar,pub", "end": "Barra da Lagoa", "link": "" },
+    { "nome": "Supermercado Oliveira", "tipo": "Supermercado", "emoji": "🛒", "cat": "supermarket,grocery", "end": "Barra da Lagoa · 07:30–22h", "link": "https://www.instagram.com/superoliveirabarra/" },
+    { "nome": "MERX Express", "tipo": "Mercado", "emoji": "🛍️", "cat": "market,grocery", "end": "Barra da Lagoa", "link": "https://www.instagram.com/merxexpress/" },
+    { "nome": "Bazar do Surf", "tipo": "Surf shop", "emoji": "🏄", "cat": "surf,shop,beach", "end": "R. Angelina Joaquina dos Santos, 110", "link": "" },
+    { "nome": "Pousada Schmitz", "tipo": "Pousada", "emoji": "🏨", "cat": "inn,hotel,beach", "end": "Barra da Lagoa", "link": "https://www.pousadaschmitz.com.br/" },
+    { "nome": "Pousada Crisana", "tipo": "Pousada", "emoji": "🛏️", "cat": "inn,beach,tropical", "end": "100m da praia", "link": "https://pousadacrisana.com.br/" },
+    { "nome": "Pousada Portal da Barra", "tipo": "Pousada", "emoji": "🌴", "cat": "inn,beach,palm", "end": "Barra da Lagoa", "link": "https://pousadaportaldabarra.com.br/" },
+    { "nome": "Pousada Barratur", "tipo": "Pousada", "emoji": "☀️", "cat": "inn,sunrise,beach", "end": "R. Felipa Benta Ramos, 18", "link": "" }
+  ]
+}

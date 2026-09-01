@@ -1,0 +1,1546 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Centro",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-centro",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Empório Kretzer",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "Rua Acelon Pacheco da Costa 115",
+   "link": ""
+  },
+  {
+   "nome": "Pitibebê",
+   "tipo": "Baby Goods",
+   "emoji": "🏪",
+   "cat": "baby_goods",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Madre Benvenuta 883",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Madre Benvenuta 1056",
+   "link": "https://www.bb.com.br"
+  },
+  {
+   "nome": "Sicoob",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Unicred",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar da Santinha",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar do Pacheco",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Boteco Bacana",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Avenida Madre Benvenuta 1678",
+   "link": ""
+  },
+  {
+   "nome": "Mr. Hoppy",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nefasta Cervejaria",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "ORI Boteco Santa Mônica",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida Madre Benvenuta 1028",
+   "link": ""
+  },
+  {
+   "nome": "dez 55 Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arquitetura do Sono",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cama Pimenta",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": "https://www.camapimenta.com.br/contato"
+  },
+  {
+   "nome": "Ortobom",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaçolaser",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lamori",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": "https://chiketaesmalteria.wixsite.com/lamoriestticaeesmalt"
+  },
+  {
+   "nome": "Nuova Donna",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Sérgio Rogério Beins 45",
+   "link": ""
+  },
+  {
+   "nome": "Della Bikes",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua Juvêncio Costa 269",
+   "link": "https://www.dellabikes.com.br/"
+  },
+  {
+   "nome": "TriBikes",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rodovia Admar Gonzaga 1187",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Vip",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": "http://www.barbeariavip.com.br/"
+  },
+  {
+   "nome": "Barber's Place",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Capricho's Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Beauté",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Coronel Maurício Spalding de Souza 1060",
+   "link": ""
+  },
+  {
+   "nome": "Concetto Hair",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Conrado's Barber",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fashion Hair",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Porto Beleza",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rossi Cabelereiros",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": "http://rossicabeleireiros.com.br/"
+  },
+  {
+   "nome": "Café Cultura",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Deli Itacorubi",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Family Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Go Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panifico",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Starbucks",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Automega Renault",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Madre Benvenuta",
+   "link": "http://www.renaultautomega.com.br"
+  },
+  {
+   "nome": "Barigui Semi Novos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": "https://www.bariguiseminovos.com.br/"
+  },
+  {
+   "nome": "DVA Jeep",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Macedo Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nissan",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Prima Fiat",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rodovia Admar Gonzaga 435",
+   "link": "http://www.primafiat.com.br"
+  },
+  {
+   "nome": "Santa Fé Chevrolet",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Madre Benvenuta",
+   "link": "http://www.santafeveiculos.com.br"
+  },
+  {
+   "nome": "Blackout Películas",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tapete Persa",
+   "tipo": "Carpet",
+   "emoji": "🏪",
+   "cat": "carpet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Empório Cambuhy",
+   "tipo": "Chemist",
+   "emoji": "🏪",
+   "cat": "chemist",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kopenhagen",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bolo da Felicidade",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Avatim",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Belshop",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "L'Occitane",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "MAC Cosmetics",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Paris",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quem Disse, Berenice?",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sephora",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Body Shop",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vereda Persianas e Cortinas",
+   "tipo": "Curtain",
+   "emoji": "🏪",
+   "cat": "curtain",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "Avenida Madre Benvenuta",
+   "link": "https://www.milium.com.br/"
+  },
+  {
+   "nome": "Samsung",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Madre Benvenuta 1414",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pague Menos",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chilli Beans",
+   "tipo": "Fashion Accessories",
+   "emoji": "🏪",
+   "cat": "fashion_accessories",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém das Flores",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Moldura Minuto",
+   "tipo": "Frame",
+   "emoji": "🏪",
+   "cat": "frame",
+   "end": "",
+   "link": "https://www.molduraminuto.com.br/"
+  },
+  {
+   "nome": "Vaticano Crematórium",
+   "tipo": "Funeral Directors",
+   "emoji": "🏪",
+   "cat": "funeral_directors",
+   "end": "Rua Pastor William Richard Schisler Filho 489",
+   "link": "https://portalvaticano.com.br/"
+  },
+  {
+   "nome": "Casa Cléo",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Koerich",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Energiluz",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Juvêncio Costa 290",
+   "link": "https://energiluz.com.br/"
+  },
+  {
+   "nome": "Direto do Campo",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Mercure Florianópolis",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rodovia Admar Gonzaga 600",
+   "link": ""
+  },
+  {
+   "nome": "Camicado",
+   "tipo": "Houseware",
+   "emoji": "🏪",
+   "cat": "houseware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa a Caso",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": "http://www.casaacaso.com.br/"
+  },
+  {
+   "nome": "Empório Casa",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mundo Deva",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "H. Stern",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Life Vivara",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pandora",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Swarovski",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vivara",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Burger King",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Giraffas",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hambúrgueria São Paulo",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "McDonald's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Oakberry Açaí bowls",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Parma Pizzaria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rama Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Severo Garage",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": "https://severogarage.com.br/"
+  },
+  {
+   "nome": "Soul Brothers",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Space Food",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tao Açaí",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavanderia Kilav",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavanderia Soares",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Pastor William Richard Schisler Filho",
+   "link": ""
+  },
+  {
+   "nome": "Jorge Bischoff",
+   "tipo": "Leather",
+   "emoji": "🏪",
+   "cat": "leather",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Luz da Lua",
+   "tipo": "Leather",
+   "emoji": "🏪",
+   "cat": "leather",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santos Madeiras",
+   "tipo": "Lumber",
+   "emoji": "🏪",
+   "cat": "lumber",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Villa Romana Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Avenida Madre Benvenuta 687",
+   "link": "http://villaromanashopping.com.br/l"
+  },
+  {
+   "nome": "Casa Construto",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "HMC Materiais de Construção",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santa Apolônia",
+   "tipo": "Medical Supply",
+   "emoji": "🏪",
+   "cat": "medical_supply",
+   "end": "",
+   "link": "https://www.santaapolonia.com.br/"
+  },
+  {
+   "nome": "Alecrim Produtos Naturais e Orgânicos",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém 3",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Acelon Pacheco da Costa",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Itacorubi",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado da Família",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Amaro Antônio Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Mini Mercado Villa Mariana",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni Santa Mônica",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Nirberto Haase 75",
+   "link": "https://www.angeloni.com.br/"
+  },
+  {
+   "nome": "Carrefour",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "http://walmart.com.br"
+  },
+  {
+   "nome": "Supermercado É de Casa",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Admar Gonzaga",
+   "link": ""
+  },
+  {
+   "nome": "Claro",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "TIM",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "iPlace",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "fitland",
+   "tipo": "Nutrition Supplements",
+   "emoji": "🏪",
+   "cat": "nutrition_supplements",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casagrande",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Martelinho de Ouro",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado do Óleo",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Avenida Madre Benvenuta 1630",
+   "link": "http://www.mercadodooleo.net.br/"
+  },
+  {
+   "nome": "Mint",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ojo",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rio Branco",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sunglass Hut",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "NEMA Floripa",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Santa Isabel",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pão São Jorge",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Eduardo Gonçalves d'Ávila",
+   "link": ""
+  },
+  {
+   "nome": "Pão à Mão",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": "https://paoamao.com.br/"
+  },
+  {
+   "nome": "Festa e Alegria",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Verde Pescados",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Boticário",
+   "tipo": "Perfumery",
+   "emoji": "🏪",
+   "cat": "perfumery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jully Maria",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": "http://www.jullymariapet.com.br/"
+  },
+  {
+   "nome": "Veneg",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nuova Pet",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Ilha Bela",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Admar Gonzaga 500",
+   "link": ""
+  },
+  {
+   "nome": "Real Auto Posto",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Bom Garfo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Boutique da Carne",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho Caseiro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eatsy Restaurante e Cafeteria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1392",
+   "link": "https://linktr.ee/eatsyfloripa"
+  },
+  {
+   "nome": "Five 440",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Forneria Catarina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1248",
+   "link": "https://forneriacatarina.com.br/"
+  },
+  {
+   "nome": "Frango & Fritas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 979",
+   "link": ""
+  },
+  {
+   "nome": "Hard Rock Cafe",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ichiro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kiddo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Madero",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quatro Estações",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Joe Collaço 107",
+   "link": "http://4estacoesrestaurante.com.br"
+  },
+  {
+   "nome": "Restaurante Santa Mônica",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Sérgio Rogério Beins 25",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Universitário",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Universitário do Centro de Ciências Agrárias",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sushic Express",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sushinami",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tratto",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Uncle Joe's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1167",
+   "link": ""
+  },
+  {
+   "nome": "Wamaki",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://wamaki.com.br"
+  },
+  {
+   "nome": "Zeppelin Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1025",
+   "link": ""
+  },
+  {
+   "nome": "Adidas Originals",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Animale",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Brooksfield",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Calzedonia",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cris",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farm",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hering",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hope",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Intimissimi",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "John John",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lazer Veste Você",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lez a Lez",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Live!",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lua de Papel",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Avenida Madre Benvenuta 809",
+   "link": "https://luadepapel.com.br/"
+  },
+  {
+   "nome": "Lupo",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Makenji",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Osklen",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Recicla Baby",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": "http://www.reciclababy.com.br"
+  },
+  {
+   "nome": "Renner",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rip Curl",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Gallery Florianópolis",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The North Face",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Youcom",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Zara",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arezzo",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Carioca",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Crocs",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Havaianas",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bacio di Latte",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Max Gelateria",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Master Paper Papelaria",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Piscina Limpa",
+   "tipo": "Swimming Pool",
+   "emoji": "🏪",
+   "cat": "swimming_pool",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Portobello Shop",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Avenida Madre Benvennuta 690",
+   "link": ""
+  },
+  {
+   "nome": "Martino Pneus",
+   "tipo": "Tyres",
+   "emoji": "🏪",
+   "cat": "tyres",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bazar da Ilha",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

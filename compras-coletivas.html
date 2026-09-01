@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>🛒 Compras Coletivas · Vento Sul</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<style>
+  :root{--bg:#0a0e14;--card:#131a23;--line:#1f2937;--txt:#e2e8f0;--muted:#94a3b8;
+        --gold:#fbbf24;--accent:#06b6d4;--good:#10b981;--bad:#ef4444;--magic:#a855f7;}
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif;}
+  body{background:linear-gradient(135deg,#0f172a,#1e293b);color:var(--txt);min-height:100vh;}
+  header{background:rgba(255,255,255,.03);backdrop-filter:blur(10px);
+         border-bottom:1px solid rgba(251,191,36,.2);padding:12px 16px;
+         display:flex;align-items:center;justify-content:space-between;}
+  header h1{font-size:18px;background:linear-gradient(90deg,var(--gold),var(--good));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+  header nav{display:flex;gap:10px;}
+  header a{color:var(--accent);text-decoration:none;font-size:13px;}
+
+  .hero{padding:18px 16px 10px;background:linear-gradient(135deg,rgba(16,185,129,.07),rgba(6,182,212,.05));}
+  .hero h2{font-size:22px;font-weight:900;margin-bottom:4px;}
+  .hero p{font-size:13px;color:var(--muted);line-height:1.5;}
+  .hero-stats{display:flex;gap:14px;margin-top:12px;flex-wrap:wrap;}
+  .hero-stat{background:rgba(0,0,0,.3);border-radius:10px;padding:10px 14px;text-align:center;}
+  .hero-stat .n{font-size:22px;font-weight:900;color:var(--good);}
+  .hero-stat .l{font-size:10px;color:var(--muted);text-transform:uppercase;}
+
+  .section-title{font-size:15px;font-weight:700;color:var(--gold);padding:14px 16px 6px;
+                 display:flex;align-items:center;gap:6px;}
+
+  /* Como funciona */
+  .steps{padding:0 16px 14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+  .step{background:rgba(255,255,255,.04);border-radius:12px;padding:14px;border:1px solid var(--line);}
+  .step .num{font-size:28px;font-weight:900;color:var(--good);margin-bottom:4px;}
+  .step .title{font-size:14px;font-weight:700;margin-bottom:4px;}
+  .step p{font-size:12px;color:var(--muted);line-height:1.5;}
+
+  /* Coletivas abertas */
+  .coletivas-lista{padding:0 14px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;}
+  .col-card{background:rgba(255,255,255,.04);border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:16px;transition:.2s;}
+  .col-card:hover{border-color:rgba(16,185,129,.4);transform:translateY(-1px);}
+  .col-card .header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;}
+  .col-card .titulo{font-size:16px;font-weight:700;}
+  .col-card .badge{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;}
+  .badge.aberta{background:rgba(16,185,129,.2);color:var(--good);}
+  .badge.quase{background:rgba(251,191,36,.2);color:var(--gold);}
+  .badge.cheia{background:rgba(6,182,212,.2);color:var(--accent);}
+  .col-card .cat{font-size:11px;color:var(--magic);font-weight:600;margin-bottom:6px;}
+  .col-card .desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:10px;}
+  .col-card .preco-row{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;}
+  .col-card .pnovo{font-size:24px;font-weight:900;color:var(--good);}
+  .col-card .pvelho{font-size:13px;text-decoration:line-through;color:var(--muted);}
+  .col-card .eco{font-size:11px;background:rgba(16,185,129,.2);color:var(--good);padding:2px 8px;border-radius:10px;font-weight:700;}
+  .prog-wrap{background:rgba(255,255,255,.06);border-radius:4px;height:10px;overflow:hidden;margin-bottom:6px;}
+  .prog-bar{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--good),var(--accent));transition:.8s;}
+  .prog-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:12px;}
+  .col-card .info-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
+  .info-pill{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);
+    background:rgba(255,255,255,.05);padding:3px 8px;border-radius:8px;}
+  .cta-btn{width:100%;padding:12px;border-radius:12px;border:0;font-weight:700;
+    font-size:14px;cursor:pointer;transition:.2s;letter-spacing:.3px;}
+  .cta-btn.entrar{background:linear-gradient(135deg,var(--good),#059669);color:#fff;}
+  .cta-btn.dentro{background:rgba(16,185,129,.15);border:1px solid var(--good);color:var(--good);}
+  .cta-btn:disabled{opacity:.5;cursor:default;}
+
+  /* Calendário */
+  .calendario{padding:0 16px 20px;}
+  .cal-linha{display:flex;gap:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:10px;cursor:pointer;}
+  .cal-linha:hover{border-color:rgba(251,191,36,.3);}
+  .cal-data-col{background:rgba(0,0,0,.4);min-width:60px;padding:14px 10px;text-align:center;flex-shrink:0;}
+  .cal-data-col .dia{font-size:26px;font-weight:900;color:var(--gold);}
+  .cal-data-col .mes{font-size:11px;color:var(--muted);text-transform:uppercase;}
+  .cal-corpo{padding:12px 14px;flex:1;}
+  .cal-nome{font-size:14px;font-weight:700;margin-bottom:2px;}
+  .cal-sub{font-size:12px;color:var(--muted);margin-bottom:6px;}
+  .cal-end{padding:12px 14px;display:flex;align-items:center;flex-shrink:0;}
+
+  .empty{text-align:center;padding:48px 20px;color:var(--muted);}
+  .empty .icon{font-size:48px;margin-bottom:12px;}
+  .skel{background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.08),rgba(255,255,255,.04));
+        background-size:200% 100%;animation:skel 1.5s infinite;border-radius:10px;}
+  @keyframes skel{0%{background-position:200% 0}100%{background-position:-200% 0}}
+</style>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body data-vs-title="🛒 Compras Coletivas">
+
+<div class="hero">
+  <h2>Juntos compramos melhor 💪</h2>
+  <p>Quando mais pessoas entram, o preço cai pra todo mundo.<br>
+     Vento Sul — 95% do desconto fica na comunidade.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="n" id="stat-abertas">—</div><div class="l">Abertas agora</div></div>
+    <div class="hero-stat"><div class="n" id="stat-particip">—</div><div class="l">Participantes</div></div>
+    <div class="hero-stat"><div class="n" id="stat-economia">—</div><div class="l">Economia média</div></div>
+  </div>
+</div>
+
+<div class="section-title">📋 Como funciona</div>
+<div class="steps">
+  <div class="step">
+    <div class="num">1</div>
+    <div class="title">Comerciante cria</div>
+    <p>O comerciante abre uma oferta coletiva com preço especial válido quando X pessoas entram.</p>
+  </div>
+  <div class="step">
+    <div class="num">2</div>
+    <div class="title">Rede se mobiliza</div>
+    <p>A rádio e o app avisam usuários próximos. Cada entrada desce o preço ou confirma o desconto.</p>
+  </div>
+  <div class="step">
+    <div class="num">3</div>
+    <div class="title">Mínimo atingido</div>
+    <p>Quando o mínimo de participantes é alcançado, a coletiva fecha e o pedido vai pra produção.</p>
+  </div>
+  <div class="step">
+    <div class="num">4</div>
+    <div class="title">Entrega programada</div>
+    <p>O produto ou serviço é entregue na data combinada. Pagamento via Pix ou SulCoin.</p>
+  </div>
+</div>
+
+<div class="section-title">🟢 Coletivas Abertas <span id="contagem-abertas" style="color:var(--muted);font-size:12px;margin-left:4px"></span></div>
+<div class="coletivas-lista" id="lista-coletivas">
+  <div class="skel" style="height:300px"></div>
+  <div class="skel" style="height:300px"></div>
+</div>
+
+<div class="section-title">📅 Calendário de Entregas</div>
+<div class="calendario" id="calendario"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/shared/supabase.js?v=20260825"></script>
+<script>
+const SUPA = 'https://vdrzndgkwdpibexjkyxi.supabase.co';
+const ANON = 'sb_publishable_UuXuHUDxe7nmhE-Z9qu-0w_1tv2IrvC';
+VSSupabase.init(SUPA, ANON);
+
+let coletivas = [];
+let lat = null, lng = null;
+
+async function pegarGPS() {
+  if (!('geolocation' in navigator)) return;
+  try {
+    const pos = await new Promise((res, rej) =>
+      navigator.geolocation.getCurrentPosition(res, rej, {timeout:6000})
+    );
+    lat = pos.coords.latitude;
+    lng = pos.coords.longitude;
+  } catch(e) {}
+}
+
+async function carregar() {
+  try {
+    const params = {
+      p_lat: lat, p_lng: lng,
+      p_raio_km: 200,
+      p_cidade: null, p_estado: null,
+    };
+    const dados = await VSSupabase.rpc('coletivas_perto', params);
+    coletivas = Array.isArray(dados) ? dados : [];
+    renderStats();
+    renderColetivas();
+    renderCalendario();
+  } catch(e) {
+    document.getElementById('lista-coletivas').innerHTML =
+      `<div class="empty"><div class="icon">😕</div><p>${e.message}</p></div>`;
+  }
+}
+
+function renderStats() {
+  const abertas = coletivas.filter(c => !c.user_participa).length;
+  const particip = coletivas.reduce((s,c) => s + (c.qtd_confirmada||0), 0);
+  const ecos = coletivas.map(c => c.economia_pct||0);
+  const avgEco = ecos.length ? Math.round(ecos.reduce((a,b)=>a+b,0)/ecos.length) : 0;
+  document.getElementById('stat-abertas').textContent = coletivas.length;
+  document.getElementById('stat-particip').textContent = particip;
+  document.getElementById('stat-economia').textContent = avgEco + '%';
+  document.getElementById('contagem-abertas').textContent = `(${coletivas.length})`;
+}
+
+function renderColetivas() {
+  const lista = document.getElementById('lista-coletivas');
+  if (!coletivas.length) {
+    lista.innerHTML = `<div class="empty"><div class="icon">🛒</div>
+      <p>Nenhuma coletiva aberta no momento.<br>
+      <a href="/comerciante-pro.html" style="color:var(--accent)">Comerciante? Crie uma oferta coletiva →</a></p></div>`;
+    return;
+  }
+  lista.innerHTML = coletivas.map(c => {
+    const pct = c.pct_preenchido || 0;
+    const badgeClass = pct >= 100 ? 'cheia' : pct >= 60 ? 'quase' : 'aberta';
+    const badgeTxt = pct >= 100 ? '✅ Mínimo atingido!' : pct >= 60 ? '🔥 Quase lá!' : '🟢 Aberta';
+    const dias = c.dias_restantes || 0;
+    const entregaStr = c.data_entrega
+      ? new Date(c.data_entrega+'T12:00').toLocaleDateString('pt-BR',{day:'2-digit',month:'long'})
+      : '—';
+    const fechaStr = new Date(c.data_fechamento).toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
+    const pmLabel = `R$ ${Number(c.preco_unitario).toFixed(2).replace('.',',')}`;
+    const pcLabel = `R$ ${Number(c.preco_coletivo).toFixed(2).replace('.',',')}`;
+    const btnClass = c.user_participa ? 'dentro' : 'entrar';
+    const btnTxt = c.user_participa ? '✅ Você está participando' : '🛒 Quero Entrar';
+    return `<div class="col-card">
+      <div class="header">
+        <div class="titulo">${c.titulo}</div>
+        <span class="badge ${badgeClass}">${badgeTxt}</span>
+      </div>
+      <div class="cat">${c.categoria||''} ${c.barraca_nome ? `· ${c.barraca_nome}` : ''} ${c.cidade ? `· 📍 ${c.cidade}` : ''}</div>
+      ${c.descricao ? `<div class="desc">${c.descricao}</div>` : ''}
+      <div class="preco-row">
+        <span class="pnovo">${pcLabel}<span style="font-size:12px;color:var(--muted)">/un</span></span>
+        <span class="pvelho">${pmLabel}</span>
+        <span class="eco">-${c.economia_pct}%</span>
+      </div>
+      <div class="prog-wrap"><div class="prog-bar" style="width:${pct}%"></div></div>
+      <div class="prog-meta">
+        <span>👥 ${c.qtd_confirmada} de ${c.min_participantes} mínimos</span>
+        <span>${pct}%</span>
+      </div>
+      <div class="info-row">
+        <span class="info-pill">⏰ Fecha ${fechaStr}</span>
+        <span class="info-pill ${dias<=2?'style="color:var(--bad)"':''}">📅 Entrega ${entregaStr}</span>
+        ${c.distancia_km ? `<span class="info-pill">📍 ${c.distancia_km.toFixed(1)}km</span>` : ''}
+        <span class="info-pill">🪙 Aceita SulCoin</span>
+      </div>
+      <button class="cta-btn ${btnClass}" onclick="entrar('${c.id}',this)" ${c.user_participa?'disabled':''}>
+        ${btnTxt}
+      </button>
+    </div>`;
+  }).join('');
+}
+
+function renderCalendario() {
+  const root = document.getElementById('calendario');
+  if (!coletivas.length) {
+    root.innerHTML = '<div class="empty"><div class="icon">📅</div><p>Nenhum evento agendado.</p></div>';
+    return;
+  }
+  const porData = {};
+  coletivas.forEach(c => {
+    const key = c.data_entrega || c.data_fechamento?.slice(0,10);
+    if (!porData[key]) porData[key] = [];
+    porData[key].push(c);
+  });
+  const sorted = Object.entries(porData).sort(([a],[b]) => a.localeCompare(b));
+  root.innerHTML = sorted.map(([data, items]) => {
+    const dt = new Date(data+'T12:00');
+    const dia = dt.getDate().toString().padStart(2,'0');
+    const mes = dt.toLocaleDateString('pt-BR',{month:'short'}).toUpperCase().replace('.','');
+    const semana = dt.toLocaleDateString('pt-BR',{weekday:'long'});
+    return `<div style="font-size:12px;color:var(--gold);font-weight:700;margin:12px 0 6px;padding:0 2px">${semana.charAt(0).toUpperCase()+semana.slice(1)}</div>` +
+      items.map(c => `
+        <div class="cal-linha">
+          <div class="cal-data-col"><div class="dia">${dia}</div><div class="mes">${mes}</div></div>
+          <div class="cal-corpo">
+            <div class="cal-nome">${c.titulo}</div>
+            <div class="cal-sub">${c.barraca_nome||c.categoria} ${c.cidade ? `· ${c.cidade}` : ''}</div>
+            <div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+              <div style="flex:1;background:rgba(255,255,255,.06);border-radius:3px;height:4px;overflow:hidden">
+                <div style="height:100%;width:${c.pct_preenchido}%;background:var(--good);border-radius:3px"></div>
+              </div>
+              <span style="font-size:11px;color:var(--muted)">${c.qtd_confirmada}/${c.min_participantes}</span>
+            </div>
+          </div>
+          <div class="cal-end">
+            ${c.user_participa
+              ? '<span style="color:var(--good);font-size:18px">✅</span>'
+              : `<button style="background:rgba(16,185,129,.15);border:1px solid var(--good);color:var(--good);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12px;font-weight:700" onclick="entrar('${c.id}',this)">Entrar</button>`
+            }
+          </div>
+        </div>`
+      ).join('');
+  }).join('');
+}
+
+async function entrar(id, btn) {
+  await VSSupabase.ensureSession();
+  const orig = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '…';
+  try {
+    const res = await VSSupabase.rpc('entrar_coletiva', {p_coletiva_id: id, p_qtd: 1});
+    if (res.ok) {
+      const c = coletivas.find(x => x.id === id);
+      if (c) { c.user_participa = true; c.qtd_confirmada = res.qtd_confirmada || c.qtd_confirmada+1; }
+      renderColetivas();
+      renderCalendario();
+      renderStats();
+    } else {
+      btn.innerHTML = orig;
+      btn.disabled = false;
+      alert(res.msg || 'Não foi possível entrar.');
+    }
+  } catch(e) {
+    btn.innerHTML = orig;
+    btn.disabled = false;
+    alert('Entre no app pra participar!');
+  }
+}
+
+(async () => {
+  await VSSupabase.ensureSession();
+  await pegarGPS();
+  await carregar();
+})();
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="comerciante"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+<!-- 18/08/2026 — explicador desta página (ícone do rodapé). O vídeo está
+     registrado em shared/vs-video-explica.js pelo caminho da página. -->
+<script src="/shared/vs-video-explica.js?v=20260825" defer></script>
+</body>
+</html>

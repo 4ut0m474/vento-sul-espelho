@@ -1,0 +1,108 @@
+{
+ "atualizado": "2026-08-29T19:09:02-03:00",
+ "lugar": "Barra da Lagoa, Florianopolis",
+ "cambio": {
+  "dolar": {
+   "valor": 5.2005,
+   "atualizado": "2026-08-28 13:11"
+  },
+  "euro": {
+   "valor": 6.0315,
+   "atualizado": "2026-08-28 13:11"
+  },
+  "fonte": "Banco Central (PTAX)",
+  "peso_argentino": {
+   "valor": 0.003413,
+   "fonte": "open.er-api.com (PTAX nao cota ARS)"
+  }
+ },
+ "sol": {
+  "nascer": "06:28",
+  "por": "18:00",
+  "duracao_dia": "11:31:16",
+  "crepusculo_fim": "18:22"
+ },
+ "ar_e_uv": {
+  "uv": 0.0,
+  "uv_recado": "tranquilo, sem protetor",
+  "pm2_5": 1.7,
+  "pm10": 2.2,
+  "fonte": "Open-Meteo (camada gratis e NAO-COMERCIAL)"
+ },
+ "feriados": {
+  "proximos": [
+   {
+    "data": "2026-09-07",
+    "nome": "Independência do Brasil",
+    "faltam_dias": 9
+   },
+   {
+    "data": "2026-10-12",
+    "nome": "Nossa Senhora Aparecida",
+    "faltam_dias": 44
+   },
+   {
+    "data": "2026-11-02",
+    "nome": "Finados",
+    "faltam_dias": 65
+   },
+   {
+    "data": "2026-11-15",
+    "nome": "Proclamação da República",
+    "faltam_dias": 78
+   }
+  ]
+ },
+ "economia": {
+  "selic_ao_ano": {
+   "valor": 14.0,
+   "data": "16/09/2026"
+  },
+  "ipca_mes": {
+   "valor": 0.07,
+   "data": "01/07/2026"
+  },
+  "fonte": "Banco Central do Brasil (SGS)"
+ },
+ "ibge": {
+  "itens": [
+   {
+    "titulo": "População estimada do país chega a 214,2 milhões de pessoas em 2026",
+    "quando": "28/08/2026",
+    "link": "http://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/47878-populacao-estimada-do-pais-chega-a-214-2-milhoes-de-pessoas-em-2026.html"
+   },
+   {
+    "titulo": "Índice de Preços ao Produtor (IPP) é de -0,83% em julho",
+    "quando": "28/08/2026",
+    "link": "http://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/47877-indice-de-precos-ao-produtor-ipp-e-de-0-83-em-julho.html"
+   },
+   {
+    "titulo": "IBGE avança na recuperação de prédios próprios ",
+    "quando": "27/08/2026",
+    "link": "http://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/47879-ibge-avanca-na-recuperacao-de-predios-proprios.html"
+   }
+  ],
+  "fonte": "IBGE"
+ },
+ "para": {
+  "turista": [
+   "cambio",
+   "sol",
+   "ar_e_uv",
+   "feriados"
+  ],
+  "comerciante": [
+   "cambio",
+   "economia",
+   "feriados",
+   "ibge"
+  ],
+  "morador": [
+   "sol",
+   "ar_e_uv",
+   "feriados",
+   "ibge"
+  ]
+ },
+ "fontes_vivas": "6/6"
+}

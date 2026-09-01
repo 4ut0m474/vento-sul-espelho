@@ -1,0 +1,29 @@
+{
+ "atualizado": "2026-08-29T23:00:06",
+ "sem_dado": false,
+ "fonte": "Open-Meteo Marine (modelo)",
+ "lua": {
+  "emoji": "🌖",
+  "nome": "Minguante gibosa",
+  "iluminacao": 87,
+  "ciclo": 17
+ },
+ "mare": {
+  "nivel_m": 0.19,
+  "tendencia": "↑ enchendo",
+  "proximo": "Preamar 02:00 (0.57m)",
+  "label": "0.19m ↑ enchendo"
+ },
+ "ondas": {
+  "altura_m": 0.84,
+  "periodo_s": 6.2,
+  "direcao": "SE",
+  "graus": 120,
+  "classificacao": "Mar leve",
+  "label": "0.8m | 6s | SE | Mar leve"
+ },
+ "linha_mar": "🌊 0.8m | 6s | SE | Mar leve",
+ "linha_mare": "🌊 Maré 0.19m ↑ enchendo",
+ "linha_lua": "🌖 Minguante gibosa 87%",
+ "resumo": "0.8m 6s SE | Maré 0.19m ↑ enchendo | 🌖 Minguante gibosa"
+}

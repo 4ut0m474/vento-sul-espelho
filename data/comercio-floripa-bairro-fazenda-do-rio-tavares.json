@@ -1,0 +1,154 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Fazenda do Rio Tavares",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-fazenda-do-rio-tavares",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": "https://www.bb.com.br"
+  },
+  {
+   "nome": "Bar do André",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rodovia SC-405 715",
+   "link": ""
+  },
+  {
+   "nome": "Casas da Água",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rodovia Francisco Magno Vieira 1920",
+   "link": "https://www.casasdaagua.com.br/"
+  },
+  {
+   "nome": "Estofaria Hames",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Servidão Jaborandi 246",
+   "link": ""
+  },
+  {
+   "nome": "Rodrigo",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "Rua Huberto Rohden",
+   "link": ""
+  },
+  {
+   "nome": "Damiani",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rodovia SC-405 1247",
+   "link": ""
+  },
+  {
+   "nome": "TETU",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Avenida Pequeno Príncipe 145",
+   "link": ""
+  },
+  {
+   "nome": "Kitanda 405",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Valdemar",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Francisco Magno Vieira 749",
+   "link": ""
+  },
+  {
+   "nome": "Rangel",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Progresso",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Construcolor",
+   "tipo": "Paint",
+   "emoji": "🏪",
+   "cat": "paint",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ristorante Pizzaria Campeche",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia SC-405 1225",
+   "link": ""
+  },
+  {
+   "nome": "Tia Jurema",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Villa Açoriana",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Dulci",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Oficina do Aprendiz",
+   "tipo": "Toys",
+   "emoji": "🏪",
+   "cat": "toys",
+   "end": "Rodovia Francisco Magno Vieira 1120",
+   "link": "https://oficinadoaprendiz.com.br/"
+  },
+  {
+   "nome": "Marmoraria Rezende",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

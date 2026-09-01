@@ -1,0 +1,226 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "São João do Rio Vermelho",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-sao-joao-do-rio-vermelho",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Com Estoria",
+   "tipo": "Artes E Oficinas",
+   "emoji": "🏪",
+   "cat": "Artes_e_Oficinas",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Boss barbershop",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Cafeteria Mo",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rodovia João Gualberto Soares 5144",
+   "link": ""
+  },
+  {
+   "nome": "Ilha North Ferragens",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Dani",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Ultra Mega Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "ShpoFarma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Comercial GN",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Beto",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eco Hotel Oceanomare",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rodovia João Gualberto Soares 5158",
+   "link": "https://ecohoteloceanomare.com/"
+  },
+  {
+   "nome": "Centro Comercial Red Park",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rua Cândido Pereira dos Anjos 745",
+   "link": ""
+  },
+  {
+   "nome": "De Paula Casa e Construção",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rua Cândido Pereira dos Anjos 1476",
+   "link": ""
+  },
+  {
+   "nome": "Renovlar",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Bom",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Super Norte",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Red Park",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "São Domingos",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Moto Racing",
+   "tipo": "Motorcycle Repair",
+   "emoji": "🏪",
+   "cat": "motorcycle_repair",
+   "end": "Rua Cândido Pereira dos Anjos 1864",
+   "link": ""
+  },
+  {
+   "nome": "Oficina D'rios",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pequenos Reparos",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rocha Mecanica e Geometris",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Cândido Pereira dos Anjos 1235",
+   "link": ""
+  },
+  {
+   "nome": "Óticas Goo",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Rua Cândido Pereira dos Anjos 745",
+   "link": ""
+  },
+  {
+   "nome": "Padaria e Confeitaria São Jorge",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "MC Rações e Acessórios",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Posto Rio Vermelho",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Aquarium Sushi Lounge",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Cândido Pereira dos Anjos 745",
+   "link": ""
+  },
+  {
+   "nome": "Borracharia Ponto Vip",
+   "tipo": "Tyres",
+   "emoji": "🏪",
+   "cat": "tyres",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

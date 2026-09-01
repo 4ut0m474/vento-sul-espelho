@@ -1,0 +1,3642 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Parque da Luz",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-atracao-parque-da-luz",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Lindacap Flat Residence",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Apae",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém da Renda",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arte Presentes",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Artesanatos",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bazar Caramuru",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Box Arts",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Catarina",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cerâmica Açoriana Tatá",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Empório Economia Solidária",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilha SC Brasil",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Indoart’s",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mão de Maria Artesanatos",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Açougue Aurino",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Açougue Kretzer",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "A Criativa",
+   "tipo": "Baby Goods",
+   "emoji": "🏪",
+   "cat": "baby_goods",
+   "end": "Rua Francisco Tolentino 556",
+   "link": ""
+  },
+  {
+   "nome": "Cegonha",
+   "tipo": "Baby Goods",
+   "emoji": "🏪",
+   "cat": "baby_goods",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Aquariana",
+   "tipo": "Bag",
+   "emoji": "🏪",
+   "cat": "bag",
+   "end": "Rua Francisco Tolentino 386",
+   "link": ""
+  },
+  {
+   "nome": "Universal",
+   "tipo": "Bag",
+   "emoji": "🏪",
+   "cat": "bag",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco Daycoval",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Jornalista Rubens de Arruda Ramos 1168",
+   "link": "https://www.daycoval.com.br/"
+  },
+  {
+   "nome": "Banco Pan",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco Safra",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": "https://www.safra.com.br/"
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banrisul",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Presidente Nereu Ramos 69",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Itaú",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Álvaro de Carvalho",
+   "link": ""
+  },
+  {
+   "nome": "Santander Select",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sicoob",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Unicred",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "A Fábrica Working Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": "https://www.afabricaworkingbar.com/"
+  },
+  {
+   "nome": "Balcão Mané",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar da Alfândega",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar do Elói",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bayer Bier Ponte",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Jornalista Assis Chateaubriand 109",
+   "link": ""
+  },
+  {
+   "nome": "Beer Boss",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Blues Velvet",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Pedro Ivo 147",
+   "link": ""
+  },
+  {
+   "nome": "Boteco Cascaes",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Botequim Floripa",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Avenida Rio Branco",
+   "link": ""
+  },
+  {
+   "nome": "Box 32",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": "http://www.box32.com.br/contato"
+  },
+  {
+   "nome": "Chopp do Mercado",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Didge Steakhouse Pub",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": "http://florianopolis.didge.com.br"
+  },
+  {
+   "nome": "Fields",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jivago Social Club",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Deputado Leoberto Leal 116",
+   "link": "http://www.jivagosocialclub.com/"
+  },
+  {
+   "nome": "Quintal Açoriano Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quiosque da Brahma",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Scuna Sul Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Trapiche Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Cestas",
+   "tipo": "Basket",
+   "emoji": "🏪",
+   "cat": "basket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ortobom",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "Rua Tenente Silveira 214",
+   "link": ""
+  },
+  {
+   "nome": "Gabby Beauty",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jasmin Spa, Beleza & Massagens",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Avenida Rio Branco 720",
+   "link": ""
+  },
+  {
+   "nome": "Juliana Santos",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Bento Gonçalves 174",
+   "link": ""
+  },
+  {
+   "nome": "SD Saúde e Beleza - Sul Dental",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Avenida Prefeito Osmar Cunha 183 bloco B sala 508",
+   "link": ""
+  },
+  {
+   "nome": "emporium da beleza",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bike Up!",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tribikes",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua Francisco Tolentino 532",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Tradicional",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Avenida Prefeito Osmar Cunha",
+   "link": "https://barbeariatradicional.com/"
+  },
+  {
+   "nome": "Barbearia do Mercado",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Guimarães Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "StuDio3",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Werner Coiffeur",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ókus Barbearia e Café",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Desembargador Arno Hoeschel 301",
+   "link": ""
+  },
+  {
+   "nome": "Alemão Café e Pães",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arbor Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Avenida Prefeito Osmar Cunha 251",
+   "link": ""
+  },
+  {
+   "nome": "Bendito Fruto",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cafeteria 53",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café do Largo",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cliff Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Coffe To Go",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Pão e Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lugano",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Avenida Rio Branco 583",
+   "link": ""
+  },
+  {
+   "nome": "Paradinha do Fernando",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Point da Luz",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Prime Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Dom Jaime Câmara 170",
+   "link": ""
+  },
+  {
+   "nome": "Stazione Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cacau Show",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "Rua Felipe Schmidt 522",
+   "link": ""
+  },
+  {
+   "nome": "Chocolates Brasil Cacau",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Showcolate",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa do Cartucho",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Computec Suprimentos para Impressão",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Digitex Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "FXT Security Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Avenida Rio Branco 404",
+   "link": "https://fxtsecurity.com"
+  },
+  {
+   "nome": "Fatality Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rua Francisco Tolentino 470",
+   "link": "https://www.fatality.com.br/"
+  },
+  {
+   "nome": "JNC Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "PC Floripa",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rua Felipe Schmidt",
+   "link": "https://www.pcfloripa.com.br/"
+  },
+  {
+   "nome": "Recicla Mais",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Toolbox Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rua Francisco Tolentino 606",
+   "link": ""
+  },
+  {
+   "nome": "Work Print Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rua Francisco Tolentino 572",
+   "link": ""
+  },
+  {
+   "nome": "Candy Crush",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Doce Vida",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pé de Moleque",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Gravura Gráfica",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Bento Gonçalves 137",
+   "link": ""
+  },
+  {
+   "nome": "Multitoner",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Coronel Melo Alvim 44",
+   "link": ""
+  },
+  {
+   "nome": "Cotirô Cosméticos",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "Rua Francisco Tolentino 426",
+   "link": ""
+  },
+  {
+   "nome": "Dermus",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pink Makeup e Acessórios",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Xande",
+   "tipo": "Cosmetics",
+   "emoji": "🏪",
+   "cat": "cosmetics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço da Cortina",
+   "tipo": "Curtain",
+   "emoji": "🏪",
+   "cat": "curtain",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sol e Mar",
+   "tipo": "Curtain",
+   "emoji": "🏪",
+   "cat": "curtain",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercadomix Prime",
+   "tipo": "Deli",
+   "emoji": "🏪",
+   "cat": "deli",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Havan",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Avenida Rio Branco 139",
+   "link": ""
+  },
+  {
+   "nome": "Lojas Americanas",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rua Felipe Schmidt 446",
+   "link": ""
+  },
+  {
+   "nome": "Pernambucanas",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rua Deodoro 177",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "Rua Álvaro de Carvalho 338",
+   "link": ""
+  },
+  {
+   "nome": "5àsec",
+   "tipo": "Dry Cleaning",
+   "emoji": "🏪",
+   "cat": "dry_cleaning",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ferres",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilha Som",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "JVF Eletrônicos",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "LVN Tecnologia",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Luis Eletrônicos",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mundo Tec",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto Frio",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "TJG Imports",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Xin Eletrônicos",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bazar Brito",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Futebol Mania",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Rua Tenente Silveira 141",
+   "link": ""
+  },
+  {
+   "nome": "Leão Sport Shop",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vidas Corridas",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Avenida Professor Othon Gama d'Eça 590",
+   "link": "https://vidascorridas.com"
+  },
+  {
+   "nome": "BM Corretora de Imóveis",
+   "tipo": "Estate Agent",
+   "emoji": "🏪",
+   "cat": "estate_agent",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Boa Vista",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa das Novidades Aviamentos",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Macedônia",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto Cruz Aviamentos",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vera Cruz Aviamentos",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vera Cruz Linhas",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bio Idêntica",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Prefeito Osmar Cunha 508",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Santa Maria",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Duarte Schutel 174",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Angeloni Centro",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Esteves Júnior 307",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia do Trabalhador",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácias São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pague Menos",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Antônio Dib Mussi 436",
+   "link": "https://www.paguemenos.com.br/"
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Phytomaster",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Belli Bijoux",
+   "tipo": "Fashion Accessories",
+   "emoji": "🏪",
+   "cat": "fashion_accessories",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa da Sombrinhas",
+   "tipo": "Fashion Accessories",
+   "emoji": "🏪",
+   "cat": "fashion_accessories",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Central Pesca e Camping",
+   "tipo": "Fishing",
+   "emoji": "🏪",
+   "cat": "fishing",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Só Pesca Esportiva e Profissional",
+   "tipo": "Fishing",
+   "emoji": "🏪",
+   "cat": "fishing",
+   "end": "Rua Francisco Tolentino 374",
+   "link": ""
+  },
+  {
+   "nome": "Bella Flor",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "",
+   "link": "https://www.bellaflorfloripa.com.br/"
+  },
+  {
+   "nome": "Floricultura Velha Figueira",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "Rua Tenente Silveira",
+   "link": ""
+  },
+  {
+   "nome": "Floricultura do Mercado",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vidraçaria e Molduraria Florianópolis",
+   "tipo": "Frame",
+   "emoji": "🏪",
+   "cat": "frame",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arte Lar Móveis",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casas Bahia",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "GS Mobiliário",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Rua Padre Roma 129",
+   "link": ""
+  },
+  {
+   "nome": "Koerich",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Magazine Luiza",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Salfer",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho da Arte Vidraçaria e Molduraria",
+   "tipo": "Glaziery",
+   "emoji": "🏪",
+   "cat": "glaziery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lu Ferreira Hair Studio",
+   "tipo": "Hairdresser Supply",
+   "emoji": "🏪",
+   "cat": "hairdresser_supply",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cia da Saúde",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "Rua Tenente Silveira 137",
+   "link": ""
+  },
+  {
+   "nome": "Grãos e Ervas",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Linha Natural",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mundo Verde",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": "https://mundoverde.com.br"
+  },
+  {
+   "nome": "BBZ",
+   "tipo": "Hearing Aids",
+   "emoji": "🏪",
+   "cat": "hearing_aids",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "ProHear Aparelhos Auditivos",
+   "tipo": "Hearing Aids",
+   "emoji": "🏪",
+   "cat": "hearing_aids",
+   "end": "Rua Jerônimo Coelho 170",
+   "link": "https://prohear.com.br/"
+  },
+  {
+   "nome": "Empório Martins",
+   "tipo": "Honey",
+   "emoji": "🏪",
+   "cat": "honey",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hortifruti Box 34 e 35",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quitanda do Paladar",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Easy Host Brasil",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Rua Bento Gonçalves 156",
+   "link": ""
+  },
+  {
+   "nome": "Ecobox Hostel",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hi Hostel Florianópolis",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Rua Duarte Schutel 227",
+   "link": "http://www.floripahostel.com.br/"
+  },
+  {
+   "nome": "Cecomtur",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Arcipreste Paiva 107",
+   "link": "https://www.hotelcecomturflorianopolis.com.br/"
+  },
+  {
+   "nome": "Farol da Ilha",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Bento Gonçalves 163",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Castelmar",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt 1260",
+   "link": "https://www.castelmarhotel.com.br/"
+  },
+  {
+   "nome": "Hotel Deville Express",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Faial",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt 603",
+   "link": "https://hotelfaial.com.br/"
+  },
+  {
+   "nome": "Hotel Ibis",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Lumar",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Conselheiro Mafra 848",
+   "link": "http://lumarhotel.com.br/"
+  },
+  {
+   "nome": "Hotel Porto da Ilha",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Dom Jaime Câmara",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Valerim Center",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt 554",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Valerim Plaza",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt 705",
+   "link": "http://hotelvalerim.com.br"
+  },
+  {
+   "nome": "Intercity",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Paulo Fontes 1210",
+   "link": "https://www.intercityhoteis.com.br/hoteis/florianopolis/hotel-intercity-florianopolis/"
+  },
+  {
+   "nome": "Novotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Jornalista Rubens de Arruda Ramos 2034",
+   "link": ""
+  },
+  {
+   "nome": "Slaviero Baía Norte",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sumaré Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Felipe Schmidt 423",
+   "link": ""
+  },
+  {
+   "nome": "WK Design Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Bocaiúva 1755",
+   "link": "https://wkdesignhotel.com.br/"
+  },
+  {
+   "nome": "Bazar Mansur",
+   "tipo": "Houseware",
+   "emoji": "🏪",
+   "cat": "houseware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Formiga Festas",
+   "tipo": "Houseware",
+   "emoji": "🏪",
+   "cat": "houseware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Home Cabides",
+   "tipo": "Houseware",
+   "emoji": "🏪",
+   "cat": "houseware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Aline Jóias",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "Rua 7 de Setembro 113",
+   "link": ""
+  },
+  {
+   "nome": "Bruna Tessaro Jóias e Ótica",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eduardo Joalheria e Ótica",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Só Prata",
+   "tipo": "Jewelry",
+   "emoji": "🏪",
+   "cat": "jewelry",
+   "end": "Rua Felipe Schmidt 427",
+   "link": ""
+  },
+  {
+   "nome": "Casa dos Fogões",
+   "tipo": "Kitchen",
+   "emoji": "🏪",
+   "cat": "kitchen",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hospital do Fogão",
+   "tipo": "Kitchen",
+   "emoji": "🏪",
+   "cat": "kitchen",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilha Gás",
+   "tipo": "Kitchen",
+   "emoji": "🏪",
+   "cat": "kitchen",
+   "end": "Rua Conselheiro Mafra 596",
+   "link": ""
+  },
+  {
+   "nome": "Amazon Fruit Bowls",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Artcana",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Desembargador Arno Hoeschel 255",
+   "link": ""
+  },
+  {
+   "nome": "Bob's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bob’s",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caldo de Cana Elias I",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caldo de Cana Elias I(",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Coimbra",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chico Food",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "China in Box",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Rio Branco 197",
+   "link": "https://chinainbox.com.br/"
+  },
+  {
+   "nome": "Cia Sucos",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Dom Black Hamburgueria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Filho da Fruta",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Prefeito Osmar Cunha 51",
+   "link": ""
+  },
+  {
+   "nome": "Mini Kalzone",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pasteleria Keko",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponte 100 Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponte Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quiosque Martins",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quiosque do Manézinho",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rei do Mate",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sandubrasil",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Padre Miguelino 15",
+   "link": ""
+  },
+  {
+   "nome": "Seu Zé Chopperia e Hamburgueria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sucos da Ilha",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vida Natural",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Tenente Silveira 180",
+   "link": ""
+  },
+  {
+   "nome": "Laundrexpress",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rei dos Cintos",
+   "tipo": "Leather",
+   "emoji": "🏪",
+   "cat": "leather",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Acervo das Lebras Sebo",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "Rua Conselheiro Mafra 675",
+   "link": ""
+  },
+  {
+   "nome": "Catarinense",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "Rua Felipe Schmidt 60",
+   "link": ""
+  },
+  {
+   "nome": "Livrarias Catarinense",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Livros & Livros",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Favorita",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lotérica Boa Sorte",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lotérica da Ilha",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vida Loterias",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Camelódromo Municipal",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ceisa Center",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Avenida Prefeito Osmar Cunha 183",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Paris",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rua Vidal Ramos 153",
+   "link": ""
+  },
+  {
+   "nome": "Galeria Central",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Galeria Comasa",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Passeio Rio Branco",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Avenida Rio Branco 967",
+   "link": ""
+  },
+  {
+   "nome": "Shopping Praia de Fora",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa dos Reparos",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rua Francisco Tolentino 588",
+   "link": ""
+  },
+  {
+   "nome": "Casarão das Ferragens",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rua Francisco Tolentino 464",
+   "link": ""
+  },
+  {
+   "nome": "Ferramental",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Góis Ferragens",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Amazônia Nativa",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Empório Mania da Ilha",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Grãos da Ilha",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hari Mercado Oriental",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Vitória",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Conselheiro Mafra 681",
+   "link": ""
+  },
+  {
+   "nome": "Mini Mercado Família",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Duarte Schutel 168",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Buenos",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni Centro",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Esteves Júnior 307",
+   "link": "https://www.angeloni.com.br/super/"
+  },
+  {
+   "nome": "HiperBom",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Deodoro 291",
+   "link": ""
+  },
+  {
+   "nome": "Hippo",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Almirante Lamego 740",
+   "link": ""
+  },
+  {
+   "nome": "Imperatriz Gourmet",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Professor Othon Gama d'Eça 771",
+   "link": ""
+  },
+  {
+   "nome": "Loja do Guia Vegano",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Dom Jaime Câmara 280",
+   "link": "https://www.guiavegano.com.br/vegan/"
+  },
+  {
+   "nome": "Cellular Aid",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Center Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Centro Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Click Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Inova Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Intercell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Madson Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Smart Cell",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Target",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "Rua Francisco Tolentino 440",
+   "link": ""
+  },
+  {
+   "nome": "Tim",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "iCenter",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "BMG",
+   "tipo": "Money Lender",
+   "emoji": "🏪",
+   "cat": "money_lender",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Balcão do MEI",
+   "tipo": "Money Lender",
+   "emoji": "🏪",
+   "cat": "money_lender",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Empreendedor",
+   "tipo": "Money Lender",
+   "emoji": "🏪",
+   "cat": "money_lender",
+   "end": "",
+   "link": "https://www.bancodoempreendedor.org.br/"
+  },
+  {
+   "nome": "VP moto",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "",
+   "link": "http://hondasc.viaporto.com.br"
+  },
+  {
+   "nome": "Roots Records",
+   "tipo": "Music",
+   "emoji": "🏪",
+   "cat": "music",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mensageiro Musical",
+   "tipo": "Musical Instrument",
+   "emoji": "🏪",
+   "cat": "musical_instrument",
+   "end": "Rua 7 de Setembro 159",
+   "link": "https://www.mensageiromusical.com.br/"
+  },
+  {
+   "nome": "Zandomênico",
+   "tipo": "Musical Instrument",
+   "emoji": "🏪",
+   "cat": "musical_instrument",
+   "end": "Rua Conselheiro Mafra 372",
+   "link": ""
+  },
+  {
+   "nome": "Banca Praça XV",
+   "tipo": "Newsagent",
+   "emoji": "🏪",
+   "cat": "newsagent",
+   "end": "Rua Tenente Silveira",
+   "link": ""
+  },
+  {
+   "nome": "Carlotto Presentes",
+   "tipo": "Newsagent",
+   "emoji": "🏪",
+   "cat": "newsagent",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Matéria Prima Suplementos",
+   "tipo": "Nutrition Supplements",
+   "emoji": "🏪",
+   "cat": "nutrition_supplements",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chilli Beans",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Instituto dos Óculos",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercadão do Óculos",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Rua Deodoro 189",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Jerônimo Coelho",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Luiza",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Rua Tenente Silveira 208",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Real",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Rua Tenente Silveira 100",
+   "link": ""
+  },
+  {
+   "nome": "Óticas Carol",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Óticas Diniz",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Brapesca",
+   "tipo": "Outdoor",
+   "emoji": "🏪",
+   "cat": "outdoor",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bombow Embalagens",
+   "tipo": "Packing",
+   "emoji": "🏪",
+   "cat": "packing",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santa Embalagem",
+   "tipo": "Packing",
+   "emoji": "🏪",
+   "cat": "packing",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "TJ Embalagens",
+   "tipo": "Packing",
+   "emoji": "🏪",
+   "cat": "packing",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tupã Embalagens",
+   "tipo": "Packing",
+   "emoji": "🏪",
+   "cat": "packing",
+   "end": "Rua Conselheiro Mafra 564",
+   "link": ""
+  },
+  {
+   "nome": "O padeiro de Sevilha",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Esteves Júnior 214",
+   "link": "https://www.opadeirodesevilha.com.br/"
+  },
+  {
+   "nome": "Padaria Sabor e Pão",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Duarte Schutel 162",
+   "link": ""
+  },
+  {
+   "nome": "Padaria São Francisco de Assi",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa das Tintas",
+   "tipo": "Paint",
+   "emoji": "🏪",
+   "cat": "paint",
+   "end": "Rua Doutor Frederico Rolla 112",
+   "link": ""
+  },
+  {
+   "nome": "Laços e Fitas Embalagens",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Machado Festas",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "Rua Conselheiro Mafra 371",
+   "link": ""
+  },
+  {
+   "nome": "Pontual Festas",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Browneria To Go",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "Rua Jerônimo Coelho 353",
+   "link": ""
+  },
+  {
+   "nome": "Casa de Bolos",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Estação do Bacalhau",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Faimar Pescados",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Dededa",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Golfinho",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Guimarães",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Marcelo do Chico",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Oliveira",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Souza",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria Trindade",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria do Chico",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pescados Silva",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Perfuma Nani",
+   "tipo": "Perfumery",
+   "emoji": "🏪",
+   "cat": "perfumery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Agro Rancho",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Agrocopecuária do Mercado",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cobasi",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Francisco Tolentino 657",
+   "link": ""
+  },
+  {
+   "nome": "Faunasul Pet",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Pedro Ivo 149",
+   "link": ""
+  },
+  {
+   "nome": "Machado Agropet",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Francisco Tolentino 568",
+   "link": ""
+  },
+  {
+   "nome": "Nutriflor",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Só Patas",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Felipe Schmidt 1337",
+   "link": ""
+  },
+  {
+   "nome": "Posto Galo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Almirante Lamego 1076",
+   "link": ""
+  },
+  {
+   "nome": "Posto Rita Maria",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Paulo Fontes",
+   "link": ""
+  },
+  {
+   "nome": "Lojas França",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Portal da Ilha",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Presentes da Ilha",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Uati",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Canto das Velas 2",
+   "tipo": "Religion",
+   "emoji": "🏪",
+   "cat": "religion",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa da Magia",
+   "tipo": "Religion",
+   "emoji": "🏪",
+   "cat": "religion",
+   "end": "Rua Conselheiro Mafra 665",
+   "link": ""
+  },
+  {
+   "nome": "Pado In",
+   "tipo": "Religion",
+   "emoji": "🏪",
+   "cat": "religion",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém Rita Maria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Alameda Annita Hoepcke da Silva",
+   "link": ""
+  },
+  {
+   "nome": "Art Gourmet",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Beirut",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Carne na Brasa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa na Brasa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Conselheiro Mafra 495",
+   "link": ""
+  },
+  {
+   "nome": "Catamarã Floripa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chef Waldemar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Colher de Pau",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Conselheiro do Paladar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Dib Mussi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Antônio Dib Mussi",
+   "link": ""
+  },
+  {
+   "nome": "Dona Cota",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Conselheiro Mafra 594",
+   "link": ""
+  },
+  {
+   "nome": "Dona Delícia Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Padre Roma 240",
+   "link": ""
+  },
+  {
+   "nome": "Estilo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Família Tagliari",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Almirante Lamego 1158",
+   "link": "https://familiatagliari.com.br/"
+  },
+  {
+   "nome": "Forneria Catarina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "https://www.forneriacatarina.com.br/"
+  },
+  {
+   "nome": "Giardini",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Grand Cru",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Barão de Batovi 590",
+   "link": ""
+  },
+  {
+   "nome": "Guacamole",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Jornalista Rubens de Arruda Ramos 2006",
+   "link": ""
+  },
+  {
+   "nome": "Império Gourmet Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kazuaki Sushi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Dom Jaime Câmara 50",
+   "link": ""
+  },
+  {
+   "nome": "Kibe & Kebab",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kulturas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Jerônimo Coelho 312",
+   "link": ""
+  },
+  {
+   "nome": "Lindacap",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Felipe Schmidt 1162",
+   "link": "http://www.lindacap.com.br"
+  },
+  {
+   "nome": "Mirantes Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mozza Pizzeria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "ORI Boteco - Centro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Henrique Valgas 318",
+   "link": ""
+  },
+  {
+   "nome": "Paladar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Deodoro 191",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Papparella",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Jornalista Rubens de Arruda Ramos",
+   "link": "http://papparella.com.br"
+  },
+  {
+   "nome": "Porto",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Tenente Silveira 296",
+   "link": ""
+  },
+  {
+   "nome": "Quiero Café",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rancho da Ilha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Silvestre",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Sobrado",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Felipe Schmidt",
+   "link": ""
+  },
+  {
+   "nome": "Salve!",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Travessa Harmonia 45",
+   "link": ""
+  },
+  {
+   "nome": "Santo André Restaurante e Lanchonete",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Spaccio Rar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Almirante Lamego 871",
+   "link": ""
+  },
+  {
+   "nome": "Sushimasa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://restaurantesushimasa.com.br"
+  },
+  {
+   "nome": "Taberna Ibérica",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Felipe Schmidt 1333",
+   "link": ""
+  },
+  {
+   "nome": "Tratto Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Prefeito Osmar Cunha",
+   "link": "https://trattorestaurantefloripa.com.br/"
+  },
+  {
+   "nome": "Tropical",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tsan The Restaurante Vegetariano",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vitória",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "3 Meninos",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Francisco Tolentino 398",
+   "link": ""
+  },
+  {
+   "nome": "A Sedutora",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Areia Bronze",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Baco",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Beagle",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bem Linda",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Carioca Sports",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa do Jeans",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Álvaro de Carvalho 120",
+   "link": ""
+  },
+  {
+   "nome": "Cereja Marcante",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chamelle",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cia. do Homem",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Tenente Silveira 207",
+   "link": ""
+  },
+  {
+   "nome": "Companhia da Moda",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Deodoro 297",
+   "link": ""
+  },
+  {
+   "nome": "Corações Moda Íntima",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "DB Dress Basic",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Tenente Silveira 206",
+   "link": ""
+  },
+  {
+   "nome": "Dudu Store",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Duna Casual",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Tenente Silveira 242",
+   "link": ""
+  },
+  {
+   "nome": "Dybelly",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Etc & Tal",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Familly Plus Size",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Store",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Tenente Silveira 127",
+   "link": ""
+  },
+  {
+   "nome": "Hering Kids",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Francisco Tolentino 402",
+   "link": ""
+  },
+  {
+   "nome": "Horus",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Inovernov",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Java",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Joy",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Vidal Ramos 325",
+   "link": ""
+  },
+  {
+   "nome": "Julia Bongiolo Store",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "KantoA",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "La Raffs",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lulu'z Moda Íntima",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "M. Huntt",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Malandrus",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Marca Nativa",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nefertari",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "New Up!",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Olho d'Água",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Outlet Ferrero",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Tenente Silveira 121",
+   "link": ""
+  },
+  {
+   "nome": "Panini Modas",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pijamas & Pijamas",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Realce Moda",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Realce Moda Evangélica",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rei dos Bonés Uniformes e Bordados",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Conselheiro Mafra 677",
+   "link": ""
+  },
+  {
+   "nome": "Renner",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rubik Chapeús",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Siddhartha",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sognare Lingerie",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Conselheiro Mafra 657",
+   "link": ""
+  },
+  {
+   "nome": "Suiê",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tess Dress",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Top 15",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Torra",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Violeta Bella",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Yellow Kids",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "beco",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "nluzzi",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "48 Brechó",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bazar Religioso Plumas e Paetês",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Autorizado Singer",
+   "tipo": "Sewing",
+   "emoji": "🏪",
+   "cat": "sewing",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Box 32 Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Box 33 Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Box 34 Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Calçados 2000",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Carioca Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Felipe Schmidt 107",
+   "link": ""
+  },
+  {
+   "nome": "Elias Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lebru Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panamericana",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pedrinho Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pittol",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto 57",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Francisco Tolentino 430",
+   "link": ""
+  },
+  {
+   "nome": "Rua Felipe Schmidt, 302 Florianópolis SC",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Felipe Schmidt 302",
+   "link": ""
+  },
+  {
+   "nome": "Rua Felipe Schmidt, 395 Florianópolis SC",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Felipe Schmidt 395",
+   "link": ""
+  },
+  {
+   "nome": "Studio Z",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Trajano 165",
+   "link": ""
+  },
+  {
+   "nome": "Top Shoes",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Jerônimo Coelho 359",
+   "link": ""
+  },
+  {
+   "nome": "havaianas",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Solar Dona Marinez",
+   "tipo": "Solar D. Marinez",
+   "emoji": "🏪",
+   "cat": "Solar D. Marinez",
+   "end": "Rua Antônio Dib Mussi 315",
+   "link": ""
+  },
+  {
+   "nome": "Bob's Shakes",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Gelateria 32",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "6B Papelaria",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "BV Papelaria e Presentes",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponte de Papel",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Guarda Volumes",
+   "tipo": "Storage Rental",
+   "emoji": "🏪",
+   "cat": "storage_rental",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tabacaria Aguiar",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tabacaria Borges",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "Avenida Prefeito Osmar Cunha",
+   "link": ""
+  },
+  {
+   "nome": "Tabacaria Central",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Brinquederia Artesanal",
+   "tipo": "Toys",
+   "emoji": "🏪",
+   "cat": "toys",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casas da Água",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hidro Bombas",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Rua Francisco Tolentino 582",
+   "link": ""
+  },
+  {
+   "nome": "Plazatur",
+   "tipo": "Travel Agency",
+   "emoji": "🏪",
+   "cat": "travel_agency",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "França Pneus",
+   "tipo": "Tyres",
+   "emoji": "🏪",
+   "cat": "tyres",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Loja Chinês",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Só 3 Reais",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "Rua Conselheiro Mafra 572",
+   "link": ""
+  },
+  {
+   "nome": "Top R$ 3,00",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tudo R$ 5,00",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Oficina de Relógios",
+   "tipo": "Watches",
+   "emoji": "🏪",
+   "cat": "watches",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rebelo",
+   "tipo": "Water",
+   "emoji": "🏪",
+   "cat": "water",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rua Deodoro, 210 Florianópolis SC",
+   "tipo": "Yes",
+   "emoji": "🏪",
+   "cat": "yes",
+   "end": "Rua Deodoro, 210 Florianópolis SC 210",
+   "link": ""
+  }
+ ]
+}

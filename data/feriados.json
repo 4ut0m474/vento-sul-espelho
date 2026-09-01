@@ -1,0 +1,23 @@
+{
+ "hoje": null,
+ "proximos": [
+  {
+   "data": "2026-09-07",
+   "nome": "Independência do Brasil",
+   "tipo": "national",
+   "dias_faltam": 9
+  },
+  {
+   "data": "2026-10-12",
+   "nome": "Nossa Senhora Aparecida",
+   "tipo": "national",
+   "dias_faltam": 44
+  },
+  {
+   "data": "2026-11-02",
+   "nome": "Finados",
+   "tipo": "national",
+   "dias_faltam": 65
+  }
+ ]
+}

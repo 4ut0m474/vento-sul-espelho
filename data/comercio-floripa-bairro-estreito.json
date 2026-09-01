@@ -1,0 +1,754 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Estreito",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-estreito",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Koetter",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Itaú",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barber Shop",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Bernardino Vaz",
+   "link": ""
+  },
+  {
+   "nome": "Bike Up!",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mono Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua José Abreu 518",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Velhos Amigos",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Coronel Pedro Demoro 1874",
+   "link": ""
+  },
+  {
+   "nome": "Central Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Território Masculino Barbearia Social Club",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Euclides Machado 44",
+   "link": "http://www.territoriomasculino.com.br/"
+  },
+  {
+   "nome": "Bridge Coffee Estreito",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Secundino Peixoto 119",
+   "link": "https://cafeteria.bridgecoffee.com.br"
+  },
+  {
+   "nome": "Caoa Hyundai",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "DVA",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua General Eurico Gaspar Dutra 865",
+   "link": ""
+  },
+  {
+   "nome": "Globo Renault",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Phipasa Fiat",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Gorvenador Ivo Silveira 1601",
+   "link": ""
+  },
+  {
+   "nome": "Shop Car Floripa",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Luiz Gualberto",
+   "link": ""
+  },
+  {
+   "nome": "Show Prime Concessionária de carros",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Luiz Gualberto",
+   "link": ""
+  },
+  {
+   "nome": "Top Car BMW",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Visconde de Cairu 176",
+   "link": "http://www.topcar.bmw.com.br"
+  },
+  {
+   "nome": "Volkswagen",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Santos Saraiva 654",
+   "link": ""
+  },
+  {
+   "nome": "Floripeças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Santos Saraiva 610",
+   "link": "http://www.floripecas.com.br/"
+  },
+  {
+   "nome": "Casas d'Água",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eletro Rachadel",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "Rua Santos Saraiva 677",
+   "link": ""
+  },
+  {
+   "nome": "Ibagy",
+   "tipo": "Estate Agent",
+   "emoji": "🏪",
+   "cat": "estate_agent",
+   "end": "Rua Santos Saraiva 1083",
+   "link": ""
+  },
+  {
+   "nome": "Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Coronel Pedro Demoro 1396",
+   "link": "https://www.drogariacatarinense.com.br"
+  },
+  {
+   "nome": "Farmácia Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Coronel Pedro Demoro 1814",
+   "link": ""
+  },
+  {
+   "nome": "Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Zazá",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Armanda Móveis e decorações",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Móveis do Bem",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Rua Doutor Fúlvio Aducci 626",
+   "link": "https://moveisdobem.com/"
+  },
+  {
+   "nome": "O Cestão",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Rua Ursulina de Senna Castro",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Oceano",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Governador Ivo Silveira 1041",
+   "link": ""
+  },
+  {
+   "nome": "Hotel de Trânsito de Oficiais",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar e Lanchonete do Chico",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bob's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "LC Chaves e Carimbos",
+   "tipo": "Locksmith",
+   "emoji": "🏪",
+   "cat": "locksmith",
+   "end": "Rua Doutor Heitor Blum 345",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Edelweiss",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rua Santos Saraiva 1180",
+   "link": ""
+  },
+  {
+   "nome": "AmericanOil",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Galego",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "SC Mini Mercado",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Atacadão",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Juscelino Kubitschek de Oliveira 469",
+   "link": "https://www.atacadao.com.br/"
+  },
+  {
+   "nome": "Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua General Liberato Bittencourt 410",
+   "link": ""
+  },
+  {
+   "nome": "MT Store Floripa",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "Rua Fúlvio Aducci 627",
+   "link": "https://linktr.ee/mtstore.floripa/"
+  },
+  {
+   "nome": "Banco do Empreendedor",
+   "tipo": "Money Lender",
+   "emoji": "🏪",
+   "cat": "money_lender",
+   "end": "",
+   "link": "https://www.bancodoempreendedor.org.br/"
+  },
+  {
+   "nome": "Box Motocicletas",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "Rua Capitão Euclides de Castro 94",
+   "link": ""
+  },
+  {
+   "nome": "Top Car",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "Rua General Eurico Gaspar Dutra 558",
+   "link": ""
+  },
+  {
+   "nome": "Armazém do Óleo",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Carlos",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa dos Freios",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Praça Paulo Schlemper 4",
+   "link": ""
+  },
+  {
+   "nome": "Júlio Pneus",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1481",
+   "link": ""
+  },
+  {
+   "nome": "Mecânica e Auto Elétrica Precisão",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua General Liberato Bittencourt 1518",
+   "link": ""
+  },
+  {
+   "nome": "Mercado do Óleo",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua General Eurico Gaspar Dutra 862",
+   "link": "http://www.mercadodooleo.net.br/"
+  },
+  {
+   "nome": "Rodar Mecânica Multimarcas",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1574",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho Doce",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Requinte's",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora e confeitaria Megapan",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Afonso Pena 468",
+   "link": ""
+  },
+  {
+   "nome": "Pão e Sonhos",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vitória Tintas",
+   "tipo": "Paint",
+   "emoji": "🏪",
+   "cat": "paint",
+   "end": "Rua Araci Vaz Callado 1607",
+   "link": ""
+  },
+  {
+   "nome": "Xandoca",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuária Fênix",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arara",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho do Cão",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Felipe Neves",
+   "link": ""
+  },
+  {
+   "nome": "Galbiati Estética Pet",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "American Oil",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Coronel Pedro Demoro 1760",
+   "link": "http://www.americanoil.com.br/site/#home"
+  },
+  {
+   "nome": "Ipiranga",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua General Eurico Gaspar Dutra 885",
+   "link": ""
+  },
+  {
+   "nome": "Jóia Posto",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua General Eurico Gaspar Dutra",
+   "link": ""
+  },
+  {
+   "nome": "Posto Atacadão",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Coronel Pedro Demoro",
+   "link": ""
+  },
+  {
+   "nome": "Aromas e Sabores",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Asahi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Coronel Pedro Demoro 1864",
+   "link": ""
+  },
+  {
+   "nome": "Bella Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Boka's III",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Churrascaria Riosulense",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Castro Alves 1102",
+   "link": ""
+  },
+  {
+   "nome": "Empório do Baga",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Flor de Sal",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lara",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Malaguetas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nonno Luna",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Costelão",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto X",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quero Mais",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Requinte",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Tiannes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Henrique Boiteaux 154",
+   "link": ""
+  },
+  {
+   "nome": "Mozão Floripa Boutique",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Coronel Pedro Demoro 2113",
+   "link": ""
+  },
+  {
+   "nome": "MTattuo",
+   "tipo": "Tattoo",
+   "emoji": "🏪",
+   "cat": "tattoo",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Samuell Zion Tattoo",
+   "tipo": "Tattoo",
+   "emoji": "🏪",
+   "cat": "tattoo",
+   "end": "Rua Belmira Isabel Martins 62",
+   "link": ""
+  },
+  {
+   "nome": "Rua Coronel Pedro Demoro, 2045 Florianópolis SC",
+   "tipo": "Yes",
+   "emoji": "🏪",
+   "cat": "yes",
+   "end": "Rua Coronel Pedro Demoro, 2045 Florianópolis SC 2045",
+   "link": ""
+  },
+  {
+   "nome": "Rua Coronel Pedro Demoro, 2086 Florianópolis SC",
+   "tipo": "Yes",
+   "emoji": "🏪",
+   "cat": "yes",
+   "end": "Rua Coronel Pedro Demoro, 2086 Florianópolis SC 2086",
+   "link": ""
+  }
+ ]
+}

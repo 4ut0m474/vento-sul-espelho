@@ -1,0 +1,290 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Santo Antônio de Lisboa",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-santo-antonio-de-lisboa",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Arteeiro",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Açoriana",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "Rua Cônego Serpa 30",
+   "link": "http://www.casaacoriana.com.br"
+  },
+  {
+   "nome": "Estúdio Vineli",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "Rua Quinze de Novembro 147",
+   "link": "http://www.estudiovineli.com.br"
+  },
+  {
+   "nome": "Studio 1000",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Açougue Carne Fresca",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "Rodovia José Carlos Daux 9580",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia José Carlos Daux 8600",
+   "link": ""
+  },
+  {
+   "nome": "Açores Bar e Restaurante",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Adega Fort Atacadista",
+   "tipo": "Beverages",
+   "emoji": "🏪",
+   "cat": "beverages",
+   "end": "Rodovia José Carlos Daux 9580",
+   "link": ""
+  },
+  {
+   "nome": "Café da Praça",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café do Céu",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "FairyLand Cupcakes",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Estrada Caminho dos Açores 1740",
+   "link": ""
+  },
+  {
+   "nome": "Freguesia",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Koerich",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rattan",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "7Ball",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rodovia José Carlos Daux 8600",
+   "link": ""
+  },
+  {
+   "nome": "Maria Coxinha",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Santo Antônio",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Cônego Serpa 62",
+   "link": "https://mercadosantoantonio.com.br/"
+  },
+  {
+   "nome": "BR",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Padre Lourenço Rodrigues de Andrade",
+   "link": ""
+  },
+  {
+   "nome": "Amalfi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chão Batido",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Quinze de Novembro 103",
+   "link": ""
+  },
+  {
+   "nome": "Fim de tarde",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Freguesia Bar e Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Quinze de Novembro 179",
+   "link": "https://www.freguesiabar.com.br/"
+  },
+  {
+   "nome": "Marisqueria Sintra",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://www.marisqueirasintra.com.br"
+  },
+  {
+   "nome": "May",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Caminho dos Açores 1689",
+   "link": ""
+  },
+  {
+   "nome": "Mirantes Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quatro Estações",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante e Pizzaria Chico",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rosso",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Gilson da Costa Xavier 201",
+   "link": "http://www.rossorestro.com.br"
+  },
+  {
+   "nome": "Seu Antônio",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tonho Boteco",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Villa do Porto",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Quinze de Novembro 123",
+   "link": "https://www.villadoporto.com.br/"
+  },
+  {
+   "nome": "Wamaki Sushi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia José Carlos Daux 8600",
+   "link": ""
+  },
+  {
+   "nome": "Madeireira Monte Verde",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Rodovia José Carlos Daux 9220",
+   "link": ""
+  },
+  {
+   "nome": "Fort Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Rodovia José Carlos Daux 9580",
+   "link": "https://www.fortatacadista.com.br/"
+  }
+ ]
+}

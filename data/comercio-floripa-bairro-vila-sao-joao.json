@@ -1,0 +1,50 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Vila São João",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-vila-sao-joao",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Farmácia PreçoPopular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia João Gualberto Soares 6671",
+   "link": "https://www.precopopular.com.br/"
+  },
+  {
+   "nome": "Lotérica Rio Vermelho",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "Rodovia João Gualberto Soares 6671",
+   "link": ""
+  },
+  {
+   "nome": "São Domingos",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Cândido Pereira dos Anjos",
+   "link": ""
+  },
+  {
+   "nome": "Moto Racing",
+   "tipo": "Motorcycle Repair",
+   "emoji": "🏪",
+   "cat": "motorcycle_repair",
+   "end": "Rua Cândido Pereira dos Anjos 1864",
+   "link": ""
+  },
+  {
+   "nome": "Posto Santanna",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Xangri-lá",
+ "cidade": "Florianópolis",
+ "slug": "rs-xangri-la",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Los Borges Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Rio Jacuí 779",
+   "link": "",
+   "tel": "+55 51 98241 7193",
+   "zap": "",
+   "insta": "http://instagram.com/andreylosborges",
+   "fb": ""
+  },
+  {
+   "nome": "Pousada Xangri-lá (Fechada)",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": "www.pousadaxangrila.com/",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Redemac Zona Nova Center",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Asun",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Avenida",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Posto Friderichs",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Rio Jacuí",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Nostro Molino",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  }
+ ]
+}

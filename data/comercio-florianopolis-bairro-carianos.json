@@ -1,0 +1,186 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Carianos",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-carianos",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Bar do Chapecó",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Paraná Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vô Dilóca Gastrobar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Avenida Deputado Diomício Freitas 3062",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Telles",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Susana Bitencourt Bolos Artísticos e Doces",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "Servidão Antônio Arlindo Bittencourt",
+   "link": ""
+  },
+  {
+   "nome": "Farmagui",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Deputado Diomício Freitas 2770",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Deputado Diomício Freitas",
+   "link": ""
+  },
+  {
+   "nome": "Agroveterinária Aeroporto",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Avenida Deputado Diomício Freitas",
+   "link": ""
+  },
+  {
+   "nome": "Comercial Agro Carianos",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Avenida Deputado Diomício Freitas 2306",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Ideal",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Aeroporto",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Costa",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Deputado Diomício Freitas",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Pública",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Avenida Deputado Diomício Freitas 3393",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Beija Flor",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Empório Amstaff",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Saul Oliveira",
+   "link": ""
+  },
+  {
+   "nome": "Posto Avião",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Deputado Diomício Freitas 2581",
+   "link": ""
+  },
+  {
+   "nome": "Posto Ônix",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Deputado Diomício Freitas",
+   "link": ""
+  },
+  {
+   "nome": "Churrascaria 4 Irmãos",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Saul Oliveira",
+   "link": ""
+  },
+  {
+   "nome": "Padaria do Joca",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Deputado Diomício Freitas",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Filé no Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Deputado Diomício Freitas 2436",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante do Kuta",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor de Casa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Deputado Diomício Freitas 2196",
+   "link": ""
+  }
+ ]
+}

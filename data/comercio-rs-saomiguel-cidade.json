@@ -1,0 +1,46 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "rs-saomiguel-cidade",
+ "cidade": "Florianópolis",
+ "slug": "rs-saomiguel-cidade",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Associação de Artesãos Tupãmba'é",
+   "tipo": "Art",
+   "emoji": "🏪",
+   "cat": "art",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Pousada das Missões",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua São Nicolau 601",
+   "link": "http://www.pousadatematica.com.br",
+   "tel": "+55 55 3381-1202",
+   "zap": "+55 55 98454-5722",
+   "insta": "",
+   "fb": "https://www.facebook.com/PousadaDasMissoes"
+  },
+  {
+   "nome": "BR",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  }
+ ]
+}

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>📍 Perto de Você · Vento Sul</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<style>
+  :root{--bg:#0a0e14;--card:#131a23;--line:#1f2937;--txt:#e2e8f0;--muted:#94a3b8;
+        --gold:#fbbf24;--accent:#06b6d4;--good:#10b981;--bad:#ef4444;--magic:#a855f7;}
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif;}
+  body{background:linear-gradient(135deg,#0f172a,#1e293b);color:var(--txt);min-height:100vh;}
+
+  header{background:rgba(255,255,255,.03);backdrop-filter:blur(10px);
+         border-bottom:1px solid rgba(251,191,36,.2);padding:12px 16px;
+         display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;}
+  header h1{font-size:18px;background:linear-gradient(90deg,var(--gold),var(--accent));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+  header nav a{color:var(--accent);text-decoration:none;font-size:13px;}
+
+  .filtros{padding:12px 16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+           background:rgba(0,0,0,.2);border-bottom:1px solid var(--line);}
+  .filtros input[type=range]{-webkit-appearance:none;width:130px;height:4px;border-radius:2px;
+    background:rgba(255,255,255,.1);outline:none;}
+  .filtros input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;
+    border-radius:50%;background:var(--gold);cursor:pointer;}
+  .filtros label{font-size:12px;color:var(--muted);}
+  .chip{padding:5px 12px;border-radius:20px;font-size:12px;cursor:pointer;border:1px solid rgba(255,255,255,.1);
+        background:rgba(255,255,255,.04);color:var(--muted);transition:.2s;}
+  .chip.ativo{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.5);color:var(--gold);}
+  .chip:hover{border-color:rgba(251,191,36,.3);}
+
+  #loc-status{font-size:12px;color:var(--muted);padding:0 16px 8px;}
+
+  .tabs-nav{display:flex;gap:0;border-bottom:1px solid var(--line);}
+  .tab-btn{flex:1;padding:12px;font-size:13px;font-weight:600;background:transparent;
+    border:0;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;}
+  .tab-btn.ativo{color:var(--gold);border-bottom-color:var(--gold);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;padding:14px;}
+  .card{background:rgba(255,255,255,.04);border:1px solid rgba(251,191,36,.12);
+        border-radius:14px;overflow:hidden;transition:.2s;}
+  .card:hover{border-color:rgba(251,191,36,.35);transform:translateY(-1px);}
+  .card-img{width:100%;height:120px;object-fit:cover;background:rgba(0,0,0,.3);}
+  .card-img-ph{width:100%;height:120px;background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(6,182,212,.06));
+               display:flex;align-items:center;justify-content:center;font-size:36px;}
+  .card-body{padding:12px;}
+  .card-title{font-size:15px;font-weight:700;margin-bottom:4px;}
+  .card-cat{font-size:11px;color:var(--magic);font-weight:600;text-transform:uppercase;margin-bottom:4px;}
+  .card-loc{font-size:12px;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:4px;}
+  .card-actions{display:flex;align-items:center;gap:8px;margin-top:8px;}
+
+  .score-badge{display:inline-flex;align-items:center;gap:4px;
+    background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3);
+    border-radius:8px;padding:3px 8px;font-size:11px;color:var(--gold);font-weight:700;}
+  .like-btn{background:transparent;border:1px solid rgba(255,255,255,.15);
+    border-radius:8px;padding:5px 10px;cursor:pointer;font-size:14px;transition:.2s;color:var(--txt);}
+  .like-btn.liked{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.4);color:#f87171;}
+  .like-btn:hover{border-color:rgba(239,68,68,.4);}
+  .like-count{font-size:11px;color:var(--muted);}
+
+  /* Coletivas */
+  .coletiva-card{background:rgba(255,255,255,.04);border:1px solid rgba(16,185,129,.2);
+                 border-radius:14px;padding:14px;transition:.2s;}
+  .coletiva-card:hover{border-color:rgba(16,185,129,.4);}
+  .col-title{font-size:15px;font-weight:700;margin-bottom:4px;}
+  .col-preco{display:flex;align-items:baseline;gap:8px;margin:8px 0;}
+  .col-preco .novo{font-size:22px;font-weight:900;color:var(--good);}
+  .col-preco .velho{font-size:13px;text-decoration:line-through;color:var(--muted);}
+  .col-preco .eco{font-size:11px;background:rgba(16,185,129,.2);color:var(--good);
+                  padding:2px 7px;border-radius:10px;font-weight:700;}
+  .progress-wrap{background:rgba(255,255,255,.06);border-radius:4px;height:8px;overflow:hidden;margin:8px 0;}
+  .progress-bar{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--good),var(--accent));transition:.6s;}
+  .col-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:10px;}
+  .prazo-badge{display:inline-block;padding:3px 8px;border-radius:10px;font-size:11px;font-weight:700;}
+  .prazo-badge.urgente{background:rgba(239,68,68,.2);color:var(--bad);}
+  .prazo-badge.ok{background:rgba(251,191,36,.15);color:var(--gold);}
+  .prazo-badge.folgado{background:rgba(16,185,129,.15);color:var(--good);}
+  .entrar-btn{width:100%;padding:10px;border-radius:10px;border:0;font-weight:700;
+    font-size:13px;cursor:pointer;transition:.2s;}
+  .entrar-btn.aberto{background:linear-gradient(135deg,var(--good),#059669);color:#fff;}
+  .entrar-btn.participando{background:rgba(16,185,129,.15);border:1px solid var(--good);color:var(--good);}
+  .entrar-btn:disabled{opacity:.5;cursor:default;}
+
+  /* Calendar view */
+  .cal-mes{padding:14px;}
+  .cal-titulo{font-size:15px;font-weight:700;color:var(--gold);margin-bottom:10px;}
+  .cal-row{display:flex;align-items:stretch;gap:0;margin-bottom:8px;border-radius:10px;overflow:hidden;border:1px solid var(--line);}
+  .cal-data{background:rgba(0,0,0,.4);padding:12px 10px;text-align:center;min-width:54px;flex-shrink:0;}
+  .cal-data .dia{font-size:22px;font-weight:900;color:var(--gold);}
+  .cal-data .mes{font-size:10px;color:var(--muted);text-transform:uppercase;}
+  .cal-info{padding:10px 12px;flex:1;}
+  .cal-info .nome{font-size:13px;font-weight:700;margin-bottom:2px;}
+  .cal-info .sub{font-size:11px;color:var(--muted);}
+  .cal-status{padding:12px 10px;display:flex;align-items:center;flex-shrink:0;}
+
+  .vazio{text-align:center;padding:48px 20px;color:var(--muted);}
+  .vazio .icon{font-size:48px;margin-bottom:10px;}
+  .skel{background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.08),rgba(255,255,255,.04));
+        background-size:200% 100%;animation:skel 1.5s infinite;border-radius:8px;}
+  @keyframes skel{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+  .raio-label{color:var(--gold);font-weight:700;min-width:60px;}
+</style>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body data-vs-no-pad="1" data-vs-title="📍 Perto de Você">
+
+<div class="filtros">
+  <label>
+    <span>🗺️ Raio: <span class="raio-label" id="raio-label">50 km</span></span>
+    <input type="range" id="raio" min="1" max="200" value="50">
+  </label>
+  <div id="cat-chips" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+</div>
+<div id="loc-status">📡 Localizando…</div>
+
+<div class="tabs-nav">
+  <button class="tab-btn ativo" data-tab="descobrir">🔍 Descobrir</button>
+  <button class="tab-btn" data-tab="coletivas">🛒 Coletivas</button>
+  <button class="tab-btn" data-tab="calendario">📅 Calendário</button>
+</div>
+
+<div id="tab-descobrir">
+  <div class="grid" id="grid-barracas">
+    <div class="skel" style="height:220px"></div>
+    <div class="skel" style="height:220px"></div>
+    <div class="skel" style="height:220px"></div>
+    <div class="skel" style="height:220px"></div>
+  </div>
+</div>
+
+<div id="tab-coletivas" style="display:none">
+  <div class="grid" id="grid-coletivas">
+    <div class="skel" style="height:260px"></div>
+    <div class="skel" style="height:260px"></div>
+  </div>
+</div>
+
+<div id="tab-calendario" style="display:none">
+  <div class="cal-mes" id="cal-root">
+    <div class="skel" style="height:70px;margin-bottom:8px"></div>
+    <div class="skel" style="height:70px;margin-bottom:8px"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/shared/supabase.js?v=20260825"></script>
+<script>
+const SUPA = 'https://vdrzndgkwdpibexjkyxi.supabase.co';
+const ANON = 'sb_publishable_UuXuHUDxe7nmhE-Z9qu-0w_1tv2IrvC';
+VSSupabase.init(SUPA, ANON);
+
+const CAT_ICONES = {
+  Lanchonete:'🥪',Mercado:'🛒',Bar:'🍺',Estadia:'🛏️',Padaria:'🥖',
+  Farmácia:'💊','Frutos do mar':'🦐',Artesanato:'🎨','Café colonial':'☕',
+  'Cerveja artesanal':'🍻','Comida regional':'🍽️','Eventos gastronômicos':'🎪',
+  'Mel & apicultura':'🍯','Vinhos & vinícola':'🍷',Salgados:'🧆',Saúde:'🏥',Arte:'🎭',
+};
+
+let estado = {
+  lat: null, lng: null, cidade: null, estado_uf: null,
+  raio: 50, catFiltro: null, userId: null,
+  barracas: [], coletivas: [],
+};
+
+// ── Localização ─────────────────────────────────────────────────────
+async function pegarLocalizacao() {
+  const status = document.getElementById('loc-status');
+  if ('geolocation' in navigator) {
+    try {
+      const pos = await new Promise((res, rej) =>
+        navigator.geolocation.getCurrentPosition(res, rej, {timeout:8000})
+      );
+      estado.lat = pos.coords.latitude;
+      estado.lng = pos.coords.longitude;
+      await reverseGeocode(estado.lat, estado.lng);
+      status.textContent = `📍 ${estado.cidade || 'Localizado'} · raio ${estado.raio}km`;
+    } catch(e) {
+      // Sem GPS → cai em Florianópolis pra nunca ficar vazio na demo
+      estado.lat = -27.5954; estado.lng = -48.548;
+      estado.cidade = 'Florianópolis'; estado.estado_uf = 'SC';
+      status.textContent = '📍 Mostrando Florianópolis · ative o GPS pra ver o seu redor';
+    }
+  } else {
+    estado.lat = -27.5954; estado.lng = -48.548;
+    estado.cidade = 'Florianópolis'; estado.estado_uf = 'SC';
+    status.textContent = '📍 Mostrando Florianópolis · GPS indisponível neste aparelho';
+  }
+}
+
+async function reverseGeocode(lat, lng) {
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&accept-language=pt`);
+    const d = await r.json();
+    estado.cidade = d.address?.city || d.address?.town || d.address?.village;
+    estado.estado_uf = d.address?.state;
+    document.getElementById('loc-status').textContent =
+      `📍 ${estado.cidade || '—'}, ${estado.estado_uf || ''} · raio ${estado.raio}km`;
+  } catch(e) {}
+}
+
+// ── Matching ─────────────────────────────────────────────────────────
+async function carregarBarracas() {
+  const grid = document.getElementById('grid-barracas');
+  try {
+    const params = {
+      p_lat: estado.lat, p_lng: estado.lng,
+      p_raio_km: estado.raio,
+      p_cidade: estado.cidade,
+      p_estado: estado.estado_uf,
+      p_limit: 60,
+    };
+    const dados = await VSSupabase.rpc('match_ofertas_usuario', params);
+    estado.barracas = Array.isArray(dados) ? dados : [];
+    renderBarracas();
+    buildCatChips();
+  } catch(e) {
+    grid.innerHTML = `<div class="vazio"><div class="icon">😕</div><p>Erro ao carregar: ${e.message}</p></div>`;
+  }
+}
+
+function buildCatChips() {
+  const cats = [...new Set(estado.barracas.map(b => b.categoria).filter(Boolean))].slice(0,10);
+  const root = document.getElementById('cat-chips');
+  root.innerHTML = ['Todos', ...cats].map(c => {
+    const ativo = (c === 'Todos' && !estado.catFiltro) || c === estado.catFiltro;
+    return `<div class="chip ${ativo?'ativo':''}" onclick="filtrarCat('${c}')">${CAT_ICONES[c]||'•'} ${c}</div>`;
+  }).join('');
+}
+
+function filtrarCat(cat) {
+  estado.catFiltro = cat === 'Todos' ? null : cat;
+  buildCatChips();
+  renderBarracas();
+}
+
+function renderBarracas() {
+  const grid = document.getElementById('grid-barracas');
+  let lista = estado.barracas;
+  if (estado.catFiltro) lista = lista.filter(b => b.categoria === estado.catFiltro);
+  if (lista.length === 0) {
+    grid.innerHTML = `<div class="vazio"><div class="icon">🔍</div><p>Nenhum resultado.<br>Aumente o raio ou mude o filtro.</p></div>`;
+    return;
+  }
+  grid.innerHTML = lista.map(b => {
+    const icone = CAT_ICONES[b.categoria] || '🏪';
+    const dist = b.distancia_km != null ? `${b.distancia_km.toFixed(1)}km · ` : '';
+    const scoreLabel = b.score > 0 ? `<span class="score-badge">⭐ ${Number(b.score).toFixed(1)}</span>` : '';
+    const likeClass = b.user_liked ? 'liked' : '';
+    return `<div class="card" data-id="${b.barraca_id}">
+      ${b.telhado_url
+        ? `<img class="card-img" src="${b.telhado_url}" onerror="this.style.display='none'" loading="lazy">`
+        : `<div class="card-img-ph">${icone}</div>`}
+      <div class="card-body">
+        <div class="card-cat">${icone} ${b.categoria||'—'}</div>
+        <div class="card-title">${b.nome}</div>
+        <div class="card-loc">📍 ${dist}${b.cidade||''}, ${b.estado||''}</div>
+        ${b.descricao ? `<div style="font-size:12px;color:var(--muted);line-height:1.4">${b.descricao.slice(0,80)}…</div>` : ''}
+        <div class="card-actions">
+          ${scoreLabel}
+          <button class="like-btn ${likeClass}" onclick="toggleLike('${b.barraca_id}',this)" title="Curtir">
+            ❤️ ${b.total_likes||0}
+          </button>
+          <span class="like-count" style="flex:1"></span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function toggleLike(id, btn) {
+  await VSSupabase.ensureSession();
+  try {
+    const res = await VSSupabase.rpc('toggle_like_barraca', { p_barraca_id: id });
+    btn.className = 'like-btn' + (res.liked ? ' liked' : '');
+    btn.innerHTML = `❤️ ${res.total||0}`;
+    // Update local state
+    const b = estado.barracas.find(x => x.barraca_id === id);
+    if (b) { b.user_liked = res.liked; b.total_likes = res.total; }
+  } catch(e) { alert('Entre pra curtir!'); }
+}
+
+// ── Coletivas ─────────────────────────────────────────────────────────
+async function carregarColetivas() {
+  const grid = document.getElementById('grid-coletivas');
+  try {
+    const params = {
+      p_lat: estado.lat, p_lng: estado.lng,
+      p_raio_km: estado.raio * 2,
+      p_cidade: estado.cidade, p_estado: estado.estado_uf,
+    };
+    const dados = await VSSupabase.rpc('coletivas_perto', params);
+    estado.coletivas = Array.isArray(dados) ? dados : [];
+    renderColetivas();
+    renderCalendario();
+  } catch(e) {
+    grid.innerHTML = `<div class="vazio"><div class="icon">😕</div><p>${e.message}</p></div>`;
+  }
+}
+
+function renderColetivas() {
+  const grid = document.getElementById('grid-coletivas');
+  if (!estado.coletivas.length) {
+    grid.innerHTML = `<div class="vazio"><div class="icon">🛒</div>
+      <p>Nenhuma compra coletiva aberta perto de você.<br>
+      <a href="/comerciante-pro.html" style="color:var(--accent)">Comerciante? Crie uma →</a></p></div>`;
+    return;
+  }
+  grid.innerHTML = estado.coletivas.map(c => {
+    const pmLabel = `R$ ${Number(c.preco_unitario).toFixed(2).replace('.',',')}`;
+    const pcLabel = `R$ ${Number(c.preco_coletivo).toFixed(2).replace('.',',')}`;
+    const pct = c.pct_preenchido || 0;
+    const dias = c.dias_restantes || 0;
+    const prazoClass = dias <= 2 ? 'urgente' : dias <= 5 ? 'ok' : 'folgado';
+    const prazoTxt = dias === 0 ? 'Encerra hoje!' : dias === 1 ? 'Amanhã!' : `${dias} dias restantes`;
+    const btnClass = c.user_participa ? 'participando' : 'aberto';
+    const btnTxt = c.user_participa ? '✅ Você está dentro' : '🛒 Entrar na Coletiva';
+    return `<div class="coletiva-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px">
+        <div class="col-title">${c.titulo}</div>
+        <span class="prazo-badge ${prazoClass}">${prazoTxt}</span>
+      </div>
+      <div style="font-size:11px;color:var(--magic);font-weight:600;margin-bottom:4px">
+        ${c.categoria||''} ${c.barraca_nome ? `· ${c.barraca_nome}` : ''} ${c.cidade ? `· ${c.cidade}` : ''}
+      </div>
+      ${c.descricao ? `<div style="font-size:12px;color:var(--muted);margin-bottom:8px">${c.descricao}</div>` : ''}
+      <div class="col-preco">
+        <span class="novo">${pcLabel}/un</span>
+        <span class="velho">${pmLabel}</span>
+        <span class="eco">-${c.economia_pct}%</span>
+      </div>
+      <div class="col-meta">
+        <span>👥 ${c.qtd_confirmada}/${c.min_participantes} confirmados</span>
+        <span>${pct >= 100 ? '✅ Mínimo atingido!' : `${pct}% do mínimo`}</span>
+      </div>
+      <div class="progress-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
+      ${c.data_entrega ? `<div style="font-size:11px;color:var(--muted);margin-bottom:8px">📦 Entrega prevista: ${new Date(c.data_entrega+'T12:00').toLocaleDateString('pt-BR')}</div>` : ''}
+      <button class="entrar-btn ${btnClass}" onclick="entrarColetiva('${c.id}',this)" ${c.user_participa?'disabled':''}>
+        ${btnTxt}
+      </button>
+    </div>`;
+  }).join('');
+}
+
+async function entrarColetiva(id, btn) {
+  await VSSupabase.ensureSession();
+  btn.disabled = true;
+  btn.textContent = 'Entrando…';
+  try {
+    const res = await VSSupabase.rpc('entrar_coletiva', { p_coletiva_id: id, p_qtd: 1 });
+    if (res.ok) {
+      btn.className = 'entrar-btn participando';
+      btn.textContent = '✅ Você está dentro';
+      const c = estado.coletivas.find(x => x.id === id);
+      if (c) { c.user_participa = true; c.qtd_confirmada = res.qtd_confirmada; }
+    } else {
+      btn.disabled = false;
+      btn.textContent = '🛒 Entrar na Coletiva';
+      alert(res.msg || 'Não foi possível entrar.');
+    }
+  } catch(e) {
+    btn.disabled = false;
+    btn.textContent = '🛒 Entrar na Coletiva';
+    alert('Entre no app pra participar!');
+  }
+}
+
+// ── Calendário ────────────────────────────────────────────────────────
+function renderCalendario() {
+  const root = document.getElementById('cal-root');
+  if (!estado.coletivas.length) {
+    root.innerHTML = `<div class="vazio"><div class="icon">📅</div><p>Nenhum evento agendado perto de você.</p></div>`;
+    return;
+  }
+  // Group by data_entrega
+  const porData = {};
+  estado.coletivas.forEach(c => {
+    const key = c.data_entrega || c.data_fechamento?.slice(0,10);
+    if (!porData[key]) porData[key] = [];
+    porData[key].push(c);
+  });
+  const sorted = Object.entries(porData).sort(([a],[b]) => a.localeCompare(b));
+  root.innerHTML = sorted.map(([data, items]) => {
+    const dt = new Date(data + 'T12:00');
+    const dia = dt.getDate().toString().padStart(2,'0');
+    const mes = dt.toLocaleDateString('pt-BR',{month:'short'}).toUpperCase().replace('.','');
+    return `<div class="cal-titulo">${dt.toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long'})}</div>` +
+      items.map(c => {
+        const pct = c.pct_preenchido || 0;
+        return `<div class="cal-row">
+          <div class="cal-data"><div class="dia">${dia}</div><div class="mes">${mes}</div></div>
+          <div class="cal-info">
+            <div class="nome">${c.titulo}</div>
+            <div class="sub">${c.barraca_nome||c.categoria} · ${c.cidade||''}</div>
+            <div style="margin-top:4px">
+              <div style="background:rgba(255,255,255,.06);border-radius:3px;height:4px;overflow:hidden">
+                <div style="height:100%;width:${pct}%;background:var(--good);border-radius:3px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cal-status">
+            ${c.user_participa ? '✅' : `<button style="background:rgba(16,185,129,.15);border:1px solid var(--good);color:var(--good);border-radius:8px;padding:5px 10px;cursor:pointer;font-size:12px" onclick="entrarColetiva('${c.id}',this)">Entrar</button>`}
+          </div>
+        </div>`;
+      }).join('');
+  }).join('');
+}
+
+// ── Tabs ──────────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('ativo'));
+    btn.classList.add('ativo');
+    ['descobrir','coletivas','calendario'].forEach(t => {
+      document.getElementById('tab-'+t).style.display = t === btn.dataset.tab ? '' : 'none';
+    });
+    if (btn.dataset.tab === 'coletivas' && !estado.coletivas.length) carregarColetivas();
+    if (btn.dataset.tab === 'calendario' && !estado.coletivas.length) carregarColetivas();
+  };
+});
+
+// Raio slider
+document.getElementById('raio').oninput = (e) => {
+  estado.raio = parseInt(e.target.value);
+  document.getElementById('raio-label').textContent = estado.raio + ' km';
+};
+document.getElementById('raio').onchange = () => {
+  carregarBarracas();
+  carregarColetivas();
+  document.getElementById('loc-status').textContent =
+    `📍 ${estado.cidade||'Localizado'} · raio ${estado.raio}km`;
+};
+
+// Boot
+(async () => {
+  await VSSupabase.ensureSession();
+  await pegarLocalizacao();
+  await carregarBarracas();
+  await carregarColetivas();
+})();
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="mapa"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+  <script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+<!-- 18/08/2026 — explicador desta página (ícone do rodapé). O vídeo está
+     registrado em shared/vs-video-explica.js pelo caminho da página. -->
+<script src="/shared/vs-video-explica.js?v=20260825" defer></script>
+</body>
+</html>

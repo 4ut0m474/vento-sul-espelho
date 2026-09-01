@@ -1,0 +1,476 @@
+{
+ "atualizado": "2026-08-05",
+ "fontes": [
+  "Conselho da Cidade — IPUF/Prefeitura de Florianópolis",
+  "OpenStreetMap (Overpass API)",
+  "UFECO — União Florianopolitana de Entidades Comunitárias"
+ ],
+ "aviso": "Dados de fontes públicas. Faltando ou errado? Escreva pra gente que a gente corrige — esta lista é da comunidade.",
+ "entidades": [
+  {
+   "nome": "Amigos do Campeche",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.6829707,
+   "lng": -48.4946454,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "AMORV - Associação de Moradores do Rio Vermelho",
+   "bairro": "Rio Vermelho",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Servidão Luiz Duarte Soares",
+   "lat": -27.4908533,
+   "lng": -48.4192493,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação Catarinense para Integração do Cego",
+   "bairro": "Saco Grande",
+   "sigla": "",
+   "tel": "+55 48 3261-4500",
+   "email": "secpresidencia@acic.org.br",
+   "site": "https://acic.org.br/",
+   "endereco": "Rodovia Virgílio Várzea, 1300",
+   "lat": -27.5479739,
+   "lng": -48.4964365,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação Comunitária do Loteamento João G.da Costa",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Rua da Apicultura, 139",
+   "lat": -27.5356382,
+   "lng": -48.5040845,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação Comunitária do Morro das Pedras",
+   "bairro": "Morro das Pedras",
+   "sigla": "ACMP",
+   "tel": "",
+   "email": "diretoria.acmp@redemorrodaspedras.com.br",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação Comunitária Jardim Santa Mônica",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5918442,
+   "lng": -48.5085363,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação da Marinha do Brasil",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5848651,
+   "lng": -48.6026882,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação de Metropolitana de Micro e Pequenas Empresas",
+   "bairro": "",
+   "sigla": "",
+   "tel": "+55 48 3259-4800",
+   "email": "",
+   "site": "https://ampemetropolitana.com.br/",
+   "endereco": "",
+   "lat": -27.5915989,
+   "lng": -48.5535213,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação de Moradores de Ratones",
+   "bairro": "Ratones",
+   "sigla": "AMORA",
+   "tel": "",
+   "email": "amora.ratones@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5110928,
+   "lng": -48.4839033,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)",
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação Delta de Ingleses",
+   "bairro": "Ingleses",
+   "sigla": "ARL DELTA",
+   "tel": "",
+   "email": "jaderlisboa@hotmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação do Bairro Itacorubi",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5801302,
+   "lng": -48.5047802,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Amigos do Parque da Luz",
+   "bairro": "",
+   "sigla": "AAPL",
+   "tel": "",
+   "email": "amigoparquedaluz@gmail.com",
+   "site": "",
+   "endereco": "Rua Felipe Schmidt, 1243",
+   "lat": -27.591501,
+   "lng": -48.5605866,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)",
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Empregados da Comcap",
+   "bairro": "Capoeiras",
+   "sigla": "",
+   "tel": "+55 48 3348 7694",
+   "email": "",
+   "site": "",
+   "endereco": "Avenida Governador Ivo Silveira, 3920",
+   "lat": -27.5996974,
+   "lng": -48.6045089,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores da Costeira do Pirajubaé",
+   "bairro": "Costeira do Pirajubaé",
+   "sigla": "AMOCOP",
+   "tel": "",
+   "email": "amocopcontato@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": -27.6474673,
+   "lng": -48.5218108,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)",
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores da Vila Ivan Matos e Adjacências",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5733186,
+   "lng": -48.5118377,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Conjunto Habitacional Caminho do Mar",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.4473801,
+   "lng": -48.4278786,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Jardim Atlântico",
+   "bairro": "Jardim Atlântico",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Rua Manoel Pizzolati, 273",
+   "lat": -27.578723,
+   "lng": -48.5982161,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Porto da Lagoa",
+   "bairro": "Porto da Lagoa",
+   "sigla": "AMPOLA",
+   "tel": "",
+   "email": "ampolaporto@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Recreio Santos Dumont",
+   "bairro": "Recreio Santos Dumont",
+   "sigla": "AMOSAD",
+   "tel": "",
+   "email": "contato@amosad.org.br",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Sertão e Córrego Grande",
+   "bairro": "Córrego Grande",
+   "sigla": "AMOSC",
+   "tel": "",
+   "email": "amosc.pocao@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores do Sol Nascente",
+   "bairro": "",
+   "sigla": "",
+   "tel": "+55 48 3238-9252",
+   "email": "",
+   "site": "",
+   "endereco": "Rua Pedra de Listras, 515",
+   "lat": -27.5498661,
+   "lng": -48.4924195,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Associação dos Moradores e Amigos do Bom Abrigo",
+   "bairro": "Bom Abrigo",
+   "sigla": "AMABA",
+   "tel": "",
+   "email": "bomabrigo.amaba@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Associação dos Municípios da Região da Grande Florianópolis",
+   "bairro": "Capoeiras",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Rua Cândido Ramos, 250",
+   "lat": -27.5980759,
+   "lng": -48.6026921,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Centro Comunitário do Córrego Grande",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Rua João Pio Duarte Silva",
+   "lat": -27.6008149,
+   "lng": -48.5035101,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Centro Comunitário do Pantanal",
+   "bairro": "",
+   "sigla": "",
+   "tel": "+55 48 3238-2232",
+   "email": "",
+   "site": "",
+   "endereco": "Rua Deputado Antônio Edu Vieira, 968",
+   "lat": -27.607951,
+   "lng": -48.5200179,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Conselho Comunitário de Capoeiras",
+   "bairro": "Capoeiras",
+   "sigla": "CCCAPOEIRAS",
+   "tel": "",
+   "email": "cccapoeiras@yahoo.com.br",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Conselho Comunitário do Jardim Anchieta",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.5967495,
+   "lng": -48.5069085,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Conselho Comunitário do Jardim Cidade Universitária",
+   "bairro": "Jardim Cidade Universitária",
+   "sigla": "CONJARDIM",
+   "tel": "",
+   "email": "machado@brturbo.com.br",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Conselho Comunitário do Ribeirão da Ilha",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.7212819,
+   "lng": -48.5641486,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Conselho Comunitário Fazenda do Rio Tavares",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "Rodovia Francisco Magno Vieira",
+   "lat": -27.6650105,
+   "lng": -48.5028424,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "Lions Clube Florianópolis-Ingleses",
+   "bairro": "Ingleses",
+   "sigla": "LIONS INGLESES",
+   "tel": "",
+   "email": "lionsingleses@gmail.com",
+   "site": "",
+   "endereco": "",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "Conselho da Cidade (PMF/IPUF)"
+   ]
+  },
+  {
+   "nome": "Salão Comunitário",
+   "bairro": "",
+   "sigla": "",
+   "tel": "",
+   "email": "",
+   "site": "",
+   "endereco": "",
+   "lat": -27.7506505,
+   "lng": -48.5482599,
+   "fontes": [
+    "OpenStreetMap"
+   ]
+  },
+  {
+   "nome": "UFECO — União Florianopolitana de Entidades Comunitárias",
+   "bairro": "",
+   "sigla": "UFECO",
+   "tel": "(48) 3338-4815",
+   "email": "contato.ufeco@gmail.com",
+   "site": "",
+   "endereco": "Rua 13 de Maio — José Mendes, Florianópolis/SC, 88020-230",
+   "lat": null,
+   "lng": null,
+   "fontes": [
+    "UFECO / CGU"
+   ]
+  }
+ ]
+}

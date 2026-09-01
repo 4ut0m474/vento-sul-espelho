@@ -1,0 +1,58 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Costa de Dentro",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-costa-de-dentro",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Pulau Pousada e Bistro",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Estrada João Bellarmino da Silva 2576",
+   "link": ""
+  },
+  {
+   "nome": "Lamiró",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado dos Açores",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercator",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vila Verde Suítes",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Lauro Mendes 229",
+   "link": ""
+  },
+  {
+   "nome": "Açor",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

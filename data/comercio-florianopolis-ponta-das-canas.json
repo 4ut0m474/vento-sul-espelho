@@ -1,0 +1,162 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Ponta das Canas",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-ponta-das-canas",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Recanto Lagoinha",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão Hercílio Lima da Silva 161",
+   "link": "https://www.recantolagoinha.com.br/"
+  },
+  {
+   "nome": "La Curreria",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Farmaconti",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nossa Casa",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Rua Alcides Bonatelli 400",
+   "link": ""
+  },
+  {
+   "nome": "Costa Norte",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "1983 Burguer & Steak",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Mercado & Bazar Ponta das Compras",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Forte Supermercados",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Compre Fácil",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Estrada Jornalista Jaime de Arruda Ramos",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Oliveira",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Peixaria do Ademir",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuaria Bazar dos Bichos",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Posto do Gusta",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Presentes",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mira Maré",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nande",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nostra Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Ocean House",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Marinheiro's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Epitácio Bittencourt 640",
+   "link": "https://restaurantemarinheiros.com.br/"
+  }
+ ]
+}

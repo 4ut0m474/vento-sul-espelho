@@ -1,0 +1,31 @@
+{
+  "name": "Vento Sul",
+  "short_name": "Vento Sul",
+  "description": "Descubra o Sul do Brasil — feira digital, mais votados, promoções, caça ao tesouro, compras coletivas e SulCoin.",
+  "lang": "pt-BR",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1a1a",
+  "theme_color": "#0d723e",
+  "categories": ["travel", "lifestyle", "shopping", "social"],
+  "icons": [
+    { "src": "icons/icon-72.png",  "sizes": "72x72",  "type": "image/png" },
+    { "src": "icons/icon-96.png",  "sizes": "96x96",  "type": "image/png" },
+    { "src": "icons/icon-128.png", "sizes": "128x128","type": "image/png" },
+    { "src": "icons/icon-144.png", "sizes": "144x144","type": "image/png" },
+    { "src": "icons/icon-152.png", "sizes": "152x152","type": "image/png" },
+    { "src": "icons/icon-192.png", "sizes": "192x192","type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-384.png", "sizes": "384x384","type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512","type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Feira Digital", "short_name": "Feira", "url": "./?go=feira", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Mais Votados",  "short_name": "Votados", "url": "./?go=votados", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Caça ao Tesouro", "short_name": "Caça", "url": "./?go=caca", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Pergunte à Litorânea", "short_name": "Litorânea", "url": "./?go=litoranea", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

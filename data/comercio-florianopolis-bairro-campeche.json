@@ -1,0 +1,554 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Campeche",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-campeche",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Açougue Campeche",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Pequeno Príncipe 1548",
+   "link": ""
+  },
+  {
+   "nome": "Liverpool",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Point do Riozinho",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Dida",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "MagraSS",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Avenida Pequeno Príncipe 1629",
+   "link": ""
+  },
+  {
+   "nome": "Cicle Campeche",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Avenida Pequeno Príncipe 2176",
+   "link": ""
+  },
+  {
+   "nome": "Luciana & Fábi",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Márcio",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Salão de Beleza",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sissa Cabeleireiros",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Talismã",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kiosk Paz na Terra",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": "http://www.paznaterra.com.br/"
+  },
+  {
+   "nome": "Baboo Bomboniere",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "Avenida Pequeno Príncipe 1557",
+   "link": "http://www.baboobomboniere.blogspot.com"
+  },
+  {
+   "nome": "Suul Center Lar",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Raia Sports",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Avenida Campeche 1560",
+   "link": "https://www.raiasports.com.br/"
+  },
+  {
+   "nome": "Underground Surf & Skate",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Avenida Pequeno Príncipe",
+   "link": ""
+  },
+  {
+   "nome": "Atelier Eliane Castellan",
+   "tipo": "Fabric",
+   "emoji": "🏪",
+   "cat": "fabric",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farma & Farma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Campeche",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lothfar",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floricultura",
+   "tipo": "Garden Centre",
+   "emoji": "🏪",
+   "cat": "garden_centre",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casarão Orgânico",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor da Terra",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Vento Sul",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Recanto do Campeche",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Rua do Gramal 188",
+   "link": "http://www.recantodocampeche.com.br"
+  },
+  {
+   "nome": "Natur Campeche",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "São Sebastião da Praia",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arte & Decoração",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arteluz",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quiosque do Badejo",
+   "tipo": "Kiosk",
+   "emoji": "🏪",
+   "cat": "kiosk",
+   "end": "Avenida Campeche 162",
+   "link": ""
+  },
+  {
+   "nome": "Cãopeche",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Pequeno Príncipe 1820",
+   "link": "http://www.caopeche.com.br/"
+  },
+  {
+   "nome": "Frango e Carne Assado",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kahuna",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mini Kalzone",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pastelaria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Varal",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lotérica Campeche",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Bem-Vindo",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Campeche Materiais de Construção",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Avenida Pequeno Príncipe 1680",
+   "link": ""
+  },
+  {
+   "nome": "Flor do Grão",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto10",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hiper Select",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Pequeno Príncipe",
+   "link": ""
+  },
+  {
+   "nome": "Jotas Mercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eletropossenti",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua do Gramal 326",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Campeche",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Recanto dos Pães",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bendição PetShop",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Avenida Pequeno Príncipe 2142",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Ilha Faceira",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua das Corticeiras 153",
+   "link": "http://www.ilhafaceira.com.br/"
+  },
+  {
+   "nome": "Pousada Zeperri",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Residencial Ilha Campeche",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Artes e Costuras",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa de Ana",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Apetito",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Flor da Ilha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mané Quiridu",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Matsuri",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Pequeno Príncipe 1615",
+   "link": ""
+  },
+  {
+   "nome": "Pequeno Príncipe",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Bemvindo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto X Pizzaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor da Aldeia",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://www.aldeiaindigo.com.br/sabor-da-aldeia"
+  },
+  {
+   "nome": "Santa Redonda",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Satori",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Pequeno Príncipe 834",
+   "link": ""
+  },
+  {
+   "nome": "Via Cappella",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "cozinha & arte",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Valentina Brechó",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lápis Mágico",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Premiere",
+   "tipo": "Video",
+   "emoji": "🏪",
+   "cat": "video",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

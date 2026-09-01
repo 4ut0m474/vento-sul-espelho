@@ -1,0 +1,82 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Atlântida",
+ "cidade": "Florianópolis",
+ "slug": "rs-atlantida",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Grupo IESA",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Paraguassu 4525",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Donald Móveis e Decorações",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Supermercado Desco",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Posto Sander",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Bali Hai",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  }
+ ]
+}

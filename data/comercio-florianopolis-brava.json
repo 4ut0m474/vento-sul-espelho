@@ -1,0 +1,146 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Brava",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-brava",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Recanto Lagoinha",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão Hercílio Lima da Silva 161",
+   "link": "https://www.recantolagoinha.com.br/"
+  },
+  {
+   "nome": "Residencial Luiz Simão",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão Luiz Simão Dos Santos 33",
+   "link": "http://www.residencialluizsimao.com.br"
+  },
+  {
+   "nome": "Le BarBaron",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": "https://lebarbaron.com.br/"
+  },
+  {
+   "nome": "London Pub",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Ênnio Demaria Cavallazzi",
+   "link": ""
+  },
+  {
+   "nome": "La Curreria",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Farmaconti",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado & Bazar Ponta das Compras",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Forte Supermercados",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Compre Fácil",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Estrada Jornalista Jaime de Arruda Ramos",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuaria Bazar dos Bichos",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Posto do Gusta",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Residencial Corujão",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Estrada Jornalista Jaime de Arruda Ramos 1349",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Presentes",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chico Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mestre da Costela",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Tom Traugott Wildi",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante LuLa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Jornalista Jaime de Arruda Ramos",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Marinheiro's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Epitácio Bittencourt 640",
+   "link": "https://restaurantemarinheiros.com.br/"
+  }
+ ]
+}

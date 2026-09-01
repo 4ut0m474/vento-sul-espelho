@@ -1,0 +1,25 @@
+{
+  "name": "🥷 Tutor pessoal",
+  "short_name": "Tutor",
+  "description": "Tutor de voz pessoal do erasto — IA PT-BR sempre disponível",
+  "start_url": "/tutor.html",
+  "scope": "/tutor.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0e14",
+  "theme_color": "#22c55e",
+  "icons": [
+    {
+      "src": "https://image.pollinations.ai/prompt/cyberpunk%20ninja%20mask%20glowing%20green%20eyes%20simple%20avatar?width=192&height=192&seed=42&nologo=true",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://image.pollinations.ai/prompt/cyberpunk%20ninja%20mask%20glowing%20green%20eyes%20simple%20avatar?width=512&height=512&seed=42&nologo=true",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

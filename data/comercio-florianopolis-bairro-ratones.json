@@ -1,0 +1,74 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Ratones",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-ratones",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Favorito Hortifruti",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Estrada Intendente Antônio Damasco",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Capivari",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Estrada Intendente Antônio Damasco",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Rafaela",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Estrada Intendente Antônio Damasco 2534",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora William",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Estrada Intendente Antônio Damasco",
+   "link": ""
+  },
+  {
+   "nome": "Paraíso do Cão",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "Estrada Intendente Antônio Damasco 2942",
+   "link": ""
+  },
+  {
+   "nome": "Farol Gourmet",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nadir Modas",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Estrada Intendente Antônio Damasco 2321",
+   "link": ""
+  },
+  {
+   "nome": "Concreto Usinado Construtex",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Estrada Intendente Antônio Damasco 1158",
+   "link": "https://www.construtexconcretos.com/"
+  }
+ ]
+}

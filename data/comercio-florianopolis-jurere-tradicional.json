@@ -1,0 +1,114 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Jurerê Tradicional",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-jurere-tradicional",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "39JurereByTheSea",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rodovia Jornalista Maurício Sirotski Sobrinho 6040",
+   "link": "https://www.39jurerebythesea.com/"
+  },
+  {
+   "nome": "The Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Deputado Paulo Preis 30",
+   "link": "https://thecoffee.jp"
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Sete Ilhas",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": "https://seteilhas.com.br"
+  },
+  {
+   "nome": "Jurerê Beach Village",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua César Nascimento 646",
+   "link": "http://www.jurerebeachvillage.com.br"
+  },
+  {
+   "nome": "Jardim",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pousada dos Chás",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Francisco Gouvêa 54",
+   "link": "https://www.pousadadoschas.com.br/"
+  },
+  {
+   "nome": "Doce Magia",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilhas de Jurerê",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "https://seteilhas.com.br/site/gastronomia/"
+  },
+  {
+   "nome": "Jurere's Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lucila",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant,bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nice",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor Natural",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

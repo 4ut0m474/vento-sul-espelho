@@ -1,0 +1,2924 @@
+/* Vento Sul — paleta igual ao app nativo Android */
+:root {
+  --bg: var(--tg-theme-bg-color, #0d1f2d);
+  --text: var(--tg-theme-text-color, #ffffff);
+  --primary: var(--tg-theme-button-color, #2e7d32);
+  --primary-text: var(--tg-theme-button-text-color, #ffffff);
+  --hint: var(--tg-theme-hint-color, #c5d0d8);
+  --section: var(--tg-theme-section-bg-color, rgba(20,40,58,0.85));
+  --separator: var(--tg-theme-section-separator-color, #1f3148);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { min-height: 100%; }
+
+body {
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  padding-bottom: 60px;
+  /* fundo padrão = Aurora (tela inicial da Litorânea/chat).
+     Gradient escuro bem leve só pra texto não sumir. */
+  background:
+    linear-gradient(rgba(13,31,45,0.30), rgba(13,31,45,0.60)),
+    url('bg/bg_aurora.webp') center/cover no-repeat fixed,
+    var(--bg);
+  /* sombra automática nos textos pra ficarem legíveis sobre qualquer fundo */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55);
+}
+
+/* Trocas de fundo por tela */
+body.tela-city {
+  background:
+    linear-gradient(rgba(13,31,45,0.30), rgba(13,31,45,0.65)),
+    url('bg/bg_florianopolis.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tela-praia {
+  background:
+    linear-gradient(rgba(13,31,45,0.25), rgba(13,31,45,0.60)),
+    url('bg/bg_praia_crystal.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tela-litoranea {
+  background:
+    linear-gradient(rgba(13,31,45,0.35), rgba(13,31,45,0.70)),
+    url('bg/bg_aurora.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+
+/* Cabeçalho — 3 colunas: ícones esquerda · logo CENTRO · ícones direita */
+#header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 8px 6px;
+  gap: 4px;
+  /* 06/08/2026 — a landing ainda tinha a BARRA (fundo + blur + risco embaixo).
+     As paginas internas ja eram transparentes desde 03/08; agora bate. */
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  border-bottom: none;
+  padding-top: max(8px, env(safe-area-inset-top));
+}
+/* sem fundo, o icone precisa da propria sombra pra nao sumir no conteudo claro */
+#header .hbtn { filter: drop-shadow(0 1px 3px rgba(0,0,0,.85)); }
+body.tema-claro #header .hbtn { filter: drop-shadow(0 1px 3px rgba(255,255,255,.95)); }
+/* Compensa altura do header fixo (bottom-bar já é compensado pelo padding-bottom do body) */
+#main {
+  padding-top: calc(62px + env(safe-area-inset-top, 0px));
+}
+.logo { display: none; }   /* logo agora vai pro corpo da Landing, não no header */
+
+/* Botão central do header — bandeira do idioma */
+.hbtn.hbtn-lang-center {
+  justify-self: center;          /* grid centering (margin auto não funciona em grid item) */
+  font-size: 20px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.18);
+  border-radius: 6px;
+}
+
+/* Título "Vento Sul / Descubra o Brasil" no corpo da Landing */
+.landing-titulo {
+  text-align: center;
+  margin: 14px auto 6px;
+  max-width: 340px;
+}
+.landing-titulo h1 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.65);
+  color: #fff;
+}
+.landing-titulo .subtitle {
+  font-size: 13px;
+  margin: 4px 0 0;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 1px;
+}
+/* Variante: título no topo da Landing, antes do carrossel */
+.landing-titulo-topo { margin: 4px auto 10px; }
+
+/* Lados do cabeçalho — esquerda e direita */
+.header-side {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.header-left  { justify-content: flex-start; }
+.header-right { justify-content: flex-end; }
+
+/* Compat: estilo antigo (caso versão em cache do HTML pegue) */
+.header-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hbtn {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+  flex-shrink: 0;
+  line-height: 1;
+}
+@media (min-width: 560px) {
+  .hbtn { width: 38px; height: 38px; font-size: 19px; }
+  .logo { font-size: 16px; letter-spacing: 3px; }
+}
+.hbtn:hover { background: rgba(255,255,255,0.10); }
+.hbtn:active { transform: scale(0.92); }
+/* as setas sao glifo de texto, nao emoji: precisam de mais corpo e menos peso
+   pra ficarem do MESMO tamanho visual que 🔊 🌙 A+ do lado */
+.hbtn-nav { font-size: 26px; font-weight: 600; }
+
+/* Tema CLARO — invertes as cores */
+body.tema-claro {
+  --bg: #f4f7fa;
+  --text: #1a2530;
+  --hint: #4a5560;
+  --section: rgba(255,255,255,0.78);
+  --separator: #d8dde2;
+  text-shadow: none;
+  background:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.78)),
+    url('bg/bg_aurora.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tema-claro.tela-city {
+  background:
+    linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.75)),
+    url('bg/bg_florianopolis.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tema-claro.tela-praia {
+  background:
+    linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.75)),
+    url('bg/bg_praia_crystal.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tema-claro.tela-litoranea {
+  background:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.80)),
+    url('bg/bg_aurora.webp') center/cover no-repeat fixed,
+    var(--bg);
+}
+body.tema-claro #header   { background: rgba(255,255,255,0.55); }
+body.tema-claro #bottom-bar { background: rgba(255,255,255,0.55); border-top-color: rgba(0,0,0,0.08); }
+body.tema-claro #bottom-bar button { color: rgba(0,0,0,0.65); text-shadow: none; }
+body.tema-claro .hbtn      { background: transparent; border: none; color: var(--text); text-shadow: none; }
+body.tema-claro .hbtn:hover { background: rgba(0,0,0,0.06); }
+body.tema-claro .hbtn.hbtn-lang-center { background: rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.10); }
+body.tema-claro .card-info,
+body.tema-claro .action-btn { background: rgba(255,255,255,0.65); border-color: rgba(0,0,0,0.08); color: var(--text); }
+body.tema-claro .logo { text-shadow: none; }
+
+/* (Aumento de fonte agora é via CSS zoom no #app — em app.js) */
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.lang {
+  font-size: 22px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen { display: none; padding: 12px; }
+.screen.active { display: block; }
+
+h2 { font-size: 22px; font-weight: 900; margin: 12px 0; }
+h3 { font-size: 14px; font-weight: 700; margin: 16px 0 8px; }
+.subtitle { color: var(--hint); font-size: 12px; margin-bottom: 12px; }
+
+/* Carrossel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 8px;
+  border-radius: 12px;
+  margin: 8px 0;
+  scrollbar-width: none;
+  min-height: 180px;       /* mantém espaço quando layers do modo fade ficam absolute */
+  position: relative;       /* âncora pros layers absolute */
+}
+.carousel::-webkit-scrollbar { display: none; }
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  height: 180px;
+  background: var(--section);
+  background-size: cover;       /* mobile: preenche tela (continua bonito) */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* PC/tablet em landscape: foto inteira com letterbox preto */
+@media (min-width: 900px), (orientation: landscape) and (min-width: 700px) {
+  .carousel-item {
+    background-color: #000;
+    background-size: contain;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 8px 12px;
+  border-radius: 0 0 12px 12px;
+}
+.carousel-caption strong { display: block; font-size: 14px; }
+.carousel-caption small { font-size: 11px; opacity: 0.8; }
+
+/* Dropdowns */
+.dropdown-block { margin: 12px 0; }
+.dropdown-block label {
+  display: block;
+  font-size: 12px;
+  color: var(--hint);
+  margin-bottom: 4px;
+}
+.dropdown-block select {
+  width: 100%;
+  padding: 12px;
+  background: rgba(20,40,58,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  font-size: 14px;
+}
+body.tema-claro .dropdown-block select { background: rgba(255,255,255,0.65); color: var(--text); border-color: rgba(0,0,0,0.10); }
+
+/* Botões — vidro fosco verde, mesma intensidade do azul "Instalar app" */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: rgba(46,125,50,0.40);
+  color: var(--primary-text);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55);
+  transition: transform 0.1s, background 0.15s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+.btn-primary:hover { background: rgba(46,125,50,0.58); }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+/* Variante azul translúcida (GPS, Mic, Cadastrar) */
+#btn-gps-praia,
+#btn-gps-perto,
+#btn-mic,
+#btn-merch-cadastrar {
+  background: rgba(25,118,210,0.45);
+}
+#btn-gps-praia:hover,
+#btn-gps-perto:hover,
+#btn-mic:hover,
+#btn-merch-cadastrar:hover {
+  background: rgba(25,118,210,0.65);
+}
+/* Persistência + Instalar app: transparentes glass */
+#btn-persistencia,
+#btn-install {
+  background: rgba(255,255,255,0.10) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.22);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+#btn-persistencia:hover,
+#btn-install:hover {
+  background: rgba(255,255,255,0.18) !important;
+  border-color: rgba(255,255,255,0.35);
+}
+
+/* Action grid (CityHome) */
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 12px 0;
+}
+.action-grid-6 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.action-grid-6 .action-btn { padding: 16px 6px; font-size: 12px; line-height: 1.3; }
+.action-btn {
+  background: rgba(20,40,58,0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 14px 6px;
+  font-size: 11px;
+  cursor: pointer;
+  line-height: 1.3;
+}
+
+/* Card info */
+.card-info {
+  background: rgba(20,40,58,0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+.card-info h3 { margin-top: 0; color: var(--primary); }
+.card-info p { color: var(--hint); font-size: 12px; line-height: 1.5; }
+
+/* Grid barracas */
+.grid-barracas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.barraca-card {
+  background: var(--section);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.barraca-card .telhado {
+  height: 100px;
+  background: #444 center/cover;
+  position: relative;
+}
+.barraca-card .telhado.placeholder::after {
+  content: "🏪";
+  font-size: 40px;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barraca-card .info { padding: 8px; }
+.barraca-card .nome { font-weight: 700; font-size: 13px; }
+.barraca-card .cat { color: var(--hint); font-size: 11px; }
+.barraca-card .livre {
+  position: absolute;
+  top: 6px; right: 6px;
+  background: #ffa000;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* Banner barraca detalhe */
+.banner {
+  height: 200px;
+  background: var(--section) center/cover;
+  border-radius: 12px;
+  margin: 0 0 14px;
+}
+.content { padding: 0 4px; }
+
+/* Lista produtos */
+.produto {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: var(--section);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.produto img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #333;
+}
+.produto .info { flex: 1; }
+.produto .info strong { display: block; font-size: 13px; }
+.produto .info small { color: var(--hint); font-size: 11px; }
+.produto .preco {
+  font-weight: 700;
+  color: #4caf50;
+  font-size: 13px;
+}
+
+/* Lista votados / promos */
+.list-card {
+  display: flex;
+  gap: 10px;
+  background: var(--section);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  align-items: center;
+}
+.list-card .emoji { font-size: 28px; }
+.list-card .info { flex: 1; }
+.list-card .info strong { font-size: 13px; }
+.list-card .info small { color: var(--hint); font-size: 11px; display: block; }
+.list-card .votos {
+  color: #ffb300;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+/* Bottom bar — estilo nativo: 5 ícones, Litorânea no centro maior */
+#bottom-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  /* TRANSPARENTE — experimento 03/08. Pra voltar: styles.css.bak-opaco */
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 4px 0 calc(4px + env(safe-area-inset-bottom));
+  border-top: none;
+  z-index: 60;
+}
+#bottom-bar button {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.85);
+  /* font-size do botão = base do label, escalado por --fonte-base */
+  font-size: clamp(10px, calc(var(--fonte-base, 14px) - 2px), 16px);
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1 1 0;
+  min-width: 0;     /* deixa flex shrink corretamente */
+  max-width: 100px;
+  overflow: hidden;
+}
+/* Ícones em em — escalam junto com o font-size do botão (e portanto com zoom do app) */
+#bottom-bar .bb-ico {
+  font-size: 2.1em;     /* ~30px com fonte 14 — visível sem exagero */
+  line-height: 1;
+  /* sem fundo na barra, o emoji precisa da própria sombra pra não sumir */
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.8));
+}
+#bottom-bar .bb-ico-big {
+  font-size: 3.2em;     /* Litorânea central ~45px — destaque sem dominar */
+  line-height: 1;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.8));
+}
+#bottom-bar .bb-lbl {
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+#bottom-bar .bb-center { color: var(--primary); font-weight: 700; }
+#bottom-bar .bb-center .bb-lbl { color: var(--primary); }
+/* Controles "Perto de mim" — raio + tabs categoria */
+.raio-btn, .cat-tab {
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 16px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.raio-btn:hover, .cat-tab:hover { background: rgba(255,255,255,0.12); }
+.raio-btn.ativo, .cat-tab.ativo {
+  background: rgba(13,114,62,0.65);
+  border-color: rgba(110,255,180,0.55);
+  font-weight: 600;
+}
+.perto-card {
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.perto-card:hover { background: rgba(20,40,58,0.65); }
+.perto-card .pc-emoji { font-size: 22px; flex-shrink: 0; width: 32px; text-align: center; }
+.perto-card .pc-info { flex: 1; min-width: 0 }
+.perto-card .pc-info strong { display: block; font-size: 14px; }
+.perto-card .pc-info small { font-size: 11px; color: var(--hint); }
+.perto-card .pc-rota {
+  padding: 6px 10px; font-size: 11px;
+  background: rgba(13,114,62,0.65); color: #fff;
+  border: none; border-radius: 6px;
+  cursor: pointer; flex-shrink: 0;
+}
+.perto-card .pc-dist { font-size: 12px; color: #4caf50; font-weight: 600; }
+.perto-relevante { border-left: 3px solid #ffc107; }
+
+/* Tabs do modal Persistência */
+.pers-tab {
+  padding: 7px 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 18px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.pers-tab:hover { background: rgba(255,255,255,0.12); }
+.pers-tab.active {
+  background: rgba(38,124,180,0.6);
+  border-color: rgba(110,200,255,0.7);
+  font-weight: 600;
+}
+.pers-pane label { font-size: 12px; color: var(--hint); display: block; margin: 8px 0 4px; }
+.pers-pane input[type="email"],
+.pers-pane input[type="password"] {
+  width: 100%; padding: 9px 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* Modo cinema — após 5s sem interação na Litorânea/Landing, UI some
+   e entra slideshow das melhores fotos da cidade. Toque traz tudo de volta. */
+#header, #bottom-bar { transition: opacity .55s ease; }
+/* "A+" e texto, nao emoji — sem isto fica gigante do lado dos icones */
+#btn-fonte { font-size: 14px; font-weight: 900; }
+body.cinema-idle #header,
+body.cinema-idle #bottom-bar { opacity: 0; pointer-events: none; }
+body.cinema-idle #main > .screen.active > * {
+  opacity: 0; pointer-events: none; transition: opacity .55s ease;
+}
+/* Stage do slideshow — duas camadas com crossfade GPU */
+#cinema-stage {
+  position: fixed; inset: 0; z-index: 25; pointer-events: none;
+  opacity: 0; transition: opacity .6s ease;
+}
+body.cinema-idle #cinema-stage { opacity: 1; }
+#cinema-stage .cs-layer {
+  position: absolute; inset: 0;
+  background-position: center; background-size: cover; background-repeat: no-repeat;
+  opacity: 0; transition: opacity 1s ease;
+}
+/* PC/tablet em landscape: foto inteira com letterbox preto */
+@media (min-width: 900px), (orientation: landscape) and (min-width: 700px) {
+  #cinema-stage .cs-layer {
+    background-color: #000;
+    background-size: contain;
+  }
+}
+#cinema-stage .cs-caption {
+  position: absolute; left: 0; right: 0; bottom: 32px;
+  text-align: center; color: rgba(255,255,255,0.92);
+  font-size: 17px; font-weight: 600; letter-spacing: .3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.85);
+  padding: 0 16px;
+}
+/* Vinheta pra dar profundidade cinematográfica */
+#cinema-stage::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+}
+
+/* 👆 Hint "toque para continuar" */
+#cinema-stage .cs-toque {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  color: rgba(255,255,255,0.45); font-size: 13px; font-weight: 500;
+  letter-spacing: 0.8px; text-transform: uppercase;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+  pointer-events: none; user-select: none;
+  animation: cs-toque-pulse 3s ease-in-out infinite;
+}
+@keyframes cs-toque-pulse {
+  0%,100% { opacity: 0.35; } 50% { opacity: 0.75; }
+}
+
+/* ❤️ Coração de like — único clicável no modo cinema */
+#cinema-stage .cs-coracao {
+  position: absolute; bottom: 88px; left: 50%; transform: translateX(-50%);
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; cursor: pointer;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.8);
+  pointer-events: auto;  /* único elemento clicável dentro do cinema */
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  animation: cs-coracao-pulsa 1.6s ease-in-out infinite;
+  transition: transform .15s ease, background .2s ease, color .2s ease;
+  text-shadow: 0 0 12px rgba(248,113,113,.55), 0 0 24px rgba(248,113,113,.25);
+  user-select: none;
+}
+#cinema-stage .cs-coracao:hover { transform: translateX(-50%) scale(1.12); }
+#cinema-stage .cs-coracao.liked {
+  color: #f87171;
+  background: rgba(248,113,113,.16);
+  border-color: rgba(248,113,113,.55);
+  text-shadow: 0 0 16px rgba(248,113,113,.85), 0 0 32px rgba(248,113,113,.5);
+}
+@keyframes cs-coracao-pulsa {
+  0%,100% { box-shadow: 0 0 0 0 rgba(248,113,113,.45); }
+  50%     { box-shadow: 0 0 0 10px rgba(248,113,113,0); }
+}
+#cinema-stage .cs-coracao.bump { animation: cs-bump .4s ease; }
+@keyframes cs-bump {
+  0% { transform: translateX(-50%) scale(1); }
+  40% { transform: translateX(-50%) scale(1.4); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+/* Card "Como funciona" da Landing — clicável, Litorânea explica falando */
+.card-tour { cursor: pointer; transition: transform .18s ease, box-shadow .18s ease, border-color .2s ease; outline: none; }
+.card-tour:hover  { transform: translateY(-1px); box-shadow: 0 5px 16px rgba(0,0,0,0.35); }
+.card-tour:active { transform: scale(0.99); }
+.card-tour:focus-visible { border: 1px solid rgba(110,200,255,0.7); }
+.card-tour h3 { display: flex; align-items: center; gap: 10px; }
+.card-tour .tour-mic { font-size: 22px; }
+.card-tour .tour-hint { margin-top: 8px; font-size: 13px; opacity: 0.78; font-style: italic; }
+.card-tour.falando {
+  border: 1px solid rgba(110,200,255,0.85);
+  animation: tour-pulse 1.1s ease-in-out infinite;
+}
+.card-tour.falando .tour-mic { animation: tour-mic-bounce 1s ease-in-out infinite; }
+@keyframes tour-pulse {
+  0%, 100% { box-shadow: 0 3px 12px rgba(110,200,255,0.30); }
+  50%      { box-shadow: 0 3px 22px rgba(110,200,255,0.80); }
+}
+@keyframes tour-mic-bounce {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.18); }
+}
+
+/* Setas do carrossel — discretas, aparecem mais no hover/touch */
+.vs-carousel-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(0,0,0,0.32); color: #fff; font-size: 22px; line-height: 1;
+  border: 1px solid rgba(255,255,255,0.22);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 3; padding: 0;
+  opacity: 0.55; transition: opacity .18s, background .18s;
+}
+.vs-carousel-arrow:hover, .vs-carousel-arrow:active { opacity: 1; background: rgba(0,0,0,0.55); }
+.vs-arrow-prev { left: 6px; }
+.vs-arrow-next { right: 6px; }
+#bottom-bar .bb-litoranea-ico { display: inline-flex; align-items: center; justify-content: center; }
+#bottom-bar .bb-litoranea-ico img {
+  width: 1em; height: 1em;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.35));
+  transition: transform 0.18s ease;
+}
+#bottom-bar .bb-center.lit-listen .bb-litoranea-ico img,
+#bottom-bar .bb-center.lit-listen .bb-litoranea-ico {
+  animation: lit-pulse 1.1s ease-in-out infinite;
+}
+@keyframes lit-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(110,200,255,0)); }
+  50%      { transform: scale(1.12); filter: drop-shadow(0 0 12px rgba(110,200,255,0.85)); }
+}
+#bottom-bar button.active { color: #4caf50; font-weight: 700; }
+#bottom-bar button.active .bb-lbl { color: #4caf50; }
+
+/* Action grid — cards coloridos como o nativo */
+.action-btn {
+  background: rgba(20,40,58,0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 18px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.3;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.action-btn:active { transform: scale(0.96); }
+.action-btn:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.action-btn[data-acao="feira"]        { border-left: 4px solid #ff6f00; }
+.action-btn[data-acao="mais_votados"] { border-left: 4px solid #fdd835; }
+.action-btn[data-acao="promocoes"]    { border-left: 4px solid #e91e63; }
+.action-btn[data-acao="praias"]       { border-left: 4px solid #03a9f4; }
+.action-btn[data-acao="caca"]         { border-left: 4px solid #8bc34a; }
+.action-btn[data-acao="coletiva"]     { border-left: 4px solid #9c27b0; }
+.action-btn[data-acao="wallet"]       { border-left: 4px solid #4caf50; }
+.action-btn[data-acao="trilhas"]      { border-left: 4px solid #795548; }
+
+/* Loader */
+.loading { text-align: center; padding: 40px; color: var(--hint); }
+
+/* Carrossel primário dos parceiros — estilo destaque com glow dourado */
+.carousel-primary-wrap {
+  margin: 8px 0 12px;
+  padding: 12px;
+  background: rgba(255,213,79,0.08);
+  border: 1px solid rgba(255,213,79,0.30);
+  border-radius: 14px;
+}
+.carousel-primary-wrap h3 {
+  font-size: 13px; font-weight: 700;
+  color: #ffd54f;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.carousel-primary-wrap .carousel { min-height: 220px; }
+.carousel-primary-wrap .carousel-item {
+  height: 220px !important;     /* maior que o carrossel secundário */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.40), 0 0 0 1px rgba(255,213,79,0.30);
+}
+.carousel-primary-wrap .carousel-caption {
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  padding: 10px 14px;
+}
+.carousel-primary-wrap .carousel-caption strong {
+  font-size: 16px;
+  color: #ffd54f;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Notificações — toggles de categoria */
+.notif-cat {
+  display: flex; align-items: center; gap: 12px;
+  background: rgba(20,40,58,0.50);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+}
+.notif-cat .nc-ico { font-size: 24px; line-height: 1; }
+.notif-cat .nc-text { flex: 1; }
+.notif-cat .nc-text strong { display: block; font-size: 14px; }
+.notif-cat .nc-text small { font-size: 11px; color: var(--hint); }
+.notif-toggle {
+  width: 44px; height: 24px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 12px;
+  position: relative; flex-shrink: 0;
+  transition: background 0.2s;
+}
+.notif-toggle::after {
+  content: ""; position: absolute;
+  width: 18px; height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px; left: 3px;
+  transition: left 0.2s;
+}
+.notif-cat.ativa .notif-toggle { background: rgba(76,175,80,0.7); }
+.notif-cat.ativa .notif-toggle::after { left: 23px; }
+
+/* Carrossel decorativo em todas as telas — praias + bares/restaurantes mar */
+.carousel-decor {
+  margin: 8px 0 14px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.carousel-decor { min-height: 140px; }
+.carousel-decor .carousel-item {
+  height: 140px;
+}
+
+/* ───── Carteira SulCoin ───── */
+.wallet-saldo-card {
+  background: linear-gradient(135deg, rgba(255,179,0,0.16), rgba(20,40,58,0.85));
+  border: 1px solid rgba(255,179,0,0.35);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.40);
+}
+.wallet-saldo-grande { text-align: center; padding: 6px 0 14px; }
+.wallet-saldo-grande .ws-label { font-size: 12px; color: var(--hint); letter-spacing: 1px; text-transform: uppercase; }
+.wallet-saldo-grande .ws-valor {
+  font-size: 38px; font-weight: 900; color: #ffb300; line-height: 1;
+  margin: 6px 0 4px;
+  text-shadow: 0 2px 8px rgba(255,179,0,0.30);
+}
+.wallet-saldo-grande .ws-conta { font-size: 11px; color: var(--hint); }
+.wallet-saldo-extras {
+  display: flex; gap: 12px; padding: 10px 0;
+  border-top: 1px dashed rgba(255,255,255,0.18);
+  border-bottom: 1px dashed rgba(255,255,255,0.18);
+  font-size: 12px;
+}
+.wallet-saldo-extras > div { flex: 1; display: flex; justify-content: space-between; align-items: center; }
+.wallet-saldo-extras span { color: var(--hint); }
+.wallet-saldo-extras strong { font-weight: 700; }
+.wallet-actions {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 6px; margin-top: 14px;
+}
+.wallet-actions .wa-btn {
+  background: rgba(20,40,58,0.55);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+  font-size: 11px; line-height: 1.3;
+  padding: 10px 2px; border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.15s;
+}
+.wallet-actions .wa-btn:active { transform: scale(0.96); }
+.wallet-actions .wa-receber { background: rgba(76,175,80,0.30); border-color: rgba(76,175,80,0.55); }
+.wallet-actions .wa-enviar  { background: rgba(25,118,210,0.30); border-color: rgba(25,118,210,0.55); }
+.wallet-actions .wa-scan    { background: rgba(156,39,176,0.30); border-color: rgba(156,39,176,0.55); }
+.wallet-actions .wa-link    { background: rgba(255,179,0,0.25);  border-color: rgba(255,179,0,0.50); }
+.wallet-actions .wa-sair    { background: rgba(229,57,53,0.25);  border-color: rgba(229,57,53,0.50); }
+
+/* ─────────────────────────────────────────────────────────────
+   ZONA COMERCIAL — flat, reto, "banco". Lucidez matemática.
+   Aplica em qualquer .zone-comercial: Carteira, Pix, Comerciante, Admin.
+   Neutraliza gradientes/cores rosadas, suprime emojis grandes.
+   Ícones: usar VSIcons.svg() em vez de emoji.
+   ───────────────────────────────────────────────────────────── */
+.zone-comercial {
+  --zc-bg:        #0f1822;
+  --zc-card:      #15212e;
+  --zc-card-2:    #1b2a3a;
+  --zc-border:    rgba(255,255,255,0.10);
+  --zc-border-2:  rgba(255,255,255,0.16);
+  --zc-text:      #e6edf3;
+  --zc-hint:      #9aa7b3;
+  --zc-accent:    #4f8ec9;     /* azul-banco, frio */
+  --zc-positivo:  #2e7d32;     /* verde-banco */
+  --zc-negativo:  #c0392b;
+  --zc-warn:      #b8860b;
+}
+.zone-comercial * { letter-spacing: 0; }
+.zone-comercial .wallet-saldo-grande {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-radius: 6px;     /* cantos retos, não arredondados */
+  padding: 18px 16px;
+}
+.zone-comercial .ws-label   { color: var(--zc-hint); font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; }
+.zone-comercial .ws-valor   { color: var(--zc-text); font-weight: 600; font-size: 32px; font-variant-numeric: tabular-nums; }
+.zone-comercial .ws-conta   { color: var(--zc-hint); font-size: 12px; }
+.zone-comercial .wallet-saldo-extras { background: var(--zc-card-2); border-color: var(--zc-border); border-radius: 4px; }
+.zone-comercial .wallet-actions { gap: 4px; }
+.zone-comercial .wallet-actions .wa-btn {
+  background: var(--zc-card-2) !important;
+  border: 1px solid var(--zc-border-2) !important;
+  border-radius: 4px;
+  color: var(--zc-text);
+  font-size: 11px; font-weight: 500;
+  padding: 12px 4px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.zone-comercial .wallet-actions .wa-btn:hover {
+  background: var(--zc-card) !important;
+  border-color: var(--zc-accent) !important;
+}
+.zone-comercial .wallet-actions .wa-btn svg {
+  stroke: var(--zc-text);
+  opacity: 0.85;
+}
+.zone-comercial .wa-receber svg { stroke: var(--zc-positivo); }
+.zone-comercial .wa-enviar svg  { stroke: var(--zc-accent); }
+.zone-comercial .wa-sair svg    { stroke: var(--zc-negativo); }
+.zone-comercial .wallet-bonus-card {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-left: 3px solid var(--zc-positivo);
+  border-radius: 4px;
+}
+.zone-comercial h3, .zone-comercial h2 { color: var(--zc-text); font-weight: 600; }
+.zone-comercial .btn-primary {
+  background: var(--zc-accent) !important;
+  border-radius: 4px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+/* Botão flat genérico — labels com ícone */
+.ic-flat-btn { display: inline-flex; align-items: center; gap: 6px; }
+.ic-flat-label { font-size: inherit; }
+.zone-comercial svg { vertical-align: middle; }
+.zone-comercial .wa-link-flat {
+  color: var(--zc-accent) !important;
+  display: inline-flex; align-items: center; gap: 4px;
+  text-decoration: none;
+}
+.zone-comercial .wa-link-flat:hover { text-decoration: underline; }
+.zone-comercial .btn-modo-inst {
+  background: transparent;
+  border: 1px solid var(--zc-border-2);
+  color: var(--zc-hint);
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.zone-comercial .btn-modo-inst:hover { color: var(--zc-text); border-color: var(--zc-accent); }
+
+/* Cards comerciante (mc-*) */
+.zone-comercial .mc-card {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-radius: 4px;
+  padding: 14px;
+}
+.zone-comercial .mc-card strong { color: var(--zc-text); }
+.zone-comercial .mc-status.mc-ok   { color: var(--zc-positivo); }
+.zone-comercial .mc-status.mc-warn { color: var(--zc-warn); }
+.zone-comercial .mc-roi {
+  background: var(--zc-card-2);
+  border-left: 3px solid var(--zc-accent);
+  padding: 8px 10px;
+  border-radius: 0 4px 4px 0;
+}
+.zone-comercial .mc-btn {
+  background: var(--zc-card-2) !important;
+  border: 1px solid var(--zc-border-2) !important;
+  border-radius: 4px !important;
+  color: var(--zc-text) !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  padding: 9px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.zone-comercial .mc-btn:hover {
+  border-color: var(--zc-accent) !important;
+  background: var(--zc-card) !important;
+}
+.zone-comercial .mc-btn svg { stroke: var(--zc-text); opacity: 0.8; }
+.zone-comercial .mc-btn-wide { font-weight: 600; }
+.zone-comercial .mc-btn-saques {
+  background: var(--zc-positivo) !important;
+  border: 1px solid var(--zc-positivo) !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  font-weight: 600;
+}
+.zone-comercial .mc-btn-saques:hover { filter: brightness(1.1); }
+.zone-comercial input[type="email"],
+.zone-comercial input[type="password"],
+.zone-comercial input[type="text"],
+.zone-comercial input[type="number"],
+.zone-comercial select,
+.zone-comercial textarea {
+  background: var(--zc-card-2) !important;
+  border: 1px solid var(--zc-border-2) !important;
+  color: var(--zc-text) !important;
+  border-radius: 4px !important;
+  padding: 12px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+.zone-comercial input:focus,
+.zone-comercial select:focus,
+.zone-comercial textarea:focus {
+  outline: none;
+  border-color: var(--zc-accent) !important;
+}
+.zone-comercial .card-info {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-radius: 4px;
+}
+.zone-comercial .card-info summary { color: var(--zc-text) !important; }
+.zone-comercial label { color: var(--zc-hint); font-size: 12px; letter-spacing: 0.5px; }
+
+/* Presets de recarga + escolha de PSP (Recarregar SulCoins) */
+.zone-comercial .rc-preset {
+  background: var(--zc-card-2) !important;
+  border: 2px solid var(--zc-border-2) !important;
+  border-radius: 4px !important;
+  padding: 12px !important;
+  color: var(--zc-text);
+}
+.zone-comercial .rc-preset:hover { border-color: var(--zc-accent) !important; }
+.zone-comercial .rc-preset[style*="--primary"],
+.zone-comercial .rc-preset.rc-ativo { border-color: var(--zc-accent) !important; background: var(--zc-card) !important; }
+.zone-comercial .rc-psp-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--zc-border-2);
+  background: var(--zc-card-2);
+  color: var(--zc-text);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+.zone-comercial .rc-psp-btn.psp-ativo {
+  background: var(--zc-card);
+  border-color: var(--zc-accent);
+  color: var(--zc-accent);
+  font-weight: 600;
+}
+
+/* Funil Litorânea — chips de pergunta-resposta dirigida */
+.lit-funil-bloco {
+  background: rgba(110,200,255,0.08);
+  border-left: 3px solid #7af0ff;
+  padding: 12px 14px;
+  border-radius: 0 10px 10px 0;
+  margin: 10px 0;
+}
+.lit-funil-pergunta {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.lit-funil-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.lit-chip {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(110,200,255,0.40);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  letter-spacing: 0.2px;
+}
+.lit-chip:hover {
+  background: rgba(110,200,255,0.18);
+  border-color: #7af0ff;
+}
+.lit-chip:active { transform: scale(0.96); }
+.lit-chip:disabled { opacity: 0.45; cursor: default; }
+.lit-chip.lit-chip-pick {
+  background: #7af0ff !important;
+  color: #062330 !important;
+  font-weight: 700;
+  border-color: #7af0ff !important;
+  opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LANDING — entrada serena, limpa, sem alma, mas com Litorânea
+   como única ponte humana. Pra não assustar visitante novo.
+   Princípio: cantos retos, neutros, sem gradient gritante.
+   ───────────────────────────────────────────────────────────── */
+.entrada-btn,
+.entrada-btn-secundario {
+  border-radius: 4px !important;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  text-transform: none;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+}
+.entrada-btn-secundario {
+  width: 100%;
+  margin-top: 10px;
+  padding: 11px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.entrada-btn-secundario:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.32);
+}
+.entrada-btn-secundario.entrada-btn-aurora {
+  margin-top: 12px;
+  border-color: rgba(255,255,255,0.20);
+  color: rgba(255,255,255,0.78);
+}
+.entrada-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  border-radius: 4px !important;
+}
+.entrada-card strong { font-weight: 600; letter-spacing: 0.2px; }
+body.tema-claro .entrada-btn-secundario { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.10); color: var(--text); }
+body.tema-claro .entrada-btn-secundario:hover { background: rgba(0,0,0,0.08); }
+body.tema-claro .entrada-card { background: rgba(0,0,0,0.03) !important; border-color: rgba(0,0,0,0.10) !important; }
+
+/* Card "Como funciona" — único bloco com toque humano (avatar Litorânea) */
+.entrada-card-tour {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  border-radius: 4px !important;
+  padding: 14px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s;
+}
+.entrada-card-tour:hover { border-color: rgba(110,200,255,0.40) !important; background: rgba(110,200,255,0.06) !important; }
+.entrada-card-tour .tour-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  background: rgba(110,200,255,0.15);
+  border: 2px solid rgba(110,200,255,0.35);
+  box-shadow: 0 0 16px rgba(110,200,255,0.20);
+}
+.entrada-card-tour .tour-avatar img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.entrada-card-tour .tour-texto { flex: 1; min-width: 0; }
+.entrada-card-tour .tour-texto h3 { margin: 0 0 4px; font-size: 15px; font-weight: 600; letter-spacing: 0.2px; }
+.entrada-card-tour .tour-texto p { margin: 4px 0; font-size: 13px; line-height: 1.45; color: rgba(255,255,255,0.75); }
+.entrada-card-tour .tour-hint { font-size: 11px; color: rgba(110,200,255,0.85); margin-top: 6px !important; }
+body.tema-claro .entrada-card-tour { background: rgba(0,0,0,0.03) !important; border-color: rgba(0,0,0,0.10) !important; }
+body.tema-claro .entrada-card-tour .tour-texto p { color: var(--hint); }
+.zone-comercial .mc-guia { background: var(--zc-card); border: 1px solid var(--zc-border); }
+.zone-comercial .mc-guia summary { color: var(--zc-text); }
+.zone-comercial .mc-h4 { color: var(--zc-accent); font-weight: 600; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase; margin: 16px 0 6px; }
+.zone-comercial .mc-aviso-sulcoin {
+  background: var(--zc-card-2);
+  border: 1px solid var(--zc-border-2);
+  border-left: 3px solid var(--zc-warn);
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+  margin: 10px 0;
+}
+.zone-comercial .mc-bloco-info {
+  background: var(--zc-card-2);
+  border: 1px solid var(--zc-border-2);
+  border-radius: 4px;
+  padding: 10px;
+}
+/* zone-entrada — Landing flat matemático, MAS o card-tour da Litorânea
+   mantém vibe humana (única exceção). Tudo flat, fundo navy, cantos retos. */
+.zone-entrada {
+  /* Herda variáveis do .zone-comercial (já vem nas cores frias) */
+}
+.zone-entrada .landing-titulo h1 { color: var(--zc-text); letter-spacing: 2.5px; }
+.zone-entrada .landing-titulo .subtitle { color: var(--zc-hint); }
+.zone-entrada select {
+  background: var(--zc-card-2) !important;
+  border: 1px solid var(--zc-border-2) !important;
+  color: var(--zc-text) !important;
+  border-radius: 4px !important;
+}
+.zone-entrada .dropdown-block label { color: var(--zc-hint) !important; }
+.zone-entrada .btn-primary {
+  background: var(--zc-accent) !important;
+  border-radius: 4px !important;
+  color: #fff;
+  font-weight: 600;
+}
+.zone-entrada .btn-primary:disabled,
+.zone-entrada .btn-primary[disabled] {
+  background: var(--zc-card-2) !important;
+  color: var(--zc-hint) !important;
+}
+/* Card-tour da Litorânea CONTINUA com vibe humana (acolhedora) — exceção */
+.zone-entrada .entrada-card-tour {
+  background: rgba(110,200,255,0.06) !important;
+  border: 1px solid rgba(110,200,255,0.22) !important;
+  border-radius: 10px !important;  /* arredondado, não reto */
+}
+.zone-entrada .entrada-card-tour:hover {
+  background: rgba(110,200,255,0.12) !important;
+  border-color: rgba(110,200,255,0.45) !important;
+}
+
+/* Botão sutil "escute essa explicação" — fica no canto da tela ou ao lado do título */
+.escute-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 50%;
+  color: rgba(255,255,255,0.55);
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 6px;
+  padding: 0;
+  transition: color 0.18s, border-color 0.18s, background 0.18s, transform 0.1s;
+}
+.escute-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(110,200,255,0.08);
+}
+.escute-btn:active { transform: scale(0.92); }
+.escute-btn.escute-falando {
+  color: #7af0ff;
+  border-color: #7af0ff;
+  background: rgba(110,200,255,0.18);
+  animation: escute-pulse 1.6s ease-in-out infinite;
+}
+@keyframes escute-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(110,200,255,0.6); }
+  50%      { box-shadow: 0 0 0 8px rgba(110,200,255,0); }
+}
+body.tema-claro .escute-btn { border-color: rgba(0,0,0,0.18); color: rgba(0,0,0,0.55); }
+body.tema-claro .escute-btn:hover { color: var(--primary); border-color: var(--primary); background: rgba(110,200,255,0.10); }
+
+/* Olhinho mostrar/esconder senha — wrapper que envolve <input type="password"> */
+.senha-com-olho { position: relative; display: block; }
+.senha-com-olho input { padding-right: 40px !important; }
+.senha-com-olho .olho-btn {
+  position: absolute;
+  right: 4px; top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--zc-hint, var(--hint));
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 18px;
+  line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.senha-com-olho .olho-btn:hover { color: var(--zc-text, var(--text)); }
+.zone-comercial .mc-bloco-info code {
+  background: rgba(0,0,0,0.4);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+/* Admin tabs flat */
+.zone-comercial .admin-tabs .adm-tab {
+  background: var(--zc-card-2) !important;
+  border: 1px solid var(--zc-border-2) !important;
+  color: var(--zc-hint) !important;
+  border-radius: 4px !important;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.zone-comercial .admin-tabs .adm-tab.adm-ativo {
+  background: var(--zc-card) !important;
+  border-color: var(--zc-accent) !important;
+  color: var(--zc-accent) !important;
+}
+.zone-comercial .adm-stat {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-radius: 4px;
+}
+.zone-comercial .adm-stat-ico svg { stroke: var(--zc-accent); }
+.zone-comercial .adm-user,
+.zone-comercial .adm-compra,
+.zone-comercial .adm-log {
+  background: var(--zc-card);
+  border: 1px solid var(--zc-border);
+  border-radius: 4px;
+}
+
+/* Cartão de bônus diário */
+.wallet-bonus-card {
+  margin-top: 12px;
+  background: linear-gradient(135deg, rgba(76,175,80,0.18), rgba(20,40,58,0.55));
+  border: 1px solid rgba(76,175,80,0.40);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.wallet-bonus-card:empty { display: none; }
+.wallet-bonus-card .wb-titulo {
+  font-size: 12px; color: #a5d6a7; letter-spacing: 1px; text-transform: uppercase;
+  margin-bottom: 4px;
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.wallet-bonus-card .wb-streak {
+  background: rgba(255,179,0,0.20);
+  color: #ffd54f;
+  border: 1px solid rgba(255,179,0,0.45);
+  padding: 2px 8px; border-radius: 999px;
+  font-size: 10px; letter-spacing: 0.5px; text-transform: none;
+}
+.wallet-bonus-card .wb-corpo {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+}
+.wallet-bonus-card .wb-valor { font-size: 18px; font-weight: 800; color: #4caf50; }
+.wallet-bonus-card .wb-valor-pago { color: var(--hint); font-size: 14px; font-weight: 600; }
+.wallet-bonus-card .wb-btn { padding: 8px 16px; font-size: 13px; }
+
+.wallet-comoganhar { margin-top: 14px; }
+.wallet-comoganhar .cg-lista { list-style: none; padding: 0; margin: 8px 0 0; }
+.wallet-comoganhar .cg-lista li {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 0;
+  border-top: 1px dashed rgba(255,255,255,0.10);
+}
+.wallet-comoganhar .cg-lista li:first-child { border-top: 0; }
+.wallet-comoganhar .cg-lista li > span { font-size: 22px; line-height: 1; flex-shrink: 0; }
+.wallet-comoganhar .cg-lista li > div { font-size: 12px; line-height: 1.4; }
+.wallet-comoganhar .cg-lista li strong { display: block; font-size: 13px; margin-bottom: 2px; }
+
+/* Stats da carteira */
+.wallet-stats {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 8px; margin-top: 14px;
+}
+.wallet-stats .ws-item {
+  background: rgba(20,40,58,0.50);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.wallet-stats .ws-l { font-size: 11px; color: var(--hint); text-transform: uppercase; letter-spacing: 0.5px; }
+.wallet-stats strong { font-size: 13px; font-weight: 700; }
+
+/* Filtros do histórico */
+.wallet-filtros {
+  display: flex; flex-direction: column; gap: 6px;
+  margin: 12px 0 6px;
+}
+.wallet-filtros .wf-linha {
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.wallet-filtros .wf-btn {
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: var(--text);
+  padding: 6px 12px; border-radius: 999px;
+  font-size: 11px; cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.wallet-filtros .wf-btn.wf-ativo {
+  background: rgba(255,179,0,0.30);
+  border-color: rgba(255,179,0,0.55);
+  color: #ffd54f;
+}
+.wallet-filtros .wf-pb {
+  font-size: 10px; padding: 4px 10px;
+  background: rgba(20,40,58,0.30);
+}
+.wallet-filtros .wf-pb.wf-pb-ativo {
+  background: rgba(110,200,255,0.22);
+  border-color: rgba(110,200,255,0.55);
+  color: #7af0ff;
+}
+
+/* Comprovante */
+.comp-bloco {
+  background: rgba(76,175,80,0.10);
+  border: 1px solid rgba(76,175,80,0.30);
+  border-radius: 12px; padding: 14px;
+  margin-top: 12px;
+}
+.comp-valor {
+  font-size: 28px; font-weight: 800; color: #4caf50;
+  text-align: center; margin-bottom: 10px;
+}
+.comp-linhas { display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+.comp-linhas > div { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.comp-linhas span { color: var(--hint); }
+.comp-linhas strong { text-align: right; word-break: break-word; }
+
+/* Histórico agrupado por dia */
+.hist-grupo { margin-bottom: 14px; }
+.hist-data {
+  font-size: 11px; color: var(--hint); text-transform: uppercase; letter-spacing: 1px;
+  margin: 0 0 4px; padding-left: 4px;
+}
+.hist-linha {
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+}
+.hist-ico { font-size: 22px; line-height: 1; flex-shrink: 0; }
+.hist-info { flex: 1; min-width: 0; }
+.hist-info strong { display: block; font-size: 13px; }
+.hist-info small { display: block; font-size: 11px; color: var(--hint); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hist-valor { font-weight: 800; font-size: 14px; flex-shrink: 0; }
+
+/* ───── Painel Admin ───── */
+.admin-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0;
+}
+.admin-tabs .adm-tab {
+  background: rgba(20,40,58,0.55);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text); cursor: pointer;
+  padding: 8px 12px; border-radius: 999px;
+  font-size: 11px;
+}
+.admin-tabs .adm-tab.adm-ativo {
+  background: rgba(255,179,0,0.30);
+  border-color: rgba(255,179,0,0.55);
+  color: #ffd54f;
+}
+.admin-painel { padding: 4px 0; }
+.adm-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;
+}
+.adm-stat {
+  background: rgba(20,40,58,0.55);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px; padding: 10px 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.adm-stat-ico { font-size: 24px; }
+.adm-stat-val { font-size: 18px; font-weight: 800; }
+.adm-stat-l { font-size: 10px; color: var(--hint); text-transform: uppercase; letter-spacing: 0.5px; }
+.adm-user, .adm-compra, .adm-log {
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 10px;
+  padding: 10px 12px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.adm-log { display: block; }
+.adm-log-head { display: flex; justify-content: space-between; align-items: center; }
+.adm-log-head small { color: var(--hint); font-size: 10px; }
+.adm-log-det {
+  background: rgba(0,0,0,0.30); padding: 4px 8px; margin: 4px 0 0;
+  font-size: 10px; border-radius: 4px;
+  white-space: pre-wrap; word-break: break-all;
+}
+.adm-role-sel {
+  background: rgba(255,255,255,0.10); color: var(--text);
+  border: 1px solid rgba(255,255,255,0.20); border-radius: 6px;
+  padding: 4px 6px; font-size: 11px;
+}
+.adm-palavra {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(229,57,53,0.20); border: 1px solid rgba(229,57,53,0.45);
+  padding: 4px 8px; border-radius: 999px; margin: 2px;
+  font-size: 11px;
+}
+.adm-palavra button {
+  background: transparent; border: 0; color: #ff8a80; cursor: pointer; padding: 0;
+}
+
+/* Modal genérico (transferir, etc) */
+.modal-bg {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 100;
+  display: flex; align-items: center; justify-content: center;
+  padding: 14px;
+  backdrop-filter: blur(6px);
+}
+.modal {
+  background: rgba(20,40,58,0.95);
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 14px;
+  padding: 18px;
+  width: 100%;
+  max-width: 380px;
+}
+.modal h3 { margin: 0 0 12px; }
+.modal label { display: block; font-size: 12px; color: var(--hint); margin: 8px 0 4px; }
+.modal input {
+  width: 100%; padding: 10px; box-sizing: border-box;
+  background: rgba(255,255,255,0.08); color: var(--text);
+  border: 1px solid rgba(255,255,255,0.20); border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Leaflet ajustes pra ficar com o tema escuro */
+#leaflet-mapa .leaflet-container { background: #14283a; }
+#leaflet-mapa .leaflet-tile { filter: brightness(0.85) contrast(1.05); }
+
+/* ⭐ Botão estrela de favorito */
+.fav-star {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.20);
+  color: #ffd54f;
+  font-size: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  transition: transform 0.1s, background 0.15s;
+}
+.fav-star:hover { background: rgba(255,255,255,0.20); }
+.fav-star:active { transform: scale(0.92); }
+.fav-star.ativo {
+  background: rgba(255,213,79,0.30);
+  border-color: rgba(255,213,79,0.70);
+}
+/* ⭐⭐⭐ favoritar cidade — botão embaixo do cabeçalho, longe do FAB */
+.fav-cidade-tri {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 2px;
+  padding: 8px 14px;
+  background: rgba(255,213,79,0.10);
+  border: 1px solid rgba(255,213,79,0.35);
+  border-radius: 24px;
+  color: #9fb3c8;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .12s, background .2s, color .2s, border-color .2s;
+}
+.fav-cidade-tri .tri-stars { color: #5b6b7a; font-size: 15px; letter-spacing: 2px; transition: color .2s; }
+.fav-cidade-tri.ativo { background: rgba(255,213,79,0.18); border-color: #ffd54f; color: #ffd54f; }
+.fav-cidade-tri.ativo .tri-stars { color: #ffd54f; text-shadow: 0 0 8px rgba(255,213,79,0.6); }
+.fav-cidade-tri:active { transform: scale(0.96); }
+/* nome da cidade dourado quando favorita (duplo clique) */
+.cidade-favorita { color: #ffd54f !important; text-shadow: 0 0 10px rgba(255,213,79,0.5); }
+.city-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 8px;
+  position: relative;
+}
+.cidade-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+.cidade-row select { height: 44px; }
+
+/* Botão-título: o nome da cidade vira gatilho do menu de sublocais/outras cidades */
+.city-title-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+  transition: background 0.15s;
+}
+.city-title-btn #city-title { font-size: inherit; font-weight: inherit; }
+.city-title-btn:hover { background: rgba(255,255,255,0.06); }
+.city-title-btn .city-chev {
+  font-size: 12px;
+  opacity: 0.55;
+  transition: transform 0.18s, opacity 0.15s;
+}
+.city-title-btn.cm-aberto { background: rgba(255,255,255,0.08); }
+.city-title-btn.cm-aberto .city-chev { transform: rotate(180deg); opacity: 0.95; }
+
+/* Menu flutuante de sublocais + outras cidades */
+.city-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 6px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background: rgba(15,28,42,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 10px;
+  padding: 6px;
+  z-index: 60;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+.city-menu[hidden] { display: none; }
+.city-menu .cm-group {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 10px 4px;
+}
+.city-menu .cm-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+.city-menu .cm-item:hover { background: rgba(255,255,255,0.08); }
+.city-menu .cm-item:active { background: rgba(255,255,255,0.14); }
+.city-menu .cm-item.cm-active { color: var(--primary); font-weight: 600; }
+.city-menu .cm-item.cm-item-back { color: rgba(255,255,255,0.65); font-size: 13px; border-bottom: 1px solid rgba(255,255,255,0.10); margin-bottom: 4px; }
+.city-menu .cm-item.cm-item-cid::after { content: " ›"; color: rgba(255,255,255,0.40); }
+body.tema-claro .city-menu { background: rgba(255,255,255,0.96); border-color: rgba(0,0,0,0.10); }
+body.tema-claro .city-title-btn { color: var(--text); }
+body.tema-claro .city-menu .cm-item:hover { background: rgba(0,0,0,0.06); }
+
+/* Card de favorito na lista */
+.fav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.fav-item:hover { background: rgba(20,40,58,0.65); }
+.fav-item .fav-thumb {
+  width: 50px; height: 50px;
+  border-radius: 8px;
+  background-size: cover; background-position: center;
+  background-color: rgba(255,255,255,0.10);
+  flex-shrink: 0;
+}
+.fav-item .fav-text { flex: 1; min-width: 0; }
+.fav-item .fav-text strong { display: block; font-size: 14px; }
+.fav-item .fav-text small { font-size: 11px; color: var(--hint); }
+.fav-item .fav-rm {
+  background: none; border: none; color: rgba(229,57,53,0.80);
+  font-size: 18px; cursor: pointer; padding: 4px 8px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * PRAIAS HUB — destaque grande + categorias de comércio
+ * ───────────────────────────────────────────────────────────── */
+.praias-destaque {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+.praias-destaque::-webkit-scrollbar { height: 4px; }
+.praia-card-grande {
+  flex: 0 0 78%;
+  scroll-snap-align: start;
+  background: rgba(20,40,58,0.55);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 14px;
+  padding: 14px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.praia-card-grande::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(transparent 30%, rgba(0,0,0,0.78));
+  border-radius: 14px;
+  pointer-events: none;
+}
+.praia-card-grande > * { position: relative; z-index: 1; }
+.praia-card-grande strong { font-size: 16px; }
+.praia-card-grande small { color: rgba(255,255,255,0.85); font-size: 12px; }
+
+/* 🧊 Grid mais densa (Missão E, 2026-05-10): cards menores, cabe mais por viewport.
+   Antes: 5 col desktop / 3 col mobile com padding 14×4. Agora: 6 col / 4 col com padding ~70%. */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin: 6px 0 4px;
+}
+@media (max-width: 480px) {
+  .cat-grid { grid-template-columns: repeat(4, 1fr); gap: 5px; }
+}
+.cat-btn {
+  background: rgba(20,40,58,0.50);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: var(--text);
+  padding: 10px 3px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.25;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  transition: transform 0.1s, background 0.15s;
+}
+.cat-btn:hover { background: rgba(20,40,58,0.70); transform: translateY(-2px); }
+.cat-btn[data-cat="comida"]   { border-bottom: 4px solid #ff6f00; }
+.cat-btn[data-cat="estadia"]  { border-bottom: 4px solid #1976d2; }
+.cat-btn[data-cat="mercado"]  { border-bottom: 4px solid #4caf50; }
+.cat-btn[data-cat="lanche"]   { border-bottom: 4px solid #fdd835; }
+.cat-btn[data-cat="farmacia"] { border-bottom: 4px solid #e91e63; }
+.cat-btn.ativa {
+  background: rgba(46,125,50,0.45);
+  border-color: rgba(46,125,50,0.85);
+}
+
+/* Canvas de malha de pontos+linhas — Litorânea + Landing */
+#lit-malha {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: none;
+  opacity: 0.85;
+  mix-blend-mode: screen;
+}
+body.tela-litoranea #lit-malha,
+body.tela-landing   #lit-malha { display: block; }
+/* Landing: mais intenso e saturado */
+body.tela-landing   #lit-malha { opacity: 1.0; }
+/* Conteúdo do app fica acima do canvas */
+#app { position: relative; z-index: 2; }
+
+/* ─────────────────────────────────────────────────────────────
+ * LITORÂNEA — chat estilo bolha
+ * ───────────────────────────────────────────────────────────── */
+.lit-hero, .aurora-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.lit-avatar {
+  font-size: 56px;
+  line-height: 1;
+  background: rgba(3,169,244,0.20);
+  border: 2px solid rgba(3,169,244,0.40);
+  border-radius: 50%;
+  width: 72px; height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-shadow: 0 0 18px rgba(3,169,244,0.6);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 22px rgba(3,169,244,0.35);
+}
+.lit-avatar img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.aurora-avatar {
+  font-size: 50px;
+  background: rgba(186,104,200,0.20);
+  border: 2px solid rgba(186,104,200,0.40);
+  border-radius: 50%;
+  width: 72px; height: 72px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  text-shadow: 0 0 18px rgba(186,104,200,0.7);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 22px rgba(255,80,200,0.35);
+}
+.aurora-avatar img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.lit-titulo h2, .aurora-titulo h2 { margin: 0 0 2px 0; }
+.lit-titulo .subtitle, .aurora-titulo .subtitle { margin: 0; }
+.cerebro-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 3px 10px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.cerebro-badge.llama {
+  background: rgba(76,175,80,0.30);
+  border-color: rgba(76,175,80,0.60);
+  color: #c8f0cc;
+}
+.cerebro-badge.falando {
+  animation: pulse-fala 1.2s ease-in-out infinite;
+}
+@keyframes pulse-fala {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(76,175,80,0.5); }
+  50%      { box-shadow: 0 0 0 6px rgba(76,175,80,0); }
+}
+
+.chat-area {
+  background: rgba(20,40,58,0.40);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 200px;
+  max-height: 45vh;
+  overflow-y: auto;
+  margin: 12px 0 8px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 3;     /* acima da malha animada */
+}
+/* Esconde área de resposta legada (compat com app.js antigo) */
+#resposta-litoranea { display: none !important; }
+/* Litorânea hero: avatar + título compactos no PC */
+.lit-hero, .aurora-hero { margin-bottom: 10px; }
+.chat-msg {
+  display: flex;
+  margin: 8px 0;
+}
+.chat-msg.user { justify-content: flex-end; }
+.chat-msg .balao {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  line-height: 1.4;
+  font-size: 13px;
+  text-shadow: none;
+}
+.chat-msg.lit .balao {
+  background: rgba(3,169,244,0.25);
+  border: 1px solid rgba(3,169,244,0.45);
+  color: #e1f5fe;
+  border-top-left-radius: 4px;
+}
+.chat-msg.user .balao {
+  background: rgba(76,175,80,0.30);
+  border: 1px solid rgba(76,175,80,0.50);
+  color: #f1f8e9;
+  border-top-right-radius: 4px;
+}
+.chat-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+.chip {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.chip:hover { background: rgba(255,255,255,0.18); }
+.chat-input {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 6px;
+}
+.chat-input input {
+  flex: 1;
+  padding: 12px 14px;
+  background: rgba(20,40,58,0.55);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 22px;
+  font-size: 14px;
+}
+.chat-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.18);
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.chat-btn-send {
+  background: rgba(46,125,50,0.55);
+  border-color: rgba(46,125,50,0.75);
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * AURORA — aventura RPG (mapa + classes + stats)
+ * ───────────────────────────────────────────────────────────── */
+.aurora-tabs {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+.aurora-tab {
+  flex: 1;
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: var(--text);
+  padding: 10px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.aurora-tab.active {
+  background: rgba(186,104,200,0.30);
+  border-color: rgba(186,104,200,0.65);
+  font-weight: 700;
+}
+
+.aurora-mapa {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+/* Botão fullscreen no canto do mapa */
+.aurora-mapa-fullscreen-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 36px; height: 36px;
+  background: rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.20);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 5;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.15s, background 0.2s;
+}
+.aurora-mapa-fullscreen-btn:hover {
+  background: rgba(186,104,200,0.55);
+  transform: scale(1.08);
+}
+/* Quando o mapa entra em fullscreen real do browser */
+.aurora-mapa:fullscreen,
+.aurora-mapa:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0;
+  margin: 0;
+}
+.aurora-mapa:fullscreen .aurora-svg-mapa {
+  width: 100%; height: 100%;
+}
+
+/* Aurora: mapa quebra a coluna mobile pra ocupar largura toda */
+@media (min-width: 480px) {
+  #screen-aurora.active > .aurora-mapa,
+  #screen-aurora.active > .aurora-hero {
+    max-width: 100%;
+  }
+}
+
+/* Desktop: mapa Aurora ocupa MUITO mais espaço (rompe o max-width 580px) */
+@media (min-width: 768px) {
+  #screen-aurora.active {
+    max-width: 100% !important;
+  }
+  #screen-aurora .aurora-mapa {
+    height: 65vh;
+    min-height: 480px;
+  }
+  #screen-aurora .aurora-classes {
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Admin: painéis precisam de mais espaço pra tabelas/grids — quebra a coluna mobile */
+@media (min-width: 480px) {
+  #screen-admin.active {
+    max-width: 100% !important;
+  }
+  #screen-admin.active > * {
+    max-width: 720px;
+  }
+}
+@media (min-width: 1200px) {
+  #screen-aurora .aurora-mapa {
+    height: 72vh;
+    min-height: 600px;
+  }
+}
+.aurora-mapa-fundo {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.4s ease;
+}
+.aurora-svg-mapa {
+  width: 100%; height: 100%;
+  display: block;
+  transition: filter 0.6s ease;
+}
+
+/* Camadas específicas de cada era — toggle por data-era do .aurora-mapa */
+.era-passado-only,
+.era-presente-only,
+.era-futuro-only { display: none; }
+.aurora-mapa[data-era="passado"]  .era-passado-only  { display: inline; }
+.aurora-mapa[data-era="presente"] .era-presente-only { display: inline; }
+.aurora-mapa[data-era="futuro"]   .era-futuro-only   { display: inline; }
+
+/* Animações específicas por era */
+@media (prefers-reduced-motion: no-preference) {
+  .cyber-stream {
+    stroke-dashoffset: 0;
+    animation: cyber-flow 2s linear infinite;
+  }
+  .cyber-drone {
+    animation: cyber-drone-fly 6s ease-in-out infinite;
+  }
+  /* 🌊 Ondas (sobem e descem) */
+  .onda-mover {
+    animation: onda-baile 3.5s ease-in-out infinite;
+  }
+  /* ⛵ Navios medievais balançam */
+  .navio-passado {
+    transform-origin: center bottom;
+    animation: navio-balanca 4s ease-in-out infinite;
+  }
+  /* 🛥️ Barcos modernos navegam */
+  .barco-moderno {
+    animation: barco-navegar 8s linear infinite;
+  }
+  /* 🛸 Cidades flutuantes do futuro pairam */
+  .cidade-flutuante {
+    transform-origin: center;
+    animation: cidade-flutua 5s ease-in-out infinite;
+  }
+  /* 🗼 Farol pisca */
+  .farol-luz {
+    animation: farol-piscar 2.4s ease-in-out infinite;
+  }
+}
+@keyframes onda-baile {
+  0%,100% { transform: translateY(0); opacity: 0.6; }
+  50%     { transform: translateY(-2px); opacity: 1; }
+}
+@keyframes navio-balanca {
+  0%,100% { transform: rotate(-2deg) translateY(0); }
+  50%     { transform: rotate(2deg) translateY(-1px); }
+}
+@keyframes barco-navegar {
+  0%   { transform: translateX(0) translateY(0); }
+  50%  { transform: translateX(-15px) translateY(-1px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+@keyframes cidade-flutua {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-3px); }
+}
+@keyframes farol-piscar {
+  0%,100% { fill: #ffd54f; filter: drop-shadow(0 0 2px #ffd54f); }
+  50%     { fill: #fff; filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 4px #ffd54f); }
+}
+
+/* 🎭 PLAYERS andando entre cidades */
+@media (prefers-reduced-motion: no-preference) {
+  .player-r1 { animation: rota-r1 8s linear infinite; }
+  .player-r2 { animation: rota-r2 6s linear infinite; animation-delay: 1s; }
+  .player-r3 { animation: rota-r3 7s linear infinite; animation-delay: 2s; }
+  .player-r4 { animation: rota-r4 9s linear infinite; animation-delay: 0.5s; }
+  .player-r5 { animation: rota-r5 11s linear infinite; animation-delay: 3s; }
+  .player-r6 { animation: rota-r6 8s linear infinite; animation-delay: 1.5s; }
+}
+/* Foz Iguaçu (50,35) → Curitiba (240,42) */
+@keyframes rota-r1 {
+  0%   { transform: translate(50px, 35px); }
+  100% { transform: translate(240px, 42px); }
+}
+/* Curitiba (240,42) → Antonina (278,55) */
+@keyframes rota-r2 {
+  0%   { transform: translate(240px, 42px); }
+  100% { transform: translate(278px, 55px); }
+}
+/* Joinville (265,92) → Floripa (290,125) */
+@keyframes rota-r3 {
+  0%   { transform: translate(265px, 92px); }
+  100% { transform: translate(290px, 125px); }
+}
+/* Caxias (120,175) → Porto Alegre (160,200) */
+@keyframes rota-r4 {
+  0%   { transform: translate(120px, 175px); }
+  100% { transform: translate(160px, 200px); }
+}
+/* Lages (150,128) → Floripa (290,125) */
+@keyframes rota-r5 {
+  0%   { transform: translate(150px, 128px); }
+  100% { transform: translate(290px, 125px); }
+}
+/* Pelotas (180,225) → Torres (276,195) */
+@keyframes rota-r6 {
+  0%   { transform: translate(180px, 225px); }
+  100% { transform: translate(276px, 195px); }
+}
+@keyframes cyber-flow {
+  to { stroke-dashoffset: -10; }
+}
+@keyframes cyber-drone-fly {
+  0%,100% { transform: translate(0,0); }
+  25%     { transform: translate(8px,-5px); }
+  50%     { transform: translate(15px,3px); }
+  75%     { transform: translate(5px,8px); }
+}
+
+/* 🎨 IMAGENS DE FUNDO épicas geradas por IA — uma por era */
+.aurora-mapa::before {
+  content: ""; position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  z-index: 0; transition: opacity 0.6s ease, filter 0.6s ease;
+}
+.aurora-mapa[data-era="passado"]::before {
+  background-image: url('bg/aurora-passado.webp');
+  filter: sepia(0.25) saturate(1.15);
+}
+.aurora-mapa[data-era="presente"]::before {
+  background-image: url('bg/aurora-presente.webp');
+  filter: saturate(1.1);
+}
+.aurora-mapa[data-era="futuro"]::before {
+  background-image: url('bg/aurora-futuro.webp');
+  filter: saturate(1.3) brightness(1.05);
+}
+.aurora-svg-mapa {
+  position: relative;
+  z-index: 2;                    /* SVG acima da malha (castelos por cima) */
+  background: transparent;       /* deixa textura cinematográfica de baixo passar inteira */
+}
+/* Malha de relevo (canvas) entre foto e SVG */
+#aurora-malha-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;                    /* atrás do SVG, na frente da foto */
+  mix-blend-mode: screen;
+  opacity: 0.75;
+}
+/* SVG sem background sólido — textura cinematográfica fica visível por trás dos estados */
+.aurora-mapa[data-era="passado"] .aurora-svg-mapa { background: transparent; }
+.aurora-mapa[data-era="presente"] .aurora-svg-mapa { background: transparent; }
+.aurora-mapa[data-era="futuro"] .aurora-svg-mapa { background: transparent; }
+
+/* Linhas scan cyber */
+.aurora-mapa[data-era="futuro"]::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background:
+    repeating-linear-gradient(0deg, rgba(122,240,255,0.06) 0 1px, transparent 1px 4px);
+  mix-blend-mode: screen;
+  animation: aurora-cyber-scan 4s linear infinite;
+}
+@keyframes aurora-cyber-scan {
+  0%,100% { background-position: 0 0; }
+  50%     { background-position: 0 4px; }
+}
+
+/* Pulso nos hubs */
+@media (prefers-reduced-motion: no-preference) {
+  .hub-glow {
+    transform-origin: center;
+    animation: hub-pulse 3s ease-in-out infinite;
+  }
+  .hub-grupo[data-hub="curitiba"] .hub-glow { animation-delay: 0s; }
+  .hub-grupo[data-hub="florianopolis"] .hub-glow { animation-delay: 1s; }
+  .hub-grupo[data-hub="portoalegre"] .hub-glow { animation-delay: 2s; }
+  .hub-ponto {
+    animation: hub-twinkle 2.4s ease-in-out infinite;
+  }
+  .aurora-malha {
+    animation: aurora-malha-flow 6s linear infinite;
+  }
+  .aurora-avatar-mini {
+    animation: aurora-avatar-bob 2s ease-in-out infinite;
+  }
+}
+@keyframes hub-pulse {
+  0%,100% { transform: scale(1) translateZ(0); opacity: 0.7; }
+  50%     { transform: scale(1.4); opacity: 1; }
+}
+@keyframes hub-twinkle {
+  0%,100% { filter: drop-shadow(0 0 2px currentColor); }
+  50%     { filter: drop-shadow(0 0 8px currentColor) drop-shadow(0 0 12px currentColor); }
+}
+@keyframes aurora-malha-flow {
+  to { stroke-dashoffset: -24; }
+}
+@keyframes aurora-avatar-bob {
+  0%,100% { transform: translate(290px, 125px); }
+  50%     { transform: translate(290px, 120px); }
+}
+
+/* Hub clicável */
+.hub-grupo { cursor: pointer; }
+.hub-grupo:hover .hub-ponto { r: 8; }
+.aurora-mapa-titulo {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.aurora-classes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 10px 0;
+}
+.aurora-classe {
+  background: rgba(20,40,58,0.55);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text);
+  padding: 8px 4px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.2;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  transition: transform 0.15s, background 0.2s, box-shadow 0.2s;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.ac-avatar {
+  width: 100%; aspect-ratio: 1; max-width: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.25);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.ac-nome { font-size: 10px; }
+.aurora-classe:hover .ac-avatar {
+  transform: scale(1.08);
+  border-color: rgba(186,104,200,0.7);
+}
+.aurora-classe:hover {
+  background: rgba(186,104,200,0.20);
+}
+.aurora-classe.selecionada {
+  background: rgba(186,104,200,0.40);
+  border-color: rgba(186,104,200,0.85);
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(186,104,200,0.4);
+}
+.aurora-classe.selecionada .ac-avatar {
+  border-color: rgba(255,80,200,0.9);
+  box-shadow: 0 0 12px rgba(255,80,200,0.6);
+}
+
+.aurora-stats {
+  background: rgba(20,40,58,0.45);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.aurora-stats .stat {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px;
+}
+.aurora-stats .stat > span:first-child { width: 70px; }
+.aurora-stats .stat .pct { width: 36px; text-align: right; font-weight: 700; }
+.aurora-stats .bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.aurora-stats .bar .fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+ * DESKTOP (≥ 768px) — mantém o layout compacto do celular,
+ * só desenha o app como uma "janela de celular" centralizada.
+ * Largura máx 460px. Botões/fonte continuam tamanho mobile.
+ * ───────────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 0;
+    min-height: 100vh;
+  }
+  #app {
+    max-width: 580px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0,0,0,0.45);
+    background: rgba(13,31,45,0.18);
+    border-left: 1px solid rgba(255,255,255,0.06);
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  #main {
+    flex: 1;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  #bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    width: min(100%, 580px);
+    transform: translateX(-50%);
+  }
+
+  /* (botões translúcidos já são globais; só preciso do centering aqui) */
+}
+
+/* Landing — coluna centralizada (340px, mantém estreito conforme design) */
+#screen-landing.screen.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#screen-landing > * {
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+#screen-landing > #install-block { padding: 0; }
+#screen-landing > #install-block > .btn-primary {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Landing: carrossel retangular panoramico, baixinho, ocupa toda largura */
+#screen-landing .carousel,
+#screen-landing .carousel-item {
+  height: 200px;
+  min-height: 200px;
+  max-width: 100%;
+}
+@media (min-width: 480px) {
+  /* PWA web: panoramico, ocupa toda largura disponivel */
+  #screen-landing .carousel { max-width: 100%; }
+  #screen-landing .carousel,
+  #screen-landing .carousel-item { height: 240px; min-height: 240px; }
+}
+@media (min-width: 900px) {
+  #screen-landing .carousel,
+  #screen-landing .carousel-item { height: 280px; min-height: 280px; }
+}
+
+.aurora-mapa-toggle {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: var(--text);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.aurora-mapa-toggle.aurora-mapa-toggle-on {
+  background: rgba(255,213,79,0.30);
+  border-color: rgba(255,213,79,0.55);
+  color: #ffd54f;
+}
+
+/* Aurora — celular: garante que o SVG estilizado tem altura adequada
+   e mapa real ocupa largura total mesmo dentro da coluna mobile */
+@media (max-width: 480px) {
+  #aurora-mapa { height: clamp(240px, 42vh, 360px); }
+  #aurora-mapa-real { height: clamp(280px, 50vh, 460px) !important; }
+  /* Toggle fica grudado em telas pequenas, dá um respiro */
+  .aurora-mapa-toggle { padding: 5px 10px !important; font-size: 10.5px !important; }
+}
+/* O bloco fullbleed deve quebrar a coluna mobile mesmo no Aurora */
+#aurora-mapa-real, #aurora-mapa, #aurora-mapa-real-leaflet {
+  max-width: 100% !important;
+}
+/* Garante que o mapa estilizado está visível por default (fallback se JS quebrar) */
+#aurora-mapa { display: block; }
+#aurora-mapa svg { display: block; width: 100%; }
+/* Z-index correto: leaflet ABAIXO da info, malha ACIMA do leaflet mas BAIXO da info */
+#aurora-mapa-real-leaflet { z-index: 1; }
+#aurora-malha-real-canvas { z-index: 2; }
+#aurora-mapa-real-info    { z-index: 6; }
+
+/* ─────────────────────────────────────────────────────────────
+   ACESSIBILIDADE WCAG AA
+   ───────────────────────────────────────────────────────────── */
+/* Skip link — leitor de tela */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #fff; color: #000;
+  padding: 8px 14px;
+  z-index: 99999;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+}
+
+/* Foco visível — anel ciano sempre */
+*:focus-visible {
+  outline: 3px solid #7af0ff !important;
+  outline-offset: 2px !important;
+  border-radius: 4px;
+}
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  box-shadow: 0 0 0 3px rgba(110,200,255,0.50);
+}
+
+/* Touch targets WCAG mín 44px */
+button, a.btn-primary, .nav-tab, .trio-bot {
+  min-height: 44px;
+}
+
+/* Contraste mínimo 4.5:1 — texto secundário */
+.subtitle, small, .hint {
+  color: rgba(255,255,255,0.78);
+}
+
+/* Reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* MODO INSTITUCIONAL — visual sóbrio pra apresentação prefeitura */
+body.modo-inst .emoji-cidadao { display: none; }
+body.modo-inst .lit-avatar,
+body.modo-inst .trio-avatar {
+  filter: saturate(0.7) contrast(1.05);
+}
+body.modo-inst .btn-primary {
+  background: linear-gradient(135deg, #1a4f76, #0a2a45) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  color: #fff !important;
+}
+body.modo-inst h1, body.modo-inst h2, body.modo-inst h3 {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+body.modo-inst .card-info {
+  background: rgba(255,255,255,0.04) !important;
+  border-color: rgba(255,255,255,0.10) !important;
+}
+.btn-modo-inst {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-modo-inst:hover { background: rgba(110,200,255,0.20); }
+body.modo-inst .btn-modo-inst {
+  background: rgba(255,213,79,0.30);
+  border-color: rgba(255,213,79,0.55);
+  color: #ffd54f;
+}
+
+/* Bottom-bar — ícones épicos: gradiente, glow, drop-shadow, ring active */
+.bb-ico-grad {
+  display:inline-flex; align-items:center; justify-content:center;
+  position: relative;
+  width:46px; height:46px; border-radius:0;
+  font-size:22px;
+  background: transparent;     /* sem quadrado de fundo */
+  border: 0;
+  box-shadow: none;
+  transition: transform 0.18s cubic-bezier(.34,1.56,.64,1), filter 0.2s;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+  overflow: visible;
+}
+/* Glyph (emoji) icons — sem fundo, sem moldura */
+.bb-ico-glyph {
+  font-size: 30px;
+  line-height: 1;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+}
+/* Litorânea (foto de pessoa) — mantém círculo natural */
+.bb-litoranea-ico img {
+  mix-blend-mode: normal !important;
+  border-radius: 50% !important;
+}
+#bottom-bar button:hover .bb-ico-img img,
+#bottom-bar button.active .bb-ico-img img {
+  transform: scale(1.10);
+  filter: saturate(1.30) contrast(1.10) brightness(1.05);
+}
+/* anel luminoso decorativo (visível no active) */
+.bb-ico-grad::after {
+  content: "";
+  position: absolute; inset: -3px;
+  border-radius: 16px;
+  border: 1.5px solid transparent;
+  pointer-events: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+/* Cor do icone flat = filtro (sem fundo, sem borda, sem text-shadow) */
+.bb-ico-home, .bb-ico-comercio, .bb-ico-sulcoin, .bb-ico-perto {
+  background: transparent;
+  border: 0;
+  text-shadow: none;
+}
+.bb-ico-img img { background: transparent; border-radius: 0; }
+
+/* Hover: leve flutuar */
+#bottom-bar button:hover .bb-ico-grad {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.30);
+}
+/* Active: ring pulsante + flutuar mais alto */
+#bottom-bar button.active .bb-ico-grad {
+  transform: translateY(-3px) scale(1.12);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.20);
+  border-color: rgba(255,255,255,0.45);
+  animation: bb-ico-pulse 1.8s ease-in-out infinite;
+}
+#bottom-bar button.active .bb-ico-grad::after {
+  border-color: rgba(255,255,255,0.35);
+  box-shadow: 0 0 12px rgba(255,255,255,0.25);
+}
+
+@keyframes bb-ico-pulse {
+  0%, 100% { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)) brightness(1); }
+  50%      { filter: drop-shadow(0 2px 8px rgba(255,255,255,0.35)) brightness(1.15); }
+}
+
+/* Tap: pequeno "press" */
+#bottom-bar button:active .bb-ico-grad {
+  transform: translateY(-1px) scale(1.04);
+  transition-duration: 0.08s;
+}
+
+/* User marker pulsante no Leaflet de cidade */
+@keyframes pulse-user {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(25,118,210,0.55); }
+  50%      { box-shadow: 0 0 0 14px rgba(25,118,210,0); }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   "Coluna mobile" universal — todas as outras telas respeitam
+   ~420px de largura útil, centralizada. Mantém sensação de app.
+   Elementos com .screen-fullbleed quebram a regra (mapas, hero).
+   ───────────────────────────────────────────────────────────── */
+@media (min-width: 480px) {
+  .screen.active:not(#screen-landing) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .screen.active:not(#screen-landing) > * {
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Imagens internas respeitam o pai */
+  .screen.active:not(#screen-landing) img,
+  .screen.active:not(#screen-landing) .carousel,
+  .screen.active:not(#screen-landing) .carousel-item {
+    max-width: 100%;
+  }
+  /* Quem quer quebrar a coluna usa esta classe */
+  .screen.active .screen-fullbleed {
+    max-width: 100% !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Ícones vivos — animações CSS GPU-aceleradas, ~3KB total
+   Tudo respeita prefers-reduced-motion, então usuário com a11y
+   on tem o app silencioso. Sem JS, sem bibliotecas, sem peso.
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  /* Trio de IAs: avatar inativo respira; ativo ganha aura pulsante */
+  .trio-bot { transform-origin: center; }
+  .trio-bot:not(.trio-ativo) > div:first-child {
+    display: inline-block;
+    animation: ico-breathe 3.6s ease-in-out infinite;
+  }
+  .trio-bot.trio-ativo {
+    animation: ico-glow 2.6s ease-in-out infinite;
+  }
+  .trio-bot.trio-ativo > div:first-child {
+    display: inline-block;
+    animation: ico-bounce 2s ease-in-out infinite;
+  }
+  /* Avatar Aurora ✨ pisca */
+  .aurora-avatar {
+    display: inline-block;
+    animation: ico-twinkle 2.4s ease-in-out infinite;
+  }
+  /* Avatar Litorânea 🌊 flutua */
+  .lit-avatar {
+    display: inline-block;
+    animation: ico-float 3.4s ease-in-out infinite;
+  }
+  /* Botão central da nav (Litorânea SVG) — leve respirada */
+  .bb-litoranea-ico {
+    display: inline-block;
+    animation: ico-breathe 4s ease-in-out infinite;
+  }
+  /* Botão mic gravando: pulso vermelho + leve crescimento */
+  #btn-mic.ouvindo,
+  .chat-btn[aria-pressed="true"] {
+    animation: ico-mic-rec 1.1s ease-in-out infinite;
+  }
+  /* Saldo da carteira: emoji 💰 dança ao mudar */
+  .ws-valor::before {
+    display: inline-block;
+    animation: ico-coin-flip 6s ease-in-out infinite;
+  }
+  /* Setinhas/chevrons no chat: pulsam suave */
+  .chat-btn-send {
+    animation: ico-pulse 2.4s ease-in-out infinite;
+  }
+  /* Header buttons (mute, tema, lang): wiggle no hover */
+  .hbtn:hover { animation: ico-wiggle 0.6s ease-in-out; }
+  /* Botão "Convidar" 🎁 chacoalha pra chamar atenção */
+  .wa-convite {
+    animation: ico-shake-soft 5s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+  /* Hub 🏘️ leve respirada */
+  .wa-hub > :first-child,
+  .wa-recarga > :first-child {
+    display: inline-block;
+    animation: ico-breathe 3.8s ease-in-out infinite;
+  }
+  /* Cards de cidade: hover faz crescer ligeiramente */
+  .card-info:hover { transform: translateY(-2px); transition: transform .25s; }
+  /* Chips de chat: hover wiggle */
+  .chip:hover { animation: ico-wiggle 0.5s ease-in-out; }
+  /* Botão primário verde: pulso suave em call-to-action principais */
+  .btn-primary[id^="btn-"]:not(:disabled):not([id="btn-merch-sair"]):not([id="btn-install"]):not([id="btn-persistencia"]) {
+    /* só nos importantes — preserva legibilidade */
+  }
+  /* Cerebro badge (☁️/🏠) flutua */
+  .cerebro-badge { animation: ico-float 4s ease-in-out infinite; }
+}
+
+/* ─── Keyframes ─── */
+@keyframes ico-breathe {
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.06); }
+}
+@keyframes ico-bounce {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-3px); }
+}
+@keyframes ico-float {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50%     { transform: translateY(-2px) rotate(2deg); }
+}
+@keyframes ico-twinkle {
+  0%,100% { transform: scale(1)   rotate(0deg);  filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+  50%     { transform: scale(1.18) rotate(15deg); filter: drop-shadow(0 0 6px rgba(255,255,200,0.85)); }
+}
+@keyframes ico-pulse {
+  0%,100% { transform: scale(1);   opacity: 0.92; }
+  50%     { transform: scale(1.08); opacity: 1; }
+}
+@keyframes ico-glow {
+  0%,100% { box-shadow: 0 0 0 0 rgba(122,240,255,0.55), 0 0 0 0 rgba(122,240,255,0); }
+  50%     { box-shadow: 0 0 0 4px rgba(122,240,255,0.18), 0 0 18px 4px rgba(122,240,255,0.35); }
+}
+@keyframes ico-mic-rec {
+  0%,100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(229,57,53,0.55); }
+  50%     { transform: scale(1.10); box-shadow: 0 0 0 8px rgba(229,57,53,0.05); }
+}
+@keyframes ico-coin-flip {
+  0%,80%,100% { transform: rotateY(0); }
+  90%         { transform: rotateY(360deg); }
+}
+@keyframes ico-wiggle {
+  0%,100% { transform: rotate(0); }
+  25%     { transform: rotate(-8deg); }
+  75%     { transform: rotate(8deg); }
+}
+@keyframes ico-shake-soft {
+  0%,92%,100% { transform: rotate(0); }
+  94%         { transform: rotate(-6deg); }
+  96%         { transform: rotate(6deg); }
+  98%         { transform: rotate(-3deg); }
+}
+
+/* ─── Magia opt-in (VSMagia) ─── */
+/* Glint: brilho passando — dispara só quando .vs-glint é adicionado por JS */
+.vs-glint { position: relative; overflow: hidden; }
+.vs-glint::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.45) 50%, transparent 70%);
+  transform: translateX(-100%);
+  animation: vs-glint 1s ease-out;
+  pointer-events: none;
+}
+@keyframes vs-glint { to { transform: translateX(100%); } }
+
+/* Quase lá: glow âmbar em barras de progresso 90-99% */
+.vs-quase-la {
+  box-shadow: 0 0 0 0 rgba(255,193,7,0.7);
+  animation: vs-quase-la 1.6s ease-in-out infinite;
+}
+@keyframes vs-quase-la {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,193,7,0.5); }
+  50%     { box-shadow: 0 0 0 6px rgba(255,193,7,0.0); }
+}
+
+/* Number rolling: number atualiza com pulse delicado */
+.ws-valor { transition: transform .3s ease; }
+.ws-valor.vs-roll { transform: scale(1.08); }
+
+/* Chips fade-in scroll: cards entram suaves */
+@media (prefers-reduced-motion: no-preference) {
+  .card-info { opacity: 0.96; transition: opacity .4s, transform .25s; }
+  .card-info:hover { opacity: 1; }
+}
+
+/* Streak flame — quanto mais alto streak, mais quente */
+.vs-streak {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-weight: 700; padding: 2px 8px; border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255,143,0,0.25), rgba(255,87,34,0.20));
+  border: 1px solid rgba(255,143,0,0.45);
+  animation: vs-streak-pulse 2.4s ease-in-out infinite;
+}
+@keyframes vs-streak-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,87,34,0.5); }
+  50%     { box-shadow: 0 0 0 6px rgba(255,87,34,0); }
+}
+
+/* Botão fechar universal nos modais — fica fixo no canto top-right pra fácil acesso */
+.modal { position: relative; }
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255,255,255,0.15);
+  color: var(--text, #fff);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+  transition: background 0.15s;
+}
+.modal-close-btn:hover, .modal-close-btn:active {
+  background: rgba(239,68,68,0.7);
+}
+/* Espaço pro X não cobrir o título */
+.modal h3, .modal h2 { padding-right: 36px; }
+
+/* PWA web: carrossel respeita largura do container (nao estoura moldura) */
+@media (min-width: 600px) {
+  .carousel { width: 100%; max-width: 100%; }
+  .carousel-item { width: 100%; }
+}
+
+/* 📢 Avisos oficiais — banner home */
+#avisos-banner .aviso-banner {
+  background: rgba(15,22,32,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  color: var(--zc-text, #e5f6e8);
+}
+#avisos-banner .aviso-banner.urg-emergencia {
+  background: rgba(220,38,38,0.25);
+  border: 1px solid rgba(220,38,38,0.6);
+}
+#avisos-banner .aviso-titulo {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#avisos-banner .aviso-msg {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--zc-hint, #cbd5e1);
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.005); box-shadow: 0 0 16px rgba(220,38,38,0.4); }
+}
+
+/* praia favoritada (duplo-clique/toque longo) — 2026-07-16 */
+.praia-item.praia-favorita{ outline:2px solid var(--accent,#ffd166); box-shadow:0 0 0 2px rgba(255,209,102,.3); position:relative; }
+.praia-item.praia-favorita::after{ content:"⭐"; position:absolute; top:8px; right:8px; font-size:18px; filter:drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
+
+/* ── Roda da comunidade fora da tela de Notificações ── 04/08/2026
+   O ícone da roda é fixo no canto (z-index 9000) e o balão que ele abre é 9001;
+   os dois passavam por cima da lista de avisos. Aqui eles somem enquanto a tela
+   de notificações estiver aberta, e voltam sozinhos ao sair dela.
+   O balão não tem id — é um div com estilo em linha —, então é alvejado pelo
+   próprio z-index. Feito em CSS de propósito: o vs-roda-aside.js está travado
+   com chattr +i e não precisa ser destravado pra isso. */
+body:has(#screen-notif.active) #roda-mini,
+body:has(#screen-notif.active) #roda-peek {
+  display: none !important;
+}

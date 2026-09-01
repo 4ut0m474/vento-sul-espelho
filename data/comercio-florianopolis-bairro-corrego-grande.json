@@ -1,0 +1,906 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Córrego Grande",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-corrego-grande",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Pitibebê",
+   "tipo": "Baby Goods",
+   "emoji": "🏪",
+   "cat": "baby_goods",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Madre Benvenuta 883",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Madre Benvenuta 1056",
+   "link": "https://www.bb.com.br"
+  },
+  {
+   "nome": "Sicoob",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Unicred",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar da Santinha",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chopp do Gus",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua João Pio Duarte Silva 1650",
+   "link": "https://www.choppdogus.com.br/"
+  },
+  {
+   "nome": "Container Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Meu Escritório",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mr. Hoppy",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nefasta Cervejaria",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "ORI Boteco Santa Mônica",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida Madre Benvenuta 1028",
+   "link": ""
+  },
+  {
+   "nome": "dez 55 Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Escritório das Bebidas",
+   "tipo": "Bebidas",
+   "emoji": "🍷",
+   "cat": "alcohol",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arquitetura do Sono",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cama Pimenta",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": "https://www.camapimenta.com.br/contato"
+  },
+  {
+   "nome": "Ortobom",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaçolaser",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lamori",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": "https://chiketaesmalteria.wixsite.com/lamoriestticaeesmalt"
+  },
+  {
+   "nome": "Nuova Donna",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Sérgio Rogério Beins 45",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia CARVE",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Vip",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": "http://www.barbeariavip.com.br/"
+  },
+  {
+   "nome": "Capricho's Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Beauté",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Coronel Maurício Spalding de Souza 1060",
+   "link": ""
+  },
+  {
+   "nome": "Concetto Hair",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Conrado's Barber",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fashion Salão de Beleza",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rossi Cabelereiros",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": "http://rossicabeleireiros.com.br/"
+  },
+  {
+   "nome": "B.Min",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "ComDonuts",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Vera Linhares de Andrade 2126",
+   "link": ""
+  },
+  {
+   "nome": "Family Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lanchonete FEESC",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lanchonete do CETEC",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mané Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panifico",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "AutoMundi Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": "https://www.automundi.com"
+  },
+  {
+   "nome": "DVA Jeep",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Point Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bolo da Felicidade",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Madre Benvenuta 1414",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia São Rafael",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua João Pio Duarte Silva 1630",
+   "link": ""
+  },
+  {
+   "nome": "Pague Menos",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Deputado Antônio Edu Vieira 1926",
+   "link": ""
+  },
+  {
+   "nome": "Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Moldura Minuto",
+   "tipo": "Frame",
+   "emoji": "🏪",
+   "cat": "frame",
+   "end": "",
+   "link": "https://www.molduraminuto.com.br/"
+  },
+  {
+   "nome": "Casa Cléo",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Koerich",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Direto do Campo",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Casa a Caso",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": "http://www.casaacaso.com.br/"
+  },
+  {
+   "nome": "Empório Casa",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mundo Deva",
+   "tipo": "Interior Decoration",
+   "emoji": "🏪",
+   "cat": "interior_decoration",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Larika's Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Quero Quero Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Severo Garage",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": "https://severogarage.com.br/"
+  },
+  {
+   "nome": "Villa Açoriana Pizzaria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": "https://www.pizzariavillaacoriana.com.br"
+  },
+  {
+   "nome": "Lave + Agil",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua João Pio Duarte Silva 1630",
+   "link": ""
+  },
+  {
+   "nome": "Limp à Serv Lavanderia",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua João Pio Duarte Silva",
+   "link": "https://www.limpaseclavanderia.com.br/index.php"
+  },
+  {
+   "nome": "Centro Comercial Germânia",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Construto",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santa Apolônia",
+   "tipo": "Medical Supply",
+   "emoji": "🏪",
+   "cat": "medical_supply",
+   "end": "",
+   "link": "https://www.santaapolonia.com.br/"
+  },
+  {
+   "nome": "Ana Paula",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "SpotMarkt",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua João Pio Duarte Silva 1630",
+   "link": "https://spotmarkt.com.br/corrego"
+  },
+  {
+   "nome": "Angeloni Santa Mônica",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Nirberto Haase 75",
+   "link": "https://www.angeloni.com.br/"
+  },
+  {
+   "nome": "Imperatriz Supermercados",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua João Pio Duarte Silva",
+   "link": "https://www.supermercadosimperatriz.com.br/"
+  },
+  {
+   "nome": "Juan Motos",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "fitland",
+   "tipo": "Nutrition Supplements",
+   "emoji": "🏪",
+   "cat": "nutrition_supplements",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casagrande",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Total Center Car",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua João Pio Duarte Silva 1491",
+   "link": ""
+  },
+  {
+   "nome": "Mint",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rio Branco",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém da Nina",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua João Pio Duarte Silva 114",
+   "link": ""
+  },
+  {
+   "nome": "Crunch Mama | Padaria Artesanal & Pizzaria",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": "https://www.instagram.com/crunch.mama/"
+  },
+  {
+   "nome": "Nobre Pão",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Orlessan",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Deputado Antônio Edu Vieira 1440",
+   "link": ""
+  },
+  {
+   "nome": "Pão à Mão",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": "https://paoamao.com.br/"
+  },
+  {
+   "nome": "Festa e Alegria",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jully Maria",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": "http://www.jullymariapet.com.br/"
+  },
+  {
+   "nome": "Ral Pet",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua João Pio Duarte Silva",
+   "link": ""
+  },
+  {
+   "nome": "Nuova Pet",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Postos Galo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua João Pio Duarte Silva",
+   "link": ""
+  },
+  {
+   "nome": "Balakas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bistrô Varanda",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 1197",
+   "link": ""
+  },
+  {
+   "nome": "Boutique da Carne",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Don Mario Parrilla y Bar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eatsy Restaurante e Cafeteria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1392",
+   "link": "https://linktr.ee/eatsyfloripa"
+  },
+  {
+   "nome": "Espaço Nutrir Restaurante Vegano e Café",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Forneria Catarina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1248",
+   "link": "https://forneriacatarina.com.br/"
+  },
+  {
+   "nome": "Frango & Fritas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 979",
+   "link": ""
+  },
+  {
+   "nome": "Grelhados Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Acadêmico Reinaldo Consoni 406",
+   "link": ""
+  },
+  {
+   "nome": "Ichiro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Kiddo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Tao Sushi Lounge",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 1843",
+   "link": "https://corregogrande.otaosushilounge.com/"
+  },
+  {
+   "nome": "Pizzaria Lenha e Oliva",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://www.lenhaoliva.com.br"
+  },
+  {
+   "nome": "Quatro Estações",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Joe Collaço 107",
+   "link": "http://4estacoesrestaurante.com.br"
+  },
+  {
+   "nome": "Restaurante Santa Mônica",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Sérgio Rogério Beins 25",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Vó Velha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante da Família",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Seu Caetano Restaurante e Hamburgueria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 22",
+   "link": ""
+  },
+  {
+   "nome": "Sushi Vibe",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Frostbier Pub",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "João Pio Duarte Silva 331",
+   "link": ""
+  },
+  {
+   "nome": "Tradição",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 277",
+   "link": ""
+  },
+  {
+   "nome": "Uncle Joe's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1167",
+   "link": ""
+  },
+  {
+   "nome": "Wamaki",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "http://wamaki.com.br"
+  },
+  {
+   "nome": "Zeppelin Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Madre Benvenuta 1025",
+   "link": ""
+  },
+  {
+   "nome": "Charme Blanc Uniformes e Jalecos",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lazer Veste Você",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lua de Papel",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Avenida Madre Benvenuta 809",
+   "link": "https://luadepapel.com.br/"
+  },
+  {
+   "nome": "Max Gelateria",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Portobello Shop",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Avenida Madre Benvennuta 690",
+   "link": ""
+  },
+  {
+   "nome": "Santa Adega",
+   "tipo": "Wine",
+   "emoji": "🏪",
+   "cat": "wine",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

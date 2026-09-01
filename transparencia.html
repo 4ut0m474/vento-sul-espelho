@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📊 Transparência — Vento Sul</title>
+<style>
+  :root { --bg:#0a0e14; --card:#131a23; --line:#1f2937; --txt:#e5e7eb; --muted:#94a3b8;
+          --accent:#06b6d4; --good:#10b981; --magic:#a855f7; --gold:#fbbf24; }
+  *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+  body{background:radial-gradient(ellipse at top,rgba(6,182,212,0.12),#0a0e14);color:var(--txt);min-height:100vh;padding:20px;line-height:1.6}
+  main{max-width:780px;margin:0 auto}
+  h1{font-size:32px;margin-bottom:10px;background:linear-gradient(90deg,var(--good),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .sub{color:var(--muted);margin-bottom:30px;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:18px}
+  .card h2{font-size:18px;margin-bottom:10px;color:var(--gold)}
+  .num{font-size:28px;font-weight:800;color:var(--accent);margin:6px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0}
+  .stat{background:rgba(255,255,255,0.04);padding:14px;border-radius:10px;text-align:center}
+  .stat .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+  .stat .v{font-size:22px;font-weight:700;color:var(--gold);margin-top:4px}
+  .fase-atual{background:linear-gradient(135deg,rgba(16,185,129,0.15),rgba(6,182,212,0.10));border:1px solid var(--good);border-radius:14px;padding:18px;text-align:center;margin:20px 0}
+  .fase-atual .label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
+  .fase-atual .nome{font-size:26px;color:var(--good);font-weight:800;margin:6px 0}
+  pre{background:rgba(0,0,0,0.4);padding:14px;border-radius:10px;overflow-x:auto;font-size:12px;color:#7df}
+  a{color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-size:11px;text-transform:uppercase;font-weight:600}
+</style><script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head><body>
+<main>
+<div id="vs-numeros"></div>
+  <p style="margin-bottom:14px"><a href="/" style="font-size:13px">← Vento Sul</a> · <a href="/manifesto.html" style="font-size:13px">📜 Manifesto</a></p>
+  <h1>📊 Transparência</h1>
+  <p class="sub">Tudo aberto. Quanto entra, quanto cobre o hub, quanto vira promoção pra galera.</p>
+
+  <div class="fase-atual">
+    <div class="label">Fase atual</div>
+    <div class="nome">🌱 FASE 1 — Semente</div>
+    <div style="font-size:14px;color:var(--muted);margin-top:6px">até 50% mantém o app no ar (servidor + manutenção + fundador) até se pagar · depois 1% fundador · 99% comunidade</div>
+  </div>
+
+  <div class="card" style="border-color:rgba(52,211,153,0.4)">
+    <h2>📡 Estado real agora <span style="font-size:11px;color:var(--muted);font-weight:400">(ao vivo, sem maquiagem)</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
+      <div class="stat"><div class="lbl">Usuários no app</div><div class="v" id="er-users">…</div></div>
+      <div class="stat"><div class="lbl">Novos (7 dias)</div><div class="v" id="er-novos">…</div></div>
+      <div class="stat"><div class="lbl">Comerciantes pagantes</div><div class="v" id="er-comerc">…</div></div>
+      <div class="stat"><div class="lbl">Receita até hoje</div><div class="v" id="er-receita">…</div></div>
+      <div class="stat"><div class="lbl">Em pools (volta pra galera)</div><div class="v" id="er-pools">…</div></div>
+      <div class="stat"><div class="lbl">Barracas no mapa</div><div class="v" id="er-barracas">…</div></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px" id="er-ts">Puxado direto do banco — se tá zerado, é porque é zero mesmo. A gente não infla número.</p>
+  </div>
+
+  <div class="card">
+    <h2>💰 Custo mensal <span style="font-size:11px;color:var(--muted);font-weight:400">(estimativa)</span></h2>
+    <table>
+      <tr><th>Item</th><th>R$/mês</th></tr>
+      <tr><td>Hetzner Feiosão (servidor cloud)</td><td>R$ 230</td></tr>
+      <tr><td>Cloudflare Pages + R2 + Workers</td><td>R$ 0 (free)</td></tr>
+      <tr><td>Supabase Pro</td><td>R$ 0 (free hoje)</td></tr>
+      <tr><td>APIs IA (Cerebras + SambaNova free)</td><td>R$ 0</td></tr>
+      <tr><td>IA paga API (Haiku eventual)</td><td>~R$ 50</td></tr>
+      <tr><td>Domínios amortizados</td><td>R$ 5</td></tr>
+      <tr><th>TOTAL</th><th style="color:var(--gold)">~R$ 285</th></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>👥 Usuários ativos hoje</h2>
+    <div class="num" id="users-ativos">…</div>
+    <p style="font-size:13px;color:var(--muted)">Atualizado a cada hora pela métrica do app</p>
+  </div>
+
+  <div class="card">
+    <h2>🧮 Fórmula aberta</h2>
+<pre>preço = custo real do hub ÷ pagantes ativos
+500 pagantes cobrem o hub. excedente vira PROMOÇÃO pros clientes.
+
+  Fase 1 (semente, AGORA) → o app ainda não se paga: até 50% cobre
+                            servidor + manutenção + um mínimo pro fundador.
+                            O resto volta pra comunidade.
+  Fase 2 (quando se pagar)→ 1% fundador · 99% volta pra comunidade · pra sempre</pre>
+  </div>
+
+  <div class="card">
+    <h2>📈 Metas das fases</h2>
+    <div class="grid">
+      <div class="stat"><div class="lbl">Hub atende até</div><div class="v">5 000 pessoas</div></div>
+      <div class="stat"><div class="lbl">Hub paga custo a partir de</div><div class="v">500 pagantes</div></div>
+      <div class="stat"><div class="lbl">Hoje</div><div class="v" id="users-ativos-2">…</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="background:linear-gradient(135deg,rgba(168,85,247,0.10),rgba(6,182,212,0.06));border-color:var(--magic)">
+    <h2 style="color:var(--magic)">📜 Por que abrimos isso?</h2>
+    <p>Startup de impacto só funciona com transparência. Se a conta tá aberta, ninguém duvida que é preço de custo. Tu vê o que entra, vê quanto cobre o hub, e vê quanto vira <strong>promoção pros clientes</strong>. Dindin volta pra galera, sempre.</p>
+    <p style="margin-top:10px"><strong>Marco Legal Startups (LC 182/2021)</strong> + <strong>Res BCB 4.122</strong> garantem o modelo legal. <strong>Esta página</strong> garante a confiança.</p>
+  </div>
+
+  <div id="pools" style="margin-top:20px">
+    <h2 style="font-size:20px;color:var(--gold);margin-bottom:6px">💰 Pools SulCoin — Floripa-SC (saldos vivos)</h2>
+    <p style="font-size:12px;color:var(--muted);margin-bottom:14px">
+      Cada R$ que entra é distribuído em 9 pools (3 principais + 3 propaganda + 3 prêmios) conforme a fase atual.
+      A página <a href="/carteira.html" style="color:var(--gold)">/carteira.html</a> mostra a auditoria <em>antes</em> de cada compra. Atualiza a cada 30s.
+    </p>
+
+    <div class="card" style="border-color:var(--accent)">
+      <h2 style="color:var(--accent)">🏛️ Pools principais</h2>
+      <div class="grid" id="pools-coop"></div>
+    </div>
+
+    <div class="card" style="border-color:var(--magic)">
+      <h2 style="color:var(--magic)">📢 Propaganda regional</h2>
+      <p style="font-size:11px;color:var(--muted);margin-bottom:8px">3 vetores de tráfego — sem nenhum deles, o motor trava.</p>
+      <div class="grid" id="pools-prop"></div>
+    </div>
+
+    <div class="card" style="border-color:var(--gold)">
+      <h2 style="color:var(--gold)">🎯 Prêmios e missões</h2>
+      <p style="font-size:11px;color:var(--muted);margin-bottom:8px">Recompensa pra quem move a rede (desbravadores, jogadores Aurora, viewers).</p>
+      <div class="grid" id="pools-prem"></div>
+    </div>
+
+    <p style="font-size:11px;color:var(--muted);text-align:right">
+      Última atualização: <span id="pools-update">…</span>
+    </p>
+  </div>
+
+  <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:30px">
+    📂 Atualizado automaticamente · próxima atualização: <span id="prox-update">…</span>
+  </p>
+</main>
+<script src="/config.js"></script>
+<script src="/shared/economia.js?v=20260825"></script>
+<script>
+// Fonte única: config.js → VSEconomia (espelho do whitepaper). Sem chave solta aqui.
+const SUPA = window.VENTOSUL_CONFIG?.SUPABASE_URL || "https://vdrzndgkwdpibexjkyxi.supabase.co";
+const ANON = window.VENTOSUL_CONFIG?.SUPABASE_ANON || "sb_publishable_UuXuHUDxe7nmhE-Z9qu-0w_1tv2IrvC";
+try { VSEconomia.init({ supaUrl: SUPA, apiKey: ANON }); }
+catch (e) { console.warn("VSEconomia indisponível, usando fetch direto:", e); }
+
+const POOL_INFO = {
+  app:                      { emoji: "⚙️",  nome: "Custo do app",     cor: "var(--accent)", grupo: "coop" },
+  fundador:                 { emoji: "👤",  nome: "Fundador",          cor: "var(--muted)",  grupo: "coop" },
+  promocoes_devolucao:      { emoji: "🎁",  nome: "Volta pra galera",  cor: "var(--good)",   grupo: "coop" },
+  propaganda_radio:         { emoji: "📻",  nome: "Rádio Vento Sul",   cor: "var(--magic)",  grupo: "prop" },
+  propaganda_jogo:          { emoji: "✨",  nome: "Jogo Aurora",       cor: "var(--magic)",  grupo: "prop" },
+  propaganda_redes_sociais: { emoji: "📱",  nome: "Redes sociais",     cor: "var(--magic)",  grupo: "prop" },
+  premios_missoes_sociais:  { emoji: "🎯",  nome: "Missões sociais",   cor: "var(--gold)",   grupo: "prem" },
+  premios_quests_jogo:      { emoji: "⚔️",  nome: "Quests Aurora",     cor: "var(--gold)",   grupo: "prem" },
+  premios_assistir_video:   { emoji: "🎬",  nome: "Assistir vídeo",    cor: "var(--gold)",   grupo: "prem" },
+  // Agregados antigos (read-only, exibidos só se ainda têm saldo histórico)
+  propaganda:               { emoji: "📣",  nome: "Propaganda (legado)", cor: "var(--muted)", grupo: "legado" },
+  premios:                  { emoji: "🏆",  nome: "Prêmios (legado)",    cor: "var(--muted)", grupo: "legado" },
+};
+
+const ORDEM_COOP = ["app", "fundador", "promocoes_devolucao"];
+const ORDEM_PROP = ["propaganda_radio", "propaganda_jogo", "propaganda_redes_sociais"];
+const ORDEM_PREM = ["premios_missoes_sociais", "premios_quests_jogo", "premios_assistir_video"];
+
+function cardPool(p, info) {
+  const reais = (Number(p.saldo_centavos || 0) / 100).toFixed(2).replace(".", ",");
+  const mov = p.movimentos_count || 0;
+  const wp = window.VSEconomia?.MAPA_POOLS_WP?.[p.pool_id];
+  const div = document.createElement("div");
+  div.className = "stat";
+  div.innerHTML = `
+    <div class="lbl">${info.emoji} ${info.nome}</div>
+    <div class="v" style="color:${info.cor}">R$ ${reais}</div>
+    <div style="font-size:10px;color:var(--muted);margin-top:4px">${mov} movimento${mov === 1 ? '' : 's'}${wp ? ' · pool WP: ' + wp : ''}</div>
+  `;
+  return div;
+}
+
+function preencher(gridId, ordem, dados) {
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+  grid.innerHTML = "";
+  for (const k of ordem) {
+    const p = (dados || []).find(x => x.pool_id === k) || { saldo_centavos: 0, movimentos_count: 0 };
+    grid.appendChild(cardPool(p, POOL_INFO[k]));
+  }
+}
+
+async function carregarPools() {
+  try {
+    let arr;
+    if (window.VSEconomia) {
+      arr = await VSEconomia.poolsFloripa("floripa-sc");
+    } else {
+      const r = await fetch(SUPA + "/rest/v1/transparencia_pools?region_id=eq.floripa-sc",
+        { headers: { apikey: ANON, Authorization: "Bearer " + ANON } });
+      arr = await r.json();
+    }
+    preencher("pools-coop", ORDEM_COOP, arr);
+    preencher("pools-prop", ORDEM_PROP, arr);
+    preencher("pools-prem", ORDEM_PREM, arr);
+    document.getElementById("pools-update").textContent =
+      new Date().toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  } catch (e) {
+    ["pools-coop","pools-prop","pools-prem"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<div class="stat"><div class="lbl">Falha</div><div class="v">—</div></div>';
+    });
+  }
+}
+
+fetch(SUPA + "/rest/v1/feira_barracas?select=count&ativa=eq.true", {
+  headers: { "apikey": ANON, "Prefer": "count=exact", "Range": "0-0" }
+}).then(r => r.headers.get("content-range")?.split("/")[1] || "—").then(n => {
+  const ua = document.getElementById("users-ativos"); if(ua) ua.textContent = n + " barracas cadastradas";
+  const u2 = document.getElementById("users-ativos-2"); if(u2) u2.textContent = n;
+  const eb = document.getElementById("er-barracas"); if(eb) eb.textContent = n;
+}).catch(() => {});
+
+// 📡 Estado real agora — puxa números honestos do banco (sem maquiagem)
+async function estadoReal() {
+  try {
+    let d;
+    if (window.VSEconomia) {
+      d = await VSEconomia.dashboardTransparencia();
+    } else {
+      const r = await fetch(SUPA + "/rest/v1/rpc/dashboard_transparencia", {
+        method: "POST",
+        headers: { apikey: ANON, Authorization: "Bearer " + ANON, "Content-Type": "application/json" },
+        body: "{}"
+      });
+      d = await r.json();
+    }
+    const brl = c => "R$ " + (Number(c||0)/100).toFixed(2).replace(".", ",");
+    const set = (id,v) => { const e=document.getElementById(id); if(e) e.textContent=v; };
+    set("er-users",   (d.users_total ?? 0).toLocaleString("pt-BR"));
+    set("er-novos",   "+" + (d.novos_7d ?? 0));
+    set("er-comerc",  d.comerciantes ?? 0);
+    set("er-receita", brl(d.receita_centavos));
+    set("er-pools",   brl(d.pool_total_centavos));
+    if (d.gerado_em) set("er-ts", "Puxado do banco em " + new Date(d.gerado_em).toLocaleString("pt-BR") +
+      " — se tá zerado, é zero mesmo. A gente não infla número.");
+  } catch(e) {
+    ["er-users","er-novos","er-comerc","er-receita","er-pools"].forEach(id=>{
+      const el=document.getElementById(id); if(el) el.textContent="—"; });
+  }
+}
+estadoReal();
+setInterval(estadoReal, 60000);
+document.getElementById("prox-update").textContent = new Date(Date.now()+3600000).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+
+carregarPools();
+setInterval(carregarPools, 30000);
+</script>
+  <!-- Oráculo de Silício — auditoria tech -->
+  <div class="card" style="margin-top:16px;background:linear-gradient(135deg,rgba(167,139,250,0.10),rgba(34,211,238,0.06));border-color:rgba(167,139,250,0.4)">
+    <h2 style="color:#a78bfa">🔮 Oráculo de Silício — auditoria tecnológica</h2>
+    <p>Todas as ferramentas que fazem o app funcionar são monitoradas <strong>todo dia às 06h</strong> por uma IA local. Se algum serviço mudar de preço, parar de ser mantido ou der sinal de problema, existe um histórico completo de sinais coletados que explica o porquê.</p>
+    <p style="margin-top:10px">Isso é prova auditável: se algo falhar, não foi surpresa — estava sendo monitorado.</p>
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+      <span id="transp-orc-sinais" style="background:rgba(125,211,252,0.1);border:1px solid rgba(125,211,252,0.3);border-radius:20px;padding:4px 12px;font-size:12px;color:#7dd3fc">📡 carregando sinais…</span>
+      <span id="transp-orc-tools" style="background:rgba(134,239,172,0.1);border:1px solid rgba(134,239,172,0.3);border-radius:20px;padding:4px 12px;font-size:12px;color:#86efac">🛠️ 18 ferramentas</span>
+      <span style="background:rgba(167,139,250,0.1);border:1px solid rgba(167,139,250,0.3);border-radius:20px;padding:4px 12px;font-size:12px;color:#a78bfa">🤖 análise com IA local (R/bin/bash)</span>
+    </div>
+    <p style="margin-top:14px"><a href="/oraculo-status.html" style="color:#a78bfa;font-weight:600">→ Ver status completo do sistema</a></p>
+  </div>
+
+<script>
+(async () => {
+  try {
+    const d = await fetch('/oraculo-status.json?v='+Date.now()).then(r=>r.json());
+    const s = document.getElementById('transp-orc-sinais');
+    const t = document.getElementById('transp-orc-tools');
+    if (s) s.textContent = '📡 '+d.coleta.total_sinais+' sinais coletados';
+    if (t) t.textContent = '🛠️ '+d.ferramentas.length+' ferramentas';
+  } catch(e){}
+})();
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="admin"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/config.js"></script>
+<script src="/shared/vs-numeros-reais.js?v=2" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+</body></html>

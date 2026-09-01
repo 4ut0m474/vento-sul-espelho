@@ -1,0 +1,58 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Santinho",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-santinho",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Casa da Marilu",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão do Jornalista 135",
+   "link": "https://www.booking.com/hotel/br/casa-da-marilu.pt-br.html"
+  },
+  {
+   "nome": "Casa da Marilu Prime",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão Andorinhas do Costão 61",
+   "link": "https://www.booking.com/hotel/br/casa-da-marilu-prime.pt-br.html"
+  },
+  {
+   "nome": "Amsterdam Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Estrada Vereador Onildo Lemos 745",
+   "link": ""
+  },
+  {
+   "nome": "Camping e Hostel Recanto do Santinho",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Rua Raul Pereira Caldas 21",
+   "link": "https://www.campingrecantodosantinho.com.br/"
+  },
+  {
+   "nome": "Chega Mash Quiridu",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Vereador Onildo Lemos 2298",
+   "link": ""
+  },
+  {
+   "nome": "Rancho do Pescador",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

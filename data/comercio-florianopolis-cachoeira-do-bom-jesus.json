@@ -1,0 +1,338 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Cachoeira do Bom Jesus",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-cachoeira-do-bom-jesus",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Belluno Apart Hotel",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Leonel Pereira (Nelito) 78",
+   "link": ""
+  },
+  {
+   "nome": "La Alhambra Apart Hotel",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida Luiz Boiteux Piazza 3437",
+   "link": "https://pt.apartlaalhambra.com/"
+  },
+  {
+   "nome": "La Ville Residence Cachoeira",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Pousada do Mar",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida Luiz Boiteux Piazza 3177",
+   "link": ""
+  },
+  {
+   "nome": "Praias Brancas Resort",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida Luiz Boiteux Piazza 3771",
+   "link": "http://www.resortpraiasbrancas.com"
+  },
+  {
+   "nome": "Residencial Canna Verde",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Leonel Pereira (Nelito) 40",
+   "link": ""
+  },
+  {
+   "nome": "Água Doce",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida Luiz Boiteux Piazza 2528",
+   "link": ""
+  },
+  {
+   "nome": "Café + Office",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Nero Caffé",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cachoeira",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  },
+  {
+   "nome": "Farmácias São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": "https://www.saojoaofarmacias.com.br/"
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Komprão Utilidades",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Avenida Luiz Boiteux Piazza 3955",
+   "link": ""
+  },
+  {
+   "nome": "Sacolão Cachoeira",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Residencial Carolina",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Recanto Forte",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Parador da Cachoeira",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Luiz Boiteux Piazza 4001",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Recanto dos Bambus",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Torres da Cachoeira",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Luiz Boiteux Piazza 3991",
+   "link": "https://www.hoteltorresdacachoeira.com/"
+  },
+  {
+   "nome": "Acaí",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  },
+  {
+   "nome": "Ozzy Dog Cachoeira",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Gringo Burger",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Casa Norte",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Serra e Mar",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Leonel Pereira (Nelito) 1144",
+   "link": ""
+  },
+  {
+   "nome": "Forte",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Fênix",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Dande PetCenter",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Avenida Luiz Boiteux Piazza 2616",
+   "link": "https://www.dande.com.br/"
+  },
+  {
+   "nome": "Beach Posto",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Postos Galo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Luiz Boiteux Piazza",
+   "link": ""
+  },
+  {
+   "nome": "Lemúria Aparts",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Servidão Maria Serafina Oliveira 139",
+   "link": "https://www.lemuriabrasil.com/"
+  },
+  {
+   "nome": "Boka's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Leonel Pereira (Nelito) 330",
+   "link": ""
+  },
+  {
+   "nome": "Casa Barcellos Restaurante Pizzaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chefs Restaurantes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Leonel Pereira (Nelito) 712",
+   "link": "https://www.instagram.com/chefs.cozinha/"
+  },
+  {
+   "nome": "La Rotiseria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Oitaliano",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  },
+  {
+   "nome": "Pizza di Pietre",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Elba d'Italia",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Luiz Boiteux Piazza 3481",
+   "link": "https://www.pizzeriaelba.com.br/"
+  },
+  {
+   "nome": "Restaurante Il Caravaggio",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Luiz Boiteux Piazza 3180",
+   "link": "https://ilcaravaggio.com.br/"
+  },
+  {
+   "nome": "Tea House Floripa Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Flamboyants 5",
+   "link": ""
+  },
+  {
+   "nome": "Brechó da Serte",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Donna Pria",
+   "tipo": "Yes",
+   "emoji": "🏪",
+   "cat": "yes",
+   "end": "Rua Leonel Pereira (Nelito)",
+   "link": ""
+  }
+ ]
+}

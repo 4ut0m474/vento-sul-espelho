@@ -1,0 +1,226 @@
+{
+ "atualizado": "2026-08-29T23:00:06",
+ "local": "Barra da Lagoa",
+ "tempo": {
+  "temp_c": 17.8,
+  "sensacao_c": 17.6,
+  "codigo": 51,
+  "vento_kmh": 20.0,
+  "vento_graus": 176,
+  "vento_dir": "S",
+  "umidade": 97,
+  "dias": [
+   {
+    "data": "2026-08-29",
+    "codigo": 95,
+    "max_c": 21.0,
+    "min_c": 17.4,
+    "chuva_pct": 98,
+    "vento_max_kmh": 26.3
+   },
+   {
+    "data": "2026-08-30",
+    "codigo": 95,
+    "max_c": 19.6,
+    "min_c": 17.2,
+    "chuva_pct": 100,
+    "vento_max_kmh": 20.7
+   },
+   {
+    "data": "2026-08-31",
+    "codigo": 95,
+    "max_c": 19.3,
+    "min_c": 17.3,
+    "chuva_pct": 100,
+    "vento_max_kmh": 13.0
+   },
+   {
+    "data": "2026-09-01",
+    "codigo": 63,
+    "max_c": 22.4,
+    "min_c": 16.6,
+    "chuva_pct": 96,
+    "vento_max_kmh": 28.6
+   },
+   {
+    "data": "2026-09-02",
+    "codigo": 2,
+    "max_c": 20.3,
+    "min_c": 12.2,
+    "chuva_pct": 2,
+    "vento_max_kmh": 19.6
+   }
+  ]
+ },
+ "fonte": "Open-Meteo Marine (modelo)",
+ "lua": {
+  "emoji": "🌖",
+  "nome": "Minguante gibosa",
+  "iluminacao": 87,
+  "ciclo": 17
+ },
+ "agora": {
+  "onda_m": 0.84,
+  "periodo_s": 6.2,
+  "dir": "SE",
+  "mare_m": 0.19,
+  "tendencia": "↑ enchendo",
+  "classe": "Mar leve"
+ },
+ "mares": [
+  {
+   "tipo": "Preamar",
+   "hora": "02:00",
+   "dia": "08-30",
+   "nivel_m": 0.57
+  },
+  {
+   "tipo": "Baixamar",
+   "hora": "09:00",
+   "dia": "08-30",
+   "nivel_m": -0.34
+  },
+  {
+   "tipo": "Preamar",
+   "hora": "15:00",
+   "dia": "08-30",
+   "nivel_m": 0.41
+  },
+  {
+   "tipo": "Baixamar",
+   "hora": "21:00",
+   "dia": "08-30",
+   "nivel_m": -0.1
+  }
+ ],
+ "horas": [
+  {
+   "t": "2026-08-29T23:00",
+   "onda_m": 0.84,
+   "periodo_s": 6.2,
+   "dir": "SE",
+   "mare_m": 0.19,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T02:00",
+   "onda_m": 0.8,
+   "periodo_s": 6.25,
+   "dir": "SE",
+   "mare_m": 0.57,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T05:00",
+   "onda_m": 0.72,
+   "periodo_s": 6.45,
+   "dir": "SE",
+   "mare_m": 0.21,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T08:00",
+   "onda_m": 0.68,
+   "periodo_s": 6.55,
+   "dir": "L",
+   "mare_m": -0.29,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T11:00",
+   "onda_m": 0.66,
+   "periodo_s": 6.6,
+   "dir": "L",
+   "mare_m": -0.16,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T14:00",
+   "onda_m": 0.66,
+   "periodo_s": 6.65,
+   "dir": "L",
+   "mare_m": 0.38,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T17:00",
+   "onda_m": 0.66,
+   "periodo_s": 6.7,
+   "dir": "L",
+   "mare_m": 0.24,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T20:00",
+   "onda_m": 0.68,
+   "periodo_s": 6.75,
+   "dir": "L",
+   "mare_m": -0.07,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-30T23:00",
+   "onda_m": 0.72,
+   "periodo_s": 6.75,
+   "dir": "L",
+   "mare_m": 0.04,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T02:00",
+   "onda_m": 0.74,
+   "periodo_s": 6.75,
+   "dir": "L",
+   "mare_m": 0.48,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T05:00",
+   "onda_m": 0.78,
+   "periodo_s": 6.75,
+   "dir": "L",
+   "mare_m": 0.26,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T08:00",
+   "onda_m": 0.82,
+   "periodo_s": 6.85,
+   "dir": "L",
+   "mare_m": -0.17,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T11:00",
+   "onda_m": 0.84,
+   "periodo_s": 6.95,
+   "dir": "SE",
+   "mare_m": -0.18,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T14:00",
+   "onda_m": 0.84,
+   "periodo_s": 7.0,
+   "dir": "SE",
+   "mare_m": 0.27,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T17:00",
+   "onda_m": 0.82,
+   "periodo_s": 7.1,
+   "dir": "L",
+   "mare_m": 0.23,
+   "classe": "Mar leve"
+  },
+  {
+   "t": "2026-08-31T20:00",
+   "onda_m": 0.8,
+   "periodo_s": 7.1,
+   "dir": "L",
+   "mare_m": -0.08,
+   "classe": "Mar leve"
+  }
+ ]
+}

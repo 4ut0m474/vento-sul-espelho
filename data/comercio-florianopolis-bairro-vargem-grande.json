@@ -1,0 +1,114 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Vargem Grande",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-vargem-grande",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Mauro Açougue",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "Estrada Cristóvão Machado de Campos 899",
+   "link": ""
+  },
+  {
+   "nome": "Casas das Água",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": "https://www.casasdaagua.com.br/"
+  },
+  {
+   "nome": "Havan",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": "https://www.havan.com.br/"
+  },
+  {
+   "nome": "Farmácia Shop Farma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Estrada Cristóvão Machado de Campos 411",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Nossa Senhora de Fátima",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Estrada Cristóvão Machado de Campos 1379",
+   "link": "https://www.pousadasenhoradefatima.com.br/"
+  },
+  {
+   "nome": "Gesso Teto Materiais de Construção",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Super Norte",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Livia Panificadora",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Estrada Cristóvão Machado de Campos",
+   "link": ""
+  },
+  {
+   "nome": "Oriente Sushi Lounge",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Cristóvão Machado de Campos 908",
+   "link": ""
+  },
+  {
+   "nome": "Marízia Confecções",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sorveteria Sorvetini",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fort Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Marginal da SC-403",
+   "link": "https://www.fortatacadista.com.br/"
+  },
+  {
+   "nome": "Eletrosol Materiais de Construção",
+   "tipo": "Yes",
+   "emoji": "🏪",
+   "cat": "yes",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

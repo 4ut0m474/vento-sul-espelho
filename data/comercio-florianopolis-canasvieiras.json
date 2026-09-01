@@ -1,0 +1,442 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Canasvieiras",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-canasvieiras",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Relojoaria Maresia",
+   "tipo": "Antiques",
+   "emoji": "🏪",
+   "cat": "antiques",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Apart Hotel Lacabana",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bela Vista",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Afonso Cardoso da Veiga",
+   "link": ""
+  },
+  {
+   "nome": "Casa Floripa",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Desembargador Rid Silva 354",
+   "link": ""
+  },
+  {
+   "nome": "Edificio Palm Beach",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Rodolfo Hickel 649",
+   "link": "http://bit.do/palmbeach"
+  },
+  {
+   "nome": "Flat Amsterdam",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Rodolfo Hickel 400",
+   "link": "http://www.flatamsterdam.com.br/"
+  },
+  {
+   "nome": "Flat Gean Guilherme",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Afonso Cardoso da Veiga 364",
+   "link": ""
+  },
+  {
+   "nome": "Lexus Plaza Apartamentos",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Hypólito Gregório Pereira 745",
+   "link": "http://hotellexusresidence.com.br/"
+  },
+  {
+   "nome": "Residencial Arvoredo",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Apóstolo Paschoal 528",
+   "link": "http://www.canasvieiras.com.br/arvoredo/"
+  },
+  {
+   "nome": "Residencial Kremer",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Doutor João de Oliveira 165",
+   "link": ""
+  },
+  {
+   "nome": "Residencial Las Rocas",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua dos Eucaliptos 537",
+   "link": "https://residenciallasrocas.com/"
+  },
+  {
+   "nome": "Residencial Lexus Beira Mar",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Doutor Antônio Prudente de Morais 814",
+   "link": "http://www.lexusbeiramar.com.br/"
+  },
+  {
+   "nome": "Residencial Robert",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Waldemiro José Carlsson 236",
+   "link": ""
+  },
+  {
+   "nome": "Village Praia",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Rodolfo Hickel 704",
+   "link": "http://www.villagepraia.com/"
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Hypólito Gregório Pereira 349",
+   "link": ""
+  },
+  {
+   "nome": "Eric Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Avenida Professor Milton Leite da Costa 520",
+   "link": ""
+  },
+  {
+   "nome": "Cup",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Agafarma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida das Nações 139",
+   "link": "https://agafarma.com.br/"
+  },
+  {
+   "nome": "Ganzo",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Madre Maria Villac",
+   "link": ""
+  },
+  {
+   "nome": "Redes Menor Preço",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Madre Maria Villac",
+   "link": ""
+  },
+  {
+   "nome": "São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pé na Areia",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Madre Maria Villac",
+   "link": ""
+  },
+  {
+   "nome": "Direto do Campo",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hostel Canasvieiras",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": "https://www.hostelcanasvieiras.com/"
+  },
+  {
+   "nome": "Apart Hotel Tropicanas",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Mário Lacombe 352",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Lacala Florianópolis",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Apóstolo Paschoal 1359",
+   "link": "https://lacala.hotelflorianopolis.com/br/"
+  },
+  {
+   "nome": "Marina's Palace Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Manoel Mancellos Moura 630",
+   "link": "https://marinashoteis.com.br/"
+  },
+  {
+   "nome": "Palace Praia Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Praça República do Líbano 40",
+   "link": "http://www.palacepraia.com.br/"
+  },
+  {
+   "nome": "Porto Sol Beach",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua das Buganvílias 123",
+   "link": "https://www.hoteisportosol.com.br/"
+  },
+  {
+   "nome": "Residencial Soleil",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Doutor Mário Lacombe 400",
+   "link": "http://soleilfloripa.com"
+  },
+  {
+   "nome": "The Vikings",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Hypólito Gregório Pereira",
+   "link": ""
+  },
+  {
+   "nome": "Deck 22",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Madre Maria Villac 1271",
+   "link": ""
+  },
+  {
+   "nome": "Mercado dos Amigos",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Antônio Heil (Neco)",
+   "link": ""
+  },
+  {
+   "nome": "Poko Preço",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Madre Maria Villac",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Magia",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercados Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida das Nações 192",
+   "link": "https://superimperatriz.com.br/"
+  },
+  {
+   "nome": "Padaria e Confeitaria Mangutti",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua José Daux 73",
+   "link": ""
+  },
+  {
+   "nome": "Posto Guerreiro",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida das Nações",
+   "link": ""
+  },
+  {
+   "nome": "Glicínia",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Maré Mansa",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Doutor João de Oliveira 101",
+   "link": "http://www.maremansafloripa.com.br/"
+  },
+  {
+   "nome": "Pousada Recanto Tropical",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Mário Lacombe 136",
+   "link": ""
+  },
+  {
+   "nome": "Verde Mar",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bom Paladar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Buono Beach Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Clorinda Ventimiglia 180",
+   "link": ""
+  },
+  {
+   "nome": "Candeias",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cheers",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Madre Maria Villac 1476",
+   "link": ""
+  },
+  {
+   "nome": "Costillas Grill Costelaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Professor Milton Leite da Costa 562",
+   "link": "https://www.facebook.com/costillasgrill"
+  },
+  {
+   "nome": "Mamma Mia Resto Bar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Hypólito Gregório Pereira 705",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Sabores da Ilha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Apóstolo Paschoal",
+   "link": ""
+  },
+  {
+   "nome": "Sabor na Boca",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Doutor João de Oliveira 576",
+   "link": ""
+  },
+  {
+   "nome": "Santo Kanto Restobar Floripa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua das Buganvílias 123",
+   "link": ""
+  },
+  {
+   "nome": "Havaianas",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sorvete Mania",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Passeios de Barco",
+   "tipo": "Ticket",
+   "emoji": "🏪",
+   "cat": "ticket",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

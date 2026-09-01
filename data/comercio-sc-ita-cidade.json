@@ -1,0 +1,46 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "sc-ita-cidade",
+ "cidade": "Florianópolis",
+ "slug": "sc-ita-cidade",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Fruteira",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Cerâmica Seara",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Tartari",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  }
+ ]
+}

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>💰 Carteira SulCoin · Vento Sul</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<script src="/config.js"></script>
+<style>
+:root{--bg:#0a0e14;--card:#131a23;--line:#1f2937;--txt:#e5e7eb;--muted:#94a3b8;
+      --acc:#06b6d4;--good:#10b981;--gold:#fbbf24;--magic:#a855f7;--bad:#ef4444;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,sans-serif;}
+body{background:radial-gradient(ellipse at top,rgba(251,191,36,.10),var(--bg));
+     color:var(--txt);min-height:100vh;padding:0 0 80px;}
+
+/* topbar */
+#topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:10px;
+  padding:12px 16px;background:rgba(10,14,20,.9);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(251,191,36,.15);}
+#topbar a{color:var(--acc);text-decoration:none;font-size:20px;line-height:1;}
+#topbar h1{font-size:1rem;font-weight:700;background:linear-gradient(90deg,var(--gold),var(--acc));
+  -webkit-background-clip:text;background-clip:text;color:transparent;}
+#topbar-saldo{margin-left:auto;font-size:.82rem;color:var(--gold);font-weight:700;}
+
+/* saldo hero */
+.saldo-hero{background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(6,182,212,.07));
+  border:1px solid rgba(251,191,36,.4);border-radius:16px;padding:20px;
+  text-align:center;margin:14px 16px 0;}
+.saldo-hero .lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:2px;}
+.saldo-hero .v{font-size:44px;font-weight:900;color:var(--gold);margin:4px 0;line-height:1;}
+.saldo-hero .sub{font-size:.78rem;color:var(--muted);}
+.saldo-hero .uid{font-size:.72rem;color:var(--muted);margin-top:6px;word-break:break-all;}
+
+/* tabs */
+.tabs{display:flex;gap:0;overflow-x:auto;padding:0 16px;border-bottom:1px solid var(--line);
+  margin-top:14px;scrollbar-width:none;}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:10px 16px;font-size:.82rem;font-weight:600;color:var(--muted);
+  border-bottom:2.5px solid transparent;cursor:pointer;white-space:nowrap;transition:.2s;}
+.tab.on{color:var(--gold);border-bottom-color:var(--gold);}
+
+/* telas */
+.tela{display:none;padding:16px;}
+.tela.on{display:block;}
+
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px;}
+.card h2{font-size:.88rem;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;}
+label.lb{display:block;font-size:.78rem;color:var(--muted);margin-bottom:5px;margin-top:10px;}
+input[type=text],input[type=email],input[type=number],textarea{
+  width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);
+  color:var(--txt);border-radius:10px;padding:11px 14px;font-size:.92rem;font-family:inherit;outline:none;}
+input:focus,textarea:focus{border-color:rgba(6,182,212,.5);}
+textarea{resize:vertical;min-height:60px;}
+.quick{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.quick button{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--txt);
+  padding:7px 13px;border-radius:20px;font-size:.8rem;cursor:pointer;transition:.15s;}
+.quick button:hover{border-color:var(--acc);color:var(--acc);}
+.btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
+  padding:13px 16px;border:0;border-radius:12px;font-weight:700;font-size:.95rem;
+  cursor:pointer;font-family:inherit;transition:all .15s;margin-top:10px;}
+.btn-primary{background:linear-gradient(135deg,var(--good),var(--acc));color:#fff;}
+.btn-primary:hover{filter:brightness(1.12);}
+.btn-primary:disabled{opacity:.55;cursor:wait;filter:none;}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#f97316);color:#0a0e14;}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line);}
+
+/* histórico */
+.tx{display:flex;justify-content:space-between;align-items:center;padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);font-size:.84rem;}
+.tx:last-child{border:none;}
+.tx .di{color:var(--muted);font-size:.73rem;margin-top:2px;}
+.tx .v.pos{color:var(--good);font-weight:700;}
+.tx .v.neg{color:var(--bad);font-weight:700;}
+.tx .v.neutro{color:var(--muted);font-weight:600;}
+.load-more{width:100%;padding:10px;background:transparent;border:1px solid var(--line);
+  color:var(--muted);border-radius:8px;cursor:pointer;font-size:.8rem;margin-top:8px;}
+
+/* QR code receber */
+.qr-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;padding:8px 0;}
+.qr-img{border-radius:12px;border:3px solid var(--gold);background:#fff;padding:6px;}
+.link-box{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;
+  padding:10px 12px;font-size:.75rem;color:var(--muted);word-break:break-all;
+  font-family:'Courier New',monospace;}
+.share-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;}
+
+/* modal confirmar pagamento */
+#modal-pay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);
+  z-index:100;align-items:center;justify-content:center;padding:16px;}
+#modal-pay.on{display:flex;}
+.modal-box{background:var(--card);border:1px solid rgba(251,191,36,.4);border-radius:18px;
+  padding:24px;max-width:380px;width:100%;text-align:center;}
+.modal-box h2{font-size:1.1rem;margin-bottom:8px;color:var(--gold);}
+.modal-box .big-sulis{font-size:3rem;font-weight:900;color:var(--acc);margin:12px 0;}
+.modal-box .para{font-size:.88rem;color:var(--muted);}
+.modal-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px;}
+
+/* toast */
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(80px);
+  background:var(--card);border:1px solid var(--good);color:#a7f3d0;
+  padding:12px 20px;border-radius:12px;font-size:.88rem;z-index:200;
+  transition:transform .3s;white-space:nowrap;pointer-events:none;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast.err{border-color:var(--bad);color:#fca5a5;}
+
+/* pill status */
+.pill{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;
+  font-size:.75rem;font-weight:600;}
+.pill-ok{background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.35);color:#a7f3d0;}
+.pill-bad{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);color:#fca5a5;}
+</style>
+<script src="/shared/bg-slideshow.js" data-bg-theme="carteira"></script>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body>
+
+<div id="topbar">
+  <a href="/minha-area.html">←</a>
+  <h1>💰 Carteira SulCoin</h1>
+  <span id="topbar-saldo">— ⚡</span>
+</div>
+
+<!-- SALDO HERO -->
+<div class="saldo-hero">
+  <div class="lbl">Saldo livre</div>
+  <div class="v" id="hero-saldo">—</div>
+  <div class="sub">
+    <span id="hero-bloq" style="color:var(--muted)">bloqueado: — ⚡</span> &nbsp;·&nbsp;
+    <span id="hero-reais">≈ R$ —</span>
+  </div>
+  <div class="uid" id="hero-uid">carregando…</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab on" data-t="enviar">💸 Enviar</div>
+  <div class="tab" data-t="receber">📥 Receber</div>
+  <div class="tab" data-t="historico">📋 Histórico</div>
+  <div class="tab" data-t="converter">🪙 Converter</div>
+</div>
+
+<!-- ══════════════════════ ENVIAR ══════════════════════ -->
+<div class="tela on" id="t-enviar">
+  <div class="card">
+    <h2>💸 Enviar Sulis como mensagem</h2>
+    <label class="lb" for="env-email">Para (e-mail da conta Vento Sul)</label>
+    <input id="env-email" type="email" placeholder="amigo@gmail.com">
+
+    <label class="lb" for="env-qtd">Quantidade de Sulis ⚡</label>
+    <input id="env-qtd" type="number" min="1" max="999999" placeholder="50">
+    <div class="quick">
+      <button data-q="1">1 ⚡</button>
+      <button data-q="5">5 ⚡</button>
+      <button data-q="10">10 ⚡</button>
+      <button data-q="25">25 ⚡</button>
+      <button data-q="50">50 ⚡</button>
+      <button data-q="100">100 ⚡</button>
+    </div>
+
+    <label class="lb" for="env-msg">Mensagem (opcional)</label>
+    <textarea id="env-msg" rows="2" placeholder="Para o café ☕ obrigado!"></textarea>
+
+    <button class="btn btn-primary" id="btn-enviar">💸 Enviar Sulis agora</button>
+    <div id="env-status" style="margin-top:8px;font-size:.82rem;"></div>
+  </div>
+
+  <div class="card" style="background:rgba(251,191,36,.05);border-color:rgba(251,191,36,.2);">
+    <h2>💡 Como funciona</h2>
+    <p style="font-size:.82rem;color:var(--muted);line-height:1.6">
+      • 1 Suli = R$ 0,01 &nbsp;·&nbsp; envio é instantâneo e gratuito<br>
+      • O destinatário precisa ter conta no Vento Sul<br>
+      • O histórico completo fica na aba Histórico<br>
+      • Sem taxas entre usuários — você envia 10, chegam 10
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════ RECEBER ══════════════════════ -->
+<div class="tela" id="t-receber">
+  <div class="card">
+    <h2>📥 Meu QR Code · Link de pagamento</h2>
+    <div class="qr-wrap">
+      <img id="qr-img" class="qr-img" width="200" height="200" alt="QR Code de pagamento">
+      <div class="link-box" id="link-box">carregando…</div>
+      <div class="share-btns">
+        <button class="btn btn-gold" id="btn-copiar" style="margin:0">📋 Copiar link</button>
+        <button class="btn btn-primary" id="btn-share" style="margin:0">📤 Compartilhar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💰 Pedir valor específico</h2>
+    <label class="lb" for="req-qtd">Quanto quer receber? (sulis)</label>
+    <input id="req-qtd" type="number" min="1" placeholder="50">
+    <div class="quick">
+      <button data-rq="10">10 ⚡</button>
+      <button data-rq="25">25 ⚡</button>
+      <button data-rq="50">50 ⚡</button>
+      <button data-rq="100">100 ⚡</button>
+    </div>
+    <label class="lb" for="req-msg">Motivo (aparece pra quem paga)</label>
+    <input id="req-msg" type="text" placeholder="Almoço de quinta ☕">
+    <button class="btn btn-gold" id="btn-gerar-link" style="margin-top:10px">🔗 Gerar link com valor</button>
+    <div id="req-result" style="margin-top:10px;"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ HISTÓRICO ══════════════════════ -->
+<div class="tela" id="t-historico">
+  <div class="card">
+    <h2>📋 Todas as movimentações</h2>
+    <div id="hist-list"><p style="color:var(--muted);font-size:.85rem">Carregando…</p></div>
+    <button class="load-more" id="hist-mais" style="display:none">Carregar mais…</button>
+  </div>
+</div>
+
+<!-- ══════════════════════ CONVERTER ══════════════════════ -->
+<div class="tela" id="t-converter">
+  <div class="card">
+    <h2>🪙 Converter R$ em SulCoin</h2>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:14px;line-height:1.6">
+      1 SC = R$ 0,01 · cada conversão mostra a auditoria antes de confirmar.<br>
+      Pix integrado em breve — hoje em modo teste interno.
+    </p>
+    <label class="lb" for="vlr">Valor em R$</label>
+    <input id="vlr" type="number" min="1" step="1" placeholder="10" value="10">
+    <div class="quick">
+      <button data-r="5">R$ 5</button>
+      <button data-r="10">R$ 10</button>
+      <button data-r="25">R$ 25</button>
+      <button data-r="50">R$ 50</button>
+      <button data-r="100">R$ 100</button>
+    </div>
+    <button class="btn btn-gold" id="btn-comprar">📋 Ver auditoria e converter</button>
+    <div id="conv-status" style="margin-top:8px;font-size:.82rem;"></div>
+  </div>
+</div>
+
+<!-- MODAL CONFIRMAR PAGAMENTO VIA LINK/QR -->
+<div id="modal-pay">
+  <div class="modal-box">
+    <h2>💸 Confirmar pagamento</h2>
+    <div class="big-sulis"><span id="mp-qtd">—</span> ⚡</div>
+    <div class="para">Enviando para: <strong id="mp-para">—</strong></div>
+    <div id="mp-msg" style="font-size:.8rem;color:var(--muted);margin-top:6px;"></div>
+    <div class="modal-btns">
+      <button class="btn btn-ghost" onclick="fecharModal()" style="margin:0">Cancelar</button>
+      <button class="btn btn-primary" id="btn-modal-confirmar" style="margin:0">✓ Confirmar</button>
+    </div>
+    <div id="mp-status" style="margin-top:10px;font-size:.82rem;"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="/shared/rastreio.js"></script>
+<script src="/shared/supabase.js?v=20260825"></script>
+
+<script>
+const CFG = window.VENTOSUL_CONFIG || {};
+const SUPA_URL = CFG.SUPABASE_URL || "https://vdrzndgkwdpibexjkyxi.supabase.co";
+const ANON = CFG.SUPABASE_ANON_JWT || "sb_publishable_UuXuHUDxe7nmhE-Z9qu-0w_1tv2IrvC";
+
+VSSupabase.init(SUPA_URL, ANON);
+
+let _uid = null, _saldo = 0, _histOffset = 0;
+
+// ── helpers ──────────────────────────────────────────────────────
+function fmt(n){return Math.abs(Number(n)||0).toLocaleString("pt-BR");}
+function dataBr(s){if(!s)return "—";const d=new Date(s);const diff=Math.floor((Date.now()-d)/60000);if(diff<1)return "agora";if(diff<60)return `há ${diff}min`;if(diff<1440)return `há ${Math.floor(diff/60)}h`;if(diff<43200)return `há ${Math.floor(diff/1440)}d`;return d.toLocaleDateString("pt-BR");}
+function toast(msg,bad=false){const t=document.getElementById("toast");t.textContent=msg;t.className="toast show"+(bad?" err":"");clearTimeout(t._t);t._t=setTimeout(()=>t.className="toast",3500);}
+
+async function apiFetch(path,opts={}){
+  const sess=await VSSupabase.getSession?.();
+  const jwt=sess?.access_token||ANON;
+  const res=await fetch(SUPA_URL+"/rest/v1/"+path,{...opts,headers:{"apikey":ANON,"Authorization":"Bearer "+jwt,"Content-Type":"application/json",...(opts.headers||{})}});
+  if(!res.ok)return null;
+  return res.json();
+}
+async function rpcFetch(name,body={}){
+  const sess=await VSSupabase.getSession?.();
+  const jwt=sess?.access_token||ANON;
+  const res=await fetch(SUPA_URL+"/rest/v1/rpc/"+name,{method:"POST",headers:{"apikey":ANON,"Authorization":"Bearer "+jwt,"Content-Type":"application/json"},body:JSON.stringify(body)});
+  if(!res.ok){const e=await res.json().catch(()=>({}));throw new Error(e?.message||"Erro "+res.status);}
+  return res.json();
+}
+
+// ── tabs ─────────────────────────────────────────────────────────
+document.querySelectorAll(".tab").forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll(".tab,.tela").forEach(el=>el.classList.remove("on"));
+    t.classList.add("on");
+    document.getElementById("t-"+t.dataset.t).classList.add("on");
+    if(t.dataset.t==="historico"&&_histOffset===0)carregarHistorico();
+  };
+});
+
+// ── init ─────────────────────────────────────────────────────────
+async function init(){
+  await VSSupabase.ensureSession?.();
+  const sess=await (VSSupabase.getSession?.())||null;
+  _uid=sess?.user?.id||sess?.userId||null;
+
+  if(!_uid){
+    document.getElementById("hero-uid").textContent="Faça login para usar a carteira";
+    document.getElementById("topbar-saldo").textContent="— ⚡";
+    return;
+  }
+
+  document.getElementById("hero-uid").textContent="🔑 ID: "+_uid.slice(0,8)+"… · conta Google vinculada";
+  await rpcFetch("garantir_wallet_free").catch(()=>null); // garante a carteira existir antes de qualquer operação
+  await carregarSaldo();
+  gerarQR();
+
+  // link de pagamento recebido via URL
+  const params=new URLSearchParams(location.search);
+  if(params.has("pagar_para")){
+    abrirModalPagamento(params.get("pagar_para"),parseInt(params.get("qtd")||"0"),params.get("nome")||"",params.get("msg")||"");
+  }
+
+  // abre direto na aba Converter se vier de /carteira.html#converter (ex: botao Recarregar do widget)
+  if(location.hash==="#converter"){
+    document.querySelector(".tab[data-t=converter]")?.click();
+  }
+}
+
+// ── saldo ─────────────────────────────────────────────────────────
+async function carregarSaldo(){
+  try{
+    const rows=await apiFetch("v_my_wallet?limit=1");
+    const w=rows?.[0];
+    _saldo=w?.saldo_livre_sulis??0;
+    const bloq=w?.saldo_bloqueado_sulis??0;
+    const total=w?.saldo_total_sulis??(_saldo+bloq);
+    document.getElementById("hero-saldo").textContent=fmt(_saldo)+" ⚡";
+    document.getElementById("hero-bloq").textContent="bloqueado: "+fmt(bloq)+" ⚡";
+    document.getElementById("hero-reais").textContent="≈ R$ "+(total*0.01).toFixed(2);
+    document.getElementById("topbar-saldo").textContent=fmt(_saldo)+" ⚡";
+  }catch{document.getElementById("hero-saldo").textContent="— ⚡";}
+}
+
+// ── ENVIAR ────────────────────────────────────────────────────────
+document.querySelectorAll(".quick[id] button,[data-q]").forEach(b=>{
+  if(b.dataset.q)b.onclick=()=>document.getElementById("env-qtd").value=b.dataset.q;
+});
+document.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>document.getElementById("env-qtd").value=b.dataset.q);
+
+document.getElementById("btn-enviar").onclick=async()=>{
+  const email=document.getElementById("env-email").value.trim();
+  const qtd=parseInt(document.getElementById("env-qtd").value||"0");
+  const msg=document.getElementById("env-msg").value.trim();
+  const st=document.getElementById("env-status");
+  if(!email){st.innerHTML='<span style="color:var(--bad)">⚠️ Informe o e-mail do destinatário.</span>';return;}
+  if(qtd<1){st.innerHTML='<span style="color:var(--bad)">⚠️ Quantidade inválida.</span>';return;}
+  if(!_uid){st.innerHTML='<span style="color:var(--bad)">⚠️ Faça login primeiro.</span>';return;}
+  if(qtd>_saldo){st.innerHTML='<span style="color:var(--bad)">⚠️ Saldo insuficiente ('+fmt(_saldo)+' ⚡).</span>';return;}
+  const btn=document.getElementById("btn-enviar");
+  btn.disabled=true;btn.textContent="Enviando…";
+  st.innerHTML='';
+  try{
+    const r=await rpcFetch("transferir_sulis_por_email",{p_email:email,p_sulis:qtd,p_mensagem:msg||null});
+    if(r===null||r===false||(r&&r.error)){throw new Error(r?.message||r?.error||"Falha na transferência");}
+    st.innerHTML=`<span style="color:var(--good)">✓ ${fmt(qtd)} ⚡ enviados para ${email}${msg?` — «${msg}»`:""}</span>`;
+    toast("✓ "+fmt(qtd)+" sulis enviados!");
+    document.getElementById("env-email").value="";
+    document.getElementById("env-qtd").value="";
+    document.getElementById("env-msg").value="";
+    await carregarSaldo();
+    _histOffset=0;
+  }catch(e){
+    const msg2=e.message||"";
+    if(msg2.includes("não encontrado")||msg2.includes("not found"))
+      st.innerHTML='<span style="color:var(--bad)">⚠️ E-mail não encontrado no Vento Sul.</span>';
+    else if(msg2.includes("saldo"))
+      st.innerHTML='<span style="color:var(--bad)">⚠️ Saldo insuficiente.</span>';
+    else
+      st.innerHTML=`<span style="color:var(--bad)">⚠️ ${msg2.slice(0,120)}</span>`;
+    toast("Falha ao enviar",true);
+  }finally{btn.disabled=false;btn.textContent="💸 Enviar Sulis agora";}
+};
+
+// ── RECEBER / QR ──────────────────────────────────────────────────
+function gerarQR(){
+  if(!_uid)return;
+  const link=location.origin+"/carteira.html?pagar_para="+_uid;
+  renderQR(link);
+}
+
+function renderQR(link){
+  const enc=encodeURIComponent(link);
+  document.getElementById("qr-img").src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&margin=8&data="+enc;
+  document.getElementById("link-box").textContent=link;
+}
+
+document.getElementById("btn-copiar").onclick=()=>{
+  const link=document.getElementById("link-box").textContent;
+  navigator.clipboard?.writeText(link).then(()=>toast("📋 Link copiado!")).catch(()=>{
+    prompt("Copie o link:",link);
+  });
+};
+
+document.getElementById("btn-share").onclick=()=>{
+  const link=document.getElementById("link-box").textContent;
+  if(navigator.share){
+    navigator.share({title:"💰 Meu QR Vento Sul",text:"Me manda Sulis pelo Vento Sul ⚡",url:link});
+  }else{
+    navigator.clipboard?.writeText(link).then(()=>toast("📋 Link copiado para compartilhar!"));
+  }
+};
+
+document.querySelectorAll("[data-rq]").forEach(b=>b.onclick=()=>document.getElementById("req-qtd").value=b.dataset.rq);
+
+document.getElementById("btn-gerar-link").onclick=()=>{
+  if(!_uid){toast("Faça login primeiro",true);return;}
+  const qtd=parseInt(document.getElementById("req-qtd").value||"0");
+  const msg=document.getElementById("req-msg").value.trim();
+  if(qtd<1){toast("Informe a quantidade",true);return;}
+  const link=location.origin+"/carteira.html?pagar_para="+_uid+"&qtd="+qtd+(msg?"&msg="+encodeURIComponent(msg):"");
+  const res=document.getElementById("req-result");
+  const enc=encodeURIComponent(link);
+  res.innerHTML=`
+    <div style="font-size:.78rem;color:var(--muted);margin-bottom:8px">Link de pagamento de ${fmt(qtd)} ⚡:</div>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&margin=6&data=${enc}" class="qr-img" width="180" height="180" style="display:block;margin:0 auto 10px">
+    <div class="link-box" style="font-size:.7rem">${link}</div>
+    <div class="share-btns" style="margin-top:8px">
+      <button class="btn btn-gold" style="margin:0" onclick="navigator.clipboard?.writeText('${link.replace(/'/g,"\\'")}').then(()=>window.toast?.('📋 Copiado!'))">📋 Copiar</button>
+      <button class="btn btn-primary" style="margin:0" onclick="navigator.share?.({title:'Pedido de ${fmt(qtd)} sulis',url:'${link.replace(/'/g,"\\'")}'})||navigator.clipboard?.writeText('${link.replace(/'/g,"\\'")}')">📤 Compartilhar</button>
+    </div>`;
+};
+
+// ── HISTÓRICO ─────────────────────────────────────────────────────
+const TIPO_MAP={
+  transferencia_in:  {ico:"📥",lbl:"Recebido",cls:"pos"},
+  transferencia_out: {ico:"📤",lbl:"Enviado", cls:"neg"},
+  credito_missao:    {ico:"🎯",lbl:"Missão",  cls:"pos"},
+  debito_gasto:      {ico:"💸",lbl:"Gasto",   cls:"neg"},
+  entrada_paga:      {ico:"🔑",lbl:"Entrada", cls:"neg"},
+  compra_pacote:     {ico:"📦",lbl:"Pacote",  cls:"neg"},
+  queima_servico:    {ico:"🔥",lbl:"Serviço", cls:"neg"},
+  bloqueio:          {ico:"🔒",lbl:"Bloqueio",cls:"neutro"},
+  desbloqueio:       {ico:"🔓",lbl:"Lib.",    cls:"neutro"},
+  expiracao:         {ico:"⏰",lbl:"Expirado",cls:"neg"},
+  reativacao:        {ico:"🔄",lbl:"Reativ.", cls:"pos"},
+};
+
+async function carregarHistorico(mais=false){
+  const el=document.getElementById("hist-list");
+  if(!mais)el.innerHTML='<p style="color:var(--muted);font-size:.85rem">Carregando…</p>';
+  const lim=20;
+  const rows=await apiFetch(`v_my_tx_history?order=created_at.desc&limit=${lim}&offset=${_histOffset}`).catch(()=>null);
+  if(!rows&&!mais){el.innerHTML='<p style="color:var(--muted);font-size:.85rem">Sem movimentos ainda.</p>';return;}
+  const txs=rows||[];
+  if(!mais)el.innerHTML="";
+  if(!txs.length&&!mais){el.innerHTML='<p style="color:var(--muted);font-size:.85rem">Sem movimentos ainda.</p>';return;}
+  txs.forEach(t=>{
+    const v=t.valor??0, pos=v>0;
+    const tm=TIPO_MAP[t.tipo]||{ico:"⚡",lbl:t.tipo,cls:"neutro"};
+    const div=document.createElement("div");div.className="tx";
+    div.innerHTML=`
+      <div>
+        <div>${tm.ico} ${t.descricao||tm.lbl}</div>
+        <div class="di">${dataBr(t.created_at)} · saldo: ${fmt(t.saldo_apos)} ⚡</div>
+      </div>
+      <div class="v ${tm.cls}">${pos?"+":"−"}${fmt(v)} ⚡</div>`;
+    el.appendChild(div);
+  });
+  _histOffset+=txs.length;
+  const btnMais=document.getElementById("hist-mais");
+  btnMais.style.display=txs.length===lim?"block":"none";
+}
+document.getElementById("hist-mais").onclick=()=>carregarHistorico(true);
+
+// ── MODAL PAGAMENTO VIA LINK ──────────────────────────────────────
+function abrirModalPagamento(paraUid,qtd,nome,msgLink){
+  document.getElementById("mp-qtd").textContent=fmt(qtd)||"?";
+  document.getElementById("mp-para").textContent=nome||paraUid.slice(0,8)+"…";
+  if(msgLink)document.getElementById("mp-msg").textContent='"'+msgLink+'"';
+  document.getElementById("modal-pay").classList.add("on");
+  document.getElementById("btn-modal-confirmar").onclick=async()=>{
+    const btn=document.getElementById("btn-modal-confirmar");
+    btn.disabled=true;btn.textContent="Enviando…";
+    const st=document.getElementById("mp-status");
+    try{
+      const r=await rpcFetch("transferir_sulis",{p_para_user_id:paraUid,p_sulis:qtd,p_mensagem:msgLink||"via QR/link"});
+      st.innerHTML='<span style="color:var(--good)">✓ Enviado! O saldo será atualizado.</span>';
+      setTimeout(()=>{fecharModal();carregarSaldo();},1800);
+      toast("✓ "+fmt(qtd)+" sulis enviados!");
+      _histOffset=0;
+    }catch(e){
+      st.innerHTML='<span style="color:var(--bad)">⚠️ '+e.message.slice(0,100)+'</span>';
+      toast(e.message.slice(0,80),true);
+    }finally{btn.disabled=false;btn.textContent="✓ Confirmar";}
+  };
+}
+window.fecharModal=()=>document.getElementById("modal-pay").classList.remove("on");
+document.getElementById("modal-pay").onclick=e=>{if(e.target===document.getElementById("modal-pay"))fecharModal();};
+
+// ── CONVERTER — Pix REAL via Mercado Pago (mesma infra que já ativa os planos de comerciante) ──
+document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>document.getElementById("vlr").value=b.dataset.r);
+document.getElementById("btn-comprar").onclick=async()=>{
+  const reais=parseInt(document.getElementById("vlr").value||"0",10);
+  const st=document.getElementById("conv-status");
+  if(reais<=0){st.innerHTML='<span style="color:var(--bad)">Coloca um valor maior que R$ 0</span>';return;}
+  if(!_uid){st.innerHTML='<span style="color:var(--bad)">Faça login antes de comprar sulis</span>';return;}
+  const valorCentavos=reais*100;
+  const refIdCatalogo={5:"p5",10:"p10",20:"p20"}[reais]||"avulso";
+  const btn=document.getElementById("btn-comprar");
+  btn.disabled=true;
+  st.innerHTML='<span style="color:var(--dim)">⏳ Gerando Pix…</span>';
+  try{
+    const d1=await rpcFetch("criar_pedido_pagamento",{p_ref_tipo:"recarga_sulis",p_ref_id:refIdCatalogo,p_valor_centavos:valorCentavos,p_metodo:"pix",p_origem:location.pathname+location.hash});
+    if(!d1?.ok){
+      const msg=d1?.erro==="valor_fora_do_limite"?"Valor precisa ser entre R$ 1 e R$ 500":(d1?.erro||"erro ao criar pedido");
+      throw new Error(msg);
+    }
+    const sess=await VSSupabase.getSession?.();
+    const r2=await fetch(SUPA_URL+"/functions/v1/criar-pix-mercadopago",{
+      method:"POST",
+      headers:{"Authorization":"Bearer "+(sess?.access_token||ANON),"Content-Type":"application/json"},
+      body:JSON.stringify({order_id:d1.order_id,email:sess?.user?.email||"",nome:sess?.user?.user_metadata?.full_name||"Cliente Vento Sul"})
+    });
+    const d2=await r2.json();
+    if(!d2?.ok)throw new Error("Erro ao gerar Pix. Tenta de novo em instantes.");
+    st.innerHTML="";
+    mostrarPixSulis(d1.order_id,reais,d1.nome||("🪙 Recarga R$ "+reais),d2);
+  }catch(e){
+    st.innerHTML='<span style="color:var(--bad)">⚠️ '+String(e.message||e).slice(0,100)+'</span>';
+  }finally{
+    btn.disabled=false;
+  }
+};
+
+function mostrarPixSulis(orderId,reais,nome,d2){
+  const m=document.createElement("div");
+  m.id="modal-pix-sulis";
+  m.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:99999;padding:16px;overflow:auto";
+  m.innerHTML=`<div style="background:#0e1620;border:1px solid #1f2937;border-radius:16px;max-width:420px;width:100%;padding:22px;text-align:center;color:#e5e7eb">
+    <h2 style="margin:0 0 6px;font-size:20px">${nome}</h2>
+    <p style="font-size:13px;color:#94a3b8;margin:0 0 14px">Pague o Pix abaixo. Quando cair, teus sulis chegam <b>sozinhos</b>. ✨</p>
+    ${d2.qrcode_pix?`<img src="${d2.qrcode_pix}" alt="QR Pix" style="width:230px;height:230px;background:#fff;border-radius:12px;padding:8px;display:inline-block">`:""}
+    ${d2.copy_paste?`<textarea readonly onclick="this.select()" style="width:100%;height:70px;font-size:11px;padding:8px;margin-top:10px;background:rgba(255,255,255,.06);color:#e5e7eb;border:1px solid rgba(255,255,255,.2);border-radius:8px">${d2.copy_paste}</textarea>
+      <button onclick="navigator.clipboard.writeText(\`${d2.copy_paste}\`);this.textContent='✅ Copiado!'" style="margin-top:8px;width:100%;padding:11px;border:0;border-radius:10px;background:#0d723e;color:#fff;font-weight:700;cursor:pointer">📋 Copiar código Pix</button>`:""}
+    <div id="pix-status-sulis" style="font-size:13px;color:#94a3b8;margin-top:14px">⏳ Aguardando pagamento…</div>
+    <input type="file" id="compr-arquivo-sulis" accept="image/*,.pdf" style="display:none" onchange="enviarComprovanteSulis('${orderId}', this)">
+    <button onclick="document.getElementById('compr-arquivo-sulis').click()" style="margin-top:10px;width:100%;padding:10px;border:1px solid rgba(251,191,36,.5);border-radius:10px;background:rgba(251,191,36,.12);color:#fbbf24;font-weight:700;cursor:pointer">📤 Já paguei — enviar comprovante</button>
+    <div id="compr-status-sulis" style="font-size:12px;color:#94a3b8;margin-top:6px"></div>
+    <button onclick="document.getElementById('modal-pix-sulis').remove()" style="margin-top:12px;width:100%;padding:9px;border:0;border-radius:10px;background:rgba(120,120,120,.35);color:#fff;cursor:pointer">Fechar</button>
+  </div>`;
+  document.body.appendChild(m);
+  let n=0;
+  const tick=async()=>{
+    if(!document.getElementById("modal-pix-sulis")||n++>90)return;
+    try{
+      const rows=await apiFetch(`pagamentos_orders?id=eq.${orderId}&select=status`);
+      if(rows?.[0]?.status==="pago"){
+        const stx=document.getElementById("pix-status-sulis");
+        if(stx)stx.innerHTML="✅ <b style='color:#34d399'>Pago! Sulis creditados!</b>";
+        await carregarSaldo();
+        _histOffset=0;
+        toast("✓ Sulis creditados!");
+        setTimeout(()=>document.getElementById("modal-pix-sulis")?.remove(),2500);
+        return;
+      }
+    }catch(e){}
+    setTimeout(tick,4000);
+  };
+  setTimeout(tick,4000);
+}
+
+async function enviarComprovanteSulis(orderId,input){
+  const st=document.getElementById("compr-status-sulis");
+  const f=input.files&&input.files[0];
+  if(!f)return;
+  if(f.size>8*1024*1024){st.textContent="Arquivo muito grande (máx 8 MB).";return;}
+  const sess=await VSSupabase.getSession?.();
+  if(!sess?.access_token){st.textContent="Faz login primeiro.";return;}
+  st.textContent="⏳ Enviando comprovante…";
+  try{
+    const buf=await f.arrayBuffer();
+    const hashBuf=await crypto.subtle.digest("SHA-256",buf);
+    const hash=[...new Uint8Array(hashBuf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+    const ext=(f.name.split(".").pop()||"jpg").toLowerCase().replace(/[^a-z0-9]/g,"")||"jpg";
+    const path=_uid+"/"+orderId+"-"+Date.now()+"."+ext;
+    const up=await fetch(SUPA_URL+"/storage/v1/object/comprovantes/"+path,{
+      method:"POST",
+      headers:{"apikey":ANON,"Authorization":"Bearer "+sess.access_token,"Content-Type":f.type||"application/octet-stream"},
+      body:f
+    });
+    if(!up.ok)throw new Error("upload "+up.status);
+    const d=await rpcFetch("enviar_comprovante",{p_order_id:orderId,p_arquivo_path:path,p_arquivo_hash:hash,p_valor_centavos:null});
+    if(!d?.ok)throw new Error(d?.erro||"falha ao registrar");
+    st.innerHTML=d.status==="auto_aprovado"
+      ?"✅ <b style='color:#34d399'>Comprovante guardado — pagamento já tinha caído!</b>"
+      :"✅ Comprovante recebido e guardado com segurança. A gente confere e teus sulis chegam. 💚";
+  }catch(e){st.textContent="Erro ao enviar: "+(e.message||e)+". Tenta de novo.";}
+}
+
+init();
+</script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-video-explica.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+</body>
+</html>

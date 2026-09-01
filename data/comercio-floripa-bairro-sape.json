@@ -1,0 +1,594 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Sapé",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-sape",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Açougue Carne Fresca",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "Rua Elesbão Pinto da Luz 1183",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "A Magia do Boteco",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Santos Saraiva 1962",
+   "link": ""
+  },
+  {
+   "nome": "Bar dos Amigos",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Boteko Nova Ponte",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Beleza & Cia",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Centro de Estética Arlete",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Joaquim Carneiro",
+   "link": ""
+  },
+  {
+   "nome": "Nil Art's",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mono Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua José Abreu 518",
+   "link": ""
+  },
+  {
+   "nome": "Barber Art Capoeiras",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Prefeito Dib Cherem 2408 Loja 1",
+   "link": ""
+  },
+  {
+   "nome": "Glader Cabelereiros",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Waldemar Ouriques 591",
+   "link": ""
+  },
+  {
+   "nome": "Jhon Silva Barber Shop",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Território Masculino Barbearia Social Club",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Euclides Machado 44",
+   "link": "http://www.territoriomasculino.com.br/"
+  },
+  {
+   "nome": "Continente Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Governador Ivo Silveira",
+   "link": ""
+  },
+  {
+   "nome": "Miguel Automóveis",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "New Car Camionetas",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Governador Ivo Silveira",
+   "link": ""
+  },
+  {
+   "nome": "Federal Auto Peças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua São Bento 320",
+   "link": "https://www.autopecasfederal.com/"
+  },
+  {
+   "nome": "Giovani Auto Peças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Edelberto de Oliveira 70",
+   "link": ""
+  },
+  {
+   "nome": "JSB Automotivos",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Mandarim Autopeças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "RF Peças e Acessórios",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "Servigraf Materiais Gráficos",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Campolino Alves 228",
+   "link": ""
+  },
+  {
+   "nome": "Havan",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "BR-282 3700",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "RC Farma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Waldemar Ouriques 591",
+   "link": ""
+  },
+  {
+   "nome": "Uberti",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Prefeito Dib Cherem",
+   "link": ""
+  },
+  {
+   "nome": "Casa Verde",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nossa Loja",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Avenida Governador Ivo Silveira 2422",
+   "link": ""
+  },
+  {
+   "nome": "S.O.S Gás e Água",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "Servidão Alamiro Vicente de Oliveira 39",
+   "link": ""
+  },
+  {
+   "nome": "Verde Car",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Waldemar Ouriques 117",
+   "link": ""
+  },
+  {
+   "nome": "Bella Pizza",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Av. Gov. Ivo Silveira 2928",
+   "link": "https://www.bellapizza.com.br"
+  },
+  {
+   "nome": "Tucano Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lotérica Galeria",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "Rua Prefeito Dib Cherem",
+   "link": ""
+  },
+  {
+   "nome": "Júnior",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Felipe Neves",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Capoeiras",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Pereira",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Santos Saraiva 1766",
+   "link": ""
+  },
+  {
+   "nome": "2M Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Luiz Carlos Prestes",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Governador Ivo Silveira 2445",
+   "link": "https://www.angeloni.com.br/super/"
+  },
+  {
+   "nome": "Atacadão",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Paralela Novo Horizonte 3530",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Fernandes",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Professor Egídio Ferreira 659",
+   "link": ""
+  },
+  {
+   "nome": "OK Supermercados",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Beto Motos",
+   "tipo": "Motorcycle Repair",
+   "emoji": "🏪",
+   "cat": "motorcycle_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Auto Fix Center",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1731",
+   "link": ""
+  },
+  {
+   "nome": "Autofrio",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 2142",
+   "link": ""
+  },
+  {
+   "nome": "Cinto de Segurança Machado",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Genuíno Pereira da Silva 91",
+   "link": ""
+  },
+  {
+   "nome": "Falcão Escapamentos",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 2206",
+   "link": ""
+  },
+  {
+   "nome": "MM Auto Centre",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Waldemar Ouriques 799",
+   "link": ""
+  },
+  {
+   "nome": "Mecânica Continente",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "Retífica de Motores Mega Motors",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Nossa Senhora do Rosário 604",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Dona Rosa",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Requinte's",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pão Real",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Santos Saraiva 1990",
+   "link": ""
+  },
+  {
+   "nome": "Vitória Tintas",
+   "tipo": "Paint",
+   "emoji": "🏪",
+   "cat": "paint",
+   "end": "Rua Araci Vaz Callado 1607",
+   "link": ""
+  },
+  {
+   "nome": "Dia de Festa",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "Rua Thiago da Fonseca",
+   "link": ""
+  },
+  {
+   "nome": "Xandoca",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pescados Gaivota",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "Rua Waldemar Ouriques 869",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuária Rótula",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho do Cão",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Felipe Neves",
+   "link": ""
+  },
+  {
+   "nome": "American Oil",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Prefeito Dib Cherem 2335",
+   "link": "http://www.americanoil.com.br/site/"
+  },
+  {
+   "nome": "Posto Brasol",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Governador Ivo Silveira 2642",
+   "link": ""
+  },
+  {
+   "nome": "Posto Capoeiras",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Ferro Velho",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Josué di Bernardi 1007",
+   "link": ""
+  },
+  {
+   "nome": "WDCom",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Professor Egídio Ferreira",
+   "link": ""
+  },
+  {
+   "nome": "Bom Sabor",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Prefeito Dib Cherem",
+   "link": ""
+  },
+  {
+   "nome": "Churrascaria Capoeirão",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Divina Costela",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Governador Ivo Silveira 2642",
+   "link": ""
+  },
+  {
+   "nome": "Doce Tempero",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Prefeito Dib Cherem 3012",
+   "link": ""
+  },
+  {
+   "nome": "Parma Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "The Ranch Foodpark",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Yamaki Sushi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Waldemar Ouriques 459",
+   "link": "https://yamakisushi.com.br/"
+  },
+  {
+   "nome": "Doce Amora",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Rua Waldemar Ouriques",
+   "link": ""
+  },
+  {
+   "nome": "Fort Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Rua Elesbão Pinto da Luz 1183",
+   "link": ""
+  }
+ ]
+}

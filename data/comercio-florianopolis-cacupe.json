@@ -1,0 +1,50 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Cacupé",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-cacupe",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Hotel Sesc Cacupé",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rodovia Haroldo Soares Glavan 1670",
+   "link": "https://www.sesc-sc.com.br/hotelsesccacupe/"
+  },
+  {
+   "nome": "Lanchonete",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Lorenzo's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Haroldo Soares Glavan 1166",
+   "link": "http://pizzarialorenzos.com.br"
+  },
+  {
+   "nome": "Restaurante João de Barro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Haroldo Soares Glavan 1166",
+   "link": "http://joaodebarro.com.br"
+  },
+  {
+   "nome": "Zé do Cacupé",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Haroldo Soares Glavan 1964",
+   "link": ""
+  }
+ ]
+}

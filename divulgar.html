@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>📣 Divulgador — Vento Sul</title>
+<style>
+  :root { --bg:#0a0e14; --card:#131a23; --line:#1f2937; --txt:#e5e7eb; --muted:#94a3b8;
+          --accent:#06b6d4; --good:#10b981; --warn:#f59e0b; --magic:#a855f7; --gold:#ffd54f; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:system-ui,sans-serif;color:var(--txt);min-height:100vh;
+    background:
+      linear-gradient(180deg,rgba(10,14,20,0.82),rgba(10,14,20,0.94)),
+      url("/bg/bg_florianopolis.webp");
+    background-size:cover;background-attachment:fixed;background-position:center;padding:14px;}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  h1{margin:0;font-size:22px;background:linear-gradient(90deg,var(--magic),var(--accent),var(--gold));
+     -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+  .sub{color:var(--muted);font-size:12px;}
+  main{max-width:900px;margin:0 auto;}
+  .card{background:rgba(19,26,35,0.65);backdrop-filter:blur(10px);border:1px solid rgba(168,85,247,0.25);
+    border-radius:14px;padding:14px;margin-bottom:14px;box-shadow:0 4px 18px rgba(0,0,0,0.18);}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center;}
+  .hero-left{display:flex;flex-direction:column;gap:6px;}
+  .ref-big{font-size:36px;font-weight:900;color:var(--gold);font-family:ui-monospace,monospace;
+    background:rgba(255,213,79,0.10);border:2px solid var(--gold);border-radius:14px;padding:14px;text-align:center;letter-spacing:4px;}
+  .qr-wrap{background:#fff;padding:8px;border-radius:12px;display:flex;justify-content:center;}
+  .qr-wrap img{width:100%;max-width:200px;display:block;}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;margin-top:12px;}
+  .stat{background:rgba(6,182,212,0.10);border:1px solid var(--accent);border-radius:10px;padding:10px;text-align:center;}
+  .stat .label{color:var(--muted);font-size:10px;text-transform:uppercase;}
+  .stat .v{font-size:22px;font-weight:800;color:var(--accent);}
+  .acoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;}
+  .bigbtn{
+    background:rgba(19,26,35,0.65);backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:18px 14px;
+    text-align:center;color:var(--txt);transition:all .2s;cursor:pointer;display:block;text-decoration:none;
+    box-shadow:0 4px 14px rgba(0,0,0,0.20);}
+  .bigbtn:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 6px 22px rgba(6,182,212,0.25);}
+  .bigbtn .ico{font-size:32px;display:block;margin-bottom:6px;}
+  .bigbtn .nome{font-weight:600;font-size:14px;}
+  .bigbtn .desc{color:var(--muted);font-size:11px;margin-top:4px;}
+  .materiais{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;}
+  .mat{position:relative;border-radius:10px;overflow:hidden;cursor:pointer;aspect-ratio:9/16;}
+  .mat img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.2s;}
+  .mat:hover img{transform:scale(1.05);}
+  .mat-baixar{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.7);color:#fff;border:0;border-radius:6px;padding:4px 8px;font-size:11px;cursor:pointer;}
+  .login-msg{background:rgba(245,158,11,0.10);border:1px dashed var(--warn);padding:14px;border-radius:10px;text-align:center;}
+  a{color:var(--accent);}
+  h2{margin:18px 0 8px;font-size:16px;color:#9be8f7;}
+  @media (max-width:600px){.hero{grid-template-columns:1fr;}.ref-big{font-size:28px;letter-spacing:2px;}}
+
+  .metas-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+  .meta-card{background:rgba(19,26,35,0.65);border:1px solid var(--line);border-radius:12px;padding:12px;position:relative;overflow:hidden}
+  .meta-card.conquistada{border-color:var(--gold);background:rgba(255,213,79,0.06)}
+  .meta-card .meta-ico{font-size:24px;margin-bottom:4px}
+  .meta-card .meta-n{font-size:11px;color:var(--muted);text-transform:uppercase;font-weight:600}
+  .meta-card .meta-txt{font-size:14px;font-weight:700;margin:2px 0}
+  .meta-card .meta-recompensa{font-size:12px;color:var(--gold);font-weight:700}
+  .meta-bar{height:6px;background:rgba(255,255,255,0.1);border-radius:3px;margin-top:8px;overflow:hidden}
+  .meta-bar-fill{height:100%;background:linear-gradient(90deg,var(--magic),var(--gold));border-radius:3px;transition:width 1s ease}
+  .meta-check{position:absolute;top:8px;right:8px;font-size:18px}
+  .share-big-btn{background:linear-gradient(135deg,var(--magic),var(--accent));color:#fff;
+    border:0;padding:14px;border-radius:14px;font-size:16px;font-weight:800;cursor:pointer;
+    width:100%;margin-bottom:12px;display:flex;align-items:center;justify-content:center;gap:8px}
+  .share-big-btn:active{opacity:0.85}
+
+</style>
+<script src="/shared/ui-modal.js"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📣 Área do Divulgador</h1>
+    <div class="sub">teu código · stats · materiais · shorts prontos</div>
+  </div>
+  <a href="/" style="font-size:13px">← Vento Sul</a>
+</header>
+
+<main>
+
+<div id="login-aviso" class="login-msg" style="display:none">
+  🔐 <strong>Faça login</strong> pra ter teu código de afiliado pessoal e ver stats. <a href="/">← Voltar</a>
+</div>
+
+<div id="conteudo" style="display:none">
+
+<div class="card">
+  <div class="hero">
+    <div class="hero-left">
+      <h2 style="margin:0">🪄 Teu código</h2>
+      <div class="sub">Quem entrar pelo teu link/QR fica registrado como tua indicação. Cada conversão = SulCoin pra ti.</div>
+      <div class="ref-big" id="ref-big">·····</div>
+      <div style="display:flex;gap:6px">
+        <button onclick="copiarLink()" style="flex:1;background:var(--accent);color:#001;border:0;padding:10px;border-radius:8px;cursor:pointer;font-weight:700">📋 Copiar link</button>
+        <button onclick="compartilharGeral()" style="flex:1;background:linear-gradient(135deg,var(--magic),var(--accent));color:#fff;border:0;padding:10px;border-radius:8px;cursor:pointer;font-weight:700">📲 Compartilhar</button>
+      </div>
+      <div class="sub" id="meu-link" style="word-break:break-all;font-size:11px;font-family:ui-monospace,monospace;background:#0a0e14;border:1px dashed var(--line);padding:8px;border-radius:6px;margin-top:6px"></div>
+    </div>
+    <div class="qr-wrap"><img id="qr-img" alt="QR"></div>
+  </div>
+
+  <div class="stats" id="stats">
+    <div class="stat"><div class="label">Cliques</div><div class="v" id="s-cliques">…</div></div>
+    <div class="stat"><div class="label">Visitantes únicos</div><div class="v" id="s-unicos">…</div></div>
+    <div class="stat"><div class="label">Sulis ganhos</div><div class="v" id="s-sulis">…</div></div>
+  </div>
+</div>
+
+<h2>🏅 Teu Badge</h2>
+<div class="card">
+  <div id="badge-area" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+    <div id="badge-medalha" style="font-size:64px;text-align:center;width:84px"></div>
+    <div style="flex:1;min-width:200px">
+      <div id="badge-nome" style="font-weight:700;font-size:18px;color:var(--gold)"></div>
+      <div id="badge-status" class="sub"></div>
+      <div id="badge-bonus" style="margin-top:6px;font-size:13px;color:var(--good)"></div>
+    </div>
+    <button onclick="abrirFormBadge()" style="background:linear-gradient(135deg,var(--magic),var(--gold));color:#000;border:0;padding:10px 16px;border-radius:10px;cursor:pointer;font-weight:700">⬆️ Subir badge</button>
+  </div>
+
+  <details style="margin-top:14px">
+    <summary style="cursor:pointer;font-weight:600;color:var(--accent)">📋 Ver os 5 tiers e vantagens</summary>
+    <div style="display:grid;gap:8px;margin-top:10px;font-size:13px">
+      <div style="background:rgba(16,185,129,0.10);border-left:3px solid var(--good);padding:8px 10px;border-radius:6px"><strong>🌱 Semente</strong> — qualquer divulgador. <em><strong>5% OFF</strong> · Shorts Studio · materiais base.</em></div>
+      <div style="background:rgba(6,182,212,0.10);border-left:3px solid var(--accent);padding:8px 10px;border-radius:6px"><strong>🌿 Broto</strong> — 1k+ seguidores. <em><strong>10% OFF</strong> · <strong>1 cota</strong> na Pool · prioridade carrossel.</em></div>
+      <div style="background:rgba(168,85,247,0.10);border-left:3px solid var(--magic);padding:8px 10px;border-radius:6px"><strong>🌳 Embaixador</strong> — 10k+ (admin valida). <em><strong>15% OFF</strong> · <strong>3 cotas</strong> na Pool · listado em /vips.</em></div>
+      <div style="background:rgba(255,213,79,0.10);border-left:3px solid var(--gold);padding:8px 10px;border-radius:6px"><strong>⭐ Embaixador Ouro</strong> — 100k+ (admin valida). <em><strong>20% OFF</strong> · <strong>6 cotas</strong> · suporte direto · campanhas pagas.</em></div>
+      <div style="background:linear-gradient(90deg,rgba(255,213,79,0.18),rgba(168,85,247,0.18));border-left:3px solid var(--gold);padding:8px 10px;border-radius:6px"><strong>💎 Anjo do Sul</strong> — convite. <em><strong>25% OFF</strong> · <strong>12 cotas</strong> · royalty mensal · voz consultiva.</em></div>
+      <div style="margin-top:10px;padding:8px;background:rgba(6,182,212,0.06);border-radius:6px;font-size:11px;color:var(--muted)">📐 <strong>Como funciona o caixa:</strong> 10% das comissões dos comerciantes VIP cai mensalmente na Pool Embaixador. Esse valor é dividido pelas cotas dos membros ativos (não é multiplicador da tua venda — é tua fatia da pool). Modelo mutualista, sustentável.</div>
+    </div>
+  </details>
+</div>
+
+<h2>⚡ O que fazer agora</h2>
+<div class="card">
+  <div class="acoes">
+    <a class="bigbtn" href="/shorts.html"><span class="ico">🎬</span><div class="nome">Fazer Short</div><div class="desc">Studio com câmera + cenas</div></a>
+    <button class="bigbtn" onclick="compartilharGeral()" style="border:0;font:inherit;color:inherit"><span class="ico">📲</span><div class="nome">Compartilhar</div><div class="desc">TikTok · Insta · YouTube · X</div></button>
+    <a class="bigbtn" href="/comerciante-pro.html"><span class="ico">🏢</span><div class="nome">Sou Comerciante</div><div class="desc">Vincula teu negócio</div></a>
+    <a class="bigbtn" href="/aurora-jogo.html"><span class="ico">✨</span><div class="nome">Aurora</div><div class="desc">Quests + SulCoin no jogo</div></a>
+  </div>
+</div>
+
+<h2>🤝 Pool dos Embaixadores</h2>
+<div class="card" id="pool-card">
+  <div style="font-size:13px;line-height:1.6;margin-bottom:10px">
+    Quando teu badge é <strong>Broto</strong> ou maior, tu entra automaticamente nesse pool comunitário.
+    <strong>10% das comissões dos comerciantes VIP</strong> caem aqui mensalmente e são distribuídos pelos divulgadores ativos por <em>cotas</em> (quanto maior o tier, mais cotas).
+    <br><br>É o jeito que a galera <strong>quente</strong> que agita o app é recompensada — economia comunitária, não corporativa.
+  </div>
+  <div id="pool-stats" class="stats">
+    <div class="stat"><div class="label">Saldo pool</div><div class="v" id="pool-saldo">…</div></div>
+    <div class="stat"><div class="label">Membros ativos</div><div class="v" id="pool-membros">…</div></div>
+    <div class="stat"><div class="label">Já distribuído</div><div class="v" id="pool-distribuido">…</div></div>
+    <div class="stat"><div class="label">Tuas cotas</div><div class="v" id="pool-cotas" style="color:var(--gold)">—</div></div>
+  </div>
+  <div id="pool-status" style="margin-top:10px;font-size:13px"></div>
+</div>
+
+<h2>🖼️ Materiais prontos pra postar</h2>
+<div class="card">
+  <div class="sub" style="margin-bottom:10px">Imagens cinematográficas com identidade Vento Sul. Toca pra baixar (longpress no mobile = salvar).</div>
+  <div class="materiais" id="materiais"></div>
+</div>
+
+<h2>🤖 Tua IA assistente de divulgação</h2>
+<div class="card" style="padding:0;overflow:hidden">
+  <div style="padding:10px 14px;background:linear-gradient(90deg,rgba(168,85,247,0.10),rgba(6,182,212,0.10));border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)">
+    Te ajudo a montar post pronto, gerar imagem cinematográfica, escolher hashtag certa, subir badge. Pergunta livre.
+  </div>
+  <div id="iadiv-chat" style="min-height:180px;max-height:50vh;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px"></div>
+  <div id="iadiv-chips" style="display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px"></div>
+  <div style="display:flex;gap:6px;padding:10px;border-top:1px solid var(--line)">
+    <input id="iadivPergunta" placeholder="Ex: monta um post pra Insta, gera imagem da minha cidade…" style="flex:1;background:#0a0e14;color:#fff;border:1px solid var(--line);border-radius:18px;padding:10px 14px;font-size:14px">
+    <button id="iadivBtn" onclick="iadivPerguntar()" style="background:linear-gradient(135deg,var(--magic),var(--accent));color:#fff;border:0;padding:10px 16px;border-radius:18px;cursor:pointer;font-weight:700">✨</button>
+  </div>
+</div>
+
+
+<h2>🏅 Metas de divulgação — ganhe SulCoins</h2>
+<div class="card" id="metas-container">
+  <button class="share-big-btn" onclick="compartilharAgora()">
+    📣 Compartilhar agora e ganhar Sulis
+  </button>
+  <p style="font-size:12px;color:var(--muted);text-align:center;margin:0 0 14px">Cada compartilhamento conta — as metas acumulam entre sessões</p>
+  <div class="metas-grid" id="metas-grid">
+    <div class="meta-card" id="meta-1">
+      <div class="meta-ico">🌱</div>
+      <div class="meta-n">Meta 1</div>
+      <div class="meta-txt">1 compartilhamento</div>
+      <div class="meta-recompensa">+5 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-1" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-1"></div>
+    </div>
+    <div class="meta-card" id="meta-5">
+      <div class="meta-ico">🌿</div>
+      <div class="meta-n">Meta 2</div>
+      <div class="meta-txt">5 compartilhamentos</div>
+      <div class="meta-recompensa">+15 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-5" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-5"></div>
+    </div>
+    <div class="meta-card" id="meta-10">
+      <div class="meta-ico">🌳</div>
+      <div class="meta-n">Meta 3</div>
+      <div class="meta-txt">10 compartilhamentos</div>
+      <div class="meta-recompensa">+30 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-10" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-10"></div>
+    </div>
+    <div class="meta-card" id="meta-25">
+      <div class="meta-ico">🌟</div>
+      <div class="meta-n">Meta 4</div>
+      <div class="meta-txt">25 compartilhamentos</div>
+      <div class="meta-recompensa">+75 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-25" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-25"></div>
+    </div>
+    <div class="meta-card" id="meta-50">
+      <div class="meta-ico">🏆</div>
+      <div class="meta-n">Meta 5</div>
+      <div class="meta-txt">50 compartilhamentos</div>
+      <div class="meta-recompensa">+150 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-50" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-50"></div>
+    </div>
+    <div class="meta-card" id="meta-100">
+      <div class="meta-ico">👑</div>
+      <div class="meta-n">Meta Lenda</div>
+      <div class="meta-txt">100 compartilhamentos</div>
+      <div class="meta-recompensa">+400 sulis</div>
+      <div class="meta-bar"><div class="meta-bar-fill" id="bar-100" style="width:0%"></div></div>
+      <div class="meta-check" id="chk-100"></div>
+    </div>
+  </div>
+  <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:12px" id="total-shares-lbl">Carregando…</p>
+</div>
+
+<h2>🚀 Como ganhar mais</h2>
+<div class="card" style="font-size:13px;line-height:1.7">
+  <ul style="margin:0;padding-left:20px">
+    <li><strong>Faz um short</strong> com tua cara + cenas do app no fundo (botão "🎬 Fazer Short")</li>
+    <li><strong>Cola teu QR</strong> no perfil do TikTok / Insta / YouTube — fica fixo</li>
+    <li><strong>Templates por nicho</strong>: pousada, restaurante, RPG, trilha, caça ao tesouro — escolhe o teu</li>
+    <li><strong>Cada cadastro pelo teu código</strong> = SulCoin pra ti (registrado na ledger)</li>
+    <li><strong>Top 10 divulgadores</strong> entram em campanha exclusiva (fim do mês)</li>
+  </ul>
+</div>
+
+</div>
+
+</main>
+
+<script src="/config.js"></script>
+<script src="/shared/share.js"></script>
+<script>
+const SUPA = window.VENTOSUL_CONFIG?.SUPABASE_URL || "https://vdrzndgkwdpibexjkyxi.supabase.co";
+const ANON = window.VENTOSUL_CONFIG?.SUPABASE_ANON_JWT || "";
+
+// Robusto: tenta várias chaves de sessão (suporta legado + variações)
+function descobrirSessao() {
+  const chaves = ["vs.sb.session", "sb-vdrzndgkwdpibexjkyxi-auth-token", "sb-vdrzndg-auth-token"];
+  for (const k of chaves) {
+    try {
+      const raw = localStorage.getItem(k);
+      if (!raw) continue;
+      const j = JSON.parse(raw);
+      if (j?.user?.id || j?.currentSession?.user?.id) return j.currentSession || j;
+    } catch {}
+  }
+  // Última tentativa: scan qualquer chave sb-* com access_token
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (!k || !k.startsWith("sb-")) continue;
+    try {
+      const j = JSON.parse(localStorage.getItem(k) || "null");
+      const s = j?.currentSession || j;
+      if (s?.user?.id && s?.access_token) return s;
+    } catch {}
+  }
+  return null;
+}
+const sess = descobrirSessao();
+const userJwt = sess?.access_token;
+const meuUuid = sess?.user?.id;
+
+// Se logou em qualquer formato, deriva o ref aqui (independente do share.js)
+function derivarRef(uuid) {
+  if (!uuid) return null;
+  let h = 0;
+  for (let i = 0; i < uuid.length; i++) { h = ((h << 5) - h) + uuid.charCodeAt(i); h |= 0; }
+  return Math.abs(h).toString(36).toUpperCase().padStart(6, "X").slice(0, 6);
+}
+const ref = (window.VSShare?.meuRef?.()) || derivarRef(meuUuid);
+
+if (!meuUuid) {
+  // Mostra aviso enriquecido com botão de limpar cache
+  const av = document.getElementById("login-aviso");
+  av.innerHTML = '🔐 <strong>Faça login</strong> pra ter teu código de afiliado pessoal e ver stats. <a href="/">← Voltar</a> · <a href="/?nuke=1" style="color:var(--gold)">🧹 Limpar cache do app</a>';
+  av.style.display = "block";
+  console.log("[divulgar] sem sessão. localStorage keys:", Array.from({length: localStorage.length}, (_,i) => localStorage.key(i)));
+} else if (!ref) {
+  // Tem user mas falhou ref (quase impossível) — força login nuke
+  document.getElementById("login-aviso").style.display = "block";
+  console.warn("[divulgar] user logado mas ref falhou. uuid:", meuUuid);
+} else {
+  document.getElementById("conteudo").style.display = "block";
+  document.getElementById("ref-big").textContent = ref;
+  const meuLink = `${location.origin}/?ref=${ref}`;
+  document.getElementById("meu-link").textContent = meuLink;
+  document.getElementById("qr-img").src = VSShare.qrUrl(meuLink, 220);
+  carregarStats();
+  carregarBadge();
+  carregarPool();
+  renderMateriais();
+}
+
+async function carregarPool() {
+  try {
+    const r = await fetch(`${SUPA}/rest/v1/rpc/pool_embaixador_meu_status`, {
+      method: "POST",
+      headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt, "Content-Type": "application/json" },
+      body: "{}"
+    });
+    const d = await r.json();
+    document.getElementById("pool-saldo").textContent = (d?.saldo_pool || 0).toLocaleString("pt-BR") + " §";
+    document.getElementById("pool-membros").textContent = d?.membros_ativos || 0;
+    document.getElementById("pool-distribuido").textContent = (d?.total_distribuido || 0).toLocaleString("pt-BR") + " §";
+    if (d?.membro && d.membro.user_uuid) {
+      document.getElementById("pool-cotas").textContent = d.membro.cotas + "x";
+      document.getElementById("pool-status").innerHTML =
+        `✅ Tu é membro ativo. Recebido até hoje: <strong>${(d.membro.distribuido_total || 0).toLocaleString("pt-BR")} §</strong>. Próxima distribuição vem mês que vem.`;
+    } else {
+      document.getElementById("pool-cotas").textContent = "—";
+      document.getElementById("pool-status").innerHTML =
+        `⏳ Tu ainda não tá no pool. Sobe pra <strong>Broto</strong> (1k+ seguidores declarados) e entra automaticamente.`;
+    }
+  } catch (e) {
+    document.getElementById("pool-status").textContent = "Erro ao carregar pool: " + e.message;
+  }
+}
+
+const TIERS = {
+  nenhum:           { medalha: "❓",  nome: "Sem badge ainda",    desconto: 0,  cotas: 0,  bonus: "Pede teu primeiro badge pra começar!" },
+  semente:          { medalha: "🌱", nome: "Semente",             desconto: 5,  cotas: 0,  bonus: "5% OFF · acesso ao Shorts Studio + materiais base" },
+  broto:            { medalha: "🌿", nome: "Broto",               desconto: 10, cotas: 1,  bonus: "10% OFF · 1 cota na Pool Embaixador · prioridade carrossel" },
+  embaixador:       { medalha: "🌳", nome: "Embaixador",          desconto: 15, cotas: 3,  bonus: "15% OFF · 3 cotas na Pool · listado em /vips" },
+  embaixador_ouro:  { medalha: "⭐", nome: "Embaixador Ouro",     desconto: 20, cotas: 6,  bonus: "20% OFF · 6 cotas na Pool · suporte direto · campanhas pagas" },
+  anjo_sul:         { medalha: "💎", nome: "Anjo do Sul",         desconto: 25, cotas: 12, bonus: "25% OFF · 12 cotas na Pool · royalty mensal fixa · voz consultiva" }
+};
+
+async function carregarBadge() {
+  try {
+    const r = await fetch(`${SUPA}/rest/v1/rpc/meu_badge`, {
+      method: "POST",
+      headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt, "Content-Type": "application/json" },
+      body: "{}"
+    });
+    const d = await r.json();
+    const tier = d?.tier || "nenhum";
+    const info = TIERS[tier] || TIERS.nenhum;
+    document.getElementById("badge-medalha").textContent = info.medalha;
+    document.getElementById("badge-nome").textContent = info.nome;
+    document.getElementById("badge-bonus").textContent = "💰 " + info.bonus;
+    const status = d?.status;
+    document.getElementById("badge-status").textContent = status === "pendente"
+      ? `⏳ Aguardando validação do admin (${(d.seguidores_total || 0).toLocaleString("pt-BR")} seguidores declarados)`
+      : status === "ativo"
+      ? `✅ Ativo · ${(d.seguidores_total || 0).toLocaleString("pt-BR")} seguidores declarados`
+      : "Toca em 'Subir badge' pra começar";
+  } catch (e) {
+    document.getElementById("badge-medalha").textContent = "❓";
+    document.getElementById("badge-nome").textContent = "Erro ao carregar";
+  }
+}
+
+window.abrirFormBadge = function() {
+  const overlay = document.createElement("div");
+  overlay.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:99999;display:flex;justify-content:center;align-items:center;padding:14px";
+  overlay.innerHTML = `
+    <div style="background:#131a23;border:2px solid var(--magic);border-radius:14px;max-width:480px;width:100%;padding:18px;max-height:90vh;overflow-y:auto">
+      <h3 style="margin:0 0 6px;color:var(--gold)">⬆️ Pedir/Subir Badge</h3>
+      <div class="sub" style="margin-bottom:12px">Cola teus perfis e a quantidade de seguidores. Tier abaixo de 10k é automático; acima entra em moderação (admin valida pra evitar fraude).</div>
+      ${["TikTok","Instagram","YouTube","Facebook","X","LinkedIn"].map(rede => `
+        <div style="display:grid;grid-template-columns:1fr 100px;gap:6px;margin-bottom:6px">
+          <input data-rede="${rede.toLowerCase()}" data-campo="link" placeholder="${rede} (link do perfil)" style="background:#0a0e14;color:#fff;border:1px solid #1f2937;border-radius:8px;padding:8px;font-size:13px">
+          <input data-rede="${rede.toLowerCase()}" data-campo="seguidores" type="number" placeholder="seguidores" style="background:#0a0e14;color:#fff;border:1px solid #1f2937;border-radius:8px;padding:8px;font-size:13px">
+        </div>
+      `).join("")}
+      <div style="display:flex;gap:6px;margin-top:12px">
+        <button id="bdg-cancel" style="flex:1;background:rgba(120,120,120,0.3);color:#fff;border:0;padding:10px;border-radius:8px;cursor:pointer">Cancelar</button>
+        <button id="bdg-ok" style="flex:1;background:linear-gradient(135deg,var(--magic),var(--gold));color:#000;border:0;padding:10px;border-radius:8px;cursor:pointer;font-weight:700">Enviar</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  overlay.querySelector("#bdg-cancel").onclick = () => overlay.remove();
+  overlay.querySelector("#bdg-ok").onclick = async () => {
+    const redes = [];
+    ["tiktok","instagram","youtube","facebook","x","linkedin"].forEach(r => {
+      const link = overlay.querySelector(`input[data-rede="${r}"][data-campo="link"]`).value.trim();
+      const seg = parseInt(overlay.querySelector(`input[data-rede="${r}"][data-campo="seguidores"]`).value) || 0;
+      if (link || seg) redes.push({ rede: r, link, seguidores: seg });
+    });
+    if (!redes.length) { vsToast("Coloca pelo menos uma rede!"); return; }
+    try {
+      const r = await fetch(`${SUPA}/rest/v1/rpc/requisitar_badge_divulgador`, {
+        method: "POST",
+        headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt, "Content-Type": "application/json" },
+        body: JSON.stringify({ p_redes: redes })
+      });
+      const d = await r.json();
+      if (!d?.ok) { vsToast("Erro: " + JSON.stringify(d)); return; }
+      const status = d.status === "pendente"
+        ? `⏳ Tier ${d.tier} (${d.total_seguidores.toLocaleString("pt-BR")} seguidores) — aguardando validação do admin`
+        : `✅ Badge ${d.tier} ativo agora!`;
+      vsToast(status);
+      overlay.remove();
+      carregarBadge();
+    } catch (e) { vsToast("Erro: " + e.message); }
+  };
+};
+
+async function carregarStats() {
+  try {
+    const r = await fetch(`${SUPA}/rest/v1/rpc/stats_divulgador`, {
+      method: "POST",
+      headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt, "Content-Type": "application/json" },
+      body: JSON.stringify({ p_ref: ref })
+    });
+    const d = await r.json();
+    document.getElementById("s-cliques").textContent = d?.cliques || 0;
+    document.getElementById("s-unicos").textContent = d?.unicos || 0;
+  } catch {
+    document.getElementById("s-cliques").textContent = "?";
+    document.getElementById("s-unicos").textContent = "?";
+  }
+  // Sulis ganhos por afiliação (sc_transactions ref_tipo='afiliado' ou 'boas_vindas')
+  try {
+    const r = await fetch(`${SUPA}/rest/v1/sc_transactions?user_id=eq.${meuUuid}&ref_tipo=in.(afiliado,boas_vindas)&select=sulis`, {
+      headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt }
+    });
+    const d = await r.json();
+    const total = (d || []).reduce((s, x) => s + Number(x.sulis || 0), 0);
+    document.getElementById("s-sulis").textContent = total + " §";
+  } catch {
+    document.getElementById("s-sulis").textContent = "0 §";
+  }
+}
+
+function copiarLink() {
+  navigator.clipboard.writeText(`${location.origin}/?ref=${ref}`);
+  vsToast("✅ Link copiado!");
+}
+
+function compartilharGeral() {
+  VSShare.compartilhar({
+    url: `${location.origin}/`,
+    titulo: "Vento Sul — app de impacto social do Sul",
+    texto: "Tô usando o Vento Sul 🌊 — comércio local, turismo e RPG do Sul do Brasil. Entra pelo meu link e ganha 10 sulis de boas-vindas!",
+    hashtags: ["VentoSul", "TurismoSul", "ComercioLocal", "Floripa", "Curitiba", "PortoAlegre"]
+  });
+}
+
+const POLLI_MAT = (txt, seed=1) => { const kw=String(txt||'').toLowerCase().split(',')[0].replace(/[^a-z0-9 ]/g,'').trim().split(/\s+/).slice(0,2).join(',')||'photo'; return `https://loremflickr.com/1024/1024/${encodeURIComponent(kw)}?lock=${seed}`; }
+
+const MATERIAIS = [
+  { t: "Vento Sul logo wave brazilian south coast magenta sunset cinematic poster", s: 9001 },
+  { t: "Pousada beach vista sunset pier neon coffee wine elegant brazilian", s: 9002 },
+  { t: "Aurora wizard fantasy rpg brazilian map mystical magic", s: 9003 },
+  { t: "Trilha brazilian forest waterfall adventure golden sunset", s: 9004 },
+  { t: "Brazilian small business owner storefront pride community", s: 9005 },
+  { t: "Sulcoin token coin glowing brazilian coast community impact magic", s: 9006 }
+];
+
+function renderMateriais() {
+  const div = document.getElementById("materiais");
+  div.innerHTML = MATERIAIS.map(m => `
+    <div class="mat">
+      <img src="${POLLI_MAT(m.t, m.s)}" alt="" loading="lazy">
+      <a class="mat-baixar" href="${POLLI_MAT(m.t, m.s)}" download="ventosul-${m.s}.jpg" target="_blank">⬇️ Baixar</a>
+    </div>
+  `).join("");
+}
+
+// ═════ CHAT IA DIVULGADOR ═════
+let _iadivIniciado = false;
+const _iadivHist = [];
+
+function iadivBolha(quem, txt) {
+  const div = document.createElement("div");
+  div.style.cssText = quem === "user"
+    ? "background:rgba(6,182,212,0.10);border:1px solid var(--accent);align-self:flex-end;max-width:85%;padding:8px 12px;border-radius:14px 14px 2px 14px;font-size:14px;white-space:pre-wrap;color:var(--txt)"
+    : "background:rgba(168,85,247,0.10);border:1px solid var(--magic);align-self:flex-start;max-width:90%;padding:10px 14px;border-radius:14px 14px 14px 2px;font-size:14px;white-space:pre-wrap;color:var(--txt)";
+  div.textContent = txt;
+  document.getElementById("iadiv-chat").appendChild(div);
+  div.scrollIntoView({ behavior: "smooth", block: "end" });
+  return div;
+}
+
+function iadivChips(opcoes) {
+  const div = document.getElementById("iadiv-chips");
+  div.innerHTML = "";
+  opcoes.forEach(o => {
+    const b = document.createElement("button");
+    b.textContent = o.label;
+    b.style.cssText = "background:rgba(168,85,247,0.12);color:var(--magic);border:1px solid var(--magic);border-radius:18px;padding:6px 12px;cursor:pointer;font-size:12px;font-weight:600";
+    b.onclick = () => { div.innerHTML = ""; o.acao(); };
+    div.appendChild(b);
+  });
+}
+
+function iadivIniciar() {
+  if (_iadivIniciado) return;
+  _iadivIniciado = true;
+  iadivBolha("ia", "🪄 E aí! Posso te ajudar a postar mais e converter melhor. Sou rápida pra texto e gero imagem cinematográfica em 10 segundos. Por onde quer começar?");
+  iadivChips([
+    { label: "📱 Post pro Insta", acao: () => { document.getElementById("iadivPergunta").value = "Monta um post pro Instagram com foto + texto + hashtags pra eu copiar agora"; iadivPerguntar(); } },
+    { label: "🎬 Roteiro TikTok 15s", acao: () => { document.getElementById("iadivPergunta").value = "Faz um roteiro pra TikTok 15 segundos com cena + fala + CTA"; iadivPerguntar(); } },
+    { label: "🎨 Capa pro YouTube", acao: () => { document.getElementById("iadivPergunta").value = "Gera uma capa cinematográfica pra YouTube tema Vento Sul"; iadivPerguntar(); } },
+    { label: "🏅 Subir de badge", acao: () => { document.getElementById("iadivPergunta").value = "Quanto falta pra eu subir de badge? Que devo fazer?"; iadivPerguntar(); } },
+    { label: "📊 Como tô?", acao: () => { document.getElementById("iadivPergunta").value = "Olha minhas stats e me diz o que melhorar"; iadivPerguntar(); } },
+  ]);
+}
+
+async function iadivPerguntar() {
+  const inp = document.getElementById("iadivPergunta");
+  const p = inp.value.trim();
+  if (!p) return;
+  if (!meuUuid) { iadivBolha("ia", "❌ Faz login primeiro pra eu ter teu contexto."); return; }
+  iadivBolha("user", p);
+  inp.value = "";
+  document.getElementById("iadiv-chips").innerHTML = "";
+  const placeholder = iadivBolha("ia", "🤖 pensando…");
+  const btn = document.getElementById("iadivBtn");
+  btn.disabled = true;
+  try {
+    const r = await fetch(`${SUPA}/functions/v1/divulgador-assistente`, {
+      method: "POST",
+      headers: { "apikey": ANON, "Authorization": "Bearer " + userJwt, "Content-Type": "application/json" },
+      body: JSON.stringify({ user_uuid: meuUuid, pergunta: p, history: _iadivHist }),
+    });
+    const d = await r.json();
+    if (!d.ok) {
+      placeholder.textContent = "❌ " + (d.mensagem || d.erro || "falhou");
+      return;
+    }
+    placeholder.textContent = d.texto + `\n\n— ${d.modelo || ""} · ${d.usados_hoje}/${d.limite} hoje`;
+    _iadivHist.push({ role: "user", content: p });
+    _iadivHist.push({ role: "assistant", content: d.texto });
+    if (_iadivHist.length > 16) _iadivHist.splice(0, _iadivHist.length - 16);
+    if (d.imagem_url) {
+      const wrap = document.createElement("div");
+      wrap.style.cssText = "margin-top:8px;border:1px dashed var(--magic);border-radius:8px;padding:6px;background:rgba(168,85,247,0.05)";
+      const aviso = document.createElement("div");
+      aviso.style.cssText = "font-size:11px;color:var(--muted);margin-bottom:4px";
+      aviso.textContent = "🎨 imagem cinematográfica gerando (~10s, pode aparecer aos poucos)…";
+      wrap.appendChild(aviso);
+      const img = document.createElement("img");
+      img.src = d.imagem_url;
+      img.loading = "lazy";
+      img.style.cssText = "width:100%;border-radius:6px;display:block";
+      img.onload = () => { aviso.textContent = "✅ pronta — toca segurando pra salvar"; };
+      img.onerror = () => { aviso.textContent = "⚠️ Pollinations demorou. Recarrega a imagem ou tenta de novo."; };
+      wrap.appendChild(img);
+      const dl = document.createElement("a");
+      dl.href = d.imagem_url;
+      dl.target = "_blank";
+      dl.download = `ventosul-divulga-${Date.now()}.jpg`;
+      dl.textContent = "⬇️ Baixar";
+      dl.style.cssText = "display:inline-block;margin-top:6px;color:var(--accent);font-size:12px;font-weight:600;text-decoration:none";
+      wrap.appendChild(dl);
+      placeholder.appendChild(wrap);
+    }
+    iadivChips([
+      { label: "🔁 Outra pergunta", acao: () => inp.focus() },
+      { label: "📲 Compartilhar agora", acao: compartilharGeral },
+      { label: "🎬 Ir pro Shorts", acao: () => location.href = "/shorts.html" },
+    ]);
+  } catch (e) { placeholder.textContent = "Erro: " + e.message; }
+  finally { btn.disabled = false; }
+}
+
+// inicia chat assim que carrega (so se logado)
+if (meuUuid) setTimeout(iadivIniciar, 600);
+
+// ─── Metas de compartilhamento ───────────────────────────────────────────────
+const METAS = [
+  { n: 1,   bar: 'bar-1',   card: 'meta-1',   chk: 'chk-1' },
+  { n: 5,   bar: 'bar-5',   card: 'meta-5',   chk: 'chk-5' },
+  { n: 10,  bar: 'bar-10',  card: 'meta-10',  chk: 'chk-10' },
+  { n: 25,  bar: 'bar-25',  card: 'meta-25',  chk: 'chk-25' },
+  { n: 50,  bar: 'bar-50',  card: 'meta-50',  chk: 'chk-50' },
+  { n: 100, bar: 'bar-100', card: 'meta-100', chk: 'chk-100' },
+];
+
+async function carregarMetas() {
+  try {
+    const r = await supa('/rpc/meu_progresso_divulgador', {}, 'POST');
+    const d = await r.json();
+    const total = d.total_shares || 0;
+    const el = document.getElementById('total-shares-lbl');
+    if (el) el.textContent = `📣 ${total} compartilhamento${total!==1?'s':''} registrado${total!==1?'s':''}`;
+    const proxima = METAS.find(m => total < m.n);
+    METAS.forEach(m => {
+      const pct = Math.min(total / m.n * 100, 100);
+      const bar = document.getElementById(m.bar);
+      const card = document.getElementById(m.card);
+      const chk = document.getElementById(m.chk);
+      if (bar) bar.style.width = pct + '%';
+      if (total >= m.n) {
+        if (card) card.classList.add('conquistada');
+        if (chk) chk.textContent = '✅';
+      }
+    });
+  } catch {}
+}
+
+async function compartilharAgora() {
+  const ref = window.VSShare?.meuRef?.() || '';
+  const url = ref
+    ? `https://vento-sul.tech/?ref=${ref}`
+    : 'https://vento-sul.tech';
+  const texto = '🌊 Conheça o Vento Sul — app de impacto social do Sul do Brasil! Comerciantes locais, SulCoins, rádio IA e muito mais.';
+  let compartilhou = false;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: 'Vento Sul', text: texto, url });
+      compartilhou = true;
+    } catch (e) {
+      if (e.name !== 'AbortError') compartilhou = true;
+    }
+  } else {
+    window.open(`https://wa.me/?text=${encodeURIComponent(texto + ' ' + url)}`, '_blank', 'noopener');
+    compartilhou = true;
+  }
+  if (compartilhou) {
+    // Registra no backend
+    try {
+      const r = await supa('/rpc/registrar_share_divulgador', { p_tipo: 'app' }, 'POST');
+      const d = await r.json();
+      if (d.meta_msg) {
+        setTimeout(() => { alert(d.meta_msg); carregarMetas(); }, 500);
+      } else {
+        setTimeout(carregarMetas, 800);
+      }
+    } catch {}
+  }
+}
+
+// Botão QR da barraca/loja se vier de uma barraca
+const urlParam = new URLSearchParams(location.search).get('url');
+if (urlParam) {
+  const btn = document.querySelector('.share-big-btn');
+  if (btn) {
+    btn.textContent = '📣 Compartilhar este lugar agora';
+    btn.onclick = () => {
+      if (navigator.share) navigator.share({ title: 'Vento Sul', url: urlParam });
+      else window.open(`https://wa.me/?text=${encodeURIComponent('Olha que lugar legal no Vento Sul! ' + urlParam)}`, '_blank');
+    };
+  }
+}
+
+// Load
+document.addEventListener('DOMContentLoaded', () => { setTimeout(carregarMetas, 1200); });
+
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="social"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Saco Grande",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-saco-grande",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cama Pimenta",
+   "tipo": "Bed",
+   "emoji": "🏪",
+   "cat": "bed",
+   "end": "",
+   "link": "https://www.camapimenta.com.br/contato"
+  },
+  {
+   "nome": "Elaine Amorim Studio de Beleza e Estética",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rodovia Virgílio Várzea 981",
+   "link": ""
+  },
+  {
+   "nome": "Café Cultura",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Futura",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": "http://www.autocapitalvw.com.br"
+  },
+  {
+   "nome": "Santa Rita Materiais Elétricos",
+   "tipo": "Electrical",
+   "emoji": "🏪",
+   "cat": "electrical",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Decathlon",
+   "tipo": "Esportes",
+   "emoji": "🏄",
+   "cat": "sports",
+   "end": "Rodovia José Carlos Daux 3400",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Primavera Home & Garden",
+   "tipo": "Garden Centre",
+   "emoji": "🏪",
+   "cat": "garden_centre",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Mix Utilidades - Loja SC-401",
+   "tipo": "Houseware",
+   "emoji": "🏪",
+   "cat": "houseware",
+   "end": "Rodovia José Carlos Daux 4850",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rodovia Virgílio Várzea 587",
+   "link": "www.floripashopping.com.br"
+  },
+  {
+   "nome": "Passeio Primavera",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rodovia José Carlos Daux 4150",
+   "link": ""
+  },
+  {
+   "nome": "Shopping Casa & Design",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Florterra",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rodovia Virgílio Várzea 863",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Sak's",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Virgílio Várzea 762",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Coelho",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Virgílio Várzea 1975",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Sonic",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Virgílio Várzea 1204",
+   "link": ""
+  },
+  {
+   "nome": "O Padeiro de Sevilha",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Doce Ilha Doces e Festas",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "Rodovia Virgílio Várzea",
+   "link": ""
+  },
+  {
+   "nome": "Posto Maria Rita",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Miyoshi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Nipô Sushi",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pala  Casa de Assados",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Virgílio Várzea 3033",
+   "link": "https://www.assadospala.com.br/"
+  },
+  {
+   "nome": "Quatro Estações",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Delícias do Campo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Temakin",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

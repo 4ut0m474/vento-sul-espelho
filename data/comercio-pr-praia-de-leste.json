@@ -1,0 +1,94 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Praia de Leste",
+ "cidade": "Florianópolis",
+ "slug": "pr-praia-de-leste",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Laurita Center",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Morifarma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Engenheiro Darci Gomes de Morais",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Menin",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Nossos Sonhos",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rodovia Engenheiro Darci Gomes de Morais 1670",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "Ipiranga",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": "",
+   "tel": "",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  },
+  {
+   "nome": "SuperRede",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "",
+   "link": "",
+   "tel": "+55 41 3452 2229",
+   "zap": "",
+   "insta": "",
+   "fb": ""
+  }
+ ]
+}

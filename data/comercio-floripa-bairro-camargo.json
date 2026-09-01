@@ -1,0 +1,722 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Camargo",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-camargo",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Lauro Linhares 1693",
+   "link": ""
+  },
+  {
+   "nome": "Itaú",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bugio Trindade Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "General Lee",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Cônego Bernardo 101",
+   "link": ""
+  },
+  {
+   "nome": "Karaoke Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Desembargador Vítor Lima 484",
+   "link": ""
+  },
+  {
+   "nome": "Quebra Gelo",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Rango's do Farol",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Ciclobike Trindade",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Della Bikes",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua Juvêncio Costa 269",
+   "link": "https://www.dellabikes.com.br/"
+  },
+  {
+   "nome": "Garupa",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua Francisco Goulart 42",
+   "link": "http://garupa.bike/"
+  },
+  {
+   "nome": "Barbearia Trindade",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mitragie",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Amo Café Vegano",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Professora Enoé Schutel 56",
+   "link": ""
+  },
+  {
+   "nome": "Cacau Show",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "SuperFast",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casas da Água",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Avenida da Saudade 03",
+   "link": "https://www.casasdaagua.com.br/"
+  },
+  {
+   "nome": "Hidrofusos",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Loja Completa",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares 1040",
+   "link": "https://www.drogaraia.com.br/"
+  },
+  {
+   "nome": "Farmácia Biopharma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Normal",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares 928",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares 1693",
+   "link": ""
+  },
+  {
+   "nome": "Trindade Farmácia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Inusittá",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vado Água e Gás",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Energiluz",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Juvêncio Costa 290",
+   "link": "https://energiluz.com.br/"
+  },
+  {
+   "nome": "Mix Utilidades",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Vidraçaria Carioca",
+   "tipo": "Glaziery",
+   "emoji": "🏪",
+   "cat": "glaziery",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Açaiteria Floripa",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bokão Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "McDonald's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pressed Food",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Q-sucos",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": "https://www.qsucos.com.br/"
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Usina do Hamburguer",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vitrola Burger",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Juvêncio Costa 120",
+   "link": ""
+  },
+  {
+   "nome": "Xande Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Água Viva",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Lauro Linhares 499",
+   "link": ""
+  },
+  {
+   "nome": "Stecanela",
+   "tipo": "Lighting",
+   "emoji": "🏪",
+   "cat": "lighting",
+   "end": "Rua Lauro Linhares 356",
+   "link": "https://www.stecanela.com.br/"
+  },
+  {
+   "nome": "Chaveiro Açoriano",
+   "tipo": "Locksmith",
+   "emoji": "🏪",
+   "cat": "locksmith",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Comercial São Francisco",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rua Lauro Linhares 2010",
+   "link": ""
+  },
+  {
+   "nome": "Trindade Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Villa Romana Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Avenida Madre Benvenuta 687",
+   "link": "http://villaromanashopping.com.br/l"
+  },
+  {
+   "nome": "Casas do Cano",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Avenida Madre Benvennuta 40",
+   "link": "https://casasdocano.com.br/"
+  },
+  {
+   "nome": "Materiais de Construção Ponto Certo",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermatec",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Avenida da Saudade 10",
+   "link": ""
+  },
+  {
+   "nome": "Armazém Mercado Express",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Lauro Linhares 1085",
+   "link": ""
+  },
+  {
+   "nome": "Manhattan 44",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Desembargador Vítor Lima 410",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Alternativo",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Ponto Certo",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua General Vieira da Rosa 1516",
+   "link": ""
+  },
+  {
+   "nome": "Mercado União",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Carrefour",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": "http://walmart.com.br"
+  },
+  {
+   "nome": "Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Lauro Linhares 2010",
+   "link": ""
+  },
+  {
+   "nome": "Tefé Suplementos",
+   "tipo": "Nutrition Supplements",
+   "emoji": "🏪",
+   "cat": "nutrition_supplements",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Auto Oficina C&R Possenti",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Trajano Margarida",
+   "link": ""
+  },
+  {
+   "nome": "Eletro Buratto",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rainha do Pão de Queijo",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Lauro Linhares 957",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuária Gente da Terra",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Lauro Linhares 329",
+   "link": ""
+  },
+  {
+   "nome": "Pet Affetto",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Auto Posto da Vovó",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Angeloni",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Lauro Linhares 996",
+   "link": ""
+  },
+  {
+   "nome": "Kock",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Impressão 3D ITCTERM",
+   "tipo": "Repair",
+   "emoji": "🏪",
+   "cat": "repair",
+   "end": "Rua Desembargador Vítor Lima 260",
+   "link": "www.itcterm.itcterm.com.br"
+  },
+  {
+   "nome": "Bom Garfo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Campus Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Desembargador Bar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "La Bohème",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Monxstra Pizzaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Moochacho",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Yellow's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Pop Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Humberto Campos 88",
+   "link": "https://queropop.com/"
+  },
+  {
+   "nome": "Restaurante Versá Gastronomia",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 2055",
+   "link": ""
+  },
+  {
+   "nome": "Servidor",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sobrallia",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 1250",
+   "link": "https://www.sobrallia.com.br/"
+  },
+  {
+   "nome": "Solar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Trindog",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 898",
+   "link": ""
+  },
+  {
+   "nome": "ViPizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 1974",
+   "link": ""
+  },
+  {
+   "nome": "Wa Sushi Express",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 1371",
+   "link": ""
+  },
+  {
+   "nome": "Clarinda",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Monchik's",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Top-in",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Brechó da Paróquida Trindade",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sapataria Britez",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rua Lauro Linhares 1468",
+   "link": ""
+  },
+  {
+   "nome": "Frutos De Goiás",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Torre de Papel",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Piscina Limpa",
+   "tipo": "Swimming Pool",
+   "emoji": "🏪",
+   "cat": "swimming_pool",
+   "end": "Avenida Madre Benvenuta",
+   "link": ""
+  },
+  {
+   "nome": "Hiper Trindade 1,99",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantina Il Poggio",
+   "tipo": "Wine",
+   "emoji": "🏪",
+   "cat": "wine",
+   "end": "Rua Cônego Bernardo 101",
+   "link": ""
+  }
+ ]
+}

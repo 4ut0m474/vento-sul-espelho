@@ -1,0 +1,146 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Capivari",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-capivari",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Selso Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Confiança",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Pharmalife Farmácia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Dário Manoel Cardoso 1205",
+   "link": ""
+  },
+  {
+   "nome": "Ultragaz",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Ponto da Carne",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa Express",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Dário Manoel Cardoso",
+   "link": ""
+  },
+  {
+   "nome": "Mercado e Açougue do Piá",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Dário Manoel Cardoso 1174",
+   "link": ""
+  },
+  {
+   "nome": "Super MM",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Super Mercado Minibox",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Dário Manoel Cardoso",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Colina",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Zanetti Motos",
+   "tipo": "Motorcycle Repair",
+   "emoji": "🏪",
+   "cat": "motorcycle_repair",
+   "end": "Estr. Dário Manoel Cardoso 745",
+   "link": ""
+  },
+  {
+   "nome": "Zero Grau",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rodovia João Gualberto Soares 1977",
+   "link": ""
+  },
+  {
+   "nome": "Agro Pet & Flor",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rodovia João Gualberto Soares 1775",
+   "link": ""
+  },
+  {
+   "nome": "Posto Alto dos Ingleses",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia João Gualberto Soares 1800",
+   "link": ""
+  },
+  {
+   "nome": "Postos Máximo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia João Gualberto Soares",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Chácara Rio Jordão",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Estrada Dário Manoel Cardoso 2222",
+   "link": "https://www.chacarariojordao.com.br/"
+  },
+  {
+   "nome": "Calçados Bambini",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "Rodovia João Gualberto Soares 610",
+   "link": ""
+  }
+ ]
+}

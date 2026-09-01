@@ -1,0 +1,178 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Jurerê Internacional",
+ "cidade": "Florianópolis",
+ "slug": "sc-floripa-jurere",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Jurerê International Apartment",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida das Raias 601",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida dos Búzios 1760",
+   "link": ""
+  },
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia Jornalista Maurício Sirotsky Sobrinho",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia PreçoPopular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Jornalista Maurício Sirotsky Sobrinho 5567,",
+   "link": ""
+  },
+  {
+   "nome": "IL Campanario Villaggio Resort",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida dos Búzios 1760",
+   "link": "http://www.ilcampanario.com.br/"
+  },
+  {
+   "nome": "Jurerê Beach Village",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua César Nascimento 646",
+   "link": "http://www.jurerebeachvillage.com.br"
+  },
+  {
+   "nome": "Angeloni Jurerê",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida das Raias 471",
+   "link": "https://www.angeloni.com.br"
+  },
+  {
+   "nome": "Supermercado Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Jornalista Maurício Sirotsky Sobrinho 5451",
+   "link": ""
+  },
+  {
+   "nome": "Arqflora",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": "https://arqflora.com.br/"
+  },
+  {
+   "nome": "Di Zucchine Congelados",
+   "tipo": "Pasta",
+   "emoji": "🏪",
+   "cat": "pasta",
+   "end": "Avenida das Raias 261",
+   "link": ""
+  },
+  {
+   "nome": "Posto Golden",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Jornalista Maurício Sirotsky Sobrinho",
+   "link": ""
+  },
+  {
+   "nome": "Posto Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida das Raias 261",
+   "link": "https://www.shell.com.br/motoristas/localizador-de-postos.html"
+  },
+  {
+   "nome": "Jurerê B&B",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pousada das Samambaias",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Acqua Plage",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "https://acquajurere.com.br/"
+  },
+  {
+   "nome": "Café de la Musique",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida dos Merlins",
+   "link": ""
+  },
+  {
+   "nome": "Iguarias",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "La Serena",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida das Lagostas",
+   "link": ""
+  },
+  {
+   "nome": "Olivia cucina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Simple on the Beach",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "yogolatte",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

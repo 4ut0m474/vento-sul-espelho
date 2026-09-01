@@ -1,0 +1,826 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Morro da Caixa",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-morro-da-caixa",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Residencial Vivendas",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Doutor Abel Capela 798",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Almirante Tamandaré 94",
+   "link": ""
+  },
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida Almirante Tamandaré 355",
+   "link": ""
+  },
+  {
+   "nome": "A Magia do Boteco",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Santos Saraiva 1962",
+   "link": ""
+  },
+  {
+   "nome": "Boteko Nova Ponte",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barber Shop",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Bernardino Vaz",
+   "link": ""
+  },
+  {
+   "nome": "Bike Up!",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Central Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Toninho",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bridge Coffee Estreito",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Secundino Peixoto 119",
+   "link": "https://cafeteria.bridgecoffee.com.br"
+  },
+  {
+   "nome": "Açoriana Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Governador Ivo Silveira",
+   "link": ""
+  },
+  {
+   "nome": "DVA",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua General Eurico Gaspar Dutra 865",
+   "link": ""
+  },
+  {
+   "nome": "Florence Peugeot",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Gorvenador Ivo Silveira 1653",
+   "link": ""
+  },
+  {
+   "nome": "Miguel Automóveis",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Phipasa Fiat",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Gorvenador Ivo Silveira 1601",
+   "link": ""
+  },
+  {
+   "nome": "Ponto1",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Governador Ivo Silveira 2056",
+   "link": ""
+  },
+  {
+   "nome": "Shop Car Floripa",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Luiz Gualberto",
+   "link": ""
+  },
+  {
+   "nome": "Show Prime Concessionária de carros",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Luiz Gualberto",
+   "link": ""
+  },
+  {
+   "nome": "Top Car BMW",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Visconde de Cairu 176",
+   "link": "http://www.topcar.bmw.com.br"
+  },
+  {
+   "nome": "Volkswagen",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Santos Saraiva 654",
+   "link": ""
+  },
+  {
+   "nome": "Floripeças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Santos Saraiva 610",
+   "link": "http://www.floripecas.com.br/"
+  },
+  {
+   "nome": "Cacau Show",
+   "tipo": "Chocolate",
+   "emoji": "🏪",
+   "cat": "chocolate",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "5àsec",
+   "tipo": "Dry Cleaning",
+   "emoji": "🏪",
+   "cat": "dry_cleaning",
+   "end": "Rua Capitão Euclides de Castro",
+   "link": "https://www.5asec.com.br"
+  },
+  {
+   "nome": "Eletro Rachadel",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "Rua Santos Saraiva 677",
+   "link": ""
+  },
+  {
+   "nome": "Ibagy",
+   "tipo": "Estate Agent",
+   "emoji": "🏪",
+   "cat": "estate_agent",
+   "end": "Rua Santos Saraiva 1083",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farma Sesi",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Engenheiro Max de Souza 1410",
+   "link": ""
+  },
+  {
+   "nome": "Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Saúde Vital",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "São João",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Engenheiro Max de Souza 1346",
+   "link": ""
+  },
+  {
+   "nome": "Zazá",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Indaiara Arte Design",
+   "tipo": "Floricultura",
+   "emoji": "💐",
+   "cat": "florist",
+   "end": "Avenida Engenheiro Max de Souza",
+   "link": ""
+  },
+  {
+   "nome": "Móveis do Bem",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Rua Doutor Fúlvio Aducci 626",
+   "link": "https://moveisdobem.com/"
+  },
+  {
+   "nome": "Nossa Loja",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Avenida Governador Ivo Silveira 2422",
+   "link": ""
+  },
+  {
+   "nome": "Albano's Produtos Naturais",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Estação da Semente",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Direto do Campo Coqueiros",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Avenida Engenheiro Max de Souza 843",
+   "link": ""
+  },
+  {
+   "nome": "O Cestão",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "Rua Ursulina de Senna Castro",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Oceano",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Governador Ivo Silveira 1041",
+   "link": ""
+  },
+  {
+   "nome": "Hotel de Trânsito de Oficiais",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar e Lanchonete do Chico",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cantina",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Feito da Fruta",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lav&Leve",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "eLav Lavanderia Florianópolis",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Doutor Abel Capela 517",
+   "link": ""
+  },
+  {
+   "nome": "LC Chaves e Carimbos",
+   "tipo": "Locksmith",
+   "emoji": "🏪",
+   "cat": "locksmith",
+   "end": "Rua Doutor Heitor Blum 345",
+   "link": ""
+  },
+  {
+   "nome": "Lotérica Super Sorte Coqueiros",
+   "tipo": "Lottery",
+   "emoji": "🏪",
+   "cat": "lottery",
+   "end": "Avenida Engenheiro Max de Souza 843",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Edelweiss",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rua Santos Saraiva 1180",
+   "link": ""
+  },
+  {
+   "nome": "Galego",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Magazzino di Massa",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Pereira",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Santos Saraiva 1766",
+   "link": ""
+  },
+  {
+   "nome": "SC Mini Mercado",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Atacadão",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Juscelino Kubitschek de Oliveira 469",
+   "link": "https://www.atacadao.com.br/"
+  },
+  {
+   "nome": "Supermercados Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "MT Store Floripa",
+   "tipo": "Mobile Phone",
+   "emoji": "🏪",
+   "cat": "mobile_phone",
+   "end": "Rua Fúlvio Aducci 627",
+   "link": "https://linktr.ee/mtstore.floripa/"
+  },
+  {
+   "nome": "Banco do Empreendedor",
+   "tipo": "Money Lender",
+   "emoji": "🏪",
+   "cat": "money_lender",
+   "end": "",
+   "link": "https://www.bancodoempreendedor.org.br/"
+  },
+  {
+   "nome": "Box Motocicletas",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "Rua Capitão Euclides de Castro 94",
+   "link": ""
+  },
+  {
+   "nome": "Top Car",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "Rua General Eurico Gaspar Dutra 558",
+   "link": ""
+  },
+  {
+   "nome": "Armazém do Óleo",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva",
+   "link": ""
+  },
+  {
+   "nome": "Auto Fix Center",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1731",
+   "link": ""
+  },
+  {
+   "nome": "Autofrio",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 2142",
+   "link": ""
+  },
+  {
+   "nome": "Casa dos Freios",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Praça Paulo Schlemper 4",
+   "link": ""
+  },
+  {
+   "nome": "Júlio Pneus",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1481",
+   "link": ""
+  },
+  {
+   "nome": "LubService",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado do Óleo",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua General Eurico Gaspar Dutra 862",
+   "link": "http://www.mercadodooleo.net.br/"
+  },
+  {
+   "nome": "Prime Mecânica",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rodar Mecânica Multimarcas",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Santos Saraiva 1574",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho Doce",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Capela do Pão",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Dia de Festa",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "Rua Thiago da Fonseca",
+   "link": ""
+  },
+  {
+   "nome": "Confeitaria Krauss",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuária Fênix",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Anjinho da Guarda",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floripa PetShop",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jóia Posto",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua General Eurico Gaspar Dutra",
+   "link": ""
+  },
+  {
+   "nome": "Posto 4 Ilhas",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Engenheiro Max de Souza 1387",
+   "link": ""
+  },
+  {
+   "nome": "Posto Atacadão",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Coqueiros",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Engenheiro Max de Souza 1387",
+   "link": ""
+  },
+  {
+   "nome": "Posto Nienkötter",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arte Di Sabores",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Engenheiro Max de Souza 1093",
+   "link": ""
+  },
+  {
+   "nome": "Bella Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Heróis da Pizza",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Almirante Tamandaré 375",
+   "link": "https://www.heroisdapizza.com.br/florianopolis"
+  },
+  {
+   "nome": "Imigrantes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jun",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Almirante Tamandaré 106",
+   "link": ""
+  },
+  {
+   "nome": "O Costelão",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ponto X",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Puerto Escondido Kioske Mexicano",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Avenida",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Tiannes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Henrique Boiteaux 154",
+   "link": ""
+  },
+  {
+   "nome": "Saladas Grill",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Wamaki",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Myah Store",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cláudia Calçados",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Best Açaí",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "Avenida Engenheiro Max de Souza 1358",
+   "link": ""
+  },
+  {
+   "nome": "eskimó sorvetes",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Viva Turismo",
+   "tipo": "Travel Agency",
+   "emoji": "🏪",
+   "cat": "travel_agency",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mega Útil",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

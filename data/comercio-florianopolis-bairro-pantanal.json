@@ -1,0 +1,610 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Pantanal",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-pantanal",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Banco Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Delfino Conti 306",
+   "link": "https://www.bb.com.br"
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Delfino Conti 41",
+   "link": ""
+  },
+  {
+   "nome": "Bunker 22",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Centro Social da Cerveja",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida César Seara 19",
+   "link": ""
+  },
+  {
+   "nome": "Container Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hemera Vibes",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": "https://bio.site/hemeravibes"
+  },
+  {
+   "nome": "Meu Escritório",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Reboliço Nails Club",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Still",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia CARVE",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Cartel da Barba",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Irmão Calixto 31",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Timóteo's",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": ""
+  },
+  {
+   "nome": "Salão e Barbearia Primavera",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café Da Ilha",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Go Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": "https://gocoffee.com.br/"
+  },
+  {
+   "nome": "Lanchonete FEESC",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lanchonete do CED",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lanchonete do CETEC",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lanchonete do CFH",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mané Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Heremita",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Capitão Romualdo de Barros 952",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Dona Tita",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "AutoMundi Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": "https://www.automundi.com"
+  },
+  {
+   "nome": "Sorriso Automóveis",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Via Sul",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Pixurum",
+   "tipo": "Charity",
+   "emoji": "🏪",
+   "cat": "charity",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Unicopy",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Irmão Calixto 31",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": "https://drogaraia.com.br/"
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Deputado Antônio Edu Vieira 932",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Deputado Antônio Edu Vieira 1926",
+   "link": ""
+  },
+  {
+   "nome": "Gimpel",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Conexão 48",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Travessa das Alamandas 35",
+   "link": "http://www.conexao48hostel.com.br/"
+  },
+  {
+   "nome": "Hotel Quinta da Bica D’Água",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Capitão Romualdo de Barros 641",
+   "link": "http://hotelquintadabicadagua.com.br/site/"
+  },
+  {
+   "nome": "Quiosque do Condomínio Acquaville",
+   "tipo": "Kiosk",
+   "emoji": "🏪",
+   "cat": "kiosk",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Burblack",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Deputado Antônio Edu Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Charlie Dog",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Container CSE",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor do Nordeste",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua João Motta Espezim 1295",
+   "link": ""
+  },
+  {
+   "nome": "Santa Marguerita",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Squiers",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tren-Bão",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavanderia Lib Clean",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Capitão Romualdo de Barros 883",
+   "link": "https://www.libclean.com.br"
+  },
+  {
+   "nome": "Acervo das Letras",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casas do Cano",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Mais Saúde",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Capitão Romualdo de Barros 916",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Carvoeira",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Capitão Romualdo de Barros 905",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Migma",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Açoriano",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Armazém da Nina",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua João Pio Duarte Silva 114",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Argentina",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panificadora Orlessan",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Deputado Antônio Edu Vieira 1440",
+   "link": ""
+  },
+  {
+   "nome": "Faço Bolos Schweitzer",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "Rua Capitão Romualdo de Barros 952",
+   "link": ""
+  },
+  {
+   "nome": "Dalmo Ouriques Emotion Photo",
+   "tipo": "Photo",
+   "emoji": "🏪",
+   "cat": "photo",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto 5 Estrelas",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Deputado Antônio Edu Vieira 393",
+   "link": ""
+  },
+  {
+   "nome": "Posto Sulcar",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Deputado Antônio Edu Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Appetite",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Capitão Romualdo de Barros 925",
+   "link": ""
+  },
+  {
+   "nome": "Assados do Bairro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Capitão Romualdo de Barros 862",
+   "link": ""
+  },
+  {
+   "nome": "Assim Assado",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bife Ali na Mesa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Deputado Antônio Edu Vieira 775",
+   "link": ""
+  },
+  {
+   "nome": "Eskimo Sorvetes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Maria Eduarda 33",
+   "link": ""
+  },
+  {
+   "nome": "Flamel",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Los Brutu's Pizzaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria di Roma",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Deputado Antônio Edu Vieira 988",
+   "link": ""
+  },
+  {
+   "nome": "Recanto",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Deputado Antônio Edu Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Ilhas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante da Família",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante universitário",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": "https://ru.ufsc.br/ru/"
+  },
+  {
+   "nome": "Seu Caetano Restaurante e Hamburgueria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 22",
+   "link": ""
+  },
+  {
+   "nome": "Sushiway",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "The Frostbier Pub",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "João Pio Duarte Silva 331",
+   "link": ""
+  },
+  {
+   "nome": "Tradição",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua João Pio Duarte Silva 277",
+   "link": ""
+  },
+  {
+   "nome": "Liandra Noivas",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Gatô Tabacos & Bebidas",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": ""
+  },
+  {
+   "nome": "Sport Rodas",
+   "tipo": "Tyres",
+   "emoji": "🏪",
+   "cat": "tyres",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

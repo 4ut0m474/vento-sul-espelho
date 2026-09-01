@@ -1,0 +1,82 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Vargem de Fora",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-vargem-de-fora",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "PH Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua do Lamim",
+   "link": ""
+  },
+  {
+   "nome": "Havan",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": "https://www.havan.com.br/"
+  },
+  {
+   "nome": "Rei do Outlet",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Entrepostos",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia das Goiabas",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua das Goiabas",
+   "link": ""
+  },
+  {
+   "nome": "Posto Mahalo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Posto Rota do Mar",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia José Carlos Daux",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Toscanella",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia José Carlos Daux 17910",
+   "link": "https://pizzariatoscanella.com.br/"
+  },
+  {
+   "nome": "Fort Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Marginal da SC-403",
+   "link": "https://www.fortatacadista.com.br/"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "barra-2026-08",
+ "titulo": "O Tesouro da Barra",
+ "subtitulo": "Três provas. Três números. Um lugar.",
+ "local": "Barra da Lagoa",
+ "aberto": true,
+ "regra": "Cada prova resolvida entrega UM NÚMERO — e só quem acerta vê o número. Junte os três na ordem e você terá a chave do esconderijo. Vale juntar gente: quem resolve sozinho demora; quem resolve em roda chega antes.",
+ "premio": "a definir pelo Vento Sul",
+ "prazo": "sem prazo — fecha quando alguém achar",
+ "desafios": [
+  {
+   "n": 1,
+   "tipo": "charada",
+   "titulo": "A que sobe o rio ao contrário",
+   "texto": "Venho do sul quando o vento vira e a água esfria. Chego em cardume, e a vila inteira acorda pra me esperar — rede na mão, olho no costão, grito de quem me avista primeiro. Sou fartura de junho a julho, e quem me pega divide com o vizinho.\n\nQue peixe sou eu?",
+   "dica": "Tem festa com o meu nome, e gente que sobe o morro só pra avistar o cardume.",
+   "resposta_hash": "5a4cdcb495a5246efd1b650081d75539fb8e970e1cae80c91a94df9f80beb4c6",
+   "premio_cifrado": "OtdW/YjEmGQDhcy1KShrGjmnhtMhRHpCLSodFU/1C3O1fCyFBZXyqULW35nLuxNxprjEGXGhY4xnWD6inCFVqL4kZId/o5s="
+  },
+  {
+   "n": 2,
+   "tipo": "local",
+   "titulo": "A travessia que balança",
+   "texto": "Existe um caminho na Barra que só atravessa quem vai a pé. Ele balança quando muita gente passa junto, e liga dois lados que o carro não une.\n\nVá até lá — o app confirma quando você chegar. E leve alguém: esta caça não foi feita pra fazer sozinho.",
+   "dica": "Se você está na vila e quer chegar na praia sem dar a volta, já passou por ela.",
+   "lat": -27.57525,
+   "lng": -48.42266,
+   "raio_m": 90,
+   "pede_foto": true,
+   "resposta_hash": "ce1fe8e4de42381995d1edfe55f15b3a4e03a769255781cddc62e64ef5394bc5",
+   "premio_cifrado": "8nZx6p+D9n6Y5ZEy7dFIlzjtQUJAyXq1O9j2FuwirGlgSCY9zCWn7ZdzU+SRQrRmLdq2uQKoOl0xwiYhx2Yl+Z3Q"
+  },
+  {
+   "n": 3,
+   "tipo": "charada",
+   "titulo": "A rede que se joga girando",
+   "texto": "Não sou vara, não sou anzol, não sou rede de dois barcos. Sou pano redondo com chumbo na saia. Quem me lança gira o corpo, abre o braço e me faz virar círculo no ar antes de eu cair na água.\n\nPoucos ainda sabem me atirar direito. Pergunte a um pescador antigo da Barra o nome da arte de me lançar — e escreva esse nome aqui.",
+   "dica": "Não é o nome do peixe nem do barco. É o nome do pano que vira círculo no ar.",
+   "resposta_hash": "341cdf65092984a43c2e437583240c626668435910ef8218160db04a8096eddd",
+   "premio_cifrado": "NPV38Qw51T2qABBDg+4fK8rjRptyZaUAYTgokL+V09OIJH49AVaSadLoLyPG82wNAtkSNumapzdLPDwF3Ga+UuHxbcAcQEk="
+  }
+ ],
+ "final": {
+  "pergunta": "Junte os três números, na ordem. Que número deu?",
+  "resposta_hash": "3f9807cb9ae9fb6c30942af6139909d27753a5e03fe5a5c6e93b014f5b17366f",
+  "premio_cifrado": "z34JoLVkc1CkLuxGR/HQSfW0o7KPlcS/Qy43ypF0diiTqyxlFEGtnMFmFyLKcMss3NG0bRHX+H8pp7vPUk3iZg3oPuolvAI2Tza7OBGWmquL8dfcGPj2E4fdI+Nsa+gL+M4KLvwVhZeBw1S/WlIszhQJQX3smWtmWJm7TIqH3kyxGfj+IFhwv+Y7Uoz0Pk69Au5Ji0uIPIQkAK1DGbgfWJS8Nuf0plYFfx++gmRLhMtEA2fu7Mq3BU93DQoIwpexX7DPbn6ebCHQiQsKhRZT4+3Y32Bb+QgmmFKaFWs4vWsAPvpPm2ur1Yf0BWjPqT/65Y+if+QYtdwSJiZpa8Zd2wSIKVPsak6yDYyViairtJg="
+ }
+}

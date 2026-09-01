@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como Funciona · Vento Sul</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <script src="/config.js"></script>
+  <style>
+    :root{
+      --acc:#7af0ff;--gold:#f0c040;--good:#22c55e;--purple:#a855f7;
+      --txt:#f1f5f9;--hint:#94a3b8;--card:rgba(8,16,30,0.7);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:system-ui,sans-serif;color:var(--txt);
+      background:linear-gradient(160deg,#020810,#030d1a 60%,#040a14);
+      min-height:100vh;overflow-x:hidden;}
+
+    /* ── Topbar ── */
+    #topbar{position:sticky;top:0;z-index:99;display:flex;align-items:center;gap:10px;
+      padding:12px 16px;background:rgba(2,8,16,.92);backdrop-filter:blur(16px);
+      border-bottom:1px solid rgba(122,240,255,.10);}
+    #topbar a{color:var(--acc);text-decoration:none;font-size:20px;}
+    #topbar h1{font-size:.95rem;font-weight:700;}
+
+    /* ── Player de áudio flutuante ── */
+    #player-bar{position:fixed;bottom:0;left:0;right:0;z-index:200;
+      background:rgba(4,10,20,.96);backdrop-filter:blur(20px);
+      border-top:1px solid rgba(122,240,255,.18);padding:10px 16px;
+      display:flex;align-items:center;gap:12px;}
+    #player-bar .p-ico{font-size:22px;cursor:pointer;transition:transform .15s;flex-shrink:0;}
+    #player-bar .p-ico:hover{transform:scale(1.15);}
+    #player-bar .p-track{flex:1;min-width:0;}
+    #player-bar .p-title{font-size:.82rem;font-weight:700;color:var(--acc);
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    #player-bar .p-sub{font-size:.7rem;color:var(--hint);margin-top:1px;}
+    #player-bar .p-progress{width:100%;height:3px;background:rgba(255,255,255,.1);
+      border-radius:2px;margin-top:6px;cursor:pointer;position:relative;}
+    #player-bar .p-fill{height:100%;border-radius:2px;
+      background:linear-gradient(90deg,var(--acc),var(--gold));width:0%;
+      transition:width .5s linear;}
+    #player-bar .p-time{font-size:.68rem;color:var(--hint);min-width:36px;text-align:right;}
+    audio{display:none;}
+
+    /* ── Hero ── */
+    .hero{text-align:center;padding:48px 20px 32px;position:relative;}
+    .hero-onda{font-size:56px;animation:float 3s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    .hero h2{font-size:2rem;font-weight:900;margin:12px 0 8px;
+      background:linear-gradient(135deg,#7af0ff,#f0c040 60%,#22c55e);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .hero p{font-size:1rem;color:var(--hint);max-width:480px;margin:0 auto 20px;line-height:1.6;}
+    .btn-ouvir{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;
+      border-radius:50px;font-size:1rem;font-weight:700;cursor:pointer;border:none;
+      background:linear-gradient(135deg,rgba(122,240,255,.2),rgba(240,192,64,.15));
+      color:var(--acc);border:1px solid rgba(122,240,255,.4);transition:all .2s;}
+    .btn-ouvir:hover{background:linear-gradient(135deg,rgba(122,240,255,.3),rgba(240,192,64,.25));}
+    .btn-ouvir .ico{font-size:20px;}
+
+    /* ── Seções ── */
+    .secao{max-width:680px;margin:0 auto 60px;padding:0 16px;opacity:0;transform:translateY(24px);
+      transition:opacity .6s ease,transform .6s ease;}
+    .secao.visivel{opacity:1;transform:translateY(0);}
+    .secao.ativa .secao-num{background:var(--gold);color:#000;}
+    .secao-header{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+    .secao-num{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);
+      border:2px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;
+      font-size:1.1rem;font-weight:900;flex-shrink:0;transition:background .3s,color .3s;}
+    .secao-header h3{font-size:1.3rem;font-weight:800;line-height:1.2;}
+    .secao-header h3 span{display:block;font-size:.8rem;font-weight:400;color:var(--hint);margin-top:2px;}
+    .secao-body{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;}
+    @media(max-width:540px){.secao-body{grid-template-columns:1fr;}}
+    .secao-texto p{font-size:.95rem;line-height:1.75;color:rgba(241,245,249,.85);margin-bottom:12px;}
+    .secao-texto p:last-child{margin-bottom:0;}
+    .secao-texto strong{color:var(--acc);}
+    .secao-texto .destaque{background:rgba(122,240,255,.08);border-left:3px solid var(--acc);
+      padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:.88rem;}
+
+    /* ── Mockup phone ── */
+    .mockup{width:160px;flex-shrink:0;border-radius:20px;overflow:hidden;
+      border:2px solid rgba(255,255,255,.15);background:#060c18;
+      box-shadow:0 8px 32px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.05);}
+    .mockup-bar{height:8px;background:rgba(255,255,255,.06);display:flex;justify-content:center;
+      align-items:center;gap:3px;padding:2px 0;}
+    .mockup-bar span{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.2);}
+    .mockup-inner{padding:10px 8px;}
+    .mk-title{font-size:8px;color:var(--hint);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+    .mk-big{font-size:18px;font-weight:900;color:var(--acc);margin-bottom:2px;}
+    .mk-sub{font-size:7px;color:var(--hint);}
+    .mk-bar{height:4px;background:rgba(255,255,255,.08);border-radius:2px;margin:5px 0;}
+    .mk-bar .mk-fill{height:100%;border-radius:2px;}
+    .mk-row{display:flex;justify-content:space-between;align-items:center;
+      padding:4px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:7px;}
+    .mk-row:last-child{border:none;}
+    .mk-btn{margin-top:7px;background:rgba(122,240,255,.15);border-radius:6px;
+      padding:5px;text-align:center;font-size:7px;color:var(--acc);font-weight:700;}
+    .mk-chip{display:inline-block;padding:2px 5px;border-radius:8px;font-size:6px;
+      background:rgba(122,240,255,.1);color:var(--acc);border:1px solid rgba(122,240,255,.2);margin:2px 1px;}
+    .mk-op{background:rgba(240,192,64,.08);border:1px solid rgba(240,192,64,.2);
+      border-radius:6px;padding:5px 6px;margin-bottom:4px;font-size:7px;}
+    .mk-op-title{color:var(--gold);font-weight:700;margin-bottom:1px;}
+
+    /* ── Divisor ── */
+    .divisor{height:1px;background:linear-gradient(90deg,transparent,rgba(122,240,255,.2),transparent);
+      max-width:680px;margin:0 auto 60px;}
+
+    /* ── Destaque cooperativa ── */
+    .coop-card{max-width:680px;margin:0 auto 60px;padding:28px 24px;
+      background:linear-gradient(135deg,rgba(122,240,255,.06),rgba(240,192,64,.04));
+      border:1px solid rgba(122,240,255,.2);border-radius:20px;text-align:center;}
+    .coop-card h3{font-size:1.5rem;font-weight:900;margin-bottom:10px;
+      background:linear-gradient(135deg,var(--acc),var(--gold));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .coop-card p{font-size:.95rem;color:rgba(241,245,249,.8);line-height:1.7;margin-bottom:14px;}
+    .coop-pillars{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left;}
+    .pillar{background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.08);
+      border-radius:10px;padding:12px;}
+    .pillar .p-ico{font-size:22px;margin-bottom:6px;}
+    .pillar strong{display:block;font-size:.85rem;margin-bottom:3px;}
+    .pillar span{font-size:.76rem;color:var(--hint);}
+
+    /* ── CTA final ── */
+    .cta-final{text-align:center;max-width:480px;margin:0 auto;padding:20px 16px 80px;}
+    .cta-final h3{font-size:1.4rem;font-weight:900;margin-bottom:10px;}
+    .cta-final p{font-size:.9rem;color:var(--hint);margin-bottom:20px;line-height:1.6;}
+    .btn-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:14px 28px;border-radius:14px;font-size:1rem;font-weight:700;
+      background:linear-gradient(135deg,rgba(122,240,255,.2),rgba(34,197,94,.15));
+      color:var(--acc);border:1px solid rgba(122,240,255,.35);cursor:pointer;
+      text-decoration:none;width:100%;margin-bottom:10px;transition:all .2s;}
+    .btn-cta:hover{background:linear-gradient(135deg,rgba(122,240,255,.3),rgba(34,197,94,.25));}
+
+    /* ── 3 públicos (comércio / morador / turista) ── */
+    .publicos{max-width:680px;margin:0 auto 60px;padding:0 16px;}
+    .pub-tabs{display:flex;gap:8px;margin-bottom:18px;}
+    .pub-tab{flex:1;text-align:center;font-weight:700;font-size:.85rem;padding:11px 6px;border-radius:12px;
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--hint);cursor:pointer;transition:.18s;}
+    .pub-tab.on{background:linear-gradient(135deg,rgba(122,240,255,.22),rgba(240,192,64,.16));
+      color:var(--acc);border-color:rgba(122,240,255,.4);}
+    .pub-card{background:var(--card);border:1px solid rgba(122,240,255,.16);border-radius:18px;padding:22px 20px;}
+    .pub-card h4{font-size:1.25rem;font-weight:800;margin-bottom:8px;}
+    .pub-card .uma{font-size:.95rem;line-height:1.7;color:rgba(241,245,249,.85);margin-bottom:14px;}
+    .pub-card ul{list-style:none;display:grid;gap:8px;margin:0 0 4px;}
+    .pub-card li{font-size:.88rem;color:rgba(241,245,249,.8);padding-left:24px;position:relative;line-height:1.5;}
+    .pub-card li::before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:900;}
+    .pub-fluxia{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);
+      font-size:.86rem;color:var(--hint);line-height:1.6;}
+    .pub-fluxia b{color:var(--gold);}
+  </style>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body>
+
+<div id="topbar">
+  <a href="/" title="Início">←</a>
+  <h1>🌊 Como Funciona · Vento Sul</h1>
+</div>
+
+<!-- Player fixo no rodapé -->
+<div id="player-bar">
+  <div class="p-ico" id="btn-play" onclick="togglePlay()" title="Ouvir narração">▶️</div>
+  <div class="p-track">
+    <div class="p-title">Narração: Como funciona o Vento Sul</div>
+    <div class="p-sub" id="p-secao-atual">Clique em ▶ para ouvir a explicação narrada</div>
+    <div class="p-progress" onclick="seekAudio(event)">
+      <div class="p-fill" id="p-fill"></div>
+    </div>
+  </div>
+  <div class="p-time" id="p-time">0:59</div>
+</div>
+
+<audio id="audio-narr" preload="metadata">
+  <source src="/audio/como-funciona.mp3" type="audio/mpeg">
+</audio>
+
+<main style="padding-bottom:70px;">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-onda">🌊</div>
+    <h2>O app que tava faltando</h2>
+    <p>Vento Sul é uma plataforma cooperativa digital para o Sul do Brasil. Simples, transparente e quase gratuita. Aqui você entende tudo em 6 passos.</p>
+    <button class="btn-ouvir" onclick="togglePlay()">
+      <span class="ico">🔊</span> Ouvir a explicação narrada
+    </button>
+  </div>
+
+  <!-- ─── Seção 1 — O que é ─── -->
+  <div class="secao" id="s1" data-secao="1" data-tempo="0">
+    <div class="secao-header">
+      <div class="secao-num">1</div>
+      <h3>Você é parte dona<span>não só usuário — você tem voz na plataforma</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>O Vento Sul funciona <strong>quase como uma cooperativa digital</strong>. Diferente de apps comuns onde a empresa decide tudo, aqui cada usuário tem poder de decisão sobre como os recursos circulam.</p>
+        <p>Você define como seu dinheiro é usado no pool comunitário. Você vê em tempo real tudo que acontece. E você se beneficia diretamente quando o app cresce.</p>
+        <div class="destaque">💡 Tecnologia que serve às pessoas — não o contrário.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">🌊 Vento Sul</div>
+          <div style="display:flex;gap:6px;margin-bottom:8px">
+            <div style="flex:1;background:rgba(122,240,255,.12);border:1px solid rgba(122,240,255,.2);border-radius:8px;padding:6px;text-align:center">
+              <div style="font-size:16px">🌊</div>
+              <div style="font-size:6px;color:var(--acc);margin-top:2px">Litorânea</div>
+            </div>
+            <div style="flex:1;background:rgba(255,193,7,.12);border:1px solid rgba(255,193,7,.2);border-radius:8px;padding:6px;text-align:center">
+              <div style="font-size:16px">🤖</div>
+              <div style="font-size:6px;color:#ffc107;margin-top:2px">Automata</div>
+            </div>
+            <div style="flex:1;background:rgba(255,80,200,.12);border:1px solid rgba(255,80,200,.2);border-radius:8px;padding:6px;text-align:center">
+              <div style="font-size:16px">✨</div>
+              <div style="font-size:6px;color:#ff50c8;margin-top:2px">Aurora</div>
+            </div>
+          </div>
+          <div class="mk-btn">👤 Minha área →</div>
+          <div class="mk-btn" style="margin-top:4px;background:rgba(34,197,94,.12);color:var(--good)">💳 Minha carteira →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Seção 2 — Carteira ─── -->
+  <div class="secao" id="s2" data-secao="2" data-tempo="10">
+    <div class="secao-header">
+      <div class="secao-num">2</div>
+      <h3>Sua carteira de SulCoins<span>moeda da comunidade · 1 SC = R$ 1,00</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>Cada conta tem uma <strong>carteira com SulCoins</strong>. A menor unidade é o <em>suli</em> — 100 sulis = 1 SulCoin = R$ 1,00.</p>
+        <p>Você pode <strong>enviar sulis como mensagem</strong> para outro usuário (quase como um Pix simbólico), pagar serviços de comerciantes parceiros, ou guardar para missões futuras.</p>
+        <p>Tudo vinculado à sua conta Google — recuperou a conta, recuperou tudo.</p>
+        <div class="destaque">📲 Gerar QR code pra receber · Enviar por e-mail · Histórico completo na carteira.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">💰 Carteira SulCoin</div>
+          <div class="mk-big">13.509</div>
+          <div class="mk-sub">sulis livres · ≈ R$ 135,09</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:7px 0">
+            <div class="mk-btn" style="font-size:6px">💸 Enviar</div>
+            <div class="mk-btn" style="font-size:6px;background:rgba(34,197,94,.15);color:var(--good)">📥 Receber QR</div>
+          </div>
+          <div class="mk-title" style="margin-top:6px">Últimas transações</div>
+          <div class="mk-row"><span>🎯 Missão concluída</span><span style="color:var(--good)">+250 ⚡</span></div>
+          <div class="mk-row"><span>📥 Recebido</span><span style="color:var(--good)">+50 ⚡</span></div>
+          <div class="mk-row"><span>🔑 Entrada anual</span><span style="color:#ef4444">-1000 ⚡</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Seção 3 — Pool transparente ─── -->
+  <div class="secao" id="s3" data-secao="3" data-tempo="20">
+    <div class="secao-header">
+      <div class="secao-num">3</div>
+      <h3>Pool transparente · auditoria aberta<span>todo mundo vê o dinheiro circular em tempo real</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>Todo SulCoin que existe nasceu no pool. O pool é <strong>público, auditável e visível em tempo real</strong> para qualquer pessoa, mesmo sem login.</p>
+        <p>Você vê: quantos foram emitidos, quantos estão nas carteiras, quanto ainda está disponível para distribuir. Nada escondido.</p>
+        <div class="destaque">📊 Acesse <strong>/economia</strong> e veja o estado do pool ao vivo — atualiza a cada 90 segundos.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">🪙 Economia SulCoin</div>
+          <div class="mk-row"><span>Capacidade total</span><span style="color:var(--gold)">332K</span></div>
+          <div class="mk-row"><span>Emitido</span><span style="color:var(--acc)">15.5K</span></div>
+          <div class="mk-row"><span>Disponível</span><span style="color:var(--good)">316K</span></div>
+          <div class="mk-bar" style="margin:8px 0 4px"><div class="mk-fill" style="width:4.6%;background:var(--gold)"></div></div>
+          <div style="font-size:6px;color:var(--hint);text-align:right">4.6% usado · 95.4% livre</div>
+          <div class="mk-title" style="margin-top:8px">Forjas recentes</div>
+          <div class="mk-row"><span>🔨 compra</span><span style="color:var(--gold)">+1000 ⚡</span></div>
+          <div class="mk-row"><span>🔨 bonus_diario</span><span style="color:var(--gold)">+5 ⚡</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Seção 4 — Alocações ─── -->
+  <div class="secao" id="s4" data-secao="4" data-tempo="30">
+    <div class="secao-header">
+      <div class="secao-num">4</div>
+      <h3>Você decide onde vai o dinheiro<span>suas alocações alimentam o pool comunitário</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>Nas <strong>Minhas Alocações</strong>, você define como quer que seus sulis sejam usados no pool:</p>
+        <p>📢 <strong>Propaganda regional</strong> — rádio Vento Sul, jogo Aurora, redes sociais. Você decide o peso de cada canal.</p>
+        <p>🎯 <strong>Prêmios da comunidade</strong> — missões sociais, quests no jogo, assistir vídeos. Quanto vai para cada tipo de recompensa.</p>
+        <div class="destaque">🔒 Suas preferências ficam salvas na conta Google. Recuperou o login, preferências voltam todas.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">🎚️ Minhas Alocações</div>
+          <div style="font-size:6px;color:var(--hint);margin-bottom:5px">📢 Propaganda regional</div>
+          <div class="mk-row"><span>📻 Rádio</span><span style="color:var(--acc)">60%</span></div>
+          <div class="mk-bar"><div class="mk-fill" style="width:60%;background:var(--acc)"></div></div>
+          <div class="mk-row"><span>✨ Aurora</span><span style="color:var(--acc)">20%</span></div>
+          <div class="mk-bar"><div class="mk-fill" style="width:20%;background:var(--acc)"></div></div>
+          <div style="font-size:6px;color:var(--hint);margin:6px 0 5px">🎯 Prêmios</div>
+          <div class="mk-row"><span>🎯 Missões</span><span style="color:var(--good)">50%</span></div>
+          <div class="mk-bar"><div class="mk-fill" style="width:50%;background:var(--good)"></div></div>
+          <div class="mk-row"><span>⚔️ Quests</span><span style="color:var(--good)">30%</span></div>
+          <div class="mk-bar"><div class="mk-fill" style="width:30%;background:var(--good)"></div></div>
+          <div class="mk-btn" style="margin-top:6px">✏️ Editar alocações →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Seção 5 — Oportunidades ─── -->
+  <div class="secao" id="s5" data-secao="5" data-tempo="40">
+    <div class="secao-header">
+      <div class="secao-num">5</div>
+      <h3>Oportunidades inteligentes<span>o sistema monitora e avisa você automaticamente</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>O app lê o estado do pool em tempo real e <strong>gera oportunidades personalizadas</strong> para você:</p>
+        <p>🎁 <strong>Bônus diário disponível</strong> — resgate sulis grátis uma vez por dia.</p>
+        <p>🏪 <strong>Desconto por alocação ativa</strong> — se você alocou sulis, pode mostrar seu QR para comerciantes parceiros e ganhar desconto.</p>
+        <p>🏊 <strong>Pool em expansão</strong> — quando há muito sulis disponível, as recompensas de missão aumentam.</p>
+        <div class="destaque">🔔 Com notificações push ativas, o app te avisa quando uma oportunidade aparece mesmo sem abrir.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">🌟 Oportunidades para você</div>
+          <div class="mk-op">
+            <div class="mk-op-title">🎁 Bônus diário disponível</div>
+            <div style="font-size:6px;color:var(--hint)">Resgate sulis grátis de hoje!</div>
+            <div style="font-size:6px;color:var(--gold);margin-top:3px;font-weight:700">Resgatar →</div>
+          </div>
+          <div class="mk-op">
+            <div class="mk-op-title">🏪 Desconto por alocação</div>
+            <div style="font-size:6px;color:var(--hint)">Mostre seu QR para parceiros</div>
+            <div style="font-size:6px;color:var(--gold);margin-top:3px;font-weight:700">Ver QR →</div>
+          </div>
+          <div class="mk-op">
+            <div class="mk-op-title">🏊 Pool em expansão!</div>
+            <div style="font-size:6px;color:var(--hint)">Faça missões agora — mais recompensas</div>
+            <div style="font-size:6px;color:var(--gold);margin-top:3px;font-weight:700">Ver missões →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Seção 6 — Comerciantes ─── -->
+  <div class="secao" id="s6" data-secao="6" data-tempo="50">
+    <div class="secao-header">
+      <div class="secao-num">6</div>
+      <h3>Para comerciantes · negócios mais inteligentes<span>vitrine · rádio · fidelização · mapa</span></h3>
+    </div>
+    <div class="secao-body">
+      <div class="secao-texto">
+        <p>O Vento Sul é <strong>ferramenta de negócio</strong> para comerciantes locais:</p>
+        <p>📻 <strong>Anuncie no rádio</strong> — sua propaganda vai para quem está ouvindo ao vivo.</p>
+        <p>🗺️ <strong>Apareça no mapa</strong> — visitantes te encontram na busca por cidade e categoria.</p>
+        <p>🏪 <strong>Aceite sulis</strong> — clientes pagam com a moeda da comunidade e você fortalece o ecossistema local.</p>
+        <p>📊 <strong>Dashboard completo</strong> — veja visitas, engajamento, transações. Tudo no seu painel.</p>
+        <div class="destaque">💡 Tecnologia de grande empresa, ao alcance de qualquer barraca de praia, food truck ou loja local.</div>
+      </div>
+      <div class="mockup">
+        <div class="mockup-bar"><span></span><span></span><span></span></div>
+        <div class="mockup-inner">
+          <div class="mk-title">🏪 Painel Comerciante</div>
+          <div class="mk-row"><span>👁️ Visitas hoje</span><span style="color:var(--acc)">247</span></div>
+          <div class="mk-row"><span>💰 Receita em sulis</span><span style="color:var(--good)">3.400 ⚡</span></div>
+          <div class="mk-row"><span>📻 Anúncio rádio</span><span style="color:var(--gold)">✓ ativo</span></div>
+          <div class="mk-row"><span>🗺️ No mapa</span><span style="color:var(--good)">✓ visível</span></div>
+          <div class="mk-chip">📣 Rádio</div>
+          <div class="mk-chip" style="background:rgba(168,85,247,.1);color:#c084fc;border-color:rgba(168,85,247,.2)">🗺️ Mapa</div>
+          <div class="mk-chip" style="background:rgba(34,197,94,.1);color:var(--good);border-color:rgba(34,197,94,.2)">💳 SulCoin</div>
+          <div class="mk-btn" style="margin-top:6px">📊 Ver dashboard →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisor"></div>
+
+  <!-- ─── Como funciona pra VOCÊ (3 públicos) ─── -->
+  <div class="publicos secao" id="s-publicos">
+    <div class="secao-header">
+      <div class="secao-num">👋</div>
+      <h3>Como funciona pra você<span>o mesmo app fala três línguas: comércio, morador e turista</span></h3>
+    </div>
+    <div class="pub-tabs">
+      <div class="pub-tab on" data-p="comercio">🛒 Pro comércio</div>
+      <div class="pub-tab" data-p="pessoas">🏡 Pro morador</div>
+      <div class="pub-tab" data-p="turista">🏖️ Pro turista</div>
+    </div>
+    <div class="pub-card">
+      <h4 id="pubc-tit">Carregando…</h4>
+      <div class="uma" id="pubc-txt"></div>
+      <ul id="pubc-ben"></ul>
+      <div class="pub-fluxia" id="pubc-fx"></div>
+    </div>
+  </div>
+
+  <!-- ─── Cooperativa card ─── -->
+  <div class="coop-card secao" id="s-coop">
+    <h3>🌊 Uma cooperativa digital do Sul</h3>
+    <p>O Vento Sul não é uma empresa normal. É uma plataforma construída para ser ferramenta — não para sugar dados ou cobrar absurdos. A estrutura é pensada para que cada usuário seja dono, cada comerciante seja parceiro, e a tecnologia sirva à vida real do Sul do Brasil.</p>
+    <div class="coop-pillars">
+      <div class="pillar"><div class="p-ico">🔍</div><strong>Transparência total</strong><span>Pool público, forjas auditáveis, dados em tempo real para todos.</span></div>
+      <div class="pillar"><div class="p-ico">⚡</div><strong>Quase gratuito</strong><span>Entrada anual de R$ 10. Nada de mensalidade cara ou assinatura oculta.</span></div>
+      <div class="pillar"><div class="p-ico">🗳️</div><strong>Você decide</strong><span>Suas alocações definem como o pool é distribuído — não um algoritmo secreto.</span></div>
+      <div class="pillar"><div class="p-ico">🏘️</div><strong>Economia local</strong><span>Sulis circulam dentro da comunidade. O que fica, fica aqui.</span></div>
+    </div>
+  </div>
+
+  <!-- ─── CTA final ─── -->
+  <div class="cta-final secao" id="s-cta">
+    <h3>Pronto para começar?</h3>
+    <p>É grátis pra entrar, explorar e conversar com a Litorânea. Você paga a entrada (R$ 10/ano) só se quiser ativar sua carteira.</p>
+    <a class="btn-cta" href="/">🌊 Abrir o Vento Sul</a>
+    <a class="btn-cta" href="/economia.html" style="background:rgba(240,192,64,.1);color:var(--gold);border-color:rgba(240,192,64,.3)">🪙 Ver a economia do pool ao vivo</a>
+    <a class="btn-cta" href="/carteira.html" style="background:rgba(34,197,94,.08);color:var(--good);border-color:rgba(34,197,94,.3)">💳 Abrir minha carteira</a>
+  </div>
+
+</main>
+
+<!-- ── FAB Automata ── -->
+<style>
+#av-fab{position:fixed;bottom:80px;right:14px;z-index:300;
+  width:56px;height:56px;border-radius:50%;cursor:pointer;border:none;padding:0;
+  background:radial-gradient(circle,rgba(255,193,7,.55),rgba(255,193,7,.12));
+  border:2px solid rgba(255,193,7,.7);box-shadow:0 0 18px rgba(255,193,7,.45);
+  overflow:hidden;transition:transform .2s}
+#av-fab:hover{transform:scale(1.1)}
+#av-fab img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+#av-panel{position:fixed;bottom:148px;right:14px;z-index:301;
+  width:200px;background:rgba(8,16,30,.95);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,193,7,.3);border-radius:16px;
+  overflow:hidden;display:none;flex-direction:column;align-items:center;
+  box-shadow:0 8px 32px rgba(0,0,0,.6)}
+#av-panel.aberto{display:flex}
+#av-panel-header{width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:8px 12px;border-bottom:1px solid rgba(255,193,7,.15)}
+#av-panel-header span{font-size:.75rem;font-weight:700;color:#ffc107}
+#av-fechar{background:none;border:none;color:#94a3b8;cursor:pointer;font-size:16px;padding:0}
+#av-img{width:180px;height:180px;object-fit:cover;display:block}
+#av-legenda{font-size:.7rem;color:#f1f5f9;text-align:center;
+  padding:8px 12px;line-height:1.45;min-height:36px}
+</style>
+
+<button id="av-fab" title="Falar com a Automata 🤖" aria-label="Automata">
+  <img src="/img/aurora-classes/alquimista-feminino-futuro.jpg" alt="Automata">
+</button>
+
+<div id="av-panel">
+  <div id="av-panel-header">
+    <span>🤖 Automata</span>
+    <button id="av-fechar">✕</button>
+  </div>
+  <img id="av-img" src="" alt="Automata">
+  <div id="av-legenda">Olá! Sou a Automata 🤖<br>Deixa eu te explicar o app!</div>
+</div>
+
+<script>
+const AV_FRAMES = [
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg',  leg:'Olá! Sou a Automata 🤖<br>Deixa eu te explicar o app!' },
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg',  leg:'Você é parte dona —<br>não só usuário.' },
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg', leg:'Carteira SulCoin:<br>sua moeda, seu controle 🪙' },
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg', leg:'Pool transparente:<br>todo mundo vê em tempo real.' },
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg',           leg:'Você decide onde vai<br>cada suli 🎚️' },
+  { url:'/img/aurora-classes/alquimista-feminino-futuro.jpg',         leg:'Oportunidades inteligentes<br>esperando por você 🌟' },
+];
+
+let avIdx=0, avTimer=null, avAberto=false;
+const avFab=document.getElementById('av-fab');
+const avPanel=document.getElementById('av-panel');
+const avImg=document.getElementById('av-img');
+const avLeg=document.getElementById('av-legenda');
+const avFechar=document.getElementById('av-fechar');
+
+function avMostrar(i){
+  const f=AV_FRAMES[i];
+  avImg.src=f.url;
+  avLeg.innerHTML=f.leg;
+}
+
+function avAbrir(){
+  avAberto=true;
+  avPanel.classList.add('aberto');
+  avMostrar(0); avIdx=0;
+  avTimer=setInterval(()=>{ avIdx=(avIdx+1)%AV_FRAMES.length; avMostrar(avIdx); },2200);
+}
+
+function avFecharFn(){
+  avAberto=false;
+  avPanel.classList.remove('aberto');
+  clearInterval(avTimer);
+}
+
+avFab.addEventListener('click',()=>{ avAberto?avFecharFn():avAbrir(); });
+avFechar.addEventListener('click',avFecharFn);
+
+// Troca legenda conforme seção visível
+const SECAO_LEG={
+  s1:'Você é co-dono —<br>não só usuário.',
+  s2:'Carteira SulCoin 🪙<br>1 SC = R$1,00.',
+  s3:'Pool público —<br>auditável em tempo real.',
+  s4:'Você decide<br>onde vai o dinheiro.',
+  s5:'Oportunidades<br>inteligentes para você 🌟',
+  s6:'Para comerciantes —<br>vitrine + rádio + mapa.',
+};
+const ioAv2=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting && avAberto && SECAO_LEG[e.target.id]){
+      avLeg.innerHTML=SECAO_LEG[e.target.id];
+    }
+  });
+},{threshold:0.5});
+document.querySelectorAll('#s1,#s2,#s3,#s4,#s5,#s6').forEach(s=>ioAv2.observe(s));
+</script>
+
+<script>
+const audio = document.getElementById("audio-narr");
+const btnPlay = document.getElementById("btn-play");
+const pFill = document.getElementById("p-fill");
+const pTime = document.getElementById("p-time");
+const pSec = document.getElementById("p-secao-atual");
+
+const SECOES = [
+  {id:"s1", tempo:0,  label:"1 — Você é parte dona"},
+  {id:"s2", tempo:9,  label:"2 — Sua carteira SulCoin"},
+  {id:"s3", tempo:19, label:"3 — Pool transparente"},
+  {id:"s4", tempo:29, label:"4 — Suas alocações"},
+  {id:"s5", tempo:40, label:"5 — Oportunidades inteligentes"},
+  {id:"s6", tempo:50, label:"6 — Para comerciantes"},
+];
+
+function fmt(s){
+  s=Math.round(s||0);
+  return Math.floor(s/60)+":"+(s%60<10?"0":"")+(s%60);
+}
+
+audio.addEventListener("loadedmetadata", () => {
+  pTime.textContent = fmt(audio.duration);
+});
+
+audio.addEventListener("timeupdate", () => {
+  const pct = audio.duration ? (audio.currentTime / audio.duration * 100) : 0;
+  pFill.style.width = pct + "%";
+  pTime.textContent = fmt(audio.duration - audio.currentTime);
+
+  // Avança seção ativa conforme tempo
+  for (let i = SECOES.length - 1; i >= 0; i--) {
+    if (audio.currentTime >= SECOES[i].tempo) {
+      pSec.textContent = "Seção " + SECOES[i].label;
+      // Ativa numeração
+      document.querySelectorAll(".secao-num").forEach((n,idx) => {
+        n.classList.toggle("ativa-num", idx === i);
+        const el = document.getElementById(SECOES[idx]?.id);
+        if (el) el.classList.toggle("ativa", idx === i);
+      });
+      // Scroll suave para seção
+      const el = document.getElementById(SECOES[i].id);
+      if (el && i !== window._lastSecIdx) {
+        window._lastSecIdx = i;
+        el.scrollIntoView({behavior:"smooth", block:"start"});
+      }
+      break;
+    }
+  }
+});
+
+audio.addEventListener("ended", () => {
+  btnPlay.textContent = "▶️";
+  pSec.textContent = "Clique em ▶ para ouvir novamente";
+  pFill.style.width = "0%";
+  window._lastSecIdx = -1;
+});
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play().then(() => { btnPlay.textContent = "⏸️"; })
+      .catch(() => {
+        // Fallback Web Speech API
+        usarVozNavegador();
+      });
+  } else {
+    audio.pause();
+    btnPlay.textContent = "▶️";
+  }
+}
+
+function seekAudio(e) {
+  if (!audio.duration) return;
+  const rect = e.currentTarget.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  audio.currentTime = (x / rect.width) * audio.duration;
+}
+
+function usarVozNavegador() {
+  if (!("speechSynthesis" in window)) { alert("Sem suporte a áudio neste navegador."); return; }
+  const texto = document.querySelector("main").innerText.replace(/\n+/g," ").trim();
+  const utt = new SpeechSynthesisUtterance(texto);
+  utt.lang = "pt-BR";
+  utt.rate = 0.95;
+  const voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith("pt"));
+  if (voices.length) utt.voice = voices[0];
+  speechSynthesis.speak(utt);
+  btnPlay.textContent = "⏸️";
+  pSec.textContent = "Lendo via voz do navegador…";
+  utt.onend = () => { btnPlay.textContent = "▶️"; pSec.textContent = "Fim da narração."; };
+}
+
+// ── Intersection Observer pra revelar seções ──
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visivel"); });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(".secao").forEach(s => io.observe(s));
+
+// Estilo dinâmico para seção ativa
+const style = document.createElement("style");
+style.textContent = ".secao-num.ativa-num{background:var(--gold)!important;color:#000!important;}";
+document.head.appendChild(style);
+</script>
+<script>
+// 👋 Explicações por público — fonte única servida pela VPS (explicacoes-publicos.json).
+// Edita num lugar só (radio-queue/explicacoes-publicos.json) → app, jornal e rádio leem o mesmo.
+(function(){
+  let EXPL=null;
+  function esc(s){const d=document.createElement("div");d.textContent=s||"";return d.innerHTML;}
+  function pintar(p){
+    if(!EXPL)return;
+    const app=((EXPL.produtos||{}).app_vento_sul||{}).publicos||{};
+    const fx =((EXPL.produtos||{}).fluxia||{}).publicos||{};
+    const a=app[p]||{}, f=fx[p]||{};
+    document.getElementById("pubc-tit").textContent=a.titulo||"Vento Sul";
+    document.getElementById("pubc-txt").textContent=a.pagina||a.radio||"";
+    document.getElementById("pubc-ben").innerHTML=(a.beneficios||[]).map(b=>`<li>${esc(b)}</li>`).join("");
+    const ft=f.pagina||f.radio||"";
+    document.getElementById("pubc-fx").innerHTML=ft?`<b>FluxIA</b> (pra pousadas e comércios) — ${esc(ft)}`:"";
+    document.querySelectorAll("#s-publicos .pub-tab").forEach(t=>t.classList.toggle("on",t.dataset.p===p));
+  }
+  fetch("/radio-mp3/explicacoes-publicos.json?t="+Date.now())
+    .then(r=>r.json()).then(j=>{EXPL=j;pintar("comercio");})
+    .catch(()=>{document.getElementById("pubc-tit").textContent="Vento Sul — rádio, comércio e família da Ilha num app só.";});
+  document.querySelectorAll("#s-publicos .pub-tab").forEach(t=>t.addEventListener("click",()=>pintar(t.dataset.p)));
+})();
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="termos"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+</body>
+</html>

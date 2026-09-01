@@ -1,0 +1,480 @@
+{
+ "atualizado_em": "2026-08-29T20:04:09-03:00",
+ "fontes": {
+  "tempo": "MET Norway (api.met.no) — CC BY 4.0",
+  "mar_onda_lua": "Open-Meteo Marine + cálculo astronômico (dados-marinhos)",
+  "cambio": "Frankfurter (BCE) + PTAX/BCB",
+  "cripto": "CoinGecko (reserva: AwesomeAPI)",
+  "noticias": "Google News",
+  "feriados": "BrasilAPI"
+ },
+ "tempo": {
+  "agora": {
+   "temp": 18,
+   "vento": 10.0,
+   "vento_dir": 176.3,
+   "umidade": 94.5,
+   "simbolo": "heavyrain"
+  },
+  "resumo": {
+   "hoje": {
+    "max": 18,
+    "min": 18,
+    "chuva_mm": 1.6
+   },
+   "amanha": {
+    "max": 20,
+    "min": 17,
+    "chuva_mm": 192.8
+   }
+  },
+  "horas": [
+   {
+    "hora": "00:00",
+    "temp": 18,
+    "vento": 9.9,
+    "simbolo": "cloudy"
+   },
+   {
+    "hora": "02:00",
+    "temp": 18,
+    "vento": 9.4,
+    "simbolo": "partlycloudy_night"
+   },
+   {
+    "hora": "04:00",
+    "temp": 18,
+    "vento": 8.7,
+    "simbolo": "cloudy"
+   },
+   {
+    "hora": "06:00",
+    "temp": 18,
+    "vento": 7.5,
+    "simbolo": "cloudy"
+   },
+   {
+    "hora": "08:00",
+    "temp": 17,
+    "vento": 8.0,
+    "simbolo": "cloudy"
+   },
+   {
+    "hora": "10:00",
+    "temp": 17,
+    "vento": 6.6,
+    "simbolo": "rain"
+   },
+   {
+    "hora": "12:00",
+    "temp": 19,
+    "vento": 5.8,
+    "simbolo": "cloudy"
+   },
+   {
+    "hora": "14:00",
+    "temp": 18,
+    "vento": 4.6,
+    "simbolo": "rain"
+   },
+   {
+    "hora": "16:00",
+    "temp": 18,
+    "vento": 4.7,
+    "simbolo": "heavyrain"
+   },
+   {
+    "hora": "18:00",
+    "temp": 18,
+    "vento": 4.6,
+    "simbolo": "heavyrain"
+   },
+   {
+    "hora": "20:00",
+    "temp": 18,
+    "vento": 5.1,
+    "simbolo": "rain"
+   },
+   {
+    "hora": "22:00",
+    "temp": 17,
+    "vento": 4.3,
+    "simbolo": "heavyrain"
+   }
+  ]
+ },
+ "mar": {
+  "ondas": {
+   "altura_m": 0.84,
+   "periodo_s": 6.2,
+   "direcao": "SE",
+   "graus": 120,
+   "classificacao": "Mar leve",
+   "label": "0.8m | 6s | SE | Mar leve"
+  },
+  "mare": {
+   "nivel_m": 0.19,
+   "tendencia": "↑ enchendo",
+   "proximo": "Preamar 02:00 (0.57m)",
+   "label": "0.19m ↑ enchendo"
+  },
+  "lua": {
+   "emoji": "🌖",
+   "nome": "Minguante gibosa",
+   "iluminacao": 87,
+   "ciclo": 17
+  },
+  "idade_min": 4
+ },
+ "cambio": {
+  "USD_BRL": {
+   "valor": 5.1641,
+   "var_pct": 0.43,
+   "data": "2026-08-28"
+  },
+  "EUR_BRL": {
+   "valor": 6.0126,
+   "var_pct": 0.41,
+   "data": "2026-08-28"
+  },
+  "PTAX_compra": {
+   "compra": 5.1999,
+   "data": "2026-08-28"
+  }
+ },
+ "cripto": {
+  "BTC": {
+   "brl": 406338.0,
+   "var_pct": 0.67
+  },
+  "ETH": {
+   "brl": 12742.14,
+   "var_pct": 0.54
+  }
+ },
+ "feriados": {
+  "hoje": null,
+  "proximos": [
+   {
+    "data": "2026-09-07",
+    "nome": "Independência do Brasil",
+    "tipo": "national",
+    "dias_faltam": 9
+   },
+   {
+    "data": "2026-10-12",
+    "nome": "Nossa Senhora Aparecida",
+    "tipo": "national",
+    "dias_faltam": 44
+   },
+   {
+    "data": "2026-11-02",
+    "nome": "Finados",
+    "tipo": "national",
+    "dias_faltam": 65
+   }
+  ]
+ },
+ "noticias": {
+  "economia": [
+   {
+    "titulo": "Três sinais claros de que o Brasil está à beira de uma crise econômica",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjdIcUwxRkxtMkNncURQY1lEell6T0lGMkZLTDZwaW9UN2ZxaDZ2dkpfNnhaZFBLRFg4WXFwSTUxNVY0R0hNNXhoN1QtUFVDd3lGakk5dTJRbFNRYzNZeUt5bFdPcGVzeF9GVy1McTNTdjFNSnUyTEhpS0o0ajBldndhdFRmdGVxT0tYOFo4ZWVQRVY4WmV4RVo5ejdWR21UbnZpbVJZS0Rodw?oc=5",
+    "fonte": "VEJA",
+    "quando": "Wed, 26 Aug 2026 19:05:15 GMT"
+   },
+   {
+    "titulo": "Do Habib's às Casas Bahia, por que tantas empresas estão quebrando no Brasil?",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtSkxDVmdMcGlESkJTZW8wVW9tcFF4SFdmd0ZmYUpJVXRBVUN6emhod1kxM2pRZ3hRcDRRQ2RJT0I3VUs5MVFNYVVDTFd1elpxeXVVVnBkenNsVm5CVXZ3eDdR0gFnQVVfeXFMUEt2ajV3aE8xVFN1ZEYxemJSWG9KVU1xNWxObE80ZUpmc0J4QnRzd1NrMG1ZMjVuTFJ3c0F0ZlZRaDBaZ3U1d2xsYWt0YVlNc3lYTng4NkZCYVVQNmJic3JJRkM4dUZlSQ?oc=5",
+    "fonte": "BBC",
+    "quando": "Thu, 27 Aug 2026 19:13:28 GMT"
+   },
+   {
+    "titulo": "Brasil cria 58,5 mil vagas em julho, pior resultado para o mês desde 2020",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQXlwN0lIcU11aU9kdGZSOTFVdl9rRU5VQU5GS3VjdHFCU0lNNVJEUFJuZ25MNHJ1Ml8tUDgxQXVPc2lUaEpPYjdVWDRoWWVfM1AtWlFHd2h0UFNnQmFMLWtfV3liOXlKUUxlcGY4c3MyNmdDZXM3dHctcFdtd1pQTjVKTDVvZi1ONUY0YUgxWExENzR3anZoblZETjJqaGo0MFZYXzJB?oc=5",
+    "fonte": "UOL Economia",
+    "quando": "Fri, 28 Aug 2026 21:43:16 GMT"
+   },
+   {
+    "titulo": "‘A mineração dará protagonismo ao Brasil’, diz presidente de instituto que representa empresas",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPS1U0RDhFR2VvYWhHT25FSkc5QVRVcnJ1NjZ6R3ZNN0RTdkZLdU1WRDZHZXprWGhUQ0QtU3JKaE92OHVfc0MxckRDZWFFLWtfVjZVbTFhTi1iYTdtOGxIY1pNbEpQOEluU2dhQk5LcWs4MGFnV3J5UlJlQVpJU1c2akVZN0stdk50VEx5bmNLSE9JQTFZYmdXWXc4ZTR6VHVrWnFLdjZYQ0U2SHRiQ3hjdV81bklpSjJhM0ZKNnVBa0p0MUZ1Qk5z0gHMAUFVX3lxTE1LZG00YUg5QVBDamc4OFhqbl9Fc1ZXQUk1TTJmbTdFTDVweS15YW81N09BQlgtVlFQaWQxcUV4RGZ5RlVSSXktOXkxbXcxTDFVY01kV2cyZ29jSzJjLWFzaVZCeU1TSkh1RXYteWVvOEVheWVjMTNQa1EyOE1Cd2h3UU8zUGIwdEstaDB3QjdTUWtvdkdEREpUVUFDZkRsWmVOSzNDcU5MR0otbXFSc2tTdHAydTdSbnNsOVBiYmswUjY3LXYyaENSTnJDbQ?oc=5",
+    "fonte": "Estadão",
+    "quando": "Sat, 29 Aug 2026 08:30:00 GMT"
+   },
+   {
+    "titulo": "Lula diz que fará do Brasil ‘uma das economias mais ricas e poderosas do mundo’",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb1NaNWpFT2h5YUg3OVNWeGxqSEFZeW00cmY3SE5BcHdzWVdXSW9vU0xFSWlvSlQ0WldNczVhaFVpamVNYTgxTS1xOEg0RmdDbW9ZQzBFMG9RZHNqellRZGZ3R1YtS2tfdHdkRWotY3kzSlZBY01qcTNOQzlYYWpXWTZoVWpzdVRpV0JXNjQwU3hqbVNVM3FXUHJTTGo?oc=5",
+    "fonte": "Partido dos Trabalhadores",
+    "quando": "Fri, 28 Aug 2026 22:10:00 GMT"
+   },
+   {
+    "titulo": "Brasil assina acordo para ampliar comércio com a Índia enquanto aguarda retomada de negociação para reduzir tarifaço dos EUA",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOblE3ajRrenhwNDdGZzJpQlZHQVg5ckJsdmw0Rl9TdFpXc1hmOTVaMEJ6UnNNa2V2TWs5UVhLZ3dLLXZmeEJ5VFNjSkpSdTdWMGZVY3BPUlVtMHotRmFGMG9OcXZuYTYtdG5GSC1kWGs0XzNwRWFUV1dWQmVqY19wcTI5Y0lHdEVvbEhnbERjWldsUXkzaGZkLUtmZ3RqWVF0R3NSZlFIb1VJV3EzTFlDUEM3VWc2OWdySXA2RkFFSUdFcXJ0RWI1VklkUmJrQmdkZDFESDR2SUx0ckN6MDlMdnlYSkxnZUVwU3BFOXZjUzN4amxhOG9kNjNTeEVEa2pCdlRrMDlqQ2JlOUnSAZoCQVVfeXFMTVB1LUNVaWNPeEw4UnM5NWJ2VFN1c29CVGlRRUlOUG43cjR2Z1FLQXBGQW16RWxDZ0VXYjJiTU5BeEZVaHUxQy1qcEFDNDh1TUt3ZlV5S1I2QzRBeHZmOWU3SEg2THlfRTlkc004c0o4aHFsb2dRbnQyeDA0czVTVW8zdXlNdXZMRzRGb1JZZ2hjVThDZWZmbmtJallxXzRCVDdxT0lsRDRBcGdBd0huV1JXcjJzd1lYR2YzbjVqRHkwVkNEN01JcUdPZ2d4MEZIU1ZKZzd3MnFOWDhuYVhKSnJncnlGUU5CZ21PSzhlazlFeDRITHNoZnowSlM3NTJ6VE5Ld3l0dFlWWFlIMG9UZ0pSMzREdXYtTzZn?oc=5",
+    "fonte": "G1",
+    "quando": "Thu, 27 Aug 2026 16:48:40 GMT"
+   },
+   {
+    "titulo": "Brasil é “máquina de produzir dólar”, diz Stuhlberger sobre o câmbio",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT0pLMXpVUm1QelhaVDBpLXJlemxPbjdQdHc4XzBxYkQ3QUNrX2laOGxlSTR6c2JpRGhtLW4xVTVSc1hDWEFPTXNOcUt3RmRDOFNheC1YOW4tZkFnYXVSazJuZnZTZXBZWXdjSTJ2Z1BxWHBDekhQcTdZeXBqVHVwQ1YwWkxhblBLQzlGVXZoTUpMV3FqVEV1bjB3emZUWFgycng0bUdEaTdJQ3A3MEE?oc=5",
+    "fonte": "Poder360",
+    "quando": "Fri, 28 Aug 2026 07:05:24 GMT"
+   },
+   {
+    "titulo": "Brasil cria 58,5 mil postos de trabalho em julho, aponta Caged",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaTNyYWZqU2EtUXJuUnRVT1VmZFRWNmoxWmZoa2FZN1oxN3UyR0lMM3BMYnZ5Wkw0MTZlZF9Zd1Izb0FheU44dzZ4MmpYM3V3SEsyXzRmMUE5UGNMLVp1TWQtbE9YSm5NRXFibDZhb2lZcnBsNDJGZlUtUTQ0SUVURmRxWklIZXJpVzFRVEdGM19CRkVsb2NyaEc2YmpaaHlWWTJnaw?oc=5",
+    "fonte": "CartaCapital",
+    "quando": "Fri, 28 Aug 2026 19:10:00 GMT"
+   }
+  ],
+  "saude": [
+   {
+    "titulo": "Belém declara guerra contra o mosquito da dengue - 29/08/2026 - Equilíbrio e Saúde",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOREY5OVN4ejBBWnlla0I4bXBJaU50NzdnT0dLdGNLaksyX2owRXpOME45WWgyU0dPZ3ZYal9VWEJLODhXalRmbWZlTFIzdkMtTDhqazBWOHZqbVdUM2NhM0ZndVAxLTQtcUs3bzlNaW9FeE1CQVh0UTNqbUpETVhiOWotZDdybndwczV3Rm14OWNXQV9BSDhXNkp5bWJYczNYWjRmcUd5NGlzakJRNGc?oc=5",
+    "fonte": "Folha de S.Paulo",
+    "quando": "Sat, 29 Aug 2026 21:00:00 GMT"
+   },
+   {
+    "titulo": "Lito publica novo vídeo sobre estado de saúde, e mulher mostra estrutura montada para homecare: 'Não estou triste'",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNeVJsNlFJeXJHeHJMMFpUTFNObW9OdEtFaDJDS0I0Y2xtd3dadFF2aGZHN1FYb2xRQkdoOUNmRmRMSUpVZVpxMFRvdXlCWVJxZ0NCUjk1c1lsY2ZjcGFvVWY2NE8yRzFBSXhRMVhFY0FuSFFHNnB3LW9EQ2l3LXh1ejNIUTFMLW9YMXYyamp4bWktVW02YW9HVXpXOHJJWDBUTU5VZjVkM3k0ZDlfTFRYOV9FVjExMGhHTWI3TXozOVI1dXpwV0hEa0w0bWNmYks3V2tORHROYS1KT09RTnRETERHdHA4RnNHcFNqblNQa0p5aGJGTHNvNDN30gGIAkFVX3lxTFB3dkRicWo5alRhSzJuQkNvOVplVDVaYWVjNHR4S3AxTVBMZl82MHQzTWJsdnlDenVOTXNDeG5VaDlqeTRhTVJ1TGdsZXhGWG9tU0xTWnRVYTBlcy1nY19uYkJZTXhkbWVfVjZ6RjUxbmFENzdKQXFGOENMbmhpblpHcDlkTGZNQzBGMnhCTUtBcjE4b0FCZ1ItX0NXSFBqd1oxNXYzM0lVb2c5cmo5dnJZbnc4a09YQlRlYk9TNEdIazJxbmVHM3Z5QUVUT2xmQUNsOUJkblc5MzNUNHFjSjIxWkpLM2tnYlNjWUlFSEdQQjJhTGRSakhmQm01WkhrbDEwNUlqckRkZA?oc=5",
+    "fonte": "O GLOBO",
+    "quando": "Sat, 29 Aug 2026 22:41:45 GMT"
+   },
+   {
+    "titulo": "Emprego, saúde e cidadania marcam 4ª edição do Prefeitura na Área no Jardim Tarumã",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdEhrazZXNGstOExPeFI2UnBCQkxMbWdSVXdOcm9GX2diV1FaSHc3QkdtQ25HZVkzeHc0TGNiNE5OZl9rdDgxRVlzdXd5bmdyaVpqRTdkZ2FvRTFFQ01CaFBjaGdnTW1OY2UwN2VyMFhLNmx4Zk1qOFdDRHBfSHU5UzI1Y2hFVUV6Sy00WkYwYnd2UjFGa01UTElUV0dFXy1Za21XQ1BmaUMzb3AzZFBydXdVZndkdFZhQWFyUHFoeEVSN29Pb1plTnpTLUpRY1gyaWtQdkRXSm12V0Q1S3Vj?oc=5",
+    "fonte": "Prefeitura de Jundiaí",
+    "quando": "Sat, 29 Aug 2026 21:34:00 GMT"
+   },
+   {
+    "titulo": "Casio transforma relógio digital em anel inteligente que monitora a saúde",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ20yTDBlYnFEc21CdzlDLUJOMGNnSzV2cVJjRXBvcEc2MjhVcHY3MmpZTUFlc0pjUDNBOXRtd2NJdHBfejhjSXE3alRKWFpGZjloSS1FTXRoTTM0VUxtMGRxTXJIM2dYNVljSkt3UmZmbTQyVXlzemhJc2V5Q0FmbEdFZnU2LURnOEJXV1NLSXNOU1BFY3VwQmZlY2JPOWJ0dG5XRmRtVlR1Q1BwM0VfRnBPRWdhZw?oc=5",
+    "fonte": "CartaCapital",
+    "quando": "Sat, 29 Aug 2026 16:00:00 GMT"
+   },
+   {
+    "titulo": "Cofen inicia as atividades da Central de Atendimento e Suporte à Saúde Mental para profissionais e estudantes",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNLVpFSlktWWFROFRlTTV4eDZaU245bU5rYmVFZ0dFaHNWd0lSNkszdUt2bFBHOFpPNnFSYTgzcHctMzNzdF9qVzlvY2xocERqTXJBNk5ZLU81OThzc0ZKbXlHWDRZSGx3U3pTY3ljckwteF9aTjJaZjljMW1GdU9SaU56ajY1UUtzWEE0c0pIVGYxTTh5Uzc4d3JxWm84LUFtelk1R1N0ZUdJa3NkSmJLYmtoSEZtQmFyR2hBYlkzdUZseFBNYW9aQVg5ZWgzdTNh?oc=5",
+    "fonte": "Cofen",
+    "quando": "Fri, 28 Aug 2026 13:46:01 GMT"
+   },
+   {
+    "titulo": "Flávio Bolsonaro anuncia nome de seu ministro da Saúde caso vença as eleições",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQkwtUHV3Rkd6U0s1dU4yS2hxXzc1Ym1yVGpoU00tdktrb2sybi1kOU5FcERqaUVGN3RVMG5PaTJ2dWt2WnZUUDZMb0hLQ3BlamZ6eVloYVpwY0Y3NGYyZmtoUFBkOXB5NVpxT3BDQ3dEM18wcGdlREtKLWpkMHdwbjBrRHc4bXVia1NKM01nclZlb04tbVhjMXpkTkc0VER6MzNkVnhTUFd6aFlUMG5hRA?oc=5",
+    "fonte": "VEJA",
+    "quando": "Sat, 29 Aug 2026 01:24:00 GMT"
+   },
+   {
+    "titulo": "Flávio anuncia médico Claudio Lottenberg como ministro da Saúde",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUHF5R2tpdmJIZU40TlRiV3Q2V3BtclRDMEhPUV9iM3FSb3RDRVJmeEFqTk1XRVZUZjRTVk1MTHlVRzFDR3VNbng1Y1RGM042aHBubloxZEFiMm9IN0VBUFlMWXZYQ0ZGZGhUbUx2VjFXMjRxaXAycHFrYWxUeFgwSEdhQ1loTmNTTDNkVnJXOHpkUUNPTTVBcWRZU0puSHY1MXF0VGZidw?oc=5",
+    "fonte": "Poder360",
+    "quando": "Sat, 29 Aug 2026 01:45:30 GMT"
+   },
+   {
+    "titulo": "Flávio Bolsonaro propõe reduzir ministérios para cortar gastos e anuncia médico para a Saúde",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPalNRT2ZzQjVBQkFyUmNBRHVLSVBFRlpRM0UxR3pJektVbEhYWXVRZGN5d3BfLW1nRjZLUTFoTkFvQ0dLNkFJM0hQZTNqUHp5aFhSVU11eng2VXdrX3lDc2NHeHRmcHVFZEdha2hpajJnX0M2SmZ2SXFjNTVZOGlmWWpacEJLeXVyY29RdlNtNU43TU5Gdm1XbUNRN293aS1mXzBieG1FWE1nUVoxbFV3Q19fVk5Oc2F1NzVhOWE3d0ZLOGkxbHBtUlZuUUphTEVxc19XTEJVTHBRYjc4dVVUTU92cHh4VWszekF1Q2YxNDNMVnPSAYICQVVfeXFMUC1HVnRuX01VZG1hcE9TRVVQQ0c1QjQzTldnZm9rOHJqTlJzX2wzdUhWcWNBaTdkOUZhalhXWFBNYUVfZzM4U1JfUHF0ZmQzTXZmT0ZBTHBsTkxSS05kek1mcVdFRUN6b3FvT0lsb05yME11bGVhb2VLUHBMdTBkdmxRZkI4ZklLOFBsNFFva1hxSmpvYjBOVDEyVE5GS3hiaG11dVhfdEc4a2JlbGJKLWdHdXltNGZYNWk3eENvWXVEQkJhYlBYLURaS1JrOUM3amRlUVViUkQxVjZjeV9uWXRkUmtZVlJQQjRUbTVFSDlOWDVxWVNTVE5TRTYwSVZMOEp3?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 01:40:42 GMT"
+   }
+  ],
+  "tecnologia": [
+   {
+    "titulo": "Veja os 5 profissionais de tecnologia mais disputados pelos bancos; setor investirá R$ 3 bilhões em IA",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNTG5zeXBaS2lweUhNd1BjRVp6ejM5bkFIbC16TnFpZW5EcGtMZllXWWg2cnJNTC1jd2lJRlJJT09fd2QyNWFQTWx0OWJLV0tQX2ZyRm1DSFZtY2h6RG1ud1JsaGtocEFQQXVXUzRwWWw4UldFVGNRME40a1J6Wl9LNDFNRnNncU9SNnJza0s4SjJ0c1U1M3JqckRla290b3dXVkF5c0x6SnZWUUFKMklGdndkenhfODFmaFZ4dFZvaWdaOUdFbW1YSnBQY0RHeTUySGxCbm1SM3ptUHFYSnljZWkxcldmOEY1SExFOTZ30gH8AUFVX3lxTE4wNFE1R0x4b1J4X2RWVUZMb0NDRjV5QnVycDVFLUp5UEFleDVIcFpqSGVBckJ6WHJGVElFRjNJOWxRLWl3NkMweVFSd2NuYnQwWFowNWVOaE9IRS1KbnBDc2ZETGtXTjRQaE44Q2dETlAzSlRrdXM4NTN4SFNwWXNidVRBTmZtdWhUcE5sVlQ4eGdUcnBFc1VKeDBuZHpDQlRSVDByZU5LQzNxY25FM1BaZU9mM180M1E4ZGtWa0FLendGMWJxQUZwc3BKTEtLM01weTE1NzdKaS1JUHN0MXVrSEl2T3Q5UmlKOHhJSjVxYzhxV0oxZGtiTUlXdQ?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 07:01:05 GMT"
+   },
+   {
+    "titulo": "Dizer que o Brasil não tem tecnologia para mineração é ideia equivocada, diz diretor de associação",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWldONjlSSl9yQzhxY2dwUlVGT3hzWGp4d1NPTVcyYUlPR0M2U2hBRktFYXZBUl9oZlhYUlJGb1JOei0xWm5PWXhfSXlOakRDTng2MFhqUHRVXzZCYWpURlM3SG42aG1qZVJlc1h3WjhnRnRKdnJHOWNET3dRMXhrT0ZyWi1wTXZCeXpzODNWRFhYXzVsNnVhX2tkemw1VXBPWnI4enRTQ0syLWJCMVdCWjJNeEo1SEQwQTNwaVRvUWI5Z0doVDdCTUhHYWhveVnSAdQBQVVfeXFMTktZWUhsRDVYbVV3RnRjV2hfYlByNXAtOGxEckQ3RGZwNmpXUDJRcXBpd2N3U3c4UFBtWEFEclRjMElsUTFrVm1PSTVuVFdCTnd1cUFreTBLd3ZiSDVIaEpJWTE1dEFkLTdiZUhreGJKei1ZSzBsaGExZ1ZIVjU4YmYwaHlEYVlObFdqWmdPWUU4cks3TDZiY3A1V285TldLSWVnWXpuWmNabE9KejdhazlNVFZIZmVlTzlHSlFaWmxjZC04UTNFZVp1dUtZNnJZaWo1VS0?oc=5",
+    "fonte": "Estadão",
+    "quando": "Sat, 29 Aug 2026 08:30:00 GMT"
+   },
+   {
+    "titulo": "Colação de Grau do “Limite do Visível” forma turmas de Tecnologia em Desenvolvimento de Sistemas e Ciência de Dados",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVVVUbnNsendkRE1Ma2k2SFBmVjRzYlUySFRTWFV2SDJoeFlueVp4aFZzYU5sSXJ1OEpNUnpDMDZ0UkVhVmRQaXpQUDZ4aElfZFVwSm5idHZ2OXN0UGx6VlRGNVdWdHIzV2dUa1B2Zmxwam0xajVuMUtLUXl6UDNHSGdiRTUtMWYtR2pwTC1LTEhFT3VndzZld1hQT3ByZi1NdnF3NWRXVDF3X3k1alBDYTE2NUFFcWtlN2dJSi1TaUR2VnBrT21LMGNQZ0pmNVE?oc=5",
+    "fonte": "UEPB",
+    "quando": "Sat, 29 Aug 2026 11:18:18 GMT"
+   },
+   {
+    "titulo": "Taiwan acusa 8 pessoas pelo suposto desvio de servidores com tecnologia Nvidia para a China",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZDhmY0U3c3phZEFVMk83ZHBDQkRTZk9BUWRTRmluenlqcGJkOURIdjQwVi1OT2lCN0VVbEJnSG9aRGRWUE00b1ZMR19rSDB0RXJ5eVUyWDFUeDFPU0Vxa0lzQWVjel92U2VtLW9JakN3ZXRYanRoOHlzREdYZmVhelE5UnJhZTBJZEFZZnoxUWxGMUpiR0ZrRnA2WHVXb3V4MHBxWElpdFhVSG55UXlmc3NRN2ZxcXZXOGVnNTFnQTJFSzBRblYySG80aXdldnBldkNyVXpjeHJaZVRqVXhMNGNWTEFlVThpcGpWYU9VS1U4VUxZaU1CU0d6VQ?oc=5",
+    "fonte": "Terra",
+    "quando": "Sat, 29 Aug 2026 20:05:00 GMT"
+   },
+   {
+    "titulo": "EUA destacam tecnologia e cooperação agrícola na 49ª Expointer",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWXBQZmhuY3poN2ZTU1Ayb3Z3NmhsenFEcjB1NTlLRkhMSHQ1U004cW1nc1gxVnd0bmh4dnVJLVNnaDFaaTJrT0VBbFY3aDVmRkdFb3M3cXJuTE5ZckxodkNSRWMwVGZPeWtzRlRjcGg1SDVuODB1ZnlFbXZmVWhzR1BfUFZ4eWFXVmdvdmdCMnhhTnBOQUpCV203RmZITjlld2dqSmR5N0taSmhxeVI5UUkzUnY3WkVFVENpMURWcEFBUjc4Sk4tRXhfbWRPZ28?oc=5",
+    "fonte": "Correio do Povo",
+    "quando": "Fri, 28 Aug 2026 21:04:30 GMT"
+   },
+   {
+    "titulo": "Luz, câmera… IA: como a tecnologia invadiu a TV e o cinema sem pedir licença",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdjUxaUhtQmJXVXItUzhiVjFWaHNIdEgwa0ppOGt1OFM2Q3VDQlZwd1VsUUFUWmliUkNFeHFlTWRpUzBfZnlfeUdnaXNYcjJUMUhZSlRWVUhnUGpmZFc0NlByWFZCRmZYQmFXWXpXRFNYWTBqZjJyR2stWmtyRDZVTkdRSDV2NThoaGM0a2Z2QmFUZXpVc3JQeGdIblgxZEdkZ2U3NW11S21mbEFY?oc=5",
+    "fonte": "VEJA",
+    "quando": "Fri, 28 Aug 2026 09:00:39 GMT"
+   },
+   {
+    "titulo": "IA ganha estruturas próprias em agências e produtoras",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUFNMb1FlQWxMLVFjdzNKampPeWY1bzhtX1Z1OXdrUWRqZlZQMUtzcTJCNjZwdjRpM3RxTVJWLWVmR29fSzVBNTZlc0xwWFNQVjEwNzFGZzFDYVh4UXZOOWVnUFl4TElBODFVTzkxSzZud3Voal94b2NOcHlMVnNjbU45c3d4b0o3UmdKTll2OWZjTDM3Yk5OQ0dNM1ZHeVU?oc=5",
+    "fonte": "Meio e Mensagem",
+    "quando": "Fri, 28 Aug 2026 09:00:00 GMT"
+   },
+   {
+    "titulo": "Jogos, stop motion e videoclipes aproximam estudantes da tecnologia e estimulam criatividade e protagonismo",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNcXBaYkJ5X2g5TmR6aTJTVmk3WVBUaW96XzN1VGtlS2dZckplNTFCSnBXZnpnUTREUWlvalk0ZEVMclpxSDMxWUplNUoxckFmSmtPVDFCZTEtNFoyZl8xMHpMVnNKbV9pS09YVmVoVlhMR2hNS2ItWElxNWJYT2FhbWFwRTRaSGlGRGYzT0lQdzRrU3drVk95WjQ5WUpQdUlXeXpBNWFsYmRmS3U4d0MzdTJPRVVLamRZdUVxbGNCTHJGNnAwWFBJb1I5NWhLTGppNWlwM2NDdmdVU3BsSmpneWZ4SWdKODFW?oc=5",
+    "fonte": "Prefeitura de Jundiaí",
+    "quando": "Fri, 28 Aug 2026 15:02:00 GMT"
+   }
+  ],
+  "sc": [
+   {
+    "titulo": "Mulher morre após ser atingida por raio em praia de Palhoça, na Grande Florianópolis",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdmFLZTEtR1Z0U2ljTEdVTzRTcFVXV1Q1V2NPcWRGYmFzOFZLQUREeFo4N2xPVjQ3d2tJYkZTVHJXSV9RbDQ2Y2tIeWNSTldubnd2dFN5dFJaLWNYQnRWU2ZPVG1SdzZwb19HdXBld3pwQXE1c1hxdnRGVTQwZzZ1SVVFT09NV0FlVWxpUWhYcXJUVm5NUnB3SEFrY0dKV0dNdzY2X1JMMHA4RlhIUGZ6ZHNDM0lrblVGYUpVaXdGM25FMVXSAdIBQVVfeXFMTlFadXlfS29aa002dmdINUpjQ3B3SHVCc2FPQ0lsbDFlaDBhZnZPam10UDFQTnY3Q21vRThWQnFYT2EtaUVjU2VVdUExdGVCbGJJcldjVUF0V281MTZiU3YwZ0tWNk1ldHBMZnBvYmk5azNUY1pUMi0wNEVLN0dxaWFhRmtIbWh5N3ltLTdZRURsdDltb2ROTWVsOHdZdE00eDVTTHdIOEtDX21rTURva09UT2dhYl9HYW1fcjZBbTVieEtKVzBnbzh1X1ppOFVWOXZB?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 14:56:04 GMT"
+   },
+   {
+    "titulo": "Turista atingida por raio em praia de Santa Catarina morre no hospital",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOEtIREtlelBhbEVaenQzalZMVWNlRE1fa0FNYkpBM2Q5QmJVMmxxWWhFRF96NlpnZG5HdExMTHNIU2JtZXl1X2p5YldIZk5KczBNZzVJdXo2M3VhdUFWZDF6ekpjZGJPOHp0WEpmTXM2eXpjb3J1cHlPRm1ZaTFlN0MybWN6Qi1QVUhqaDgwN05UOWx5d1VibklMRFpzNUJDaUlIYQ?oc=5",
+    "fonte": "UOL Notícias",
+    "quando": "Sat, 29 Aug 2026 16:20:36 GMT"
+   },
+   {
+    "titulo": "Mulher morre após ser atingida por raio em praia de Santa Catarina",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNa2JDSEJmamZkUjRaZDN3Tno1akllOW02M1VxakswSHNhSElROG9hZ3pfeG5iaFJ1eWxiWWJYU2o3LUNzWEljMUtrNG03LXJVMjR5OXVFMjhSVWVtWFNhMWRpWTBRdEJ2ZGYwS29ac2F4QWpiY2VxbVY2RFV4R1FHYnR2d3ExUWpKbUNLei1OeEl6STVNek50UG82aWw1al9JUVpmRWp6b3VkSExvaVpmYnRMYkdOOFBJd0tyNHdiMlg1SXNGYlF0aXFjV1hQT01aNnVWeVRKSVpMRkN2UWRwV2VacWtEZw?oc=5",
+    "fonte": "GZH",
+    "quando": "Sat, 29 Aug 2026 21:59:18 GMT"
+   },
+   {
+    "titulo": "Atualização - Atenção Hidrometeorológica SDC/SC 29/08 11:50 – Temporais com granizo, vendavais e chuva intensa e volumosa nos próximos dias",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPZ3BGVlZHa3NwSzZmZmlIS3cxS0lKRnRBUkwybVRRWmxRckVveWRLemV4d2ZxX2dleDlVYlhuc2g0Vk9JdDJhRWw0Z2FkbUJqWGRjc0hvSGIwTXlpb1Z5LVNDNi1hU1dnZFh0a3Q1RHNVSXd3aWtxeEh6d3hXWjN1dnQwMk94U2VaVjRWX1N5NGRIOTF6OVRXamtjcjVueTE0R3o2WW0taFptWXBLRlctYnN4aktMVnJwT1hBeTVMWmdKVmdGdUMycVN1S3BSUHZndjZZWXkwdy1xS0Uzb2NYYnNoNDlsWVdwNmVQdHRKVmhRU2hxdFcwODd3TmJwZlNXVlJIdXJMaklpU0U?oc=5",
+    "fonte": "Secretaria de Estado da Proteção e Defesa Civil",
+    "quando": "Sat, 29 Aug 2026 14:54:52 GMT"
+   },
+   {
+    "titulo": "Granizo e vendaval causam estragos em SC; estado segue em alerta",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdG1XY3lHZDNPNG1RV0ZDS2lkQ2FKbnBFVnMzZzZoNDR4cWhlYXF2cktMaENtLXFianZON2ZZdkxocExZN296Qy10RXYxZ3I3ZmtvSUJScTJGX1k3OGVjamNtZTM3bXdocFlTUi1qSnl3Tm5vNy1qYjREWW1rNWtBTUNvWWlSY3FFSUt1UkFaU0ZwTXprWEtIOGNiV1hVM3E0UldaelJGdXY0SHU2MEhGUldLOWphM3M5Vk4tbXV1djBWR3l3azBFXzlR0gHYAUFVX3lxTE9MY0FDMk8xZFBRWldoNlBhMFFsVE9KVEpNczhqdXJnd2lHMDJCUEdodmdrSmRrQTVQWHh2WHZrM19TbjMwVk5DZF9GT0tiZHJQekFtQkNtX2sxZ1d0aWJOM1E5c3hYYkFST3p5bVJnOUlQbDRndGJ4S1hhSjRPZGM1WndNTWJtbkg3NDFqbTBPc2dtNzdvVExvQ1ctRGVvQWhvZlBrMUs2NUpicHFwaFhVRW1iVEZLd2NFYVF2a1YwY2ZyUDBJNWltQVBJVUNkbm9OYmdjWFhjQg?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 14:14:50 GMT"
+   },
+   {
+    "titulo": "SC tem risco de tempo severo, com temporais e chuva intensa no fim de semana; veja previsão",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVGRjdUFEWjhtcVNrV2hJMjhuVWk3R3JYWWx4cVRMNWhJcWEtTzlrTWg0NHc4NDNhaDdxTFBaRXNEM21kaVNCajN3QkpLd0RBX1NsR0hhakZVS3MwdjIzY0RIc21ydGZibUhGRFQxR3NxcHJRU3Fza01WVERFdjVZZGNzUVl2cGNUcXd6cWdyc1RwNC1ONktOdWF6MnFLekdRVFpMVU1tRTNyZWpCR0cyX0VUekk4T2xGdkNweNIBywFBVV95cUxNQU83ODRLY0dmb0t5N2h4Wi15bk1NQk4xRFVKeDA0RjRwR2JlczI0X3RwSW9KQkJxb3ZySk02NG84ZWNXUjJZM1MtQ2VEVUpNUDRwWXAzOWlCRXZtODUwNUFlb0VkVVdLT3F0YTNjVVNkZGU3cmZYYUlETnVCZU9jZHhhazBzNGxJa2lSM0lKXzFsRkVQbUx2NWd6MncwTFN6d2MzSzlhR3daZTBiMU9MUjVSTk1DbUd2QVNoeU0zSldJX1NkU3hxbnR6Zw?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 00:53:56 GMT"
+   },
+   {
+    "titulo": "Candidato em SC, Carlos ignora estado, lembra infância e pede voto a Flávio",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcUlLUUNOOTBjNGVudlZ1eWQ0UUdPMmhCbVkzdmZGX0R2TS1kZkRsTnE5NUZPeC1MbWRsM0JfWnNaakVNQ0VNaExlMGptSE43MDFBOUJIUnNCNzV5WnRodVlVdGhPeE5PU2dWZXRON3BWSG9TanN5eDZKUXM5UE9yWlRDUXJIVVRNa3F4S2JyOWpRYnk2eHpBMEttTmRxb255elBYQm9MakNuTkpqaXdCTGtyTW9ybUNtdnItQ01CMTFEbXRi?oc=5",
+    "fonte": "UOL Notícias",
+    "quando": "Fri, 28 Aug 2026 23:53:13 GMT"
+   },
+   {
+    "titulo": "Carlos testa apoio a Bolsonaro em disputa aberta em SC",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaDlSdEdCZ0YwUFl5MFd4dy1aT2k3N3M2bjZydjZIVkdkVHE1MU5rMEI2R200MzBvTlowb1RjYzV4ME1qMjRwQmZiS0dEcURKRU1pWTNzOVljRTFMMWZYWGRja0lpQXFfeXZwdi1jUkZEbWpIblZtNGp4QlZPd0k3NTUzMzJ5V2E4T2t4Sk02NkJXQkdnaWVpd1RsWnVpREVFMXVSZ3VtdnpGSTFDNWxYMmpramNCeDJvdzA0Mkh5QTBGaHc?oc=5",
+    "fonte": "Gazeta do Povo",
+    "quando": "Thu, 27 Aug 2026 16:31:00 GMT"
+   }
+  ],
+  "pr": [
+   {
+    "titulo": "Liderança de Moro no Paraná combina Lava Jato, polarização e dificuldade de Ratinho Junior em emplacar sucessor; entenda",
+    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPVkVpOTFHMHdkLVZ5UUlBODZhRFdyaDROSXA0T3lTZzF5TlItajNXeHRJUkVLeFhxV2g1REphTVpwSFg0ZXlwdkV1ODJHQjdIZXJBX2pFdHFtUnBGSmhiV3pIaW5oRk44ZXVlb2xiTWdTQ2dXT21rSXdfYXduOWljZmwzMUpra3VTOGJ2alM3ajZfVzdIMS1qQ0VWRWFPSmhJRGxOVm9jY0Y0bVR4ZDlMc09zbDNjdEJQUmpZTEgwbU4zaGJ2TzFYNFZZZ0NUVUhhbi1NZGhOTHViSzdvTkd6X0NKM1phVmFQMW13VVMwbk55b2xaUU03ak1sS0k0b3N0LVJITzMzbDBPN0ktWnNzNmpEbVM4bTjSAaYCQVVfeXFMT3pITVFROUlsVHh4RVV0UnpxSGZSeDNTNG5BVm4xQWhVS1UtVXg4MGV4Rld6VTFoTUc5eHBVUXNmcTdvVWdWekd5RXc0NWRQZlV0VUdQeG1TVXd4QUJITkZBblNVaXZOd3Z1SmhjVFMzb043Z3ZhOEFZZVRvd0hVYXZsU0NkWHZKOFpBQXdUeDQ2U3RfdkZhWHR0WDQ5RlpIS01zVHFUelFtMFRNYWZ2LVNxM0swVE5SN0lYbW1fYmNER1JUSDJTeF9wR3Q2WFMzbTJHcDNUenZyVE5RWVA5amlrTmQ3Z3ZoYV9Mc3Q4WUs1ekFTLUZnRl81bjB0QmFKRW05MmRBZm1DWFlaMk1ZQWhrOXVGSm5nSUdibU1QeG5IM0lzZS1n?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 07:00:45 GMT"
+   },
+   {
+    "titulo": "O que indicam as pesquisas mais recentes para governador do Paraná",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeVp1N0llUEJsUlNYY0xoaUkwa0tTR2J2UzZRc0tqaVhiNEMzY05Wem9TcnNWMHd4NVR1ZkZ1OU1xYURWalNpZTlJYWRfejQ1WnNEX0JtbjdqN04ydl9JSFdfeDBsSEJ4VWJYX2g2ZHJDeFpQRExzU01UbnYyMTRYNFF0UU4zNlJHbHhlcHJqdDEzN3hQWm5tLTlqa1k5ZEpZU3E2VjNxaENZd3RLc0VYY3JPbmtyMm9OQkdtUmxpMmVMbVRDMkpKYnJvMGtwZE12aURJ?oc=5",
+    "fonte": "Gazeta do Povo",
+    "quando": "Sat, 29 Aug 2026 19:43:00 GMT"
+   },
+   {
+    "titulo": "Paraná Pesquisas registra 1ª pesquisa após horário eleitoral – Esmael Morais",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObFJPNXlnZEV3Yzg5eWlwYWtCVVRLMEdQWlFVMVNTZWg5N0g0ZzZzMDcyeHdMbl9ISGFtNmNnd0E3VkZTVFRYSlA4eDktY1FuWGNjQzdQZzNEM2F3S3RBNmhPSWZCejJTMkdVZllfcklORzJsQWJnWnB5aUhZVG0xYzFhS2RiRnFUVV9MeHVFMUtuX3RzNng0?oc=5",
+    "fonte": "Brasil 247",
+    "quando": "Sat, 29 Aug 2026 13:22:00 GMT"
+   },
+   {
+    "titulo": "Rafael Greca é internado após queda durante agenda de campanha no Paraná",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWF9TOEpYekhWNE4wc2pEZGlUcmtQTHRjYW1DR2tsYmU3ZlhvMWZvbDN3cTRRdGVFOTNabl9BOU9wTy0wQS1jUmJvNTRmYklzUVRJalRmWXRhcXBpQmpyRFhIbWdCSWp2STJmUjU0U29Kd2dFSGhMWWhKRFN4cjJNNm14dFZ4aEYtUUVIZ0M5eDd6M243NkJJczJwd2JiNHZpb0tyRTBWV0t0MkVrbGRReWNETnJFRG5qOWfSAb8BQVVfeXFMTTkxV0g0djRndkdBQXQtRGJQUnMzbFc1SnJVRDNHMzlRT0hIYTVoSXdXSUxKTXFSU1oxaFhHSWNPMTJlTWxlZjdaYlJ1MWNtb1dDejJYci1QR1NDNjBoYlVyNDRldHdWUGVvOXJCTERvMlE0Qkl2dEJZLVA0TllZVHdFNk44elBXYWlwRlhIWFRiYTFMa2E3SlFtekVjalBTWURILW92UE5YRGxWZlRLVFZ5QVdTbHN1TG5lZ2VEcDQ?oc=5",
+    "fonte": "Estadão",
+    "quando": "Sat, 29 Aug 2026 17:41:59 GMT"
+   },
+   {
+    "titulo": "Rafael Greca sofre queda durante ato de campanha e é internado em Curitiba",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOODFhSjZralotSW1mM1oxdm1QcXhtNlAxZTU4YjVsQ3QzTmhyZW9MYUl1eEdZTzFhTi0yR1F2RnNIaEpJXzdGOWVreElKZ19NbERub0d2eVdwSFBVc1haWnl4Qlg1QXE4YTU4V1BZRHVmWWV3QTBkU3YwS0RqTGhwdkVRRjRSRjUxdW45ZEFadUpCZG05SGZ6LUloV0pNVUgzak9zWEJSVm1IblVSSENybkI2a240QVlpdDBxZmhjRmxzRlhLV2NOQUttblU3T1l5ekw5NkJCT1YyN2pT0gHrAUFVX3lxTE9ZMjlBLVlsaFBfNUpFVWxUQTN0MDRITnFsZGhkSEFtNUYxYXM4NXcxMF9PclRPNXJlTWpwQmdFZFZBbjAzN1JHb3lmRV9Ba0JjNjYwalJUQTRnU0lLcl9NUWFEMU8xLVU0Q2dJbXlabENNUDhhVW8ta1VONWsxT2xtLV9USHVCRFhBbnl5bWduZ2djbWlUVTFHS0ZSTlhlNEZFM0NJeEdWWERyZl9STV9YcFppaFZvdWd1ZEdBbGZhbTY2aFc1OE16akUtd0ZRZ1NFVTVWMmRuZDViWmpjbG9fNjJRcTZpem9SLTQ?oc=5",
+    "fonte": "G1",
+    "quando": "Fri, 28 Aug 2026 23:46:50 GMT"
+   },
+   {
+    "titulo": "Greca é internado em Curitiba após queda durante ato de campanha no Paraná",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYV9mTGFfdU5WVWhSazhodmlab2twbkxNaTB4SEg1TU15Tmp1T0QwcEV4NnMxNUxyQ1p1cS1ZcnFGNE9tNTlQVEFTOVFvUFIwLXlLM1BxckVWLTFvQjVKRm5jbGZxUG5XV2k1QU16WjNENTZDcEVtaEVWbGdZUHA4ZDJrWFFlalNpSVpZUGk2cWRIeGpTbEM4OUE4NWNpUHZzckNnSTgyV1Y3cVg1?oc=5",
+    "fonte": "VEJA",
+    "quando": "Sat, 29 Aug 2026 14:14:21 GMT"
+   },
+   {
+    "titulo": "Paraná Clube vence o Athletico pela Copa Paraná e encerra jejuns contra o rival",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMG5RV1F5cm5fbnFxbC1Sa3RaVVd4dS1ZSkNRTE45UVRkWXBGeWNxQy1ScjBYTU5SeUNDUGRReUZBa0ZOLUdqWlRXb010dFJLNThIUlV5UFJEeDBENVhqek1zWWNKcDJpRHpVTjAtVVdwNzdHVVlWa1Z0bC00Y1lLeUtKQ0hNa1dzOUE1MnhibDI1anRnTkNtTGxLeEc0NTJhVVVyRWExSWd6bHNF?oc=5",
+    "fonte": "Banda B",
+    "quando": "Sat, 29 Aug 2026 13:37:00 GMT"
+   },
+   {
+    "titulo": "Copa Paraná: Athletico x Paraná Clube tem tabu de 18 anos na Arena da Baixada; veja números",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQnFTNnBhX0piSmkta0MyVW8zOHVfcnZ3ZEhwNjZxb0tubWMzaTNoc0I3bHlJQmJQTGs4MTBmLVNlcTJheUt6a1pvZHc4al9nRVFLc1BONHJYV19MOWZHUGFFOElwQjM3UGhMZUg3NHZ0LW1jVGpTWlNTYjQxbjl2X2hiakRockV6dDFzZF9zQUhUcU51LXVzM3puaDJ5VUJsSXJVZnVsSEVDeG0yNFV6Tk03bzV1dGxsM1htdERZcktIZUktN2docVpWRGhEQ2U3THdYaU5LaUg2SlFEM1lN0gHuAUFVX3lxTE9sdDlXUXFnWi1yYm5ZZDRWTGVTaVpDdTB6NTNGaUxBOUpBaFFxSzZIYWlmelVsbmkzNnVraURXc2NoQmJLVHdLY2lfRXRoRHdUSS1wSktmQUhhNzN4dlFraU1PazFwM2VUb3ctVF9IbThZamFvOHNHTmpKMXVtNVJNcHNkNzBhVE9QeTJSSTJ1WHVMZFBnZHBqWTZEMU9naDBXNlVGQ3pCMmpKVnp6T1VOZkxIWGdQY0ltRzQxcWJYZ1Bsc2RNMHBleTlPcFgzYVZER2p4NzBkSEduSUswY2N6eHpsS3RMbnctOVJqbXc?oc=5",
+    "fonte": "ge",
+    "quando": "Fri, 28 Aug 2026 21:03:54 GMT"
+   }
+  ],
+  "rs": [
+   {
+    "titulo": "Granizo destelha mais de 1,6 mil casas no RS; cidade do Norte do estado tem 60% da área atingida",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWWNEeWRDdEhxQklwQ0FTZVhuZU0wTjFGdEtWS3N2b3JsaklJZEpDRXcwNFQ3eXpvQ0dSOE03LTE5LTlRYUViRHlmNkNVNnQ5ZjJ0T2Vwd1NqNmJLNFFIR18xU0hhckY5VllKbkZ0RngwUGFNdlY1WTNTZWRiYmQ3THBaMkpJM2VzSUtiR2FXS2NOS0tjQmxocFk2bnE3SGYtdDdnbkMyWXZFazdMXy1ROWJUcDDSAcMBQVVfeXFMTVZDUVFfQVNxYk1qYWplRG5ET0hKNWExUmp1THN0LVRpRHZqRTUydVhjb3N1clloVmx4eHhTT3JfZmtVOFdqQ0ItZ3VldXNqd1Frb1REajFVSlZLM251TlN1Q1pEMUVZMWlBZEpXMGdfSjhoeHNSSXItWmQxODVwNERuNnZ2VTU0azJidkcxQlpYYWFfMzFYSXZsa0RCcHRPZlpJNXFOUDlyV2NFUUIzUVZmTHR0aElPbDdiMURFUFQ5TmlV?oc=5",
+    "fonte": "G1",
+    "quando": "Sat, 29 Aug 2026 12:06:51 GMT"
+   },
+   {
+    "titulo": "Domingo (30) ainda será de chuva em parte do RS",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzBsd2N4TkctNFdZSG5POG5nd2hlY0dLZFBsNE5kLVJrNkQzb2xPNVZEVlRmeVYzdjZhc3BLcUw4bE1GaUZBdWNwT0xwRHhPZnlPTEZtZTBrN3RVcHZuNXBnUGZFaXROZDNPbnRGVkcya19QXzVSYWx1YjNYNzFnMk9IWlo4RTRj?oc=5",
+    "fonte": "Agora RS",
+    "quando": "Sat, 29 Aug 2026 20:23:18 GMT"
+   },
+   {
+    "titulo": "Defesa Civil reforça preparação do Estado para eventos adversos dos próximos dias no Rio Grande do Sul",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdnMta25QTXBYdHdzSG9CU2JMN0pYNUhYR1RaaERDbjY4Q0xPLU1jMEJNeDlNdnhES0JVdHVvTVMzbE9sNGtkdHAzVHZXc3VBdlVHSGpLWUhMT1dobkFMSDdqWXkyYkhUQ3JvbGpWYWRYekQxYS05UmZpXzBNV3ItZ3RWRzhZOXQxMUpCRnNUQ3hpbWp3NE9JTnFsWTdMcm1WbGNpN2tFelRqVXQzS3QwWkJoSTV4bnRreTJLVGN3VGlacVd6aWFxTmpWcw?oc=5",
+    "fonte": "Portal do Estado do Rio Grande do Sul",
+    "quando": "Fri, 28 Aug 2026 23:50:30 GMT"
+   },
+   {
+    "titulo": "Rio Grande do Sul teve 33 pedidos de pensão para órfãos do feminicídio",
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOYnIwdnk0US00eEJBVnJ3eWRfR2szSVlvbU92cklOTVFKSThXTTViRndSZ00xZlNBbVVBQ1RCVjFrWDEtU201N2xDZC02UzdJN0hxOEVNZ2V6SllqeFZlcF81LVYyQ3M1WUZGTmdIbS14SWRPNW5maWJ5Qm93T2pzOUxrdjU3TnlDeTY0aExFem5nUVZZbmFnYmYtMFg4NFNjQmlFcEF6OWNhbFhrVm1mSXU5dEU3aGlUeGNBVG12Wnl2X1dia195VmVuREJvdDFUVUVMUnRLZjRua2IyLUI2OUk3T0NETmdDLWtIeFNSc2pfSlg2aHRxWVllaUUybXJ2LXNF?oc=5",
+    "fonte": "GZH",
+    "quando": "Sat, 29 Aug 2026 11:20:09 GMT"
+   },
+   {
+    "titulo": "Cultura gaúcha: entre o discurso e a realidade (por Comissão dos Aprovados da Cultura RS)",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOalpYeTM1dVVXeWZZR0lNZjhiR3RxVl94Tm1zM0hwT2JQQkhmc3JMV2tzV2JwYk9rclUwOW5hUnRKdnFubUJ4WlRacERDS1A1aDdHeGFBVFlIZkl1aXZTYVhaWHhiZ1VtNDlPUGpFNUpjNmRfRlpHWjVqVUZCQ09HOHp3RktSblJ1N3UzWVNzZ2Z1bmU3WmFjTndoR3M1RGNsOE54Zi1sRkxOWnAwaEk2b3pKdXRTMWZtamZSOGNnTGVyUQ?oc=5",
+    "fonte": "Sul 21",
+    "quando": "Sat, 29 Aug 2026 11:00:00 GMT"
+   },
+   {
+    "titulo": "Programa RS Qualificação Recomeçar abre inscrições para cursos gratuitos em Porto Alegre",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY0lISEFhZ2dMczBIcHQ4OXBEa0p2allmcjlsV1lDcWhWeVZfeXpMS0F3amc3cUYyOHpIbVo2MFY5YjhMZnhWaV9GRkkxbm9KcHRmMXE0OTBQNmd6YURpeWEweG9YeEhNY0FXTHM1cWNwNTV5YUxPQ2hDR21LXzRlMXpKdmF4MlFhX0FzUjhHM1B3S0ZoTnRBbW9rWDN4emVxMEZrdEgxWkNNRzJoclMzV1BfNmQ4R2ZJb1Z0SUNlMA?oc=5",
+    "fonte": "Prefeitura de Porto Alegre",
+    "quando": "Fri, 28 Aug 2026 22:28:54 GMT"
+   },
+   {
+    "titulo": "Inicia colheita da canola no Rio Grande do Sul",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWW5HQmd2VHdsZjBmdFVES3AtX2dJZ0F6NExxcW0zVUc5ZzlZYk5FQnB4d0o3TDNkLXk4bS1uNHZrX24yNXctRUhFemRJcjgtT2V1ZWVfSWFBM1FEdFh3SlQzWDBpWGpVWTQ4bjVIclh5cEtuakMzQl9TR000UTNBZ1hOTVZSV3hpQUFDVDZqLWctcTRqbFp5eW43NVVObFFnNFhvX1J0YklqWTdnbFlv0gG0AUFVX3lxTE1oSG04V1lFeU1QSFNjVzFZRHJUVDdXNzZkOVY3Q1E2VER2UFd5bHhHdzJNRW1OSDNGdURvaGhVbmw3dXNFdnJfMWJpM0xUeDZYeWRlM0t6STcxbkV3NGpXSmxuVHZDNkVjdU9mZXppQXItOEpUR2FOeFh4ZmZUZ1ZNNEhkaWlkNXk2MXdTUmxZSzROcHJJSkZ4WUhlOTh1OUhUbFJTcUZpVnhFaWdJcXZheGlXUQ?oc=5",
+    "fonte": "Notícias Agrícolas",
+    "quando": "Fri, 28 Aug 2026 18:13:17 GMT"
+   },
+   {
+    "titulo": "Novas tempestades devem atingir o Rio Grande do Sul até segunda-feira",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOU2dGYkdsS2FrNGEwWnctNGowelZxMVhwcEVYN3gxNXFVazk0bWxiaGZBNGh3RkdKRjFjUG1VcjZKSkxXcVJEaTU3RHdwOVhubEdHM0pxbkJiRkZ6T2FHSWRvZVloYVBPZGNqOU9jNHQ3LWx3YjVZOUxSTnhHNDI1YVFIMjJSYXluV1FsT2xXWWVwNmhZTndhQUZsLVU3UndyV3NqcUNMbWNkNzlQci1CTnJnUjA4aEszUkxoNTg3M29kb2VUdHlWanVwSFNUUHhYTW8yTzRPUEd0ODloQjJYN09RRlBiMEdfY2xsaUFHWDFZZGZ3UFdWdGppMA?oc=5",
+    "fonte": "Terra",
+    "quando": "Sat, 29 Aug 2026 12:41:00 GMT"
+   }
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>📋 Política de Privacidade · Vento Sul</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { --bg:#0a0e14; --card:#131a23; --line:rgba(255,255,255,.08);
+          --txt:#e5e7eb; --muted:#94a3b8; --gold:#fcd34d; --accent:#06b6d4; --good:#10b981; }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.65 system-ui,-apple-system,sans-serif;color:var(--txt);
+    background:radial-gradient(ellipse at top,#0d1320,var(--bg));padding:18px;min-height:100vh}
+  main{max-width:760px;margin:0 auto;padding:20px 0 60px}
+  h1{font-size:26px;margin:0 0 4px;
+    background:linear-gradient(90deg,var(--accent),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:24px}
+  h2{font-size:18px;color:var(--gold);margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+  p{margin:8px 0}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  strong{color:var(--gold)}
+  a{color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);font-weight:700;background:var(--card)}
+  .caixa{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin:14px 0}
+  .ok{color:var(--good)}
+  .data{color:var(--muted);font-size:12px}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body>
+<main>
+  <h1>📋 Política de Privacidade</h1>
+  <div class="sub">Startup de Impacto Vento Sul · em conformidade com a LGPD (Lei 13.709/18)</div>
+  <p class="data">Versão 1.0 · vigente a partir de 7 de maio de 2026</p>
+
+  <div class="caixa">
+    <strong>Em uma frase:</strong> Coletamos só o necessário pro app funcionar, não vendemos teus dados, e você pode pedir pra apagar tudo a qualquer momento.
+  </div>
+
+  <h2>1. Quem somos (Controlador)</h2>
+  <p><strong>Startup de Impacto Vento Sul</strong> · contato: <a href="mailto:contato@vento-sul.tech">contato@vento-sul.tech</a> · domínio: vento-sul.tech</p>
+  <p>Encarregado de proteção de dados (DPO): pode ser contatado pelo mesmo email acima.</p>
+
+  <h2>2. Que dados coletamos</h2>
+  <table>
+    <tr><th>Categoria</th><th>Exemplo</th><th>Pra quê</th></tr>
+    <tr><td>Identificação</td><td>email, apelido, foto opcional</td><td>criar conta e identificar você no app</td></tr>
+    <tr><td>Localização aproximada</td><td>cidade, bairro · GPS só se você ativar</td><td>mostrar comerciantes/eventos perto e personalizar a rádio</td></tr>
+    <tr><td>Atividade no app</td><td>visitas, votações, compras coletivas, SulCoin movimentado</td><td>fazer o app funcionar e melhorar recomendações</td></tr>
+    <tr><td>Conteúdo que você posta</td><td>fotos, comentários, avaliações</td><td>exibir no app conforme funcionalidade</td></tr>
+    <tr><td>Dispositivo</td><td>tipo de browser, sistema, IP</td><td>segurança, debugging, métricas anônimas agregadas</td></tr>
+  </table>
+  <p><strong>Não coletamos:</strong> CPF, RG, dados bancários, dados de menores de 16 sem consentimento dos pais, dados sensíveis (saúde, religião, etc) sem necessidade explícita.</p>
+
+  <h2>3. Bases legais (LGPD art. 7º)</h2>
+  <ul>
+    <li><strong>Execução do contrato</strong> — pra você usar o app, precisa cadastro e dados básicos</li>
+    <li><strong>Consentimento</strong> — pra GPS, notificações, voz, foto opcional</li>
+    <li><strong>Legítimo interesse</strong> — métricas agregadas, segurança contra fraude</li>
+    <li><strong>Cumprimento de obrigação legal</strong> — quando aplicável</li>
+  </ul>
+
+  <h2>4. Com quem compartilhamos</h2>
+  <p>Compartilhamos dados estritamente necessários com fornecedores que processam em nosso nome:</p>
+  <ul>
+    <li><strong>Supabase</strong> (banco de dados, autenticação) — processador, política em <a href="https://supabase.com/privacy">supabase.com/privacy</a></li>
+    <li><strong>Cloudflare</strong> (hospedagem, CDN, AI Workers) — política em <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+    <li><strong>Provedores de IA</strong> (Cerebras, OpenRouter, SambaNova, IA paga) — apenas texto sem PII identificável é enviado pra geração de conteúdo da rádio/chat. Mascaramos email/CPF/Pix antes de enviar pra IA externa.</li>
+  </ul>
+  <p><strong>Não vendemos dados a terceiros.</strong> Não usamos teus dados pra anúncios em redes externas.</p>
+
+  <h2>5. Onde os dados ficam</h2>
+  <p>Servidores no Brasil (Supabase region São Paulo) e em servidor próprio em Helsinki/Finlândia (Hetzner) para a parte de geração da rádio. Cloudflare distribui cache em CDN global, mas dados de conta não saem da região configurada.</p>
+
+  <h2>6. Por quanto tempo guardamos</h2>
+  <ul>
+    <li>Dados de conta ativa: enquanto você usar o app</li>
+    <li>Dados de conta excluída: apagados em até <strong>30 dias</strong>, exceto registros legais (ex: ledger SulCoin com transações que afetam outros cooperados — anonimizados)</li>
+    <li>Logs técnicos: 90 dias</li>
+    <li>Backups: rotacionados em até 180 dias</li>
+  </ul>
+
+  <h2>7. Teus direitos (LGPD art. 18)</h2>
+  <p>Você pode, a qualquer momento, pedir:</p>
+  <ul>
+    <li>✅ <strong>Acesso</strong> — saber que dados temos sobre você</li>
+    <li>✅ <strong>Correção</strong> — corrigir dados errados/desatualizados</li>
+    <li>✅ <strong>Exclusão</strong> — apagar tua conta e dados pessoais</li>
+    <li>✅ <strong>Portabilidade</strong> — exportar teus dados em formato legível</li>
+    <li>✅ <strong>Revogar consentimento</strong> — desligar GPS/notificações/etc a qualquer hora</li>
+    <li>✅ <strong>Oposição</strong> — opor-se a tratamento baseado em legítimo interesse</li>
+  </ul>
+  <p><strong>Como exercer:</strong> envie email pra <a href="mailto:contato@vento-sul.tech">contato@vento-sul.tech</a> com o assunto "LGPD — [direito que quer exercer]". Respondemos em até <strong>15 dias</strong>.</p>
+
+  <h2>8. Cookies e armazenamento local</h2>
+  <p>O app usa <strong>localStorage</strong> e <strong>service workers</strong> pra:</p>
+  <ul>
+    <li>Manter sessão ativa (login)</li>
+    <li>Cachear assets e funcionar offline</li>
+    <li>Salvar preferências (idioma, dial da rádio, etc)</li>
+  </ul>
+  <p>Não usamos cookies de rastreamento de terceiros. Não temos Google Analytics, Facebook Pixel, ou afins.</p>
+
+  <h2>9. Crianças e adolescentes</h2>
+  <p>O app é destinado a maiores de 16 anos. Se identificarmos cadastro de menor sem consentimento de responsável, a conta será removida e os dados apagados.</p>
+
+  <h2>10. Segurança</h2>
+  <p>Aplicamos medidas técnicas e organizacionais razoáveis:</p>
+  <ul>
+    <li>Conexão sempre HTTPS</li>
+    <li>Senhas armazenadas com hash (nunca em texto plano)</li>
+    <li>Row Level Security (RLS) no banco — cada usuário só vê dados próprios</li>
+    <li>Chaves de API guardadas em vault, nunca expostas no front-end</li>
+    <li>Backups criptografados em múltiplos provedores</li>
+  </ul>
+  <p>Em caso de incidente que afete seus dados, comunicaremos no app e por email em até 72 horas após detecção, conforme art. 48 da LGPD.</p>
+
+  <h2>11. IA e teus dados</h2>
+  <p>Quando você conversa com as IAs do app (Litorânea, Automata, Aurora), o texto que você envia pode ser processado por provedores de IA externos (Cerebras, OpenRouter, etc). Antes de enviar:</p>
+  <ul>
+    <li>Mascaramos automaticamente CPF, email, telefone e Pix do texto</li>
+    <li>Não enviamos histórico de outras conversas suas</li>
+    <li>Provedores de IA são contratualmente proibidos de usar teus dados pra treinar modelos deles, conforme termos atuais</li>
+  </ul>
+
+  <h2>12. ANPD</h2>
+  <p>Se você não ficar satisfeito com nossa resposta, pode reclamar pra <strong>Autoridade Nacional de Proteção de Dados</strong>: <a href="https://www.gov.br/anpd">gov.br/anpd</a>.</p>
+
+  <h2>13. Mudanças nesta política</h2>
+  <p>Mudanças significativas são comunicadas no app com pelo menos 15 dias de antecedência. Versões anteriores ficam arquivadas e disponíveis sob solicitação.</p>
+
+  <footer>
+    <p>Startup de Impacto Vento Sul · vento-sul.tech · documento elaborado pelo próprio time, sem advogado nesta versão. Será revisto por profissional habilitado quando a operação crescer.</p>
+    <p><a href="/termos.html">📜 Termos de Uso</a> · <a href="/permissoes.html">⚙️ Permissões do app</a> · <a href="/">← voltar pro app</a></p>
+  </footer>
+</main>
+<script src="/shared/bg-slideshow.js" data-bg-theme="termos"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+
+<section id="youtube-api">
+<h2>🎬 Serviços de API do YouTube</h2>
+<p>O Vento Sul usa os <strong>Serviços de API do YouTube</strong> em duas frentes:
+(1) nossa ferramenta interna de publicação envia vídeos produzidos por nós para os
+nossos próprios canais; (2) o app reproduz vídeos e playlists públicas do YouTube
+(ex.: a rádio e a trilha musical) por meio do player oficial incorporado.</p>
+<p>Ao usar essas funções, você também concorda com os
+<a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> e com a
+<a href="http://www.google.com/policies/privacy">Política de Privacidade da Google</a>.</p>
+<p><strong>Quais dados:</strong> o app não coleta dados da sua conta do YouTube.
+O player incorporado é carregado diretamente do YouTube e pode registrar dados de
+reprodução conforme a política da própria Google. Nossa ferramenta de publicação
+acessa apenas os canais do próprio Vento Sul, autenticada por OAuth 2.0.</p>
+<p><strong>Revogação:</strong> você pode revogar o acesso de qualquer app aos seus
+dados Google em <a href="https://security.google.com/settings/security/permissions">
+security.google.com/settings/security/permissions</a>.</p>
+<p><strong>Exclusão:</strong> não armazenamos dados de API do YouTube sobre visitantes.
+Registros técnicos internos ligados à publicação são apagados em até 30 dias. Pedidos:
+o canal de contato desta página.</p>
+</section>
+
+</body>
+</html>

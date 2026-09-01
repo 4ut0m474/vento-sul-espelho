@@ -1,0 +1,122 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Jurerê",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-jurere",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Jurerê International Apartment",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Avenida das Raias 601",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Avenida dos Búzios 1760",
+   "link": ""
+  },
+  {
+   "nome": "Fuso Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Servidão José Cardoso de Oliveira 633",
+   "link": "https://fusohotel.com.br/"
+  },
+  {
+   "nome": "IL Campanario Villaggio Resort",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida dos Búzios 1760",
+   "link": "http://www.ilcampanario.com.br/"
+  },
+  {
+   "nome": "Angeloni Jurerê",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida das Raias 471",
+   "link": "https://www.angeloni.com.br"
+  },
+  {
+   "nome": "Arqflora",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": "https://arqflora.com.br/"
+  },
+  {
+   "nome": "Jurerê B&B",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café de la Musique",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida dos Merlins",
+   "link": ""
+  },
+  {
+   "nome": "Caminho do Forte",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Donna Jurerê Internacional",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida dos Pampos",
+   "link": ""
+  },
+  {
+   "nome": "La Serena",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida das Lagostas",
+   "link": ""
+  },
+  {
+   "nome": "Olivia cucina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Simple on the Beach",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "yogolatte",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

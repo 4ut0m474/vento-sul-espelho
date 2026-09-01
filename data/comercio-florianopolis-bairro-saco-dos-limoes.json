@@ -1,0 +1,378 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Saco dos Limões",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-saco-dos-limoes",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Bunker 22",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Centro Social da Cerveja",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida César Seara 19",
+   "link": ""
+  },
+  {
+   "nome": "Hemera Vibes",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": "https://bio.site/hemeravibes"
+  },
+  {
+   "nome": "Reboliço Nails Club",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Cartel da Barba",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Irmão Calixto 31",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Timóteo's",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": ""
+  },
+  {
+   "nome": "Salão e Barbearia Primavera",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café Da Ilha",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": ""
+  },
+  {
+   "nome": "Go Coffee",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": "https://gocoffee.com.br/"
+  },
+  {
+   "nome": "O Heremita",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Capitão Romualdo de Barros 952",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Dona Tita",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Pixurum",
+   "tipo": "Charity",
+   "emoji": "🏪",
+   "cat": "charity",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Unicopy",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Irmão Calixto 31",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Capitão Romualdo de Barros",
+   "link": "https://drogaraia.com.br/"
+  },
+  {
+   "nome": "PanVel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Gimpel",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Conexão 48",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Travessa das Alamandas 35",
+   "link": "http://www.conexao48hostel.com.br/"
+  },
+  {
+   "nome": "Hotel Quinta da Bica D’Água",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Capitão Romualdo de Barros 641",
+   "link": "http://hotelquintadabicadagua.com.br/site/"
+  },
+  {
+   "nome": "Brasinha Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Charlie Dog",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Delícia Dog e Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor do Nordeste",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua João Motta Espezim 1295",
+   "link": ""
+  },
+  {
+   "nome": "Santa Marguerita",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Scooby Doo",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavanderia Lib Clean",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Capitão Romualdo de Barros 883",
+   "link": "https://www.libclean.com.br"
+  },
+  {
+   "nome": "Acervo das Letras",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Mais Saúde",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Capitão Romualdo de Barros 916",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Carvoeira",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Capitão Romualdo de Barros 905",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Migma",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Açoriano",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercados Baratíssimo",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Duque de Caxias",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Imperatriz",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua João Motta Espezim 549",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Argentina",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Faço Bolos Schweitzer",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "Rua Capitão Romualdo de Barros 952",
+   "link": ""
+  },
+  {
+   "nome": "Posto 5 Estrelas",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Deputado Antônio Edu Vieira 393",
+   "link": ""
+  },
+  {
+   "nome": "Posto Galo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto de combustível",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua João Motta Espezim 200",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Edelweiss",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Luiz Pedro Ferreira 86",
+   "link": "https://www.pousadaedelweiss.com.br/"
+  },
+  {
+   "nome": "Appetite",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Capitão Romualdo de Barros 925",
+   "link": ""
+  },
+  {
+   "nome": "Assados do Bairro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Capitão Romualdo de Barros 862",
+   "link": ""
+  },
+  {
+   "nome": "Flamel",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Los Brutu's Pizzaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sushiway",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Liandra Noivas",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Gatô Tabacos & Bebidas",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "Rua Professor Milton Sullivan 51",
+   "link": ""
+  },
+  {
+   "nome": "Sport Rodas",
+   "tipo": "Tyres",
+   "emoji": "🏪",
+   "cat": "tyres",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

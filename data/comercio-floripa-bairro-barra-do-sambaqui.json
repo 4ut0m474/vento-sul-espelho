@@ -1,0 +1,18 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Barra do Sambaqui",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-barra-do-sambaqui",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "S & R Personalizados",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "",
+   "link": "https://srpersonalizados.com.br/"
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Morro das Pedras",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-morro-das-pedras",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Bar do Marinho",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cervejaria Açoriana",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cicle Daniel Falcão",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua Sargento João Machado 47",
+   "link": ""
+  },
+  {
+   "nome": "Barbearia Neves",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Salão Xampu",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Trem de Minas - Café Colonial",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia da Bia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Morro das Pedras Club Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caldo de Cana do Mirante",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rod. Francisco Thomaz dos Santos 2210",
+   "link": "https://www.instagram.com/caldodomirante/"
+  },
+  {
+   "nome": "Caldo do Tiago",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Francisco Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Gulla's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hamburgueria Nativos",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Francisco Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Bistek Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia  Francisco Thomaz dos Santos",
+   "link": ""
+  },
+  {
+   "nome": "Hiper Select",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Francisco Vieira 465",
+   "link": "https://www.hiperbom.com/"
+  },
+  {
+   "nome": "Fred Motos",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Engenho dos Pães",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Moreira",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "AgroPet Planeta Animal",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rodovia Francisco Magno Vieira",
+   "link": "https://www.agropecuariaplanetaanimal.com.br/"
+  },
+  {
+   "nome": "Rede Primos",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Francisco Magno Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Pico da Ilha",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Aroeira do Campo",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Sta Edwiges",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Brechó",
+   "tipo": "Second Hand",
+   "emoji": "🏪",
+   "cat": "second_hand",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Malibu Surfboards",
+   "tipo": "Surf",
+   "emoji": "🏪",
+   "cat": "surf",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Interlatino Agência de Viagens e Intercâmbio",
+   "tipo": "Travel Agency",
+   "emoji": "🏪",
+   "cat": "travel_agency",
+   "end": "Servidão Garapuvu do Sul 179",
+   "link": "https://www.interlatino.com.br/"
+  }
+ ]
+}

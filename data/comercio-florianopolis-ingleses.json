@@ -1,0 +1,586 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Ingleses",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-ingleses",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Aluguel de Temporada",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua Caminho do Marisco",
+   "link": "https://www.airbnb.com.br/rooms/46811248?_set_bev_on_new_domain=1676042406_ZTZiZjczYTk5YWJj&source_impression_id=p3_1676269691_QfaG4nA646GoV1xh"
+  },
+  {
+   "nome": "Apartamentos Fabrizio Ingleses",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Apartamentos de Sandra",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Estrada Dom João Becker 472",
+   "link": ""
+  },
+  {
+   "nome": "Condomínio Bella Fontana",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Condomínio Santa Maria",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Servidão Ireno Luiz Martins 88058-600",
+   "link": ""
+  },
+  {
+   "nome": "Edifício Don Diego",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilhas do Norte",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Residencial Castelo da Ilha",
+   "tipo": "Apartamento",
+   "emoji": "🏢",
+   "cat": "apartment",
+   "end": "Rua dos Lordes 600",
+   "link": "https://www.castelodailha.com.br/"
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia Armando Calil Bulos 6201",
+   "link": ""
+  },
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia Armando Calil Bulos 6200",
+   "link": ""
+  },
+  {
+   "nome": "Itaú",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Templar Bier",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cabelos e Cia",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua das Gaivotas 1159",
+   "link": ""
+  },
+  {
+   "nome": "Studio Renata Figueiredo",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cicle Bike Shop",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Parise Barber Club",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Mercúrio 30",
+   "link": ""
+  },
+  {
+   "nome": "Café Tortone",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua das Gaivotas 193",
+   "link": ""
+  },
+  {
+   "nome": "Oca Café",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "3M - Informática",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rodovia Armando Calil Bulos 6422, SL02",
+   "link": ""
+  },
+  {
+   "nome": "Cassol Centerlar",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Koerick",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": "https://www.koerich.com.br/"
+  },
+  {
+   "nome": "GM Segurança Eletrônica",
+   "tipo": "Electronics",
+   "emoji": "🏪",
+   "cat": "electronics",
+   "end": "Rua Intendente João Nunes Vieira 1456",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": "https://www.drogariacatarinense.com.br/"
+  },
+  {
+   "nome": "Farma & Farma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia PreçoPopular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Armando Calil Bulos 5940",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Vendramini",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Estrada Dom João Becker 14",
+   "link": "https://www.panvel.com/"
+  },
+  {
+   "nome": "Sacolão",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Condomínio Acquamar",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua das Gaivotas 1114",
+   "link": ""
+  },
+  {
+   "nome": "Hotel Costa Norte Ingleses",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua das Gaivotas 984",
+   "link": "http://hoteiscostanorte.com.br/hotel-costa-norte-ingleses/"
+  },
+  {
+   "nome": "Hotel Porto Sol Ingleses",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ingleses Holidays",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ingleses Praia Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Oceania Park Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua do Marisco 550",
+   "link": "http://www.oceaniaparkhotel.com.br/"
+  },
+  {
+   "nome": "Pousada Favareto",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "McDonald's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Sabor & Cia Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua das Gaivotas 86",
+   "link": ""
+  },
+  {
+   "nome": "Subway",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Barranorte Shopping",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Verdes Mares",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eletromar dos Ingleses",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Colina",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Manos",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Shopping Ingleses",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Super Beto",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Angeloni",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Armando Calil Bulos 6375",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Gaivotas",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Sol e Mar",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Supermercados Beto",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Campo Verde Agro Pet",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Intendente João Nunes Vieira 1135",
+   "link": ""
+  },
+  {
+   "nome": "Campo Verde",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "Rua Intendente João Nunes Vieira 1141",
+   "link": ""
+  },
+  {
+   "nome": "Posto Marilu",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Posto Patrol Ingleses",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Armando Calil Bulos",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Floripa House",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Brisamar 299",
+   "link": ""
+  },
+  {
+   "nome": "Bar e Restaurante Amarelinho",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bauru da Ilha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bombordo",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua das Gaivotas 740",
+   "link": ""
+  },
+  {
+   "nome": "Boulevard Gourmet",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Canto do Mar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Doca's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Porto 45",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua das Gaivotas",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante O pescador",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Dom João Becker 347",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Petisqueira",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Estrada Dom João Becker 388",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Schiavon",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Brisamar 142",
+   "link": ""
+  },
+  {
+   "nome": "Sushi Boat",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Toscana",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chinelândia",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "Estrada Dom João Becker 334",
+   "link": ""
+  },
+  {
+   "nome": "Havaianas",
+   "tipo": "Shoes",
+   "emoji": "🏪",
+   "cat": "shoes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sorveteria Monte Pelmo",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "Rua Brisamar 360",
+   "link": "http://www.sorveteriamontepelmo.com.br"
+  },
+  {
+   "nome": "Brasil Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Rodovia Armando Calil Bulos 5890",
+   "link": "https://brasilatacadista.com.br/"
+  }
+ ]
+}

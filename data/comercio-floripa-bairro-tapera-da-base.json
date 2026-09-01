@@ -1,0 +1,98 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Tapera da Base",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-tapera-da-base",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Bike Center Ferruge",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua José Correia - Juca 128",
+   "link": ""
+  },
+  {
+   "nome": "Imperador Ferramentas e Feragens",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "Rua José Correia - Juca",
+   "link": ""
+  },
+  {
+   "nome": "Talismã Gás e Água",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "Rua José Correia - Juca 113",
+   "link": ""
+  },
+  {
+   "nome": "Atacadão Descartáveis",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rodovia Açoriana",
+   "link": ""
+  },
+  {
+   "nome": "Lara Sabores do Norte",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rodovia Açoriana 1167",
+   "link": ""
+  },
+  {
+   "nome": "Ioppi Pizzaria Delivery",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua José Correia - Juca 83",
+   "link": ""
+  },
+  {
+   "nome": "Sul Açaí",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Dega",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua José Correia (Juca)",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Sempre Mais",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua José Correia - Juca",
+   "link": ""
+  },
+  {
+   "nome": "Ótica Alto Visão",
+   "tipo": "Optician",
+   "emoji": "🏪",
+   "cat": "optician",
+   "end": "Rodovia Açoriana 1167",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Sabor da Ilha",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua José Correia (Juca)",
+   "link": ""
+  }
+ ]
+}

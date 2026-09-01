@@ -1,0 +1,71 @@
+{
+ "atualizado": "2026-08-29T22:39:24",
+ "cameras": [
+  {
+   "id": "cam-barra-1",
+   "nome": "Barra da Lagoa",
+   "lat": -27.5745,
+   "lng": -48.4265,
+   "fonte": "Barra da Lagoa Online",
+   "yt": "4Cdk-DqFg9A",
+   "live": true,
+   "embed": true,
+   "titulo": "Barra da Lagoa - Florianópolis - Santa Catarina - Brasil - AO VIVO"
+  },
+  {
+   "id": "cam-barra-2",
+   "nome": "Barra da Lagoa · canal",
+   "lat": -27.5768,
+   "lng": -48.4287,
+   "fonte": "Maaxcam Ao Vivo",
+   "yt": "1Ewl-pUdWXE",
+   "live": true,
+   "embed": true,
+   "titulo": "Câmera ao Vivo Florianópolis - Barra da lagoa"
+  },
+  {
+   "id": "cam-ponte",
+   "nome": "Ponte Hercílio Luz",
+   "lat": -27.5947,
+   "lng": -48.5653,
+   "fonte": "Maaxcam Ao Vivo",
+   "yt": "fibsPUO7GQc",
+   "live": true,
+   "embed": true,
+   "titulo": "Câmera AO VIVO Ponte Hercilio Luz - Florianópolis - Porto 1922 Cafés Especiais"
+  },
+  {
+   "id": "cam-campeche",
+   "nome": "Campeche",
+   "lat": -27.6775,
+   "lng": -48.489,
+   "fonte": "Maaxcam Ao Vivo",
+   "yt": "1yevOA9T6Mc",
+   "live": true,
+   "embed": true,
+   "titulo": "Câmera ao vivo Florianópolis - Campeche - Graffi Hostel & Bar"
+  },
+  {
+   "id": "cam-lagoinha",
+   "nome": "Lagoinha do Norte",
+   "lat": -27.383,
+   "lng": -48.427,
+   "fonte": "Maaxcam Ao Vivo",
+   "yt": "0W1PeH0Dea0",
+   "live": true,
+   "embed": true,
+   "titulo": "Praia da Lagoinha do Norte- Florianópolis - Restaurante Canto da Lagoinha / Cachoeira do bom jesus."
+  },
+  {
+   "id": "cam-jurere",
+   "nome": "Jurerê Internacional",
+   "lat": -27.437,
+   "lng": -48.497,
+   "fonte": "Maaxcam Ao Vivo",
+   "yt": null,
+   "live": false,
+   "embed": false,
+   "titulo": ""
+  }
+ ]
+}

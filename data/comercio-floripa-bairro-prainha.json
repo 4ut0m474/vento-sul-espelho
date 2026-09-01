@@ -1,0 +1,418 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Prainha",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-prainha",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Faferia Cerâmica",
+   "tipo": "Arts Centre",
+   "emoji": "🏪",
+   "cat": "arts_centre,pottery",
+   "end": "Rua General Bittencourt 144",
+   "link": "faferia.com.br"
+  },
+  {
+   "nome": "Kretzen",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bradesco",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Santander",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar da Alfândega",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bar do Petit",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida Mauro Ramos 4",
+   "link": ""
+  },
+  {
+   "nome": "Haôma Baixo Centro Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida Hercílio Luz 455",
+   "link": ""
+  },
+  {
+   "nome": "Okinka",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Nunes Machado 132",
+   "link": ""
+  },
+  {
+   "nome": "Rio's Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Avenida Hercílio Luz 625",
+   "link": ""
+  },
+  {
+   "nome": "Taliesyn Rock bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Victor Meirelles 112",
+   "link": ""
+  },
+  {
+   "nome": "Vodu Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Victor Meirelles 154",
+   "link": ""
+  },
+  {
+   "nome": "Evidence",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilha Center",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Café do Largo",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Recanto dos Pães",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "Rua Tiradentes 42",
+   "link": ""
+  },
+  {
+   "nome": "KRJ Plotagem",
+   "tipo": "Copyshop",
+   "emoji": "🏪",
+   "cat": "copyshop",
+   "end": "Rua Nunes Machado 94",
+   "link": ""
+  },
+  {
+   "nome": "Drogaria Catarinense",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Berghaus",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Daifa",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": "https://www.hoteldaifa.com.br/"
+  },
+  {
+   "nome": "Hotel 2S",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Hercílio Luz 652",
+   "link": "https://2s.hotelflorianopolis.com/"
+  },
+  {
+   "nome": "Hotel Veleiro",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Plaza Florianópolis",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Rua Silva Jardim 830",
+   "link": ""
+  },
+  {
+   "nome": "Amarelinho Altas Horas",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Azeitona",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Borges",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua José Maria da Luz",
+   "link": ""
+  },
+  {
+   "nome": "Brasinha Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cid Sucos",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Delícia Dog e Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mais Pizza Floripa",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Marciléia",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Puta Madre Hamburgueria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Professora Maria Júlia Franco",
+   "link": ""
+  },
+  {
+   "nome": "Quiosque do Manézinho",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Scooby Doo",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Super Sucos",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sebos Mafalda",
+   "tipo": "Livraria",
+   "emoji": "📚",
+   "cat": "books",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Guga Express",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Avenida Hercílio Luz 465",
+   "link": ""
+  },
+  {
+   "nome": "Mercados Baratíssimo",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Duque de Caxias",
+   "link": ""
+  },
+  {
+   "nome": "Joreli",
+   "tipo": "Newsagent",
+   "emoji": "🏪",
+   "cat": "newsagent",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "DPaschoal",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Avenida Mauro Ramos 156",
+   "link": ""
+  },
+  {
+   "nome": "Santíssima Gula",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Avenida Mauro Ramos 40",
+   "link": ""
+  },
+  {
+   "nome": "Posto Galo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto SC",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Silva Jardim",
+   "link": ""
+  },
+  {
+   "nome": "Posto Vila Rica",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto de combustível",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua João Motta Espezim 200",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Edelweiss",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Rua Luiz Pedro Ferreira 86",
+   "link": "https://www.pousadaedelweiss.com.br/"
+  },
+  {
+   "nome": "AmassA, Massas e Drinks",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Travessa Osmar Regueira 25",
+   "link": "https://www.instagram.com/amassafloripa?igsh=MWtrZXc5NnFpaWRvcQ=="
+  },
+  {
+   "nome": "Charme",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Mauro Ramos 22",
+   "link": ""
+  },
+  {
+   "nome": "Dona Tita",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Istepô",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vida Nova",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tabacaria Central",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

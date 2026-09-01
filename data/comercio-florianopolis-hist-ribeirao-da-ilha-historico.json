@@ -1,0 +1,106 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Ribeirão da Ilha histórico",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-hist-ribeirao-da-ilha-historico",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Amoriko",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Bar e Armazém Dutra",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mini-Mercado Vapt-Vupt",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Rancho do Carlinhos",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Cavalheiro",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Madrissilva",
+   "tipo": "Presentes",
+   "emoji": "🎁",
+   "cat": "gift",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Ostra da Ilha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Ostras e Ostras Coisas",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria La Fornalha",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno 4958",
+   "link": "http://www.pizzarialafornalha.com"
+  },
+  {
+   "nome": "Porto do Contrato",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno 5544",
+   "link": "http://portodocontrato.com.br"
+  },
+  {
+   "nome": "Rancho Açoriano",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno 5634",
+   "link": "http://ranchoacoriano.com"
+  },
+  {
+   "nome": "Rancho da Ostra",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Baldicero Filomeno",
+   "link": ""
+  }
+ ]
+}

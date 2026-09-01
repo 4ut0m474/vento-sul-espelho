@@ -1,0 +1,106 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "João Paulo",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-joao-paulo",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Taverna Jester",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": "http://tavernajester.com.br"
+  },
+  {
+   "nome": "Tok & Stok",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Farmagnus",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rodovia João Paulo",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Farmagnus",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cassol Centerlar",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sersaco",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pizzaria Fornetto",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rodovia João Paulo 1200",
+   "link": ""
+  },
+  {
+   "nome": "Centro Comercial Jaime Costa",
+   "tipo": "Mall",
+   "emoji": "🏪",
+   "cat": "mall",
+   "end": "Rodovia João Paulo 1530",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Estrela Guria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Angeloi / Balaroti",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Madeireira Florianópolis",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Madeireira Madekalo",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Rodovia José Carlos Daux 1607",
+   "link": ""
+  }
+ ]
+}

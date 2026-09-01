@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vento Sul — Privacidade & Permissões</title>
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<style>
+  :root {
+    --bg: #050810; --card: #0e1830; --line: rgba(255,255,255,0.08);
+    --txt: #e8efff; --dim: #91a3c2;
+    --on:  #2bd07c; --off: #3a455c;
+    --rosa: linear-gradient(135deg, #ff5db4, #5dc8ff);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--txt);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  header {
+    padding: 24px 20px 16px; max-width: 720px; margin: 0 auto;
+  }
+  header h1 { margin: 0 0 6px; font-size: 1.6em; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--dim); font-size: 0.95em; }
+  main { max-width: 720px; margin: 0 auto; padding: 0 20px 80px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 18px; margin-bottom: 14px;
+  }
+  .row {
+    display: flex; align-items: flex-start; gap: 14px; padding: 8px 0;
+  }
+  .row + .row { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 14px; }
+  .row .ico { font-size: 1.6em; line-height: 1; flex: 0 0 auto; }
+  .row .meio { flex: 1; }
+  .row h3 { margin: 0 0 4px; font-size: 1.05em; }
+  .row p { margin: 0; color: var(--dim); font-size: 0.88em; line-height: 1.45; }
+  .switch { flex: 0 0 auto; position: relative; width: 52px; height: 30px; }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .switch .slider {
+    position: absolute; inset: 0; background: var(--off); border-radius: 999px;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .switch .slider::before {
+    content: ""; position: absolute; left: 3px; top: 3px;
+    width: 24px; height: 24px; border-radius: 50%; background: #fff;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .switch input:checked + .slider { background: var(--on); }
+  .switch input:checked + .slider::before { transform: translateX(22px); }
+  .acoes {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px;
+  }
+  .btn {
+    padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line);
+    background: rgba(255,255,255,0.04); color: var(--txt); font-size: 0.92em;
+    cursor: pointer; transition: background 0.15s;
+  }
+  .btn:hover { background: rgba(255,255,255,0.08); }
+  .btn.primario { background: var(--rosa); color: #1b1029; border: 0; font-weight: 700; }
+  .badge {
+    display: inline-block; font-size: 0.72em; padding: 2px 8px; border-radius: 999px;
+    background: rgba(255,193,7,0.18); color: #ffd24d; margin-left: 8px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .info-mini {
+    margin-top: 10px; padding: 10px 12px; background: rgba(93,200,255,0.06);
+    border-radius: 10px; font-size: 0.85em; color: var(--dim);
+  }
+  a.voltar { color: var(--dim); text-decoration: none; font-size: 0.9em; }
+  a.voltar:hover { color: var(--txt); }
+</style>
+<script src="/shared/radio-fab.js?v=20260827e" defer></script>
+  <script src="/shared/vs-page-header.js?v=9" defer></script>
+</head>
+<body>
+
+<header>
+  <a class="voltar" href="/">← voltar</a>
+  <h1>🛡️ Privacidade & permissões</h1>
+  <p>Tu no controle. Tudo desligado por padrão. Liga só o que faz sentido pra ti.</p>
+</header>
+
+<main>
+  <div class="card">
+    <div class="row">
+      <div class="ico">🛰️</div>
+      <div class="meio">
+        <h3>Vitrines parceiras me reconhecem <span class="badge">novo</span></h3>
+        <p>TVs de comércios parceiros mostram saudação suave quando tu passar perto. Apareces sempre como "parceiro do app", nunca pelo nome. Dado é hash anônimo + raio agregado.</p>
+        <div class="info-mini">
+          🤫 Janela silenciosa automática 22h–06h.<br>
+          😶 Nunca interrompe se tu silenciar (botão abaixo).<br>
+          🚫 Desligando aqui, nenhuma vitrine te detecta.
+        </div>
+      </div>
+      <label class="switch"><input type="checkbox" id="sw-dooh"><span class="slider"></span></label>
+    </div>
+    <div class="acoes">
+      <button class="btn" data-silenciar="3600">😶 Silenciar 1h</button>
+      <button class="btn" data-silenciar="86400">🌙 Silenciar até amanhã</button>
+      <button class="btn" data-silenciar="0">✓ Tirar silêncio</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="ico">🧭</div>
+      <div class="meio">
+        <h3>Rosinha pode interromper a rádio com dicas perto de mim</h3>
+        <p>Quando tu estiver ouvindo a rádio e passar perto de algo do teu gosto, a Rosinha (rosa-dos-ventos) entra suave 8 segundos com a dica e volta pra notícia. Tu pode silenciar a qualquer hora.</p>
+      </div>
+      <label class="switch"><input type="checkbox" id="sw-perseguidora"><span class="slider"></span></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="ico">🔔</div>
+      <div class="meio">
+        <h3>Notificações do app</h3>
+        <p>Despertador com notícia relevante, vitrine parceira por perto, alerta de ondas, promoção de comerciante teu favorito.</p>
+      </div>
+      <label class="switch"><input type="checkbox" id="sw-push"><span class="slider"></span></label>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="ico">📍</div>
+      <div class="meio">
+        <h3>Compartilhar localização com a rádio</h3>
+        <p>Personas mencionam SUTILMENTE o caminho ("Beira-Mar tá leve, Mole boa onda"). Sem nome, sem rastro. Toggle aqui controla tudo.</p>
+      </div>
+      <label class="switch"><input type="checkbox" id="sw-radio-geo"><span class="slider"></span></label>
+    </div>
+  </div>
+
+  <p style="text-align:center; color:var(--dim); font-size:0.82em; margin-top:24px;">
+    Tu pode mudar a qualquer momento. Nada disso vaza pra fora do Vento Sul.<br>
+    🌊 vento sul · feito pra alavancar parceiros, nunca pra extrair user
+  </p>
+</main>
+
+<script src="config.js"></script>
+<script src="shared/dooh-cliente.js"></script>
+<script>
+(function () {
+  const CFG = window.VENTOSUL_CONFIG || {};
+  const SUPA = (CFG.SUPABASE_URL || "").replace(/\/+$/, "");
+  const ANON = CFG.SUPABASE_ANON || CFG.SUPABASE_ANON_JWT;
+
+  function getJWT() {
+    try {
+      for (const k of Object.keys(localStorage)) {
+        if (k.includes("auth-token") || k.endsWith("-auth-token")) {
+          const raw = localStorage.getItem(k);
+          if (!raw) continue;
+          const s = JSON.parse(raw);
+          if (s?.access_token) return s.access_token;
+          if (s?.currentSession?.access_token) return s.currentSession.access_token;
+        }
+      }
+    } catch {}
+    return null;
+  }
+
+  // DOOH opt-in (local + Supabase user_perfil)
+  const swDooh = document.getElementById("sw-dooh");
+  swDooh.checked = window.VS_DOOH ? window.VS_DOOH.getOptIn() : false;
+  swDooh.addEventListener("change", async () => {
+    const v = swDooh.checked;
+    if (window.VS_DOOH) window.VS_DOOH.setOptIn(v);
+    const token = getJWT();
+    if (!token || !SUPA) return;
+    try {
+      await fetch(`${SUPA}/rest/v1/user_perfil?on_conflict=user_uuid`, {
+        method: "POST",
+        headers: {
+          "apikey": ANON, "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates"
+        },
+        body: JSON.stringify({ dooh_reconhecimento_ativo: v })
+      });
+    } catch {}
+  });
+
+  // Silenciar
+  document.querySelectorAll("[data-silenciar]").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const segundos = parseInt(btn.dataset.silenciar, 10);
+      const ate = segundos > 0 ? new Date(Date.now() + segundos * 1000).toISOString() : null;
+      const token = getJWT();
+      if (!token || !SUPA) { alert("Faz login primeiro."); return; }
+      try {
+        await fetch(`${SUPA}/rest/v1/user_perfil?on_conflict=user_uuid`, {
+          method: "POST",
+          headers: {
+            "apikey": ANON, "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates"
+          },
+          body: JSON.stringify({ dooh_silenciado_ate: ate })
+        });
+        btn.textContent = "✓ Feito";
+        setTimeout(() => location.reload(), 1200);
+      } catch (e) { alert("Erro: " + e.message); }
+    });
+  });
+
+  // Push notif (Notification API local)
+  const swPush = document.getElementById("sw-push");
+  swPush.checked = (Notification?.permission === "granted");
+  swPush.addEventListener("change", async () => {
+    if (swPush.checked) {
+      const p = await Notification.requestPermission();
+      swPush.checked = (p === "granted");
+    }
+  });
+
+  // Perseguidora rádio + rádio geo (placeholders locais, integram quando edges 1.1 saírem)
+  ["sw-perseguidora", "sw-radio-geo"].forEach(id => {
+    const sw = document.getElementById(id);
+    sw.checked = localStorage.getItem(id) === "1";
+    sw.addEventListener("change", () => {
+      try { localStorage.setItem(id, sw.checked ? "1" : "0"); } catch {}
+    });
+  });
+})();
+</script>
+<script src="/shared/bg-slideshow.js" data-bg-theme="admin"></script>
+<script src="/shared/cinema-mode.js" data-idle="30000"></script>
+  <script src="/shared/vs-fab.js?v=7"></script>
+  <script src="/shared/vs-default-fab.js?v=9" defer></script>
+<script src="/shared/vs-page-footer.js?v=7" defer></script><script src="/shared/vs-contato-footer.js?v=20260825" defer></script>
+<script src="/shared/vs-tour.js?v=5" defer></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Jardim Atlântico",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-jardim-atlantico",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Açougue Carne Fresca",
+   "tipo": "Açougue",
+   "emoji": "🥩",
+   "cat": "butcher",
+   "end": "Rua Elesbão Pinto da Luz 1183",
+   "link": ""
+  },
+  {
+   "nome": "Banco do Brasil",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Tijucas 20",
+   "link": ""
+  },
+  {
+   "nome": "Mateus",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mono Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rua José Abreu 518",
+   "link": ""
+  },
+  {
+   "nome": "Stop Bike",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Avenida Atlântica 425",
+   "link": ""
+  },
+  {
+   "nome": "Bella Imagem",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Jhon Silva Barber Shop",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "CAOA Hyundai",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "GMS Motors",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm 3529",
+   "link": "https://www.gmsmotors.com.br/"
+  },
+  {
+   "nome": "Honda Dream",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Ponto Futura",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Porsche Center Florianópolis",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm 3091",
+   "link": "https://www.porsche.com/brazil/pt/aboutporsche/porschebrasil/showrooms/florianopolis-sc"
+  },
+  {
+   "nome": "Rede Repasse",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Mandarim Autopeças",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "RF Peças e Acessórios",
+   "tipo": "Car Parts",
+   "emoji": "🏪",
+   "cat": "car_parts",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "Millium",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Casas d'Água",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Marinheiro Max Schramm 3484",
+   "link": "https://www.panvel.com/panvel/nossas-lojas/sc/florianopolis/panvel-jardim-atlantico/918"
+  },
+  {
+   "nome": "S.O.S Gás e Água",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "Servidão Alamiro Vicente de Oliveira 39",
+   "link": ""
+  },
+  {
+   "nome": "NCoisas",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Avenida Atlântica 198",
+   "link": "https://ncoisas.com.br/"
+  },
+  {
+   "nome": "Cambirela Hotel",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "Avenida Marinheiro Max Schramm 2199",
+   "link": "https://cambirela.com.br/"
+  },
+  {
+   "nome": "Hotel de Trânsito de Oficiais",
+   "tipo": "Hotel",
+   "emoji": "🏨",
+   "cat": "hotel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cachorrão",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "McDonald's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Avenida Marinheiro Max Schramm 2380",
+   "link": ""
+  },
+  {
+   "nome": "Lavô",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Itália Parafusos",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Rua Elesbão Pinto da Luz 121",
+   "link": ""
+  },
+  {
+   "nome": "Coelho Mercearia e Padaria",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Mar del Plata 530",
+   "link": ""
+  },
+  {
+   "nome": "Júnior",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Felipe Neves",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Mores",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "2M Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Luiz Carlos Prestes",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado É de Casa",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Vereador Batista Pereira 513",
+   "link": ""
+  },
+  {
+   "nome": "Edisa Florianópolis",
+   "tipo": "Motorcycle",
+   "emoji": "🏪",
+   "cat": "motorcycle",
+   "end": "Avenida Marinheiro Max Schramm 3233",
+   "link": "https://www.bajajedisa.com.br/"
+  },
+  {
+   "nome": "BMS Performance",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Tijucas 1313",
+   "link": "https://www.bmsperformance.com.br/"
+  },
+  {
+   "nome": "Casa Grande Auto Shopping",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Avenida Marinheiro Max Schramm 3325",
+   "link": "https://casagrandeautoshopping.com.br"
+  },
+  {
+   "nome": "Cinto de Segurança Machado",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Genuíno Pereira da Silva 91",
+   "link": ""
+  },
+  {
+   "nome": "MM Auto Centre",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Waldemar Ouriques 799",
+   "link": ""
+  },
+  {
+   "nome": "MM Mecânica",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Moura 467",
+   "link": ""
+  },
+  {
+   "nome": "Mecânica Continente",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "Márcio Mecânica",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Vereador Batista Pereira 484",
+   "link": ""
+  },
+  {
+   "nome": "Retífica de Motores Mega Motors",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Nossa Senhora do Rosário 604",
+   "link": ""
+  },
+  {
+   "nome": "Pescados Gaivota",
+   "tipo": "Peixaria",
+   "emoji": "🐟",
+   "cat": "seafood",
+   "end": "Rua Waldemar Ouriques 869",
+   "link": ""
+  },
+  {
+   "nome": "Cantinho do Cão",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Felipe Neves",
+   "link": ""
+  },
+  {
+   "nome": "Nico",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Atlântica",
+   "link": ""
+  },
+  {
+   "nome": "Novo Tempo",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Posto Capoeiras",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Araci Vaz Callado",
+   "link": ""
+  },
+  {
+   "nome": "Posto MaxSul",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Coronel Pedro Demoro",
+   "link": ""
+  },
+  {
+   "nome": "WDCom",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Avenida Marinheiro Max Schramm",
+   "link": ""
+  },
+  {
+   "nome": "Boka's Delivery",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Marinheiro Max Schramm 3771",
+   "link": "https://bokas.com.br/"
+  },
+  {
+   "nome": "Cantina Zabot",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Avenida Leoberto Leal 157",
+   "link": ""
+  },
+  {
+   "nome": "Fort Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Rua Elesbão Pinto da Luz 1183",
+   "link": ""
+  },
+  {
+   "nome": "Super A Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Avenida Marinheiro Max Schramm 3450",
+   "link": "https://www.instagram.com/superaatacadista/"
+  }
+ ]
+}

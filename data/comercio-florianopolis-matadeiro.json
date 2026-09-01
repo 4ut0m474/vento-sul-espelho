@@ -1,0 +1,178 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Matadeiro",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-matadeiro",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Sul da Ilha Surf Bar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Chapolim Bike Shpo",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "Rodovia Francisco Thomaz dos Santos",
+   "link": ""
+  },
+  {
+   "nome": "Ferragem trevo",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Biafarma",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Branca",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa de Pedra",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hostel Praia da Armação",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Servidão Thomás Pires 64",
+   "link": ""
+  },
+  {
+   "nome": "Retro House",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Avenida Antônio Borges dos Santos 30",
+   "link": ""
+  },
+  {
+   "nome": "Mercearia Onofre",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rodovia Francisco Thomaz dos Santos 6554",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Nunes",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rodovia Francisco Thomaz dos Santos",
+   "link": ""
+  },
+  {
+   "nome": "Supermercado Super Vovó",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Antônio Borges dos Santos",
+   "link": ""
+  },
+  {
+   "nome": "Recanto dos Bichos",
+   "tipo": "Pet Grooming",
+   "emoji": "🏪",
+   "cat": "pet_grooming",
+   "end": "Rodovia Francisco Thomaz dos Santos 6554",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Drops de Aniz",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Santa Ana",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Avenida Antônio Borges dos Santos 352",
+   "link": ""
+  },
+  {
+   "nome": "Pousada Sul",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Avenida Antônio Borges dos Santos",
+   "link": ""
+  },
+  {
+   "nome": "Cachorro quente praia da Armacao",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante Adriana",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante do Alécio",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sabor & Mar",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Sorveteria Quatro Estações",
+   "tipo": "Sorveteria",
+   "emoji": "🍦",
+   "cat": "ice_cream",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ilha do Campeche",
+   "tipo": "Ticket",
+   "emoji": "🏪",
+   "cat": "ticket",
+   "end": "Avenida Antônio Borges dos Santos 855",
+   "link": ""
+  }
+ ]
+}

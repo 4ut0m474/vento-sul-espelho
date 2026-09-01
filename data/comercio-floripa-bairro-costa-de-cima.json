@@ -1,0 +1,26 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Costa de Cima",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-costa-de-cima",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Aruna Eco Spa",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Estrada Francisco Thomás dos Santos (Chico do Alambique) 390",
+   "link": "https://www.arunaecospa.com.br/"
+  },
+  {
+   "nome": "Alambique",
+   "tipo": "Wine",
+   "emoji": "🏪",
+   "cat": "wine",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

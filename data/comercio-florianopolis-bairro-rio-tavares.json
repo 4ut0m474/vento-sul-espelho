@@ -1,0 +1,122 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Rio Tavares",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-bairro-rio-tavares",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Arautos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arautos Veículos",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milium",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Anilar",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "Rodovia Francisco Magno Vieira 1412",
+   "link": "https://www.anilar.com.br/"
+  },
+  {
+   "nome": "Feirão de Móveis",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hiper Móveis",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Floricultura Ribeironense",
+   "tipo": "Garden Centre",
+   "emoji": "🏪",
+   "cat": "garden_centre",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavix",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Milani",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "All Mecânica",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rodovia Francisco Magno Vieira 645",
+   "link": ""
+  },
+  {
+   "nome": "Plupet",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rodovia Francisco Magno Vieira 610",
+   "link": ""
+  },
+  {
+   "nome": "Shell",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rodovia Francisco Magno Vieira",
+   "link": ""
+  },
+  {
+   "nome": "Real Madeiras Construtora",
+   "tipo": "Trade",
+   "emoji": "🏪",
+   "cat": "trade",
+   "end": "Rodovia Francisco Magno Vieira 1410",
+   "link": "http://www.realmadeirasconstrutora.com.br/"
+  },
+  {
+   "nome": "Brasil Atacadista",
+   "tipo": "Wholesale",
+   "emoji": "🏪",
+   "cat": "wholesale",
+   "end": "Rodovia Francisco Magno Vieira 373",
+   "link": ""
+  }
+ ]
+}

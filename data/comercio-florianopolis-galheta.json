@@ -1,0 +1,98 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Galheta",
+ "cidade": "Florianópolis",
+ "slug": "florianopolis-galheta",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Empório Catarinense",
+   "tipo": "Deli",
+   "emoji": "🏪",
+   "cat": "deli",
+   "end": "Rodovia Jornalista Manoel de Menezes",
+   "link": ""
+  },
+  {
+   "nome": "Manacá Home Hostel",
+   "tipo": "Hostel",
+   "emoji": "🛏️",
+   "cat": "hostel",
+   "end": "Servidão Manoel Jorge de Oliveira 95",
+   "link": ""
+  },
+  {
+   "nome": "Profix Surf",
+   "tipo": "Outdoor",
+   "emoji": "🏪",
+   "cat": "outdoor",
+   "end": "Rodovia Jornalista Manoel de Menezes 2690",
+   "link": "https://profixsurf.com.br/"
+  },
+  {
+   "nome": "Pousada Alto Astral",
+   "tipo": "Pousada",
+   "emoji": "🏡",
+   "cat": "guest_house",
+   "end": "Servidão Bertolina Felicidade de Souza 51",
+   "link": ""
+  },
+  {
+   "nome": "Café Hospedagem",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rodovia Jornalista Manoel de Menezes",
+   "link": ""
+  },
+  {
+   "nome": "Canas Verde Bar e Restaurante",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fedoca do Canal",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "O Timoneiro",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Laurindo Jose de Souza 205",
+   "link": ""
+  },
+  {
+   "nome": "Rancho de Canoa",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Laurindo Jose de Souza 188",
+   "link": ""
+  },
+  {
+   "nome": "Selina",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tamarutaca",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Laurindo José de Souza 663",
+   "link": ""
+  }
+ ]
+}

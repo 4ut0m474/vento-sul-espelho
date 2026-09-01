@@ -1,0 +1,498 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Morro do Horácio",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-morro-do-horacio",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Caixa Econômica Federal",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "Rua Paschoal Apóstolo Pítsica 5064",
+   "link": ""
+  },
+  {
+   "nome": "Itaú",
+   "tipo": "Banco",
+   "emoji": "🏦",
+   "cat": "bank",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ambar",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Toca do Baron",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "bar",
+   "end": "Rua Delminda Silveira 758",
+   "link": ""
+  },
+  {
+   "nome": "Cláudia Teixeira Unhas",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "Rua São Vicente de Paula 444",
+   "link": ""
+  },
+  {
+   "nome": "Ciclobike Trindade",
+   "tipo": "Bicicletaria",
+   "emoji": "🚲",
+   "cat": "bicycle",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Espaço Mulher",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Antônio Carlos Ferreira 339",
+   "link": ""
+  },
+  {
+   "nome": "Esperon Júnior",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Antônio Carlos Ferreira 276",
+   "link": ""
+  },
+  {
+   "nome": "Fuzz",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Rui Barbosa 146",
+   "link": "https://fuzz.com.br/"
+  },
+  {
+   "nome": "Mitragie",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Ah Cucaria!",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Koxixos",
+   "tipo": "Café",
+   "emoji": "☕",
+   "cat": "cafe",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "DVA",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "Rua Paschoal Apóstolo Pítsica",
+   "link": ""
+  },
+  {
+   "nome": "Hyundai",
+   "tipo": "Car",
+   "emoji": "🏪",
+   "cat": "car",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Usina do Micro",
+   "tipo": "Computer",
+   "emoji": "🏪",
+   "cat": "computer",
+   "end": "Rua Doutor Carlos Corrêa 236",
+   "link": "http://usinadomicro.net"
+  },
+  {
+   "nome": "Casas da Água",
+   "tipo": "Department Store",
+   "emoji": "🏪",
+   "cat": "department_store",
+   "end": "Avenida da Saudade 03",
+   "link": "https://www.casasdaagua.com.br/"
+  },
+  {
+   "nome": "Hidrofusos",
+   "tipo": "Doityourself",
+   "emoji": "🏪",
+   "cat": "doityourself",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares 1040",
+   "link": "https://www.drogaraia.com.br/"
+  },
+  {
+   "nome": "Farmácia Angeloni",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Avenida Governador Irineu Bornhausen 5288",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Normal",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Farmácia Preço Popular",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Lauro Linhares 928",
+   "link": ""
+  },
+  {
+   "nome": "Panvel",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Inusittá",
+   "tipo": "Furniture",
+   "emoji": "🏪",
+   "cat": "furniture",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vado Água e Gás",
+   "tipo": "Gas",
+   "emoji": "🏪",
+   "cat": "gas",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mix Utilidades",
+   "tipo": "General",
+   "emoji": "🏪",
+   "cat": "general",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Vidraçaria Carioca",
+   "tipo": "Glaziery",
+   "emoji": "🏪",
+   "cat": "glaziery",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Direto do Campo",
+   "tipo": "Hortifruti",
+   "emoji": "🥬",
+   "cat": "greengrocer",
+   "end": "",
+   "link": "http://www.diretodocampo.net.br/"
+  },
+  {
+   "nome": "Açaiteria Floripa",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bob's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bokão Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "McDonald's",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Pressed Food",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Vieira Mafra",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Lavanderia Tá Limpo",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Avenida Governador Irineu Bornhausen",
+   "link": ""
+  },
+  {
+   "nome": "Água Viva",
+   "tipo": "Laundry",
+   "emoji": "🏪",
+   "cat": "laundry",
+   "end": "Rua Lauro Linhares 499",
+   "link": ""
+  },
+  {
+   "nome": "Stecanela",
+   "tipo": "Lighting",
+   "emoji": "🏪",
+   "cat": "lighting",
+   "end": "Rua Lauro Linhares 356",
+   "link": "https://www.stecanela.com.br/"
+  },
+  {
+   "nome": "Supermatec",
+   "tipo": "Material",
+   "emoji": "🔨",
+   "cat": "hardware",
+   "end": "Avenida da Saudade 10",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Alternativo",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Frei Caneca",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Mercado União",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Lauro Linhares",
+   "link": ""
+  },
+  {
+   "nome": "Angeloni",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Avenida Governador Irineu Bornhausen 5288",
+   "link": ""
+  },
+  {
+   "nome": "Tefé Suplementos",
+   "tipo": "Nutrition Supplements",
+   "emoji": "🏪",
+   "cat": "nutrition_supplements",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Auto Oficina C&R Possenti",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Trajano Margarida",
+   "link": ""
+  },
+  {
+   "nome": "Centro Automotivo Beira Mar Norte",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Eletro Buratto",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fábio Escapamentos",
+   "tipo": "Oficina",
+   "emoji": "🔧",
+   "cat": "car_repair",
+   "end": "Rua Antônio Carlos Ferreira 92",
+   "link": ""
+  },
+  {
+   "nome": "Família Lorenzi",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Rui Barbosa",
+   "link": ""
+  },
+  {
+   "nome": "Rainha do Pão de Queijo",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "Rua Lauro Linhares 957",
+   "link": ""
+  },
+  {
+   "nome": "Casas do Pintor",
+   "tipo": "Paint",
+   "emoji": "🏪",
+   "cat": "paint",
+   "end": "Rua Paschoal Apóstolo Pítsica",
+   "link": ""
+  },
+  {
+   "nome": "Agropecuária Gente da Terra",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "Rua Lauro Linhares 329",
+   "link": ""
+  },
+  {
+   "nome": "Pet Affetto",
+   "tipo": "Pet",
+   "emoji": "🏪",
+   "cat": "pet",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Posto Angeloni",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Lauro Linhares 996",
+   "link": ""
+  },
+  {
+   "nome": "Posto Avenida",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Delminda Silveira 191",
+   "link": ""
+  },
+  {
+   "nome": "Posto Carioni",
+   "tipo": "Posto",
+   "emoji": "⛽",
+   "cat": "fuel",
+   "end": "Rua Delminda Silveira 787",
+   "link": ""
+  },
+  {
+   "nome": "Trindog",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Lauro Linhares 898",
+   "link": ""
+  },
+  {
+   "nome": "Clarinda",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Monchik's",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Top-in",
+   "tipo": "Roupas",
+   "emoji": "👕",
+   "cat": "clothes",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Torre de Papel",
+   "tipo": "Stationery",
+   "emoji": "🏪",
+   "cat": "stationery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Viamar",
+   "tipo": "Travel Agency",
+   "emoji": "🏪",
+   "cat": "travel_agency",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Hiper Trindade 1,99",
+   "tipo": "Variety Store",
+   "emoji": "🏪",
+   "cat": "variety_store",
+   "end": "",
+   "link": ""
+  }
+ ]
+}

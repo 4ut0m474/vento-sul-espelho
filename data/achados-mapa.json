@@ -1,0 +1,50 @@
+{
+ "id": "achados-barra-2026-08",
+ "titulo": "Achados da Barra",
+ "explica": "Existem coisas escondidas no mapa. Elas não aparecem de longe: você precisa estar em cima do lugar pra que apareçam. Cada achado guarda um número — e uma prova pra você fazer.",
+ "grade": 0.0005,
+ "achados": [
+  {
+   "id": "pedras-furadas",
+   "nome": "As pedras furadas",
+   "lat": -27.57525,
+   "lng": -48.42266,
+   "raio_m": 45,
+   "icone": "🪨",
+   "conteudo_cifrado": "ccO/aSzsGgxAIPtwRuLDiD0tZPJlby4Y2zlTauLoZJAeOtNPfTuWauNL4Gm6aLBy/5SWyaoOqDd3GaccPpAD2k7TMpnclMV6iIdBZbkd5FWy+5jvpUroOYM9PSxsQxtubPqWlVR5EsiX5PRRjiyulb7TiFSVoNiZjBCDcGwZPxf0Znl/4L3SZG85tL82zZ1ajDwXAqyAjfKmZYYwX4H2Sq+hgCxW3stQAZQiNxI0YQEOGwBmOEXHdXQOdqUxaHqkPsL1JRu8HgYFkThZoBtrtTcxu0+K+SWFIUO++13kzr9oWlg3FN+IHnqu7OLG5YqvsuImxrCgmrN2G+snVqthYENc9b7JzGI7mYmJMuy3f4Q/3L/jN2O79C/SxA/6hqpDTlCMpgczrRlF4+leV+75g5zqVinb+1pSevuEz+FaBDDJ8ePGMriEb3Awv/kOqcqPn9Mt0ZH8FYpZzBzWwMvDpVk3K1neWYFGqFqI",
+   "tarefa": {
+    "foto": true,
+    "texto": "Foto de um buraco na pedra, com a mão do lado"
+   },
+   "pista": "Debaixo da travessia que balança tem pedra com marca de gente antiga. Chegue perto e olhe pra baixo."
+  },
+  {
+   "id": "trilha-prainha",
+   "nome": "A boca da trilha",
+   "lat": -27.57315,
+   "lng": -48.41767,
+   "raio_m": 60,
+   "icone": "🥾",
+   "conteudo_cifrado": "3E3rsBGUtxouRX7uJQhH72wo8Mp+VqbnvTQGMMMRqss8lrhUrWDJfjoZeYW/b5L2PoXgofy6mxflWcVr85TiAIS7mMb/uxPTPXk+0adcYBWSIvL5HwpbgJFKhdm8D/HGQwT12rRMW2v1V3NW5sD0JsiE7GRHqArKOw01aIU8CJ6yZFNUIc5l57jClI2Ofw8c0Xl3afIAVF713fI1i0k/tR+YXDkFum43Ta7Bvcnz/wZ4fvnJ3Rfnonm64Hr0Qoku4+SrgBlVwiZtXjuRTjFRPY4OfnbbRQ5UJ10B7kcQGuhhlVTy1dz0lRBSJbfJ5RSD9RYnPDvjajXPZqs7oDMrk1YyA2Ct8a1k/rqY8ZCE4L4T9k0YxexgAmJDsDyABqIlVIRU",
+   "tarefa": {
+    "video": true,
+    "texto": "10 segundos girando do mar até a mata"
+   },
+   "pista": "Onde o caminho de terra começa a subir, perto das piscinas naturais."
+  },
+  {
+   "id": "farol-trilha",
+   "nome": "O caminho do farol",
+   "lat": -27.57514,
+   "lng": -48.41817,
+   "raio_m": 60,
+   "icone": "🔦",
+   "conteudo_cifrado": "8jfAGv1558ZbqAWRPeVLJffWYnKM9HKrXn70TKqorp4YyumP1219nGafUt/48htkpbS5WseFmWkAV11k3rU/B/xRl2TFx/PtOEfGBpPG4Mf1+rI+tmwpG9bnmiwymjUkonxuD6ZLsSEAfzW/OxJ7XFmQ3TV1KI2IrUNYL8xg2pFD5CJCuh8FZeFnGWqLFPCvAGLIadlX45IWlxi0BLnVpsHCqMy+qLg1vGTnTpoeHjG3H5IVkaEpUs9udr9izk7eG2Zb3MdnryvHpPT9VKd6XS4NS4BS5OKl2/OnD6IvvOeB+5VVFsusnGa3fkNZJjSMWDHyM8iw5v42msX/yV606Z31bqo+aYqvd8wrVWA04PMwblfLgNgQfppEzaxjgd2PY7iSZcb59BlDjLIDmp/gS/mZBKS4yhYsqoOhh2Y6key0GWNVPg==",
+   "tarefa": {
+    "foto": true,
+    "texto": "Foto do mar daqui + quantos barcos você vê"
+   },
+   "pista": "Suba até onde se avista o mar aberto — era daí que se avistava a tainha."
+  }
+ ]
+}

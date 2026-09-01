@@ -1,0 +1,338 @@
+{
+ "_nota": "Dados do OpenStreetMap (licença ODbL) — © colaboradores do OpenStreetMap. Coletado pelo Vento Sul. Faltando ou errado? Escreva pra gente que a gente corrige.",
+ "bairro": "Itaguaçu Continental",
+ "cidade": "Florianópolis",
+ "slug": "floripa-bairro-itaguacu-continental",
+ "atualizado": "2026-08-25",
+ "fonte": "OpenStreetMap / Overpass",
+ "comercios": [
+  {
+   "nome": "Baita Boteco",
+   "tipo": "Bar",
+   "emoji": "🍺",
+   "cat": "pub",
+   "end": "Rua Desembargador Pedro Silva 2019",
+   "link": ""
+  },
+  {
+   "nome": "Tânia Camargo",
+   "tipo": "Beleza",
+   "emoji": "💅",
+   "cat": "beauty",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Barão da Navalha Coqueiros",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "Rua Desembargador Pedro Silva 2692",
+   "link": ""
+  },
+  {
+   "nome": "Brutu's Barbearia",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Musas Cabeleireiros Unissex",
+   "tipo": "Cabeleireiro",
+   "emoji": "💇",
+   "cat": "hairdresser",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Casa Rivie",
+   "tipo": "Confectionery",
+   "emoji": "🏪",
+   "cat": "confectionery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Droga Raia",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "Rua Desembargador Pedro Silva 2450",
+   "link": ""
+  },
+  {
+   "nome": "Pague Menos",
+   "tipo": "Farmácia",
+   "emoji": "💊",
+   "cat": "pharmacy",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Empório Limoeiro",
+   "tipo": "Health Food",
+   "emoji": "🏪",
+   "cat": "health_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Cowboy Hamburgueria",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "R. Des. Pedro Silva 2783",
+   "link": "https://beacons.ai/cowboy"
+  },
+  {
+   "nome": "Hamburgão Lanches",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Maria Coxinha",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Desembargador Pedro Silva 2107",
+   "link": ""
+  },
+  {
+   "nome": "Point do Piva",
+   "tipo": "Lanchonete",
+   "emoji": "🍔",
+   "cat": "fast_food",
+   "end": "Rua Desembargador Pedro Silva 2013",
+   "link": ""
+  },
+  {
+   "nome": "Mercado Freitas",
+   "tipo": "Mercadinho",
+   "emoji": "🏪",
+   "cat": "convenience",
+   "end": "Rua Desembargador Pedro Silva 2187",
+   "link": ""
+  },
+  {
+   "nome": "Hippo Supermercado",
+   "tipo": "Mercado",
+   "emoji": "🛒",
+   "cat": "supermarket",
+   "end": "Rua Desembargador Pedro Silva 2392",
+   "link": ""
+  },
+  {
+   "nome": "Padaria Família Müller",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Vó Zulma",
+   "tipo": "Padaria",
+   "emoji": "🥐",
+   "cat": "bakery",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Fábrica de Balões",
+   "tipo": "Party",
+   "emoji": "🏪",
+   "cat": "party",
+   "end": "",
+   "link": "https://fabricadebaloes.com.br/"
+  },
+  {
+   "nome": "A Boleira",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "A Boleira | Fábrica de Bolos - Coqueiros",
+   "tipo": "Pastry",
+   "emoji": "🏪",
+   "cat": "pastry",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Bolha's",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Boteco Zé Mané",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2360",
+   "link": ""
+  },
+  {
+   "nome": "By Cuca",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua André Wendhausen",
+   "link": "https://bycucarestaurante.webnode.com/"
+  },
+  {
+   "nome": "Conversa Fiada Assados",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "D'Grillos",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 3130",
+   "link": "https://www.grillos.com.br/"
+  },
+  {
+   "nome": "Entre Cortes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "R. Doná Antônia Alves 59",
+   "link": "https://www.entrecortesfloripa.com.br"
+  },
+  {
+   "nome": "Mister Burger",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2242",
+   "link": ""
+  },
+  {
+   "nome": "Mister Chopp",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2274",
+   "link": ""
+  },
+  {
+   "nome": "Na Brasa Costelaria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2280",
+   "link": ""
+  },
+  {
+   "nome": "Ox Beef Club",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2344",
+   "link": ""
+  },
+  {
+   "nome": "Piazza 8 Pizzeria",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Rancho Açoriano",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva",
+   "link": "http://www.ranchoacoriano.com"
+  },
+  {
+   "nome": "Recanto das Pedras",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva",
+   "link": ""
+  },
+  {
+   "nome": "Restaurante do Móca",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Tassei Cozinha Oriental",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Toca do Paru",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Yukusue",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "il mercato",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "Rua Desembargador Pedro Silva 2079",
+   "link": ""
+  },
+  {
+   "nome": "Ágapes",
+   "tipo": "Restaurante",
+   "emoji": "🍽️",
+   "cat": "restaurant",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Arena Conveniência e Tabacaria",
+   "tipo": "Tobacco",
+   "emoji": "🏪",
+   "cat": "tobacco",
+   "end": "",
+   "link": ""
+  },
+  {
+   "nome": "Le Vin",
+   "tipo": "Wine",
+   "emoji": "🏪",
+   "cat": "wine",
+   "end": "Rua Desembargador Pedro Silva 2045",
+   "link": ""
+  }
+ ]
+}
