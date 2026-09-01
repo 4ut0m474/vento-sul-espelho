@@ -1,0 +1,338 @@
+[
+  {
+    "id": "vara-pesca",
+    "emoji": "🎣",
+    "nome": "Vara de pesca + molinete",
+    "foto": "/compra-que-volta/fotos/vara-pesca.jpg",
+    "preco": 289.9,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 289.9
+      },
+      {
+        "qtd": 100,
+        "preco": 259.9
+      },
+      {
+        "qtd": 1000,
+        "preco": 229.9
+      }
+    ],
+    "votos": 23,
+    "ficticio": true,
+    "url": "produto-vara-pesca.html"
+  },
+  {
+    "id": "caixa-termica",
+    "emoji": "🧊",
+    "nome": "Caixa térmica 34 L",
+    "foto": "/compra-que-volta/fotos/caixa-termica.jpg",
+    "preco": 219.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 219.0
+      },
+      {
+        "qtd": 100,
+        "preco": 195.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 175.0
+      }
+    ],
+    "votos": 19,
+    "ficticio": true,
+    "url": "produto-caixa-termica.html"
+  },
+  {
+    "id": "colete",
+    "emoji": "🛶",
+    "nome": "Colete salva-vidas homologado",
+    "foto": "/compra-que-volta/fotos/colete.jpg",
+    "preco": 168.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 168.0
+      },
+      {
+        "qtd": 100,
+        "preco": 150.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 135.0
+      }
+    ],
+    "votos": 17,
+    "ficticio": true,
+    "url": "produto-colete.html"
+  },
+  {
+    "id": "painel-solar",
+    "emoji": "☀️",
+    "nome": "Painel solar 100 W + controlador",
+    "foto": "/compra-que-volta/fotos/painel-solar.jpg",
+    "preco": 649.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 649.0
+      },
+      {
+        "qtd": 100,
+        "preco": 589.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 529.0
+      }
+    ],
+    "votos": 14,
+    "ficticio": true,
+    "url": "produto-painel-solar.html"
+  },
+  {
+    "id": "extintor",
+    "emoji": "🧯",
+    "nome": "Extintor ABC 4 kg com suporte",
+    "foto": "/compra-que-volta/fotos/extintor.jpg",
+    "preco": 149.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 149.0
+      },
+      {
+        "qtd": 100,
+        "preco": 132.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 118.0
+      }
+    ],
+    "votos": 12,
+    "ficticio": true,
+    "url": "produto-extintor.html"
+  },
+  {
+    "id": "bateria",
+    "emoji": "🔋",
+    "nome": "Bateria estacionária 60 Ah",
+    "foto": "/compra-que-volta/fotos/bateria.jpg",
+    "preco": 789.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 789.0
+      },
+      {
+        "qtd": 100,
+        "preco": 719.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 649.0
+      }
+    ],
+    "votos": 9,
+    "ficticio": true,
+    "url": "produto-bateria.html"
+  },
+  {
+    "id": "camera",
+    "emoji": "📷",
+    "nome": "Câmera de segurança Wi-Fi",
+    "foto": "/compra-que-volta/fotos/camera.jpg",
+    "preco": 229.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 229.0
+      },
+      {
+        "qtd": 100,
+        "preco": 205.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 185.0
+      }
+    ],
+    "votos": 8,
+    "ficticio": true,
+    "url": "produto-camera.html"
+  },
+  {
+    "id": "cadeira-praia",
+    "emoji": "🪑",
+    "nome": "Cadeira de praia reforçada",
+    "foto": "/compra-que-volta/fotos/cadeira-praia.jpg",
+    "preco": 139.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 139.0
+      },
+      {
+        "qtd": 100,
+        "preco": 122.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 109.0
+      }
+    ],
+    "votos": 7,
+    "ficticio": true,
+    "url": "produto-cadeira-praia.html"
+  },
+  {
+    "id": "guarda-sol",
+    "emoji": "⛱️",
+    "nome": "Guarda-sol 2,4 m com proteção UV",
+    "foto": "/compra-que-volta/fotos/guarda-sol.jpg",
+    "preco": 179.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 179.0
+      },
+      {
+        "qtd": 100,
+        "preco": 160.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 145.0
+      }
+    ],
+    "votos": 6,
+    "ficticio": true,
+    "url": "produto-guarda-sol.html"
+  },
+  {
+    "id": "caiaque",
+    "emoji": "🚣",
+    "nome": "Caiaque individual + remo",
+    "foto": "/compra-que-volta/fotos/caiaque.jpg",
+    "preco": 2190.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 2190.0
+      },
+      {
+        "qtd": 100,
+        "preco": 1990.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 1840.0
+      }
+    ],
+    "votos": 5,
+    "ficticio": true,
+    "url": "produto-caiaque.html"
+  },
+  {
+    "id": "freezer",
+    "emoji": "❄️",
+    "nome": "Freezer horizontal 300 L",
+    "foto": "/compra-que-volta/fotos/freezer.jpg",
+    "preco": 2890.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 2890.0
+      },
+      {
+        "qtd": 100,
+        "preco": 2650.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 2450.0
+      }
+    ],
+    "votos": 4,
+    "ficticio": true,
+    "url": "produto-freezer.html"
+  },
+  {
+    "id": "rede-descanso",
+    "emoji": "🪢",
+    "nome": "Rede de descanso com suporte",
+    "foto": "/compra-que-volta/fotos/rede-descanso.jpg",
+    "preco": 259.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 259.0
+      },
+      {
+        "qtd": 100,
+        "preco": 232.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 209.0
+      }
+    ],
+    "votos": 3,
+    "ficticio": true,
+    "url": "produto-rede-descanso.html"
+  },
+  {
+    "id": "caixa-som",
+    "emoji": "🔊",
+    "nome": "Caixa de som à prova d'água",
+    "foto": "/compra-que-volta/fotos/caixa-som.jpg",
+    "preco": 349.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 349.0
+      },
+      {
+        "qtd": 100,
+        "preco": 315.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 285.0
+      }
+    ],
+    "votos": 2,
+    "ficticio": true,
+    "url": "produto-caixa-som.html"
+  },
+  {
+    "id": "botijao",
+    "emoji": "🔥",
+    "nome": "Fogareiro portátil + kit",
+    "foto": "/compra-que-volta/fotos/botijao.jpg",
+    "preco": 189.0,
+    "faixas": [
+      {
+        "qtd": 10,
+        "preco": 189.0
+      },
+      {
+        "qtd": 100,
+        "preco": 169.0
+      },
+      {
+        "qtd": 1000,
+        "preco": 150.0
+      }
+    ],
+    "votos": 1,
+    "ficticio": true,
+    "url": "produto-botijao.html"
+  }
+]

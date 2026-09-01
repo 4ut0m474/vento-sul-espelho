@@ -1,0 +1,20 @@
+/* Vento Sul — animação pulse sutil pra chamar atenção em explicações */
+@keyframes vs-pulse-atencao{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,213,79,0);}
+  50%{box-shadow:0 0 0 4px rgba(255,213,79,0.18), 0 0 22px rgba(168,85,247,0.18);}
+}
+.card-info.card-tour,
+.entrada-card-tour,
+[data-pulse-info],
+.como-funciona,
+.info-card,
+.btn-info,
+.dica-card{
+  animation: vs-pulse-atencao 3.2s ease-in-out infinite;
+}
+/* Em telas <600px, pulse mais sutil ainda pra não distrair celular */
+@media (max-width:600px){
+  .card-info.card-tour, .entrada-card-tour, [data-pulse-info]{
+    animation-duration:4s;
+  }
+}

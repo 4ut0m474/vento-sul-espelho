@@ -49,6 +49,18 @@
       "destination": "https://www.vento-sul.tech/api/$1"
     },
     {
+      "source": "/bg/(.*)",
+      "destination": "https://www.vento-sul.tech/bg/$1"
+    },
+    {
+      "source": "/compra-que-volta/(.*)",
+      "destination": "https://www.vento-sul.tech/compra-que-volta/$1"
+    },
+    {
+      "source": "/(.*\\.json)",
+      "destination": "https://www.vento-sul.tech/$1"
+    },
+    {
       "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }
